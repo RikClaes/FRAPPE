@@ -11,12 +11,14 @@
 		19644F712BF3C22100D343CF /* NIR */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NIR; path = ../../../../../Work/ClassIII_All_Derred_runable/NIR; sourceTree = "<group>"; };
 		19644F722BF3C22100D343CF /* UVB */ = {isa = PBXFileReference; lastKnownFileType = folder; name = UVB; path = ../../../../../Work/ClassIII_All_Derred_runable/UVB; sourceTree = "<group>"; };
 		19644F732BF3C22200D343CF /* VIS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VIS; path = ../../../../../Work/ClassIII_All_Derred_runable/VIS; sourceTree = "<group>"; };
+		19644F742BF3C3EA00D343CF /* BadPixelRemover.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = BadPixelRemover.py; path = ../../../../../Work/BadPixelRemover.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		19644F692BF3BDF800D343CF = {
 			isa = PBXGroup;
 			children = (
+				19644F742BF3C3EA00D343CF /* BadPixelRemover.py */,
 				19644F712BF3C22100D343CF /* NIR */,
 				19644F722BF3C22100D343CF /* UVB */,
 				19644F732BF3C22200D343CF /* VIS */,
