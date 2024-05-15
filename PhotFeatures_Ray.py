@@ -12,6 +12,26 @@ import os
 import ray
 
 
+    """
+    #+
+    # NAME:
+    #       class initialization for a "class III"
+    # PURPOSE:
+    #       Contains the information regarding an interpolated grid of templates.
+    #       Provides methods to access and plot the interpolated spectrum contained in the object
+    # CALLING SEQUENCE:
+    #      ObjectName =  classIII() for an empty object used to generate a new interolated gridFile
+    #      ObjectName =  classIII(dir = something.npz) to load an existing grid
+    # INPUTS:
+    #     self
+    #
+    # OPTIONAL INPUT KEYWORDS:
+    #     dir the directory containing a .npz file of an interpolated grid
+    #
+    # EFFECT:
+    #      None
+    #
+    """
 class classIII:
     def __init__(self, dir = None):
         self.extractedFeatureValues = None
@@ -37,7 +57,36 @@ class classIII:
 
 
 
-
+        """
+    	#+
+    	# NAME:
+    	#       extractFeaturesXS_ray
+    	# PURPOSE:
+    	#       Computes the normalized fluxes and respective uncertainties to be used in the non paramteric fitting method
+    	#
+    	# CALLING SEQUENCE:
+    	#     ObjectName.extractFeaturesXS_ray(DirSpec,nameList,SpTlist,usedFeatures,AvErr = 0.2,WLnorm = 751,wlNormHalfWidth = 0.5,SpTErr = [])
+    	#
+    	# INPUTS:
+    	#     self = ObjectName
+        #     DirSpec = the folder containing the spectra, should contain subfolders UVB,VIS,NIR for the different arms
+        #     nameList = Array containing the names of the targets for to be used spectra. (This will be used to associate the fits file, so this name should be contained in the names of the fits files)
+        #     SpTlist = Array containing the SpT of the to be used spectra, the SpT's should correspond to nameList.
+        #     usedFeatures = np array containing the wavelength ranges to be considered, format should be the following: [[335-5,335+5],[340-5,340+5],[357.5-5,357.5+5],...]
+    	# OPTIONAL INPUT KEYWORDS:
+    	#     AvErr = the error on the extinction in mag.
+    	#     WLnorm = the normalization wavelength same units as spectral axit of the spectra
+        #     wlNormHalfWidth = width of the used normalization range
+    	#     SpTErr = the uncertinty on the SpTs in SpTlist
+    	# EFFECT:
+        #      the parameters:
+    	#      self.extractedFeatureValues
+        #      self.extractedFeatureErrors
+        #      self.extractedFeatureSptCodes
+        #      are set to the extracted values so that nonParamFit_ray or nonParamFit_ray can be ran.
+    	#
+    	#
+    	"""
     def extractFeaturesXS_ray(self,DirSpec,nameList,SpTlist,usedFeatures,AvErr = 0.2,WLnorm = 751,wlNormHalfWidth = 0.5,SpTErr = []):
         #values = np.array([0 for x in range(len(SptInfo['Name']))],dtype = float)
         #errors = np.array([0 for x in range(len(SptInfo['Name']))],dtype = float)
@@ -78,50 +127,31 @@ class classIII:
 
 
 
-    def extractFeaturesXS_ray_LOG(self,DirSpec,nameList,SpTlist,usedFeatures,AvErr = 0.2,WLnorm = 751,wlNormHalfWidth = 0.5,SpTErr = []):
-        #values = np.array([0 for x in range(len(SptInfo['Name']))],dtype = float)
-        #errors = np.array([0 for x in range(len(SptInfo['Name']))],dtype = float)
-        Values = np.zeros((len(usedFeatures),len(SpTlist)))
-        Errors = np.zeros((len(usedFeatures),len(SpTlist)))
-        self.normWL = np.array([WLnorm,wlNormHalfWidth])
-
-        if len(SpTErr) == 0:
-            self.SpTErr = np.zeros(len(SpTlist))
-        else:
-            self.SpTErr = SpTErr
-        fig =plt.figure(figsize=(10,10))
-        #print(SpTlist)
-        SptCodes = scod.spt_coding(SpTlist)
-        ticklabels = np.array(['G4','','G6','','','G9','K0','','','K3','','K5','','K7','','M1','','M3','','M5','','M7','','M9',''])
-        ticks =  np.arange(-14,11,1)
-        ray.shutdown()
-        ray.init()
-
-        pool = ray.get([InerLoopExtract_log.remote(nameList[i],i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpTErr)for i in range(len(nameList))])
-
-            #for i in range(len(nameList)):
-
-        print(np.array(pool).shape)
-        Values = np.array(pool)[:,0].transpose()
-        Errors = np.array(pool)[:,1].transpose()
-        mask = np.array(pool)[:,2].transpose().astype(np.bool)
-        print(Values.shape)
-
-        print(Errors.shape)
-        print(mask)
-        print(mask[0])
-        #mask = Values > 0
-        self.setExtarctedFeatures(usedFeatures, Values, Errors, SptCodes,mask)
-
-        #del self.Values, self.Errors,
-        ray.shutdown()
-
-
-
-
-
-
-
+        """
+    	#+
+    	# NAME:
+    	#       setExtarctedFeatures
+    	# PURPOSE:
+    	#       sets the "extracted features of the object", to be called in extractFeaturesXS_ray
+    	#
+    	# CALLING SEQUENCE:
+    	#     ObjectName.setExtarctedFeatures(usedFeatures, Values, Errors, SptCodes,mask)
+    	#
+    	# INPUTS:
+    	#     usedFeatures = np array containing the wavelength ranges to be considered, format should be the following: [[335-5,335+5],[340-5,340+5],[357.5-5,357.5+5],...]
+    	#     Values = array containing the median normalized fluxes in the abaove wl ranges
+    	#     Errors = the uncertainties on Values
+        #     SptCodes = array with spts, corresponding to Values
+    	#     mask = boolean array to indicate not to be used median fluxes
+    	# EFFECT:
+        #      the parameters:
+    	#      self.extractedFeatureValues
+        #      self.extractedFeatureErrors
+        #      self.extractedFeatureSptCodes
+        #      are set to the extracted values so that nonParamFit_ray or nonParamFit_ray can be ran.
+    	#
+    	#
+    	"""
     def setExtarctedFeatures(self,usedFeatures, Values, Errors, SptCodes,mask):
         self.usedFeatures = usedFeatures
         self.extractedFeatureValues = Values
@@ -129,12 +159,53 @@ class classIII:
         self.extractedFeatureSptCodes = SptCodes
         self.Mask=mask
 
+        """
+    	#+
+    	# NAME:
+    	#       setExtarctedFeatures
+    	# PURPOSE:
+    	#       sets the "extracted features of the object", to be called in extractFeaturesXS_ray
+    	#
+    	# CALLING SEQUENCE:
+    	#     ObjectName.getExtractedFeatures()
+    	#
+    	# INPUTS:
+    	#     None
+    	# Return:
+        #      usedF = the wavelength ranges of the classIII object, format: [[335-5,335+5],[340-5,340+5],[357.5-5,357.5+5],...]
+    	#      self.extractedFeatureValues = array containing the median normalized fluxes in the abaove wl ranges
+        #      self.extractedFeatureErrors = the uncertainties on Values
+        #      self.extractedFeatureSptCodes = array with spts, corresponding to Values
+    	#
+    	#
+    	"""
     def getExtractedFeatures(self):
         usedF = self.usedFeatures
         return usedF, self.extractedFeatureSptCodes, self.extractedFeatureValues,self.extractedFeatureErrors
 
-
-    def nonParamFit(self,nrOfPoints = 200,mcSamples =1000,rad =3.5,deg = 2,outFile =None):
+        """
+    	#+
+    	# NAME:
+    	#       nonParamFit
+    	# PURPOSE:
+    	#       sets the "extracted features of the object", to be called in extractFeaturesXS_ray
+    	#
+    	# CALLING SEQUENCE:
+    	#     ObjectName.nonParamFit(nrOfPoints = 200,mcSamples =1000,rad =3.5,deg = 2,outFile =None)
+    	#
+    	#  OPTIONAl INPUTS:
+    	#     nrOfPoints = the number of SpT subclass point at which each non parametric fit is computed
+        #     mcSamples = the number of Monte Carlo simulation samples to be drawn
+        #     rad = the bandwidth of the local polynomial fits
+        #     deg = the degree of the local polynomial fit
+        #     outFile = dir where to write the generated npz file, which containes the interpolation if not given, no file will be produced
+    	# effect:
+        #      sets the interpolted grid atributed of this class III OBJECT
+        #      produces a .npz file which stores the interpolated grid
+    	#
+    	#
+    	"""
+    def nonParamFit(self,nrOfPoints = 200,mcSamples =1000,rad =2.5,deg = 2,outFile =None):
 
         features,sptCode,featureMatrix,errorMatrix = self.getExtractedFeatures()
 
@@ -184,7 +255,15 @@ class classIII:
             np.savez(outFile, medAndErr =medAndErr,sptCode = outSPTcode,usedFeatures = features,normalWL = self.normWL)
         self.setInterpFeat(outSPTcode,medOut, lowerOut, upperOut)
 
-
+        """
+    	#+
+    	# NAME:
+    	#       nonParamFit_ray
+    	# PURPOSE:
+    	#       same as nonParamFit, but faster since it is parralellized using ray
+    	# SEE nonParamFit!!
+    	#
+    	"""
     def nonParamFit_ray(self,nrOfPoints = 200,mcSamples =1000,rad =3.5,deg = 2,outFile =None):
 
         features,sptCode,featureMatrix,errorMatrix = self.getExtractedFeatures()
@@ -220,213 +299,29 @@ class classIII:
             np.savez(outFile, medAndErr =medAndErr,sptCode = outSPTcode,usedFeatures = features,normalWL = self.normWL)
         self.setInterpFeat(outSPTcode,medOut,lowerOut,upperOut)
 
-    def nonParamFit_ray_LOG(self,nrOfPoints = 200,mcSamples =1000,rad =3.5,deg = 2,outFile =None):
-
-        features,sptCode,featureMatrix,errorMatrix = self.getExtractedFeatures()
-
-        SpTErr = self.SpTErr
-        #features = self.usedFeatures
-        #featureMatrix = self.extractedFeatureValues
-        #errorMatrix = self.extractedFeatureErrors
-        if len(features) != len(featureMatrix):
-            print('features and featureMatrix must have the same dimesion allong axis 0')
-            sys.exit(1)
-        if len(features) != len(featureMatrix):
-            print('features and errorMatrix must have the same dimesion allong axis 0')
-            sys.exit(1)
-        outSPTcode = np.linspace(np.min(sptCode),np.max(sptCode),nrOfPoints)
-        ValuesOut = np.empty((len(features),len(outSPTcode)))
-        medOut = np.empty((len(features),len(outSPTcode)))
-        lowerOut = np.empty((len(features),len(outSPTcode)))
-        upperOut = np.empty((len(features),len(outSPTcode)))
-        mask = self.Mask
-        ray.shutdown()
-        ray.init()
-        pool = ray.get([InerLoopFit_log.remote(i,featureMatrix,errorMatrix,sptCode,SpTErr,mask,mcSamples,outSPTcode,rad,deg)for i in range(len(features))])
-
-        pool1 = np.array(pool)
-        print("HERE")
-        print(pool1.shape)
-        medOut,lowerOut,upperOut  = pool1[:,0,:], pool1[:,1,:], pool1[:,2,:]
-
-        medAndErr = np.array([medOut,lowerOut,upperOut])
-
-        if outFile != None:
-            np.savez(outFile, medAndErr =medAndErr,sptCode = outSPTcode,usedFeatures = features,normalWL = self.normWL)
-        self.setInterpFeat(outSPTcode,medOut,lowerOut,upperOut)
 
 
 
 
-        #uses Monte carlo as described in Anas paper!!
-    def nonParamFit_OnBestFit(self,nrOfPoints = 200,mcSamples =1000,rad =3.5,deg = 2,outFile =None):
-
-        features,sptCode,featureMatrix,errorMatrix = self.getExtractedFeatures()
-
-        SpTErr = self.SpTErr
-        #features = self.usedFeatures
-        #featureMatrix = self.extractedFeatureValues
-        #errorMatrix = self.extractedFeatureErrors
-        if len(features) != len(featureMatrix):
-            print('features and featureMatrix must have the same dimesion allong axis 0')
-            sys.exit(1)
-        if len(features) != len(featureMatrix):
-            print('features and errorMatrix must have the same dimesion allong axis 0')
-            sys.exit(1)
-        outSPTcode = np.linspace(np.min(sptCode),np.max(sptCode),nrOfPoints)
-        ValuesBestFitOut = np.empty((len(features),len(outSPTcode)))
-
-        medOut = np.empty((len(features),len(outSPTcode)))
-        lowerOut = np.empty((len(features),len(outSPTcode)))
-        upperOut = np.empty((len(features),len(outSPTcode)))
-        for i in range(len(features)):
-            # remove the values that are 0 and have inf error!
-
-            feats = featureMatrix[i][self.Mask[i]]
-            errs = errorMatrix[i][self.Mask[i]]
-            sptCodeCut = sptCode[self.Mask[i]]
-            SpTErrCut = SpTErr[self.Mask[i]]
-
-            print(self.Mask[i])
-
-
-            ValuesBestFitOut[i,:] = localreg(sptCodeCut, feats, outSPTcode , degree=deg, kernel=rbf.epanechnikov, radius=rad)
-            ValuesBestFitLoop = localreg(sptCodeCut, feats , degree=deg, kernel=rbf.epanechnikov, radius=rad)
-
-
-            mcResults = np.zeros((mcSamples, len(outSPTcode)))
-            for N in range(mcSamples):
-                #print(N)
-                featSample = ValuesBestFitLoop + (np.random.normal(0,1,len(feats))*errs)
-                sptCodeCutSample = sptCodeCut + (np.random.normal(0,1,len(feats))*SpTErrCut)
-                #print(feats)
-                #print(featSample)
-                mcResults[N,:] = localreg(sptCodeCutSample, featSample, outSPTcode , degree=deg, kernel=rbf.gaussian, radius=rad)
-
-            lowerOut[i,:] = np.percentile(mcResults,  15.9, axis=0)
-            upperOut[i,:] = np.percentile(mcResults, 100-15.9, axis=0)
-            medOut[i,:] = np.nanmedian(mcResults,axis = 0)
-
-            #self
-            medAndErr = np.array([ValuesBestFitOut,lowerOut,upperOut])
-        if outFile != None:
-            np.savez(outFile, medAndErr =medAndErr,sptCode = outSPTcode,usedFeatures = features,normalWL = self.normWL)
-        self.setInterpFeat(outSPTcode,medOut, lowerOut, upperOut)
-
-        #return ValuesOut,outSPTcode, medOut, lowerOut, upperOut
-            #preform Monte carlo simulation to compute the errors
-
-
-    ######
-    #TODO: hightlight points not used!
-    ######
+        """
+    	#+
+    	# NAME:
+    	#       plotAllInterpIndividualy
+    	# PURPOSE:
+    	#       plots the nonparameteic fit for each wl range individualy
+    	#
+    	# CALLING SEQUENCE:
+    	#     ObjectName.plotAllInterpIndividualy(outdir ='./',logScale = False)
+    	#
+    	#  OPTIONAl INPUTS:
+    	#     outdir = output dir for the ccreated
+        #     logScale = boolean if true the y axis will be in log scale
+    	# effect:
+        #      creates plots
+    	#
+    	#
+    	"""
     def plotAllInterpIndividualy(self, outdir ='./',logScale = False):
-        for i in range(len(self.medInterp)):
-            fig, axs = plt.subplots(2, 1,figsize=(11,6),sharex='col', gridspec_kw={'height_ratios': [3, 1]})
-            axs[0].set_title('wl range: '+str(self.usedFeatures[i][0])+'-'+str(self.usedFeatures[i][1])+' nm')
-            axs[0].plot(self.sptCode,self.medInterp[i])
-            mask= self.Mask
-            axs[0].errorbar(self.extractedFeatureSptCodes[mask[i]],self.extractedFeatureValues[i][mask[i]],self.extractedFeatureErrors[i][mask[i]],xerr = self.SpTErr[mask[i]],c='k',linestyle='',marker ='o', label = str(self.usedFeatures[i]))
-            axs[0].errorbar(self.extractedFeatureSptCodes[~mask[i]],self.extractedFeatureValues[i][~mask[i]],self.extractedFeatureErrors[i][~mask[i]],xerr = self.SpTErr[~mask[i]],c= 'r',alpha=0.5,linestyle='',marker ='o', label = str(self.usedFeatures[i]))
-
-            #axs[0].plot(outSPTcode,med[i])
-            axs[0].fill_between(self.sptCode,self.lowerErrInterp[i], self.upperErrInterp[i],alpha = 0.4)
-            axs[0].set_xlabel('SpT code')
-            axs[0].set_ylabel('f(range)/f'+str(self.normWL[0]))
-            if logScale:
-                axs[0].set_yscale('log')
-            #residuals
-            interp = np.interp(self.extractedFeatureSptCodes[mask[i]],self.sptCode,self.medInterp[i])
-            axs[1].scatter(self.extractedFeatureSptCodes[mask[i]],(self.extractedFeatureValues[i][mask[i]]-interp)/self.extractedFeatureErrors[i][mask[i]],c='k')
-            interp = np.interp(self.extractedFeatureSptCodes[~mask[i]],self.sptCode,self.medInterp[i])
-            axs[1].scatter(self.extractedFeatureSptCodes[~mask[i]],(self.extractedFeatureValues[i][~mask[i]]-interp)/self.extractedFeatureErrors[i][~mask[i]],c='r')
-            axs[1].plot(self.sptCode,np.zeros(len(self.sptCode)))
-            axs[1].set_xlabel('SpT code')
-            axs[1].set_ylabel(r'$(f_{spec.} - f_{fit.})/\sigma$')
-            #axs[1].set_ylim(-0.6,0.6)
-            #ticklabels = np.array(['','G9','','K1','','K3','','K5','','K7','','M1','','M3','','M5',''])
-            ticklabels = np.array(['','G9','','K1','','K3','','K5','','K7','','M1','','M3','','M5','','M7','','M9',''])
-            ticks =  np.arange(-10,11,1)
-            #plt.xlim(-10,6)
-            plt.xticks(ticks,ticklabels)
-            if logScale:
-                plt.savefig(outdir+'wl_range:'+str(self.usedFeatures[i][0])+'-'+str(self.usedFeatures[i][1])+'nm_LOG.png')
-            else:
-                plt.savefig(outdir+'wl_range:'+str(self.usedFeatures[i][0])+'-'+str(self.usedFeatures[i][1])+'nm.png')
-            plt.close()
-
-    def plotAllInterpIndividualy_FitResiduals_LOG(self, outdir ='./',logScale = False):
-        if logScale:
-            for i in range(len(self.medInterp)):
-                fig, axs = plt.subplots(2, 1,figsize=(11,6),sharex='col', gridspec_kw={'height_ratios': [3, 1]})
-                axs[0].set_title('wl range: '+str(self.usedFeatures[i][0])+'-'+str(self.usedFeatures[i][1])+' nm')
-                axs[0].plot(self.sptCode,np.log10(self.medInterp[i]))
-                mask= self.Mask
-                extractedFeat = self.extractedFeatureValues
-                extractedFeatureErr = self.extractedFeatureErrors
-                axs[0].errorbar(self.extractedFeatureSptCodes[mask[i]],extractedFeat[i][mask[i]],extractedFeatureErr[i][mask[i]],xerr = self.SpTErr[mask[i]],c='k',linestyle='',marker ='o', label = str(self.usedFeatures[i]))
-                axs[0].errorbar(self.extractedFeatureSptCodes[~mask[i]],extractedFeat[i][~mask[i]],extractedFeatureErr[i][~mask[i]],xerr = self.SpTErr[~mask[i]],c= 'r',alpha=0.5,linestyle='',marker ='o', label = str(self.usedFeatures[i]))
-
-                #axs[0].plot(outSPTcode,med[i])
-                axs[0].fill_between(self.sptCode,np.log10(self.lowerErrInterp[i]), np.log10(self.upperErrInterp[i]),alpha = 0.4)
-                axs[0].set_xlabel('SpT code')
-                axs[0].set_ylabel('log(f(range)/f'+str(self.normWL[0])+')')
-                #if logScale:
-                #    axs[0].set_yscale('log')
-                #residuals
-                extractedFeat = 10**self.extractedFeatureValues
-                extractedFeatureErr = self.extractedFeatureErrors*np.log(10)*extractedFeat
-                interp = np.interp(self.extractedFeatureSptCodes[mask[i]],self.sptCode,self.medInterp[i])
-                interpErr = np.interp(self.extractedFeatureSptCodes[mask[i]],self.sptCode,( self.upperErrInterp[i] - self.lowerErrInterp[i])/2)
-                axs[1].scatter(self.extractedFeatureSptCodes[mask[i]],(extractedFeat[i][mask[i]]-interp)/interpErr,c='k')
-                interp = np.interp(self.extractedFeatureSptCodes[~mask[i]],self.sptCode,self.medInterp[i])
-                interpErr = np.interp(self.extractedFeatureSptCodes[~mask[i]],self.sptCode,( self.upperErrInterp[i] - self.lowerErrInterp[i])/2)
-                axs[1].scatter(self.extractedFeatureSptCodes[~mask[i]],(extractedFeat[i][~mask[i]]-interp)/interpErr,c='r')
-                axs[1].plot(self.sptCode,np.zeros(len(self.sptCode)))
-                axs[1].set_xlabel('SpT code')
-                axs[1].set_ylabel(r'$(f_{spec.} - f_{fit.})/\sigma$')
-                #axs[1].set_ylim(-0.6,0.6)
-                #ticklabels = np.array(['','G9','','K1','','K3','','K5','','K7','','M1','','M3','','M5',''])
-                ticklabels = np.array(['','G9','','K1','','K3','','K5','','K7','','M1','','M3','','M5','','M7','','M9',''])
-                ticks =  np.arange(-10,11,1)
-                #plt.xlim(-10,6)
-                plt.xticks(ticks,ticklabels)
-                plt.savefig(outdir+'wl_range:'+str(self.usedFeatures[i][0])+'-'+str(self.usedFeatures[i][1])+'nm_LOG.png')
-        else:
-            for i in range(len(self.medInterp)):
-                fig, axs = plt.subplots(2, 1,figsize=(11,6),sharex='col', gridspec_kw={'height_ratios': [3, 1]})
-                axs[0].set_title('wl range: '+str(self.usedFeatures[i][0])+'-'+str(self.usedFeatures[i][1])+' nm')
-                axs[0].plot(self.sptCode,self.medInterp[i])
-                mask= self.Mask
-                extractedFeat = 10**self.extractedFeatureValues
-                extractedFeatureErr = self.extractedFeatureErrors*np.log(10)*extractedFeat
-                axs[0].errorbar(self.extractedFeatureSptCodes[mask[i]],extractedFeat[i][mask[i]],extractedFeatureErr[i][mask[i]],xerr = self.SpTErr[mask[i]],c='k',linestyle='',marker ='o', label = str(self.usedFeatures[i]))
-                axs[0].errorbar(self.extractedFeatureSptCodes[~mask[i]],extractedFeat[i][~mask[i]],extractedFeatureErr[i][~mask[i]],xerr = self.SpTErr[~mask[i]],c= 'r',alpha=0.5,linestyle='',marker ='o', label = str(self.usedFeatures[i]))
-
-                #axs[0].plot(outSPTcode,med[i])
-                axs[0].fill_between(self.sptCode,self.lowerErrInterp[i], self.upperErrInterp[i],alpha = 0.4)
-                axs[0].set_xlabel('SpT code')
-                axs[0].set_ylabel('f(range)/f'+str(self.normWL[0]))
-                #residuals
-                interp = np.interp(self.extractedFeatureSptCodes[mask[i]],self.sptCode,self.medInterp[i])
-                interpErr = np.interp(self.extractedFeatureSptCodes[mask[i]],self.sptCode,( self.upperErrInterp[i] - self.lowerErrInterp[i])/2)
-                axs[1].scatter(self.extractedFeatureSptCodes[mask[i]],(extractedFeat[i][mask[i]]-interp)/interpErr,c='k')
-                interp = np.interp(self.extractedFeatureSptCodes[~mask[i]],self.sptCode,self.medInterp[i])
-                interpErr = np.interp(self.extractedFeatureSptCodes[~mask[i]],self.sptCode,( self.upperErrInterp[i] - self.lowerErrInterp[i])/2)
-                axs[1].scatter(self.extractedFeatureSptCodes[~mask[i]],(extractedFeat[i][~mask[i]]-interp)/interpErr,c='r')
-                axs[1].plot(self.sptCode,np.zeros(len(self.sptCode)))
-                axs[1].set_xlabel('SpT code')
-                axs[1].set_ylabel(r'$(f_{spec.} - f_{fit.})/\sigma$')
-                #axs[1].set_ylim(-0.6,0.6)
-                #ticklabels = np.array(['','G9','','K1','','K3','','K5','','K7','','M1','','M3','','M5',''])
-                ticklabels = np.array(['','G9','','K1','','K3','','K5','','K7','','M1','','M3','','M5','','M7','','M9',''])
-                ticks =  np.arange(-10,11,1)
-                #plt.xlim(-10,6)
-                plt.xticks(ticks,ticklabels)
-                plt.savefig(outdir+'wl_range:'+str(self.usedFeatures[i][0])+'-'+str(self.usedFeatures[i][1])+'nm.png')
-            plt.close()
-
-    def plotAllInterpIndividualy_FitResiduals(self, outdir ='./',logScale = False):
         for i in range(len(self.medInterp)):
             fig, axs = plt.subplots(2, 1,figsize=(11,6),sharex='col', gridspec_kw={'height_ratios': [3, 1]})
             axs[0].set_title('wl range: '+str(self.usedFeatures[i][0])+'-'+str(self.usedFeatures[i][1])+' nm')
@@ -467,7 +362,24 @@ class classIII:
             plt.close()
 
 
-
+            """
+        	#+
+        	# NAME:
+        	#       plotAllInterpIndividualy
+        	# PURPOSE:
+        	#       plots all the non parametric fits together, without the error, or the used datapoints
+        	#
+        	# CALLING SEQUENCE:
+        	#     ObjectName.plotInterpTogetherNoErr(outdir ='./')
+        	#
+        	#  OPTIONAl INPUTS:
+        	#     outdir = output dir for the ccreated
+            #     logScale = boolean if true the y axis will be in log scale
+        	# effect:
+            #      creates plots
+        	#
+        	#
+        	"""
     def plotInterpTogetherNoErr(self, outdir ='./'):
         plt.figure()
         for i in range(len(self.medInterp)):
@@ -484,7 +396,24 @@ class classIII:
             plt.savefig(outdir+'allInterpNoErr.png')
             plt.close()
 
-
+        """
+        #+
+        # NAME:
+        #       plotAllInterpIndividualy
+        # PURPOSE:
+        #       plots all the non parametric fits together, with the uncertainty and without the used data points
+        #
+        # CALLING SEQUENCE:
+        #     ObjectName.plotInterpTogetherWithErr(outdir ='./')
+        #
+        #  OPTIONAl INPUTS:
+        #     outdir = output dir for the ccreated
+        #     logScale = boolean if true the y axis will be in log scale
+        # effect:
+        #      creates plots
+        #
+        #
+        """
     def plotInterpTogetherWithErr(self, outdir ='./'):
         plt.figure(figsize = (5,4))
         x = np.linspace(len(self.medInterp)-1,0,len(self.medInterp)).astype(int)
@@ -511,7 +440,24 @@ class classIII:
                 #plt.ylim(-0.1,2)
                 #plt.ylim(-0.1,2)
 
-
+        """
+        #+
+        # NAME:
+        #       plotAllInterpIndividualy
+        # PURPOSE:
+        #       retunrs an interpolated spectrum at a given SpT, the errors are assumed to be symetric
+        #
+        # CALLING SEQUENCE:
+        #     flux, err = ObjectName.plotAllInterpIndividualy(outdir ='./',logScale = False)
+        #
+        #  OPTIONAl INPUTS:
+        #     outdir = output dir for the ccreated
+        #     logScale = boolean if true the y axis will be in log scale
+        # effect:
+        #      meds = the normalized fluxes, corresponting to the used wl ranges
+        #      error =  the corresponding uncertainties
+        #
+        """
     def getFeatsAtSpt_symetricErr(self, SpT):
         #move the next line outside, set as class atribute!
         medInterpolant = intp.interp1d(self.sptCode,self.medInterp)
@@ -528,23 +474,112 @@ class classIII:
         #    medsMin8,error = self.getFeatsAtSpt_symetricErr(8)
         return meds,error
 
-
+        """
+        #+
+        # NAME:
+        #       setInterpFeat
+        # PURPOSE:
+        #       To be called by nonParamFit and init to set the interpolated grid
+        #
+        # CALLING SEQUENCE:
+        #     ObjectName.setInterpFeat(self,outSPTcode,med,lower,upper)
+        #
+        #  OPTIONAl INPUTS:
+        #     outSPTcode = the spectran type code to be set
+        #     med = the median fluxes to be set
+        #     lower = the 1 sigma lower bound uncertaintie
+        #     upper = the 1 sigma upper bound uncertaintie
+        # effect:
+        #      sets the
+        #       self.sptCode
+        #       self.medInterp
+        #       self.lowerErrInterp
+        #       self.upperErrInterp
+        #       attributes of the class III object
+        """
     def setInterpFeat(self,outSPTcode,med,lower,upper):
         self.sptCode = outSPTcode
         self.medInterp = med
         self.lowerErrInterp = lower
         self.upperErrInterp = upper
 
+        """
+        #+
+        # NAME:
+        #       setInterpFeat
+        # PURPOSE:
+        #       Returns all interpolated features
+        #
+        # CALLING SEQUENCE:
+        #     usedFeatures,sptCode, medInterp, lowerErrInterp, upperErrInterp = ObjectName.setInterpFeat()
+        #
+        #  OPTIONAl INPUTS:
+        # OUTPUTS:
+        #       sets the
+        #       usedFeatures =  array containing the wl ranges used in the interpolated grid
+        #       sptCode = the spt codes corresponding to each point for which a non parametric fit was computed
+        #       medInterp = 2d array containing the non parametric fits for all wl ranges
+        #       lowerErrInterp = 2d array containing the 1 sigma lower bound uncertainty non parametric fits for all wl ranges
+        #       upperErrInterp = 2d array containing the 1 sigma upper bound uncertainty non parametric fits for all wl ranges
+        #
+        """
     def getInterpFeat(self):
         return self.usedFeatures,self.sptCode, self.medInterp, self.lowerErrInterp, self.upperErrInterp
 
+        """
+        #+
+        # NAME:
+        #       getUsedInterpFeat
+        # PURPOSE:
+        #       Returns all interpolated features
+        #
+        # CALLING SEQUENCE:
+        #     usedFeatures = ObjectName.setInterpFeat()
+        #
+        #  OPTIONAl INPUTS:
+        # OUTPUTS:
+        #       sets the
+        #       usedFeatures =  array containing the wl ranges used in the interpolated grid
+        #
+        """
     def getUsedInterpFeat(self):
         return self.usedFeatures
 
+        """
+        #+
+        # NAME:
+        #       setInterpFeat
+        # PURPOSE:
+        #       Returns the normalization wl
+        #
+        # CALLING SEQUENCE:
+        #     normWL = ObjectName.setInterpFeat()
+        #
+        #  OPTIONAl INPUTS:
+        # OUTPUTS:
+        #       sets the
+        #       normWL =  the normalization wl of the interpolated grid
+        #
+        """
     def getUsedNormWl(self):
         return self.normWL
 
-
+        """
+        #+
+        # NAME:
+        #       readInterpFeat
+        # PURPOSE:
+        #       Returns the normalization wl
+        #
+        # CALLING SEQUENCE:
+        #     ObjectName.readInterpFeat()
+        #
+        # INPUTS:
+        #       dirInterpfeat = directory of the .npz file you want to load
+        #   EFFECT:
+        #       Loads th .npz file ands sets the relevant atributes og this classIII object
+        #
+        """
     def readInterpFeat(self,dirInterpfeat):
         npz = np.load(dirInterpfeat)
         featuresandErrs =npz['medAndErr']
@@ -555,6 +590,28 @@ class classIII:
         self.upperErrInterp = featuresandErrs[2]
         self.normWL = npz['normalWL']
 
+
+
+    """
+    #+
+    # NAME:
+    #       readMixClassIII
+    # PURPOSE:
+    #       reads in a normalized random class III template spectrum of the SpT closest to the one given
+    #
+    # CALLING SEQUENCE:
+    #     readMixClassIII
+    #
+    # INPUTS:
+    #       min_chi_sq_cl3 = the SpT at which you want a spectrum
+    #       PATH_CLASSIII = dir pointing to the spectra should have subfolders UVB,VIS,NIR
+    #       wlNorm = the wl at which the spectrum is normalized
+    #       average = False, True to be implemented!!
+    #   returns:
+    #      wl_cl3UVB,fl_cl3UVB,wl_cl3VIS,fl_cl3VIS,wl_cl3NIR,fl_cl3NIR,cl3_toSelectModel
+    # that is the wl and fluxed in the 3 XS arms and the name of the selected class III template
+    #
+    """
 def readMixClassIII(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = False):
     clsIIIinfo = np.genfromtxt(PATH_CLASSIII+'summary_classIII_final.txt',usecols=(0,2),skip_header=1,dtype=[('Name','U64'),('Spt','U4')])
     name_cl3 = clsIIIinfo['Name']
@@ -598,6 +655,27 @@ def readMixClassIII(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = False):
         raise Exception('you have yet to implement this')
     return wl_cl3UVB,fl_cl3UVB,wl_cl3VIS,fl_cl3VIS,wl_cl3NIR,fl_cl3NIR,cl3_toSelectModel
 
+
+    """
+    #+
+    # NAME:
+    #       readMixClassIII
+    # PURPOSE:
+    #       reads in a normalized random class III template spectrum of the SpT closest to the one given, also returns the SpT of this spectrum
+    #
+    # CALLING SEQUENCE:
+    #     readMixClassIII
+    #
+    # INPUTS:
+    #       min_chi_sq_cl3 = the SpT at which you want a spectrum
+    #       PATH_CLASSIII = dir pointing to the spectra should have subfolders UVB,VIS,NIR
+    #       wlNorm = the wl at which the spectrum is normalized
+    #       average = False, True to be implemented!!
+    #   returns:
+    #      wl_cl3UVB,fl_cl3UVB,wl_cl3VIS,fl_cl3VIS,wl_cl3NIR,fl_cl3NIR,cl3_toSelectModel, spt
+    # that is the wl and fluxed in the 3 XS arms and the name of the selected class III template and its SpT
+    #
+    """
 def readMixClassIII_withSpT(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = False):
     #name_cl3,SpT_cl3 = readcol_py3(PATH_CLASSIII+'summary_classIII_final.txt',2,format='A,X,A,X',skipline=1)
     clsIIIinfo = np.genfromtxt(PATH_CLASSIII+'summary_classIII_final.txt',usecols=(0,2),skip_header=1,dtype=[('Name','U64'),('Spt','U4')])
@@ -643,6 +721,18 @@ def readMixClassIII_withSpT(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = F
         raise Exception('you have yet to implement this')
     return wl_cl3UVB,fl_cl3UVB,wl_cl3VIS,fl_cl3VIS,wl_cl3NIR,fl_cl3NIR,cl3_toSelectModel, spt
 
+
+"""
+#+
+# NAME:
+#       InerLoopExtract
+# PURPOSE:
+#       to be used in extractFeaturesXS_ray for parrallelization
+#
+# CALLING SEQUENCE:
+#     IDK why you would want to
+#
+"""
 @ray.remote#(num_returns=2)
 def InerLoopExtract(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpTErr):
         #name  = nameList[i]
@@ -715,79 +805,19 @@ def InerLoopExtract(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpT
         print(mask)
         return Values, Errors, mask
 
-@ray.remote#(num_returns=2)
-def InerLoopExtract_log(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpTErr):
-        #name  = nameList[i]
-        #print(name)
-        #flux_correction(uvbFile,1.,fileout=uvbFile,flux_un='erg/s/cm2/nm')
-        Values = np.zeros(len(usedFeatures))
-        Errors = np.zeros(len(usedFeatures))
-        mask = np.array([False for i in range(len(usedFeatures))])
-        visFile = glob.glob(DirSpec+'VIS/*%s*' %name)[0]
-        Wvis,Fvis = spec_readspec(visFile)
-        uvbFile = glob.glob(DirSpec+'UVB/*%s*' %name)[0]
-        Wuvb,Fuvb = spec_readspec(uvbFile)
-        nirFile = glob.glob(DirSpec+'NIR/*%s*' %name)[0]
-        Wnir,Fnir = spec_readspec(nirFile)
-
-        print(i)
-        wl = np.concatenate([Wuvb[Wuvb<550],Wvis[(Wvis>550)&(Wvis<=1020)],Wnir[Wnir>1020]])
-        fl = np.concatenate([Fuvb[Wuvb<550],Fvis[(Wvis>550)&(Wvis<=1020)],Fnir[Wnir>1020]])
-        #fl[fl<0] = 0#np.nan
-        # this creates a problem: J1111 and DENIS will have too high of a flux at wl ~3500!!!!!
 
 
-        #fl = (1/cardelli_extinction(wl*10,av))*fl
-
-        #fl_red = (cardelli_extinction(wl*10,AvErr))*fl
-        #fl_derred = fl/(cardelli_extinction(wl*10,np.abs(AvErr)))
-
-
-        #halfWidth = 0.5
-        #fwlnorm = np.nanmedian(fl[(wl<WLnorm+halfWidth)&(wl>WLnorm-halfWidth)])
-        #fwlnormErr = np.nanstd(fl[(wl<WLnorm+halfWidth)&(wl>WLnorm-halfWidth)])#np.nanstd(normSpectrum[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])])
-        #normSpectrum = fl/fwlnorm
-        fwlnorm = np.log10(np.nanmedian(fl[(wl<=WLnorm+wlNormHalfWidth)&(wl>=WLnorm-wlNormHalfWidth)]))
-        #fwlnormErr_noise = np.nanstd(fl[(wl<=WLnorm+wlNormHalfWidth)&(wl>=WLnorm-wlNormHalfWidth)])
-        #####
-        #new!!
-        #####
-        #fwlnormErr_fCalib = fwlnorm/20
-        #fwlnormErr = np.sqrt((fwlnormErr_noise**2) + (fwlnormErr_fCalib**2))
-        fwlnormErr = np.abs(np.nanstd(fl[(wl<=WLnorm+wlNormHalfWidth)&(wl>=WLnorm-wlNormHalfWidth)])/(fwlnorm*np.log(10)))
-        for j in range(len(usedFeatures)):
-
-            #print(features[j,0])
-
-            fluxNotScaledInRange  = np.log10( np.nanmedian(fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])]))
-            fluxInRange = fluxNotScaledInRange-fwlnorm
-            logFluxInRange =  fluxInRange
-            #ErrNotScaledInRange_noise = np.nanstd(fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])])
-            #ErrNotScaledInRange_fCalib = fluxNotScaledInRange/20
-            #ErrNotScaledInRange = np.sqrt((ErrNotScaledInRange_noise**2)+ (ErrNotScaledInRange_fCalib**2))
-            ErrNotScaledInRange = np.abs(np.nanstd(fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])])/(fluxNotScaledInRange*np.log10(10)))
-            ErrFluxInRange = np.sqrt((ErrNotScaledInRange)**2 + (fwlnormErr)**2)
-            #ErrFluxInRange = np.nanstd(fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])])
-
-
-            Values[j]  = fluxInRange
-            wlReddening = 10*(usedFeatures[j,0] + usedFeatures[j,1])/2
-            CardelliCte = cardelli_extinction_a_plus_bOverRv(np.array([wlReddening]),Rv=3.1) - cardelli_extinction_a_plus_bOverRv(np.array([WLnorm]),Rv=3.1)
-            errCardelliRatio = np.abs(-0.4 * CardelliCte*AvErr)
-            #errCardelliRatio = np.abs(-0.4*np.log(10) * CardelliCte*AvErr)
-            #print(1 - (cardelli_extinction(np.array([wlReddening]),AvErr)))
-            #print(ErrFluxInRange/fluxInRange)
-            term1 = (ErrFluxInRange) **2
-            #print(term1)
-            term2 = (errCardelliRatio)**2
-            errFlDerred = np.sqrt(term1+ term2) #np.sqrt((ErrFluxInRange/fluxInRange)**2
-            #print(errCardelliRatio)
-            Errors[j] =   errFlDerred
-            #mask[j] = ((np.nanmedian((fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])]))/np.nanstd((fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])]))) >=0.5)
-            mask[j] = ((np.nanmedian((fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])]))/np.nanstd((fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])]))) >=0.0)
-        print(mask)
-        return Values, Errors, mask
-
+"""
+#+
+# NAME:
+#       InerLoopExtract
+# PURPOSE:
+#       to be used in nonParamFit_ray for parrallelization
+#
+# CALLING SEQUENCE:
+#     IDK why you would want to
+#
+"""
 @ray.remote
 def InerLoopFit(i,featureMatrix,errorMatrix,sptCode,SpTErr,mask,mcSamples,outSPTcode,rad,deg):
     feats = featureMatrix[i][mask[i]]
@@ -817,51 +847,28 @@ def InerLoopFit(i,featureMatrix,errorMatrix,sptCode,SpTErr,mask,mcSamples,outSPT
     return medOut,lowerOut,upperOut
 
 
-@ray.remote
-def InerLoopFit_log(i,featureMatrix,errorMatrix,sptCode,SpTErr,mask,mcSamples,outSPTcode,rad,deg):
-    feats = featureMatrix[i][mask[i]]
-    errs = errorMatrix[i][mask[i]]
-    sptCodeCut = sptCode[mask[i]]
-    SpTErrCut = SpTErr[mask[i]]
-    #print(mask[i])
 
 
-    #ValuesOut[i,:] = localreg(sptCodeCut, feats, outSPTcode , degree=deg, kernel=rbf.epanechnikov, radius=rad)
-
-    mcResults = np.zeros((mcSamples, len(outSPTcode)))
-    for N in range(mcSamples):
-        #print(N)
-        featSample = feats + (np.random.normal(0,1,len(feats))*errs)
-        sptCodeCutSample = sptCodeCut + (np.random.normal(0,1,len(feats))*SpTErrCut)
-        #print(feats)
-        #print(featSample)
-        mcResults[N,:] = localreg(sptCodeCutSample, featSample, outSPTcode , degree=deg, kernel=rbf.gaussian, radius=rad)
-
-    lowerOut = 10**np.percentile(mcResults,  15.9, axis=0)
-    upperOut = 10**np.percentile(mcResults, 100-15.9, axis=0)
-    medOut = 10**np.nanmedian(mcResults,axis = 0)
-
-    #self
-    #medAndErr = np.array([medOut,lowerOut,upperOut])
-    return medOut,lowerOut,upperOut
-
-def convertSpTtoTeffHH14(spt_code):
-    script_dir = os.path.dirname(__file__) #<-- absolute dir the script is in
-    rel_path = "SpT_Teff_relation_hh14_short_codes.dat"
-    abs_file_path = os.path.join(script_dir, rel_path)
-    #relDir = './SpT_Teff_relation_hh14_short_codes.dat'
-    relation = np.genfromtxt(abs_file_path,usecols=(1,2),skip_header=1,dtype=[('sptCode',float),('Teff',float)])
-    Teff = np.interp(spt_code,relation['sptCode'],relation['Teff'])
-
-    return Teff
-
-# modified version of cardelli_extinction that returns:
-#a + b/R_v
-# to be used in error propagation of extinction.
-
+"""
+#+
+# NAME:
+#       readMixClassIII
+# PURPOSE:
+#       modified version of cardelli_extinction that returns:
+#           a + b/R_v (see cardelli+ 1989)
+#           to be used in error propagation of extinction.
+# CALLING SEQUENCE:
+#     readMixClassIII
+#
+# INPUTS:
+#       wave = array with the wavelengths to compute the relation
+# Optional inputs:
+#       Rv =  parameter wth same notation in (cardelli+ 1989)
+#   returns:
+#      a + b/R_v
+#
+"""
 def cardelli_extinction_a_plus_bOverRv(wave,Rv=3.1):
-
-
   # print 'Av = ',Av, 'Rv = ',Rv
 
   x = 10000./ wave                # Convert to inverse microns
