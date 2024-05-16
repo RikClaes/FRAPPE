@@ -358,39 +358,8 @@ class classIII:
             plt.close()
 
 
-            """
-        	#+
-        	# NAME:
-        	#       plotAllInterpIndividualy
-        	# PURPOSE:
-        	#       plots all the non parametric fits together, without the error, or the used datapoints
-        	#
-        	# CALLING SEQUENCE:
-        	#     ObjectName.plotInterpTogetherNoErr(outdir ='./')
-        	#
-        	#  OPTIONAl INPUTS:
-        	#     outdir = output dir for the ccreated
-            #     logScale = boolean if true the y axis will be in log scale
-        	# effect:
-            #      creates plots
-        	#
-        	#
-        	"""
-    def plotInterpTogetherNoErr(self, outdir ='./'):
-        plt.figure()
-        for i in range(len(self.medInterp)):
-            plt.plot(self.sptCode,self.medInterp[i],label = str(self.usedFeatures[i]))
-            #plt.fill_between(self.sptCode,self.lowerErrInterp[i], self.upperErrInterp[i],alpha = 0.4)
-            legend = plt.legend()
-            plt.xlabel('SpT code')
 
-            plt.ylabel('f(range)/f'+str(self.normWL[0]))
-            ticklabels = np.array(['','G9','','K1','','K3','','K5','','K7','','M1','','M3','','M5','','M7','','M9',''])
-            ticks =  np.arange(-10,11,1)
-            plt.xticks(ticks,ticklabels)
-            legend.set_title("wavelength range: [nm]")
-            plt.savefig(outdir+'allInterpNoErr.png')
-            plt.close()
+
 
         """
         #+
