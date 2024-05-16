@@ -101,4 +101,4 @@ Below are two example of the produced figures
 ![plot](https://github.com/RikClaes/FRAPPE/blob/main/Figures/allInterpWithErr3.0.png)
 
 ## Coming later:
-FRAPPE version 1.0 will include 
+FRAPPE version 1.0 will include the code used to fit th UV continuum excess of accreting T Tauri Stars
