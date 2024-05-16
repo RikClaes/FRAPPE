@@ -57,6 +57,40 @@ A future update will allow for other spectra to be included.
 
 
 ```
+import numpy as np
+import MyFitter.PhotFeatures_Ray as pf
+import matplotlib.pyplot as plt
+
+SptFile = '~/.../ClassIII_info.txt'
+SptInfo = np.genfromtxt(SptFile,usecols=(0,2,4),skip_header=1,dtype=[('Name','U64'),('Spt','U4'),('SptErr','f8')])
+
+
+nameList = SptInfo['Name']
+Spts = SptInfo['Spt']
+
+features = np.array([[335-5,335+5],
+                     [340-5,340+5],
+                     [357.5-5,357.5+5],
+                     [355-6,355+6],#
+                     [400-4,400+4], 
+                     [450-4,450+4],
+                     [475-2,475+2],
+                     [461-3,461+3],
+                     [703-1,703+1],
+                     [707-1,707+1],
+                     [710-1,710+1],
+                     [715-1,715+1]]
+                   )
+
+# compute normalized fluxes and uncertainties withing these ranges
+classIIIFeat = pf.classIII()
+classIIIFeat.extractFeaturesXS_ray(dirSpec,nameList,Spts,features,WLnorm= 731,SpTErr = SptInfo['SptErr'])
+
+output = '/someFileName' #the output file you want to produce .npz should not be included in the name
+#run the non parametric fits
+classIIICarlosFeat.nonParamFit_ray(200,1000,rad =2.5,deg =1,outFile = output)
+
+
 ```
 
 
