@@ -47,7 +47,7 @@ plt.fill_between(wl,np.log10(features-errors) +i, np.log10(features +errors)+i,c
 ```
 this results in the following plot:
 
-
+![plot](https://github.com/RikClaes/FRAPPE/blob/main/Figures/InterpVIS_m3.png)
 
 
 PhotFeatures_Ray.py also includes the neccecary tools to generate your own interpolated spectra based on X-Shooter.
