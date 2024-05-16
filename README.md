@@ -90,10 +90,15 @@ output = '/someFileName' #the output file you want to produce .npz should not be
 #run the non parametric fits
 classIIICarlosFeat.nonParamFit_ray(200,1000,rad =2.5,deg =1,outFile = output)
 
-
+# the following plots can be produced to inspect the resulting interpolated spectrum
+# first the wavelength ranges are plotted individually
+classIIICarlosFeat.plotAllInterpIndividualy_FitResiduals(outDir+'figsGoodInterp_NoBTsettl/')
+# plot several different interpolations together
+classIIICarlosFeat.plotInterpTogetherWithErr(outDir+'figsGoodInterp_NoBTsettl/')
 ```
-
-
+Below are two example of the produced figures
+![plot](https://github.com/RikClaes/FRAPPE/blob/main/Figures/wl_range%3A709.5-710.5nm.png)
+![plot](https://github.com/RikClaes/FRAPPE/blob/main/Figures/allInterpWithErr3.0.png)
 
 ## Coming later:
 FRAPPE version 1.0 will include 
