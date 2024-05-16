@@ -14,7 +14,7 @@ The required packages are:
 
 
 ## Usage:
-
+### loading and plotting an interpolates spectrum at a given SpT
 The below eaxmple shows how to load an interpolated spectrum at a given SpT and plot it.
 
 ```
@@ -45,6 +45,21 @@ plt.fill_between(wl,np.log10(features-errors) +i, np.log10(features +errors)+i,c
 
 
 ```
+this results in the following plot:
+
+
+
+
+PhotFeatures_Ray.py also includes the neccecary tools to generate your own interpolated spectra based on X-Shooter.
+A description of how these methods work can be found in Claes et al. in prep.
+Below an example is given of how this can be done. 
+A future update will allow for other spectra to be included.
+
+
+```
+```
+
+
 
 ## Coming later:
 FRAPPE version 1.0 will include 
