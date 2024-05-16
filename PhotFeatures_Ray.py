@@ -1,13 +1,9 @@
 import numpy as np
-from spec_readspec import spec_readspec
 import matplotlib.pyplot as plt
-from cardelli_extinction import cardelli_extinction
-import spectral_classification.spt_coding as scod
 import glob
 import numpy as np
 from localreg import *
 from scipy import interpolate as intp
-from readcol_py3 import *
 import os
 import ray
 
@@ -100,7 +96,7 @@ class classIII:
             self.SpTErr = SpTErr
         fig =plt.figure(figsize=(10,10))
         #print(SpTlist)
-        SptCodes = scod.spt_coding(SpTlist)
+        SptCodes = spt_coding(SpTlist)
         ticklabels = np.array(['G4','','G6','','','G9','K0','','','K3','','K5','','K7','','M1','','M3','','M5','','M7','','M9',''])
         ticks =  np.arange(-14,11,1)
         ray.shutdown()
@@ -198,7 +194,7 @@ class classIII:
         #     mcSamples = the number of Monte Carlo simulation samples to be drawn
         #     rad = the bandwidth of the local polynomial fits
         #     deg = the degree of the local polynomial fit
-        #     outFile = dir where to write the generated npz file, which containes the interpolation if not given, no file will be produced
+        #     outFile = dir+filename where to write the generated npz file, which containes the interpolation if not given, no file will be produced
     	# effect:
         #      sets the interpolted grid atributed of this class III OBJECT
         #      produces a .npz file which stores the interpolated grid
@@ -617,7 +613,7 @@ def readMixClassIII(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = False):
     name_cl3 = clsIIIinfo['Name']
     SpT_cl3 = clsIIIinfo['Spt']
     #compute the sptcode
-    sptCodes = scod.spt_coding(SpT_cl3)
+    sptCodes = spt_coding(SpT_cl3)
     #print(min_chi_sq_cl3.dtype)
     # calculate the difference array
     difference_array = np.absolute(sptCodes-float(min_chi_sq_cl3))
@@ -677,12 +673,11 @@ def readMixClassIII(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = False):
     #
     """
 def readMixClassIII_withSpT(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = False):
-    #name_cl3,SpT_cl3 = readcol_py3(PATH_CLASSIII+'summary_classIII_final.txt',2,format='A,X,A,X',skipline=1)
     clsIIIinfo = np.genfromtxt(PATH_CLASSIII+'summary_classIII_final.txt',usecols=(0,2),skip_header=1,dtype=[('Name','U64'),('Spt','U4')])
     name_cl3 = clsIIIinfo['Name']
     SpT_cl3 = clsIIIinfo['Spt']
     #compute the sptcode
-    sptCodes = scod.spt_coding(SpT_cl3)
+    sptCodes = spt_coding(SpT_cl3)
     #print(min_chi_sq_cl3.dtype)
     # calculate the difference array
     difference_array = np.absolute(sptCodes-float(min_chi_sq_cl3))
@@ -846,7 +841,220 @@ def InerLoopFit(i,featureMatrix,errorMatrix,sptCode,SpTErr,mask,mcSamples,outSPT
     #medAndErr = np.array([medOut,lowerOut,upperOut])
     return medOut,lowerOut,upperOut
 
+def spt_coding(spt_in):
+	# give a number corresponding to the input SpT
+	# the scale is 0 at M0, -1 at K7, -8 at K0 (K8 is counted as M0),  -18 at G0
+	if np.size(spt_in) == 1:
+		if spt_in[0] == 'M':
+			spt_num = float(spt_in[1:])
+		elif spt_in[0] == 'K':
+			spt_num = float(spt_in[1:])-8.
+		elif spt_in[0] == 'G':
+			spt_num = float(spt_in[1:])-18.
+		elif spt_in[0] == 'F':
+			spt_num = float(spt_in[1:])-28.
+		elif spt_in[0] == 'A':
+			spt_num = float(spt_in[1:])-38.
+		elif spt_in[0] == 'B':
+			spt_num = float(spt_in[1:])-48.
+		elif spt_in[0] == 'L':
+			spt_num = float(spt_in[1:])+10.
+		elif spt_in[0] == '.':
+			spt_num = -99.
+		else:
+			sys.exit('what?')
+		return spt_num
+	else:
+		spt_num = np.empty(len(spt_in))
+		for i,s in enumerate(spt_in):
+			if s[0] == 'M':
+				spt_num[i] = float(s[1:])
+			elif s[0] == 'K':
+				spt_num[i] = float(s[1:])-8.
+			elif s[0] == 'G':
+				spt_num[i] = float(s[1:])-18.
+			elif s[0] == 'F':
+				spt_num[i] = float(s[1:])-28.
+			elif s[0] == 'A':
+				spt_num[i] = float(s[1:])-38.
+			elif s[0] == 'B':
+				spt_num[i] = float(s[1:])-48.
+			elif s[0] == 'L':
+				spt_num[i] = float(s[1:])+10.
+			elif s[0] == '.':
+				spt_num[i] = -99.
+			else:
+				sys.exit('what?')
+		return spt_num
 
+
+def convScodToSpTstring(scod):
+	if np.size(scod) == 1:
+		if scod<-18 or scod >10:
+			print('out of bound')
+			return None
+		elif scod>=0:
+			return 'M'+str(scod)
+		elif scod<0 and scod>=-8:
+			scodRet = 8+scod
+			return 'K'+str(scodRet)
+		elif scod<-8 and scod>-18:
+			scodRed = 18+scod
+			return 'G'+str(scodRed)
+		return None
+	else:
+		spt_out = np.empty(len(scod),dtype = 'U64')
+		for s,i in enumerate(scod):
+
+			if i<-18 or i >10:
+				print('out of bound')
+				spt_out[s] = 'NaN'
+				#return None
+			elif i>=0:
+				#return 'M'+str(i)
+				spt_out[s] = 'M'+"%.1f" % (i)
+			elif i<0 and i>=-8:
+				iRet = 8+i
+				spt_out[s] = 'K'+"%.1f" % (iRet)
+			elif i<-8 and i>-18:
+				iRed = 18+i
+				spt_out[s] = 'G'+"%.1f" % (iRed)
+			else: spt_out[s] ='NaN'
+		return spt_out
+
+"""
+# FOR PLOTTING
+ticks =  np.arange(-22,10,1)
+ticklabels = np.array(['','','F8','','G0','','','','','G5','','','','','K0','','','','','K5','','K7','','M1','','M3','','M5','','M7','','M9',''])
+pl.xticks(ticks,ticklabels)
+"""
+
+
+"""
+#+
+# NAME:
+#       readMixClassIII
+# PURPOSE:
+#       Provide the flux ratio for a given amount of extinction according to the (cardelli+ 1989) extinction law
+# CALLING SEQUENCE:
+#     ratio = cardelli_extinction wave,Av,Rv=3.1
+#
+# INPUTS:
+#       wave = array with the wavelengths to compute the relation in angstrom
+#       Av =  the extinction in mag
+# Optional inputs:
+#       Rv =  parameter wth same notation in (cardelli+ 1989), default is 3.1
+#   returns:
+#  the flux ratio as a function of wl
+#  If you use it to apply a reddening to a spectrum, multiply it for the result of
+#  this function, while you should divide by it in the case you want to deredden it.
+#
+"""
+
+def cardelli_extinction(wave,Av,Rv=3.1):
+
+  ebv = Av/Rv
+
+  # print 'Av = ',Av, 'Rv = ',Rv
+
+  x = 10000./ wave                # Convert to inverse microns
+  npts = len(x)
+  a = np.zeros(npts)
+  b = np.zeros(npts)
+#******************************
+
+  good = (x > 0.3) & (x  < 1.1)	       #Infrared
+  Ngood = np.count_nonzero(good == True)
+  if Ngood > 0:
+    a[good] =  0.574 * x[good]**(1.61)
+    b[good] = -0.527 * x[good]**(1.61)
+
+#******************************
+
+  good = (x >= 1.1) & (x < 3.3)            #Optical/NIR
+  Ngood = np.count_nonzero(good == True)
+  if Ngood > 0:           #Use new constants from O'Donnell (1994)
+    y = x[good] - 1.82
+    c1 = [-0.505, 1.647, -0.827, -1.718, 1.137, 0.701, -0.609, 0.104, 1.0]  #New coefficients
+    c2 = [3.347, -10.805, 5.491, 11.102, -7.985, -3.989, 2.908, 1.952, 0.0] #from O'Donnell (1994)
+#   c1 = [ 1. , 0.17699, -0.50447, -0.02427,  0.72085,    $ #Original
+#                 0.01979, -0.77530,  0.32999 ]               #coefficients
+#   c2 = [ 0.,  1.41338,  2.28305,  1.07233, -5.38434,    $ #from CCM89
+#                -0.62251,  5.30260, -2.09002 ]   # If you use them remember to revert them
+
+    a[good] = np.polyval(c1,y)
+    b[good] = np.polyval(c2,y)
+
+
+#******************************
+
+  good = (x >= 3.3) & (x < 8)            #Mid-UV
+  Ngood = np.count_nonzero(good == True)
+  if Ngood > 0:
+    y = x[good]
+    F_a = np.zeros(Ngood)
+    F_b = np.zeros(Ngood)
+    good1 = (y > 5.9)
+    Ngood1 = len(good1)
+    if Ngood1 > 0:
+    	y1 = y[good1] - 5.9
+    	F_a[good1] = -0.04473 * y1**2 - 0.009779 * y1**3
+    	F_b[good1] =   0.2130 * y1**2  +  0.1207 * y1**3
+    a[good] =  1.752 - 0.316*y - (0.104 / ( (y-4.67)**2 + 0.341 )) + F_a
+    b[good] = -3.090 + 1.825*y + (1.206 / ( (y-4.62)**2 + 0.263 )) + F_b
+
+
+#   *******************************
+
+  good = (x >= 8) & (x <= 11)         #Far-UV
+  Ngood = np.count_nonzero(good == True)
+  if Ngood > 0:
+    y = x[good] - 8.
+    c1 = [-0.07, 0.137, -0.628, -1.073]
+    c2 = [0.374, -0.42, 4.257, 13.67]
+    a[good] = np.polyval(c1,y)
+    b[good] = np.polyval(c2,y)
+
+#   *******************************
+
+#=======
+
+
+
+  A_lambda = Av * (a + b/Rv)
+  # print A_lambda
+
+  ratio =  10.**(-0.4*A_lambda)
+
+
+# I substitute zero for all the extreme UV wavelenghts (not covered by the cardelli law)
+  good = x > 11
+  Ngood = np.count_nonzero(good == True)
+  if Ngood > 0:
+  	ratio[good]=0.
+
+# I extrapolate linearly the law for Mid-IR wavelenghts (not covered by the cardelli law)
+# Right now it does not extrapolate outside the validity range --- TO BE DONE
+  lasttwo= (x > 0.3)
+  # lasttwosort=reverse(sort(lasttwo))
+  # xlasttwosort=x[lasttwosort]
+  # llasttwosort=wave[lasttwosort]
+  # ratiolasttwosort=ratio[lasttwosort]
+  xlasttwosort=x[lasttwo][::-1]
+  llasttwosort=wave[lasttwo][::-1]
+  ratiolasttwosort=ratio[lasttwo][::-1]
+
+  mir = x<=0.3
+  Nmir = np.count_nonzero(mir == True)
+  if Nmir > 0:
+    ratio[mir]=np.interp(x[mir],xlasttwosort,ratiolasttwosort)
+  bad= ratio > 1
+  nbad = np.count_nonzero(bad == True)
+  if nbad > 0:
+    ratio[bad]=1
+
+
+  return ratio
 
 
 """
@@ -858,7 +1066,7 @@ def InerLoopFit(i,featureMatrix,errorMatrix,sptCode,SpTErr,mask,mcSamples,outSPT
 #           a + b/R_v (see cardelli+ 1989)
 #           to be used in error propagation of extinction.
 # CALLING SEQUENCE:
-#     readMixClassIII
+#     cardelli_extinction_a_plus_bOverRv
 #
 # INPUTS:
 #       wave = array with the wavelengths to compute the relation
@@ -934,3 +1142,56 @@ def cardelli_extinction_a_plus_bOverRv(wave,Rv=3.1):
 #=======
 
   return (a + b/Rv)[0]
+
+
+def spec_readspec(file,header='NO OUTPUT HEADER',flag = False):
+	wave=[]
+	flux=[]
+	hdr=[]
+	split = file.split('.')
+	exten = split[-1]
+	if (exten == 'fits') or (exten == 'fit'):
+		hdu = pyfits.open(file)
+		hdr = hdu[0].header
+		if 'crpix1' in hdu[0].header:
+			flux = hdu[0].data
+			wave = readlambda(flux,hdu,flag)
+		else:
+			print('!!!	Wavelength keyword not found in FITS HEADER 	!!!')
+			return
+	else:
+		print("Not yet supported!")
+		return
+		#readcol, file, wave, lambda
+	hdu.close()
+	if header == 'NO OUTPUT HEADER':
+		return wave,flux
+	else:
+		return wave,flux,hdr
+
+
+def readlambda(spec, hdu_sp,flag):
+	crpix1 = hdu_sp[0].header['crpix1']
+#/ value of ref pixel
+	crval1 = hdu_sp[0].header['crval1']
+#/ delta per pixel
+	if 'cd1_1' in hdu_sp[0].header:
+		cd1_1 = hdu_sp[0].header['cd1_1']
+	#cd1_1 is sometimes called cdelt1.
+	else:
+		cd1_1 = hdu_sp[0].header['cdelt1']
+	if cd1_1 == 0:
+		print("NOT WORKING")
+		return
+	n_lambda = len(spec)
+	if flag:
+		n_lambda = len(spec[0])
+	wave = np.zeros(n_lambda)
+	for l  in range(n_lambda):
+		wave[l] = (l+1.0-crpix1)*cd1_1+crval1
+#Use pixel number starting with 0 if no lambda information is found.
+	if (np.min(wave)+np.max(wave) == 0.0):
+		print('No lambda information found: used pixel number starting with 0')
+		for l  in range(n_lambda):
+			wave[l] = l
+	return wave
