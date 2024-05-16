@@ -5,24 +5,45 @@
 FRAPPE is currently not set up as a python package.
 Currently only the functionality to interpolate between a set of X-Shooter templates and access the interpolated spectra is provided.
 To make use of the provided functions simply add the PhotFeatures_Ray.py file to you python path.
+The required packages are: 
+  - numpy
+  - matplotlib
+  - localreg (https://github.com/sigvaldm/localreg)
+  - scipy
+  - ray
 
 
 ## Usage:
 
-
+The below eaxmple shows how to load an interpolated spectrum at a given SpT and plot it.
 
 ```
 Directory pointing towards and interpolated grid
 dirInterp = '/Interpolations/earlyK_norm731_200p_1000iter_rad2.5_WholeVIS.pnz'
 
+import matplotlib.pyplot as plt
+import PhotFeatures_Ray as pf
+
 # First the class III object needs to be initialized
 classIIIreadIn = pf.classIII(dirInterp)
 
+# then load in the wavelength ranges used in the interterpolated grid
 usedFeatures = classIIIreadIn.getUsedInterpFeat()
-wlObs = (usedFeatures[:,0]+usedFeatures[:,1])/2
+# compute the central wavelengths of the ranges:
+wl = (usedFeatures[:,0]+usedFeatures[:,1])/2
+# get the wl range used to normalize the spectra
 normWLandWidth = classIIIreadIn.getUsedNormWl()
 
-features, outSPTcode, ValuesOut, lower, upper = classIIIreadIn.getInterpFeat()
+# we convert a SpT to a SpT code
+spt_coding
+# then can sample the interpolated grid at a given SpT
+featuresUVB,errorsUVB = classIIIreadInUVB.getFeatsAtSpt_symetricErr(sptCode)
+#The spectrum can then be plotted using
+plt.figure()
+plt.plot(wl,np.log10(features)+i,'tab:blue',linewidth=.5)
+plt.fill_between(wl,np.log10(features-errors) +i, np.log10(features +errors)+i,color='tab:blue',alpha = 0.4)
+
+
 ```
 
 ## Coming later:
