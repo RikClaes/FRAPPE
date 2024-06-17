@@ -83,7 +83,7 @@ class classIII:
     	#
     	#
     	"""
-    def extractFeaturesXS_ray(self,DirSpec,nameList,SpTlist,usedFeatures,AvErr = 0.2,WLnorm = 751,wlNormHalfWidth = 0.5,SpTErr = []):
+    def extractFeaturesXS_ray(self,DirSpec,nameList,SpTlist,usedFeatures,AvErr = 0.2,WLnorm = 751,wlNormHalfWidth = 0.5,SpTErr = [],minSnR = None):
         #values = np.array([0 for x in range(len(SptInfo['Name']))],dtype = float)
         #errors = np.array([0 for x in range(len(SptInfo['Name']))],dtype = float)
         Values = np.zeros((len(usedFeatures),len(SpTlist)))
@@ -102,7 +102,7 @@ class classIII:
         ray.shutdown()
         ray.init()
 
-        pool = ray.get([InerLoopExtract.remote(nameList[i],i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpTErr)for i in range(len(nameList))])
+        pool = ray.get([InerLoopExtract.remote(nameList[i],i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpTErr,minSnR)for i in range(len(nameList))])
 
             #for i in range(len(nameList)):
 
@@ -698,7 +698,7 @@ def readMixClassIII_withSpT(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = F
 #
 """
 @ray.remote#(num_returns=2)
-def InerLoopExtract(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpTErr):
+def InerLoopExtract(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpTErr,minSnR):
         #name  = nameList[i]
         #print(name)
         #flux_correction(uvbFile,1.,fileout=uvbFile,flux_un='erg/s/cm2/nm')
@@ -725,17 +725,8 @@ def InerLoopExtract(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpT
         #fl_derred = fl/(cardelli_extinction(wl*10,np.abs(AvErr)))
 
 
-        #halfWidth = 0.5
-        #fwlnorm = np.nanmedian(fl[(wl<WLnorm+halfWidth)&(wl>WLnorm-halfWidth)])
-        #fwlnormErr = np.nanstd(fl[(wl<WLnorm+halfWidth)&(wl>WLnorm-halfWidth)])#np.nanstd(normSpectrum[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])])
-        #normSpectrum = fl/fwlnorm
         fwlnorm = np.nanmedian(fl[(wl<=WLnorm+wlNormHalfWidth)&(wl>=WLnorm-wlNormHalfWidth)])
-        #fwlnormErr_noise = np.nanstd(fl[(wl<=WLnorm+wlNormHalfWidth)&(wl>=WLnorm-wlNormHalfWidth)])
-        #####
-        #new!!
-        #####
-        #fwlnormErr_fCalib = fwlnorm/20
-        #fwlnormErr = np.sqrt((fwlnormErr_noise**2) + (fwlnormErr_fCalib**2))
+
         fwlnormErr = np.nanstd(fl[(wl<=WLnorm+wlNormHalfWidth)&(wl>=WLnorm-wlNormHalfWidth)])
         for j in range(len(usedFeatures)):
 
@@ -764,7 +755,13 @@ def InerLoopExtract(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpT
             errFlDerred = np.abs(fluxInRange)* np.sqrt(term1+ term2) #np.sqrt((ErrFluxInRange/fluxInRange)**2
             #print(errCardelliRatio)
             Errors[j] =   errFlDerred
-            mask[j] = ((fluxNotScaledInRange/ErrNotScaledInRange) >=0.)
+            if minSnR is None:
+                mask[j] = ((fluxNotScaledInRange/ErrNotScaledInRange) >=0.)
+            else:
+                snr = (fluxNotScaledInRange/ErrNotScaledInRange)
+                mask[j] = (snr >=minSnR)
+
+
             #mask[j] = ((((errFlDerred) <=0.25) or (fluxInRange>0.5))&(fluxInRange>0.0)) #ErrFin0.25
         print(mask)
         return Values, Errors, mask
