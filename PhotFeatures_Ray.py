@@ -43,11 +43,11 @@ class classIII:
         self.upperErrInterp =  None
         self.normWL = None
         if dir == None:
-            print('You have to either set a grid of interpoleted features from a table using the readInterpFeat() method or create a new grid by running extractFeaturesXS() and nonParamFit')
+            print('You have to either set a grid of interpolated features from a table using the readInterpFeat() method or create a new grid by running extractFeaturesXS() and nonParamFit')
 
         else:
             self.readInterpFeat(dir)
-        # discrete points taken from observations and their errors
+
 
 
 
@@ -84,8 +84,7 @@ class classIII:
     	#
     	"""
     def extractFeaturesXS_ray(self,DirSpec,nameList,SpTlist,usedFeatures,AvErr = 0.2,WLnorm = 751,wlNormHalfWidth = 0.5,SpTErr = [],minSnR = None):
-        #values = np.array([0 for x in range(len(SptInfo['Name']))],dtype = float)
-        #errors = np.array([0 for x in range(len(SptInfo['Name']))],dtype = float)
+
         Values = np.zeros((len(usedFeatures),len(SpTlist)))
         Errors = np.zeros((len(usedFeatures),len(SpTlist)))
         self.normWL = np.array([WLnorm,wlNormHalfWidth])
@@ -95,7 +94,7 @@ class classIII:
         else:
             self.SpTErr = SpTErr
         fig =plt.figure(figsize=(10,10))
-        #print(SpTlist)
+
         SptCodes = spt_coding(SpTlist)
         ticklabels = np.array(['G4','','G6','','','G9','K0','','','K3','','K5','','K7','','M1','','M3','','M5','','M7','','M9',''])
         ticks =  np.arange(-14,11,1)
@@ -104,7 +103,6 @@ class classIII:
 
         pool = ray.get([InerLoopExtract.remote(nameList[i],i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpTErr,minSnR)for i in range(len(nameList))])
 
-            #for i in range(len(nameList)):
 
         print(np.array(pool).shape)
         Values = np.array(pool)[:,0].transpose()
@@ -115,10 +113,9 @@ class classIII:
         print(Errors.shape)
         print(mask)
         print(mask[0])
-        #mask = Values > 0
+
         self.setExtarctedFeatures(usedFeatures, Values, Errors, SptCodes,mask)
 
-        #del self.Values, self.Errors,
         ray.shutdown()
 
 
@@ -206,9 +203,7 @@ class classIII:
         features,sptCode,featureMatrix,errorMatrix = self.getExtractedFeatures()
 
         SpTErr = self.SpTErr
-        #features = self.usedFeatures
-        #featureMatrix = self.extractedFeatureValues
-        #errorMatrix = self.extractedFeatureErrors
+
         if len(features) != len(featureMatrix):
             print('features and featureMatrix must have the same dimesion allong axis 0')
             sys.exit(1)
@@ -221,7 +216,7 @@ class classIII:
         lowerOut = np.empty((len(features),len(outSPTcode)))
         upperOut = np.empty((len(features),len(outSPTcode)))
         for i in range(len(features)):
-            # remove the values that are 0 and have inf error!
+
 
             feats = featureMatrix[i][self.Mask[i]]
             errs = errorMatrix[i][self.Mask[i]]
@@ -229,16 +224,12 @@ class classIII:
             SpTErrCut = SpTErr[self.Mask[i]]
             print(self.Mask[i])
 
-
-            #ValuesOut[i,:] = localreg(sptCodeCut, feats, outSPTcode , degree=deg, kernel=rbf.epanechnikov, radius=rad)
-
             mcResults = np.zeros((mcSamples, len(outSPTcode)))
             for N in range(mcSamples):
-                #print(N)
+
                 featSample = feats + (np.random.normal(0,1,len(feats))*errs)
                 sptCodeCutSample = sptCodeCut + (np.random.normal(0,1,len(feats))*SpTErrCut)
-                #print(feats)
-                #print(featSample)
+
                 mcResults[N,:] = localreg(sptCodeCutSample, featSample, outSPTcode , degree=deg, kernel=rbf.gaussian, radius=rad)
 
             lowerOut[i,:] = np.percentile(mcResults,  15.9, axis=0)
@@ -265,9 +256,7 @@ class classIII:
         features,sptCode,featureMatrix,errorMatrix = self.getExtractedFeatures()
 
         SpTErr = self.SpTErr
-        #features = self.usedFeatures
-        #featureMatrix = self.extractedFeatureValues
-        #errorMatrix = self.extractedFeatureErrors
+
         if len(features) != len(featureMatrix):
             print('features and featureMatrix must have the same dimesion allong axis 0')
             sys.exit(1)
@@ -326,7 +315,7 @@ class classIII:
             axs[0].errorbar(self.extractedFeatureSptCodes[mask[i]],self.extractedFeatureValues[i][mask[i]],self.extractedFeatureErrors[i][mask[i]],xerr = self.SpTErr[mask[i]],c='k',linestyle='',marker ='o', label = str(self.usedFeatures[i]))
             axs[0].errorbar(self.extractedFeatureSptCodes[~mask[i]],self.extractedFeatureValues[i][~mask[i]],self.extractedFeatureErrors[i][~mask[i]],xerr = self.SpTErr[~mask[i]],c= 'r',alpha=0.5,linestyle='',marker ='o', label = str(self.usedFeatures[i]))
 
-            #axs[0].plot(outSPTcode,med[i])
+
             axs[0].fill_between(self.sptCode,self.lowerErrInterp[i], self.upperErrInterp[i],alpha = 0.4)
             axs[0].set_xlabel('SpT code')
             axs[0].set_ylabel('f(range)/f'+str(self.normWL[0]))
@@ -342,14 +331,10 @@ class classIII:
             axs[1].plot(self.sptCode,np.zeros(len(self.sptCode)))
             axs[1].set_xlabel('SpT code')
             axs[1].set_ylabel(r'$(f_{spec.} - f_{fit.})/\sigma$')
-            #axs[1].set_ylim(-0.6,0.6)
-            #ticklabels = np.array(['','G9','','K1','','K3','','K5','','K7','','M1','','M3','','M5',''])
-            #ticks =  np.arange(-10,11-4,1)
 
-            #ticklabels = np.array(['','G9','','K1','','K3','','K5','','K7','','M1','','M3','','M5',''])
             ticklabels = np.array(['','G9','','K1','','K3','','K5','','K7','','M1','','M3','','M5','','M7','','M9',''])
             ticks =  np.arange(-10,11,1)
-            #plt.xlim(-10,6)
+
             plt.xticks(ticks,ticklabels)
             if logScale:
                 plt.savefig(outdir+'wl_range:'+str(self.usedFeatures[i][0])+'-'+str(self.usedFeatures[i][1])+'nm_LOG.png')
@@ -435,8 +420,6 @@ class classIII:
         error *= 0.5
         if float(SpT) < -8.5:
             medsMin8,error = self.getFeatsAtSpt_symetricErr(-8.5)
-        #if float(SpT) > 9:
-        #    medsMin8,error = self.getFeatsAtSpt_symetricErr(8)
         return meds,error
 
         """
@@ -583,7 +566,7 @@ def readMixClassIII(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = False):
     SpT_cl3 = clsIIIinfo['Spt']
     #compute the sptcode
     sptCodes = spt_coding(SpT_cl3)
-    #print(min_chi_sq_cl3.dtype)
+
     # calculate the difference array
     difference_array = np.absolute(sptCodes-float(min_chi_sq_cl3))
 
@@ -608,8 +591,7 @@ def readMixClassIII(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = False):
         pathVIS = PATH_CLASSIII +'VIS/flux_'+cl3_toSelectModel+'_VIS_corr_phot.fits'
 
         pathNIR = PATH_CLASSIII +'NIR/flux_'+cl3_toSelectModel+'_NIR_corr_scaled_phot.fits'
-        #else:
-        #    raise Exception('you need to specify which arm you want usingthe three options uvb, vis or nir')
+
         wl_cl3UVB,fl_cl3UVB = spec_readspec(pathUVB)
         wl_cl3VIS,fl_cl3VIS = spec_readspec(pathVIS)
         wl_cl3NIR,fl_cl3NIR = spec_readspec(pathNIR)
@@ -647,7 +629,7 @@ def readMixClassIII_withSpT(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = F
     SpT_cl3 = clsIIIinfo['Spt']
     #compute the sptcode
     sptCodes = spt_coding(SpT_cl3)
-    #print(min_chi_sq_cl3.dtype)
+
     # calculate the difference array
     difference_array = np.absolute(sptCodes-float(min_chi_sq_cl3))
 
@@ -673,8 +655,7 @@ def readMixClassIII_withSpT(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = F
         pathVIS = PATH_CLASSIII +'VIS/flux_'+cl3_toSelectModel+'_VIS_corr_phot.fits'
 
         pathNIR = PATH_CLASSIII +'NIR/flux_'+cl3_toSelectModel+'_NIR_corr_scaled_phot.fits'
-        #else:
-        #    raise Exception('you need to specify which arm you want usingthe three options uvb, vis or nir')
+
         wl_cl3UVB,fl_cl3UVB = spec_readspec(pathUVB)
         wl_cl3VIS,fl_cl3VIS = spec_readspec(pathVIS)
         wl_cl3NIR,fl_cl3NIR = spec_readspec(pathNIR)
@@ -715,14 +696,7 @@ def InerLoopExtract(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpT
         print(i)
         wl = np.concatenate([Wuvb[Wuvb<550],Wvis[(Wvis>550)&(Wvis<=1020)],Wnir[Wnir>1020]])
         fl = np.concatenate([Fuvb[Wuvb<550],Fvis[(Wvis>550)&(Wvis<=1020)],Fnir[Wnir>1020]])
-        #fl[fl<0] = 0#np.nan
-        # this creates a problem: J1111 and DENIS will have too high of a flux at wl ~3500!!!!!
 
-
-        #fl = (1/cardelli_extinction(wl*10,av))*fl
-
-        #fl_red = (cardelli_extinction(wl*10,AvErr))*fl
-        #fl_derred = fl/(cardelli_extinction(wl*10,np.abs(AvErr)))
 
 
         fwlnorm = np.nanmedian(fl[(wl<=WLnorm+wlNormHalfWidth)&(wl>=WLnorm-wlNormHalfWidth)])
@@ -730,30 +704,25 @@ def InerLoopExtract(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpT
         fwlnormErr = np.nanstd(fl[(wl<=WLnorm+wlNormHalfWidth)&(wl>=WLnorm-wlNormHalfWidth)])
         for j in range(len(usedFeatures)):
 
-            #print(features[j,0])
 
             fluxNotScaledInRange  = np.nanmedian(fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])])
             fluxInRange = fluxNotScaledInRange/fwlnorm
 
-            #ErrNotScaledInRange_noise = np.nanstd(fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])])
-            #ErrNotScaledInRange_fCalib = fluxNotScaledInRange/20
-            #ErrNotScaledInRange = np.sqrt((ErrNotScaledInRange_noise**2)+ (ErrNotScaledInRange_fCalib**2))
             ErrNotScaledInRange = np.nanstd(fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])])
             ErrFluxInRange = np.abs(fluxInRange)*np.sqrt((ErrNotScaledInRange/fluxNotScaledInRange)**2 + (fwlnormErr/fwlnorm)**2)
-            #ErrFluxInRange = np.nanstd(fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])])
+
 
 
             Values[j]  = fluxInRange
             wlReddening = 10*(usedFeatures[j,0] + usedFeatures[j,1])/2
             CardelliCte = cardelli_extinction_a_plus_bOverRv(np.array([wlReddening]),Rv=3.1) - cardelli_extinction_a_plus_bOverRv(np.array([WLnorm]),Rv=3.1)
             errCardelliRatio = np.abs(-0.4*np.log(10) * CardelliCte*AvErr)
-            #print(1 - (cardelli_extinction(np.array([wlReddening]),AvErr)))
-            #print(ErrFluxInRange/fluxInRange)
+
             term1 = (ErrFluxInRange/fluxInRange) **2
-            #print(term1)
+
             term2 = (errCardelliRatio)**2
             errFlDerred = np.abs(fluxInRange)* np.sqrt(term1+ term2) #np.sqrt((ErrFluxInRange/fluxInRange)**2
-            #print(errCardelliRatio)
+
             Errors[j] =   errFlDerred
             if minSnR is None:
                 mask[j] = ((fluxNotScaledInRange/ErrNotScaledInRange) >=0.)
@@ -761,8 +730,6 @@ def InerLoopExtract(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpT
                 snr = (fluxNotScaledInRange/ErrNotScaledInRange)
                 mask[j] = (snr >=minSnR)
 
-
-            #mask[j] = ((((errFlDerred) <=0.25) or (fluxInRange>0.5))&(fluxInRange>0.0)) #ErrFin0.25
         print(mask)
         return Values, Errors, mask
 
@@ -785,26 +752,19 @@ def InerLoopFit(i,featureMatrix,errorMatrix,sptCode,SpTErr,mask,mcSamples,outSPT
     errs = errorMatrix[i][mask[i]]
     sptCodeCut = sptCode[mask[i]]
     SpTErrCut = SpTErr[mask[i]]
-    #print(mask[i])
-
-
-    #ValuesOut[i,:] = localreg(sptCodeCut, feats, outSPTcode , degree=deg, kernel=rbf.epanechnikov, radius=rad)
 
     mcResults = np.zeros((mcSamples, len(outSPTcode)))
     for N in range(mcSamples):
-        #print(N)
+
         featSample = feats + (np.random.normal(0,1,len(feats))*errs)
         sptCodeCutSample = sptCodeCut + (np.random.normal(0,1,len(feats))*SpTErrCut)
-        #print(feats)
-        #print(featSample)
+
         mcResults[N,:] = localreg(sptCodeCutSample, featSample, outSPTcode , degree=deg, kernel=rbf.gaussian, radius=rad)
 
     lowerOut = np.percentile(mcResults,  15.9, axis=0)
     upperOut = np.percentile(mcResults, 100-15.9, axis=0)
     medOut = np.nanmedian(mcResults,axis = 0)
 
-    #self
-    #medAndErr = np.array([medOut,lowerOut,upperOut])
     return medOut,lowerOut,upperOut
 
 def spt_coding(spt_in):
@@ -943,10 +903,7 @@ def cardelli_extinction(wave,Av,Rv=3.1):
     y = x[good] - 1.82
     c1 = [-0.505, 1.647, -0.827, -1.718, 1.137, 0.701, -0.609, 0.104, 1.0]  #New coefficients
     c2 = [3.347, -10.805, 5.491, 11.102, -7.985, -3.989, 2.908, 1.952, 0.0] #from O'Donnell (1994)
-#   c1 = [ 1. , 0.17699, -0.50447, -0.02427,  0.72085,    $ #Original
-#                 0.01979, -0.77530,  0.32999 ]               #coefficients
-#   c2 = [ 0.,  1.41338,  2.28305,  1.07233, -5.38434,    $ #from CCM89
-#                -0.62251,  5.30260, -2.09002 ]   # If you use them remember to revert them
+
 
     a[good] = np.polyval(c1,y)
     b[good] = np.polyval(c2,y)
