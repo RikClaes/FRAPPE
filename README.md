@@ -35,7 +35,7 @@ wl = (usedFeatures[:,0]+usedFeatures[:,1])/2
 normWLandWidth = classIIIreadIn.getUsedNormWl()
 
 # we convert a SpT to a SpT code
-spt_coding
+sptCode = spt_coding('M3')
 # then can sample the interpolated grid at a given SpT
 featuresUVB,errorsUVB = classIIIreadInUVB.getFeatsAtSpt_symetricErr(sptCode)
 #The spectrum can then be plotted using
