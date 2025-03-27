@@ -61,7 +61,7 @@ import numpy as np
 import MyFitter.PhotFeatures_Ray as pf
 import matplotlib.pyplot as plt
 
-SptFile = '~/.../ClassIII_info.txt'
+SptFile = '~/.../summary_classIII_SPTok_SpTErr.txt'
 SptInfo = np.genfromtxt(SptFile,usecols=(0,2,4),skip_header=1,dtype=[('Name','U64'),('Spt','U4'),('SptErr','f8')])
 
 
@@ -92,7 +92,7 @@ classIIICarlosFeat.nonParamFit_ray(200,1000,rad =2.5,deg =1,outFile = output)
 
 # the following plots can be produced to inspect the resulting interpolated spectrum
 # first the wavelength ranges are plotted individually
-classIIICarlosFeat.plotAllInterpIndividualy_FitResiduals(outDir+'figsGoodInterp_NoBTsettl/')
+classIIICarlosFeat.plotAllInterpIndividualy(outDir+'figsGoodInterp_NoBTsettl/')
 # plot several different interpolations together
 classIIICarlosFeat.plotInterpTogetherWithErr(outDir+'figsGoodInterp_NoBTsettl/')
 ```
