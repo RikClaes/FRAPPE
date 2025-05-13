@@ -35,3 +35,6 @@ Issues = ""
 
 [tool.hatch.build]
 sources = ["src"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/frappe_private"]
