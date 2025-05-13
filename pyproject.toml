@@ -3,7 +3,7 @@ requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
 [project]
-name = "frappe-private"
+name = "frappe"
 version = "0.1.0"
 authors = [
   { name="Rik Claes", email="rclaes@live.be" },
@@ -37,4 +37,4 @@ Issues = ""
 sources = ["src"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/frappe_private"]
+packages = ["src/frappe"]
