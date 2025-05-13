@@ -406,17 +406,19 @@ class Fit():
 		# now makes use of the RAY package, RC
 		time_init = time.time()
 		print("working_dir   " + PATH+'/models_grid/')
-		ray.init(runtime_env={"working_dir":os.path.dirname(os.path.dirname(PATH)), "excludes": [
-						'src/frappe/models_grid/**',
-						'/tests/**/*',
-						'/tests/**',
-						'/.git/**',
-            "frappe/models_grid/**/*.gif",
-            "frappe/models_grid/**/*.txt",
-            "frappe/models_grid/**/*.sav",
-            "frappe/models_grid/**/*.tgz",
-            "frappe/models_grid/**/*.zip"
-        ]})#
+		#ray.init(runtime_env={"working_dir":os.path.dirname(os.path.dirname(PATH)), "excludes": [
+		#				'src/frappe/models_grid/**',
+		#				'/frappe/models_grid/**','
+		#				'/tests/**/*',
+		#				'/tests/**',
+		#				'/.git/**',
+        #    "frappe/models_grid/**/*.gif",
+        #    "frappe/models_grid/**/*.txt",
+        #    "frappe/models_grid/**/*.sav",
+        #    "frappe/models_grid/**/*.tgz",
+        #    "frappe/models_grid/**/*.zip"
+        #]})#
+		ray.init()
 		pool_outputs1 = ray.get([main_process.remote(self,cl3_in_list[i])for i in range(len(cl3_in_list))])
 
 		print( 'Execution time:', time.time() - time_init, " seconds")
