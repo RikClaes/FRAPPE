@@ -1,0 +1,944 @@
+SIMPLE  =                    T / Written by IDL:  Thu May 10 16:06:16 2012      BITPIX  =                  -32 / Bits per pixel                                 NAXIS   =                    1 / Number of axes                                 NAXIS1  =                32668 / Axis length                                    EXTEND  =                    T / File may contain extensions                    ORIGIN  = 'NOAO-IRAF FITS Image Kernel July 2003' / FITS file originator        IRAF-TLM= '2011-11-14T17:38:02' / Time of last modification                     COMMENT NOST 100-2.0: Hanisch,R. et al. 2001, Astron. & Astrophys. 376, 559                                                                                     CRPIX1  =                   1. / Reference pixel                                CRVAL1  =              544.995 / Coordinate at reference pixel                  CDELT1  =                0.015 / Coord. incr. per pixel (original value)        CTYPE1  = 'LINEAR          '   / Units of coordinate                            BUNIT   = 'erg/s/cm2/nm'       / Units of data values                                                                                                           DATE    = '2011-11-14T17:38:02' /  [UTC] Date of writing                        FILENAME= 'flux_Tyc7760283_1.bdf' / Original file base-name                     MIDASFTP= 'IMAGE   '           / MIDAS File Type                                                                                                                OBJECT  = 'Tyc7760283-1'       / MIDAS desc.: IDENT(1)                          RA      =           183.877139 / MIDAS desc.: O_POS(1)                          DEC     =            -39.81156 / MIDAS desc.: O_POS(2)                          EQUINOX =                2000. / MIDAS desc.: O_POS(3)                          DATE-OBS= '2010-04-06'         / MIDAS desc.: O_TIME(1)                         MJD-OBS =        55292.1433674 / MIDAS desc.: O_TIME(4)                         TM-START=          12386.94336 / MIDAS desc.: O_TIME(5)                         EXPTIME =                  60. / MIDAS desc.: O_TIME(7)                         COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   COMMENT FITS (Flexible Image Transport System) format is defined in 'Astronomy  COMMENT and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H   TELESCOP= 'ESO-VLT-U2'         / MIDAS desc.: TELESCOP(1)                       INSTRUME= 'XSHOOTER'           / MIDAS desc.: INSTRUME(1)                       RADECSYS= 'FK5     '           / MIDAS desc.: RADECSYS(1)                       OBSERVER= 'UNKNOWN '           / MIDAS desc.: OBSERVER(1)                       HISTORY Converted from: PROD_SCI_SLIT_NOD_MERGE_1D_VIS.fits                    \HISTORY          EXTRACT/IMAG Tyc7760283_1 = t [545:1035]                      \HISTORY                   COMPUTE/IMAG tmp = Tyc7760283_1*EXP10(0.4*middumex*1.\HISTORY 04450E+00)                 COMPUTE/IMAG flux_Tyc7760283_1 = tmp / r_ltt\HISTORY 3218_reb                            COMPUTE/IMAG flux_Tyc7760283_1 = fl\HISTORY ux_Tyc7760283_1/6.00000E+01                  COMPUTE/IMAG flux_Tyc77602\HISTORY 83_1 = flux_Tyc7760283_1 / 1.0e+16                                      UTC     =               12382. / 03:26:22.000 UTC at start (sec)                LST     =            42121.525 / 11:42:01.525 LST at start (sec)                PI-COI  = 'UNKNOWN '           / PI-COI name.                                   CHECKSUM= '6EUC7DSB6DSB6DSB'   / HDU checksum updated 2012-05-10T14:06:16       DATASUM = '1317351438'         / data unit checksum updated 2012-05-10T14:06:16 DATAMD5 = 'c6fbaac0402d76582ab66f331ede81be' / MD5 checksum                     PIPEFILE= 'PROD_SCI_SLIT_NOD_MERGE_1D_VIS.fits' / Filename of data product      HIERARCH ESO OBS DID   = 'ESO-VLT-DIC.OBS-1.11' / OBS Dictionary                HIERARCH ESO OBS EXECTIME      =       1029 / Expected execution time           HIERARCH ESO OBS GRP   = '0       ' / linked blocks                             HIERARCH ESO OBS ID    =  200201117 / Observation block ID                      HIERARCH ESO OBS NAME  = 'Tyc7760283-1' / OB name                               HIERARCH ESO OBS OBSERVER      = 'UNKNOWN ' / Observer Name                     HIERARCH ESO OBS PI-COI ID     =      70606 / ESO internal PI-COI ID            HIERARCH ESO OBS PI-COI NAME   = 'UNKNOWN ' / PI-COI name                       HIERARCH ESO OBS PROG ID       = '085.C-0238(A)' / ESO program identification   HIERARCH ESO OBS START = '2010-04-06T03:20:56' / OB start time                  HIERARCH ESO OBS TARG NAME     = 'Tyc7760283-1' / OB target name                HIERARCH ESO OBS TPLNO =          2 / Template number within OB                 HIERARCH ESO TPL DID   = 'ESO-VLT-DIC.TPL-1.9' / Data dictionary for TPL        HIERARCH ESO TPL EXPNO =          3 / Exposure number within template           HIERARCH ESO TPL ID    = 'XSHOOTER_slt_obs_AutoNodOnSlit' / Template signa      HIERARCH ESO TPL NAME  = 'XSHOOTER observations with AutoNodOnSlit offset'      HIERARCH ESO TPL NEXP  =          7 / Number of exposures within templat        HIERARCH ESO TPL PRESEQ= 'XSHOOTER_obs_AutoNodOnSlit.seq' / Sequencer scri      HIERARCH ESO TPL START = '2010-04-06T03:25:50' / TPL start time                 HIERARCH ESO TPL VERSION       = '$Revision: 1.71 $' / Version of the template  HIERARCH ESO TEL AIRM END      =      1.044 / Airmass at end                    HIERARCH ESO TEL AIRM START    =      1.045 / Airmass at start                  HIERARCH ESO TEL ALT   =     73.164 / Alt angle at start (deg)                  HIERARCH ESO TEL AMBI FWHM END =       0.86 / Observatory Seeing queried from ASHIERARCH ESO TEL AMBI FWHM START       =       0.91 / Observatory Seeing queriedHIERARCH ESO TEL AMBI PRES END =      746.1 / Observatory ambient air pressure qHIERARCH ESO TEL AMBI PRES START       =     746.08 / Observatory ambient air prHIERARCH ESO TEL AMBI RHUM     =        16. / Observatory ambient relative humi HIERARCH ESO TEL AMBI TAU0     =   0.090492 / Average coherence time            HIERARCH ESO TEL AMBI TEMP     =      17.02 / Observatory ambient temperature quHIERARCH ESO TEL AMBI WINDDIR  =       299. / Observatory ambient wind directio HIERARCH ESO TEL AMBI WINDSP   =       0.45 / Observatory ambient wind speed queHIERARCH ESO TEL AZ    =    336.903 / Az angle at start (deg) S=0,W=90          HIERARCH ESO TEL CHOP ST       = F / True when chopping is active               HIERARCH ESO TEL DATE  = '2000-01-01T00:00:00' / TCS installation date          HIERARCH ESO TEL DID   = 'ESO-VLT-DIC.TCS' / Data dictionary for TEL            HIERARCH ESO TEL DOME STATUS   = 'FULLY-OPEN' / Dome status                     HIERARCH ESO TEL FOCU ID       = 'CA      ' / Telescope focus station ID        HIERARCH ESO TEL FOCU LEN      =    108.557 / Focal length (m)                  HIERARCH ESO TEL FOCU SCALE    =      1.894 / Focal scale (arcsec/mm)           HIERARCH ESO TEL FOCU VALUE    =      0.118 / M2 setting (mm)                   HIERARCH ESO TEL GEOELEV       =      2648. / Elevation above sea level (m)     HIERARCH ESO TEL GEOLAT=   -24.6272 / Tel geo latitute (+=North) (deg)          HIERARCH ESO TEL GEOLON=   -70.4048 / Tel geo longitude (+=East) (deg)          HIERARCH ESO TEL ID    = 'v 3.29+ ' / TCS version number                        HIERARCH ESO TEL MOON DEC      =  -22.59231 / -22:35:32.3 DEC (J2000) (deg)     HIERARCH ESO TEL MOON RA       = 285.401526 / 19:01:36.3 RA (J2000) (deg)       HIERARCH ESO TEL OPER  = 'I, Condor' / Telescope Operator                       HIERARCH ESO TEL PARANG END    =    -26.878 / Parallactic angle at end (deg)    HIERARCH ESO TEL PARANG START  =    -27.678 / Parallactic angle at start (deg)  HIERARCH ESO TEL TARG ALPHA    =  121530.72 / Alpha coordinate for the target   HIERARCH ESO TEL TARG COORDTYPE= 'M       ' / Coordinate type  M=mean A=apparen HIERARCH ESO TEL TARG DELTA    = -394842.56 / Delta coordinate for the target   HIERARCH ESO TEL TARG EPOCH    =      2000. / Epoch                             HIERARCH ESO TEL TARG EPOCHSYSTEM      = 'J       ' / Epoch system (default J=JuHIERARCH ESO TEL TARG EQUINOX  =      2000. / Equinox                           HIERARCH ESO TEL TARG PARALLAX =         0. / Parallax                          HIERARCH ESO TEL TARG PMA      =    -0.0759 / Proper Motion Alpha               HIERARCH ESO TEL TARG PMD      =    -0.0263 / Proper motion Delta               HIERARCH ESO TEL TARG RADVEL   =         0. / Radial velocity                   HIERARCH ESO TEL TH M1 TEMP    =       15.3 / M1 superficial temperature        HIERARCH ESO TEL TRAK STATUS   = 'NORMAL  ' / Tracking status                   HIERARCH ESO INS ADC1 DEC      = -395221.95037 / Telescope desclination [deg].  HIERARCH ESO INS ADC1 END      =    168.507 / Position angle at end [deg].      HIERARCH ESO INS ADC1 MODE     = 'AUTO    ' / ADC mode.                         HIERARCH ESO INS ADC1 RA       = 121605.282124 / Telescope right ascension [deg]HIERARCH ESO INS ADC2 DEC      = -395221.95037 / Telescope desclination [deg].  HIERARCH ESO INS ADC2 END      =    191.035 / Position angle at end [deg].      HIERARCH ESO INS ADC2 MODE     = 'AUTO    ' / ADC mode.                         HIERARCH ESO INS ADC2 RA       = 121605.282124 / Telescope right ascension [deg]HIERARCH ESO INS ADC3 DEC      = -395221.95037 / Telescope desclination [deg].  HIERARCH ESO INS ADC3 ENCSTART =      33742 / ADC encoder value at exposure starHIERARCH ESO INS ADC3 END      =    167.236 / Position angle at end [deg].      HIERARCH ESO INS ADC3 MODE     = 'AUTO    ' / ADC mode.                         HIERARCH ESO INS ADC3 RA       = 121605.282124 / Telescope right ascension [deg]HIERARCH ESO INS ADC4 DEC      = -395221.95037 / Telescope desclination [deg].  HIERARCH ESO INS ADC4 ENCSTART =      36421 / ADC encoder value at exposure starHIERARCH ESO INS ADC4 END      =    181.023 / Position angle at end [deg].      HIERARCH ESO INS ADC4 MODE     = 'AUTO    ' / ADC mode.                         HIERARCH ESO INS ADC4 RA       = 121605.282124 / Telescope right ascension [deg]HIERARCH ESO INS DATE  = '2005-04-01' / Instrument release date (yyyy-mm-d      HIERARCH ESO INS DID   = 'ESO-VLT-DIC.XSHOOTER_ICS-0.78' / Data dictionary      HIERARCH ESO INS FILT1 ID      = 'PS5     ' / Filter unique id.                 HIERARCH ESO INS FILT1 NAME    = 'U       ' / Filter name.                      HIERARCH ESO INS FILT1 NO      =          5 / Filter wheel position index.      HIERARCH ESO INS FOCU1 ENC     =      27124 / Absolute position [Enc].          HIERARCH ESO INS FOCU1 POS     =        16. / Position [C].                     HIERARCH ESO INS FOCU2 ENC     =      11750 / Absolute position [Enc].          HIERARCH ESO INS FOCU2 POS     =         0. / Position [C].                     HIERARCH ESO INS ID    = 'XSHOOTER/1.57' / Instrument ID.                       HIERARCH ESO INS MIRR1 ID      = 'Tel     ' / Mirror unique ID.                 HIERARCH ESO INS MIRR1 NAME    = 'Tel     ' / Mirror name.                      HIERARCH ESO INS MIRR1 NO      =          1 / Mirror slide position.            HIERARCH ESO INS MODE  = 'SLITSPEC' / Instrument mode used.                     HIERARCH ESO INS OPTI2 ID      = 'SLOT    ' / OPTIi unique ID.                  HIERARCH ESO INS OPTI2 NAME    = 'SLOT    ' / OPTIi name.                       HIERARCH ESO INS OPTI2 NO      =          3 / OPTIi slot number.                HIERARCH ESO INS OPTI2 TYPE    = 'MIRROR  ' / OPTIi element.                    HIERARCH ESO INS OPTI3 ID      = 'PS6     ' / OPTIi unique ID.                  HIERARCH ESO INS OPTI3 NAME    = '0.5x11  ' / OPTIi name.                       HIERARCH ESO INS OPTI3 NO      =          6 / OPTIi slot number.                HIERARCH ESO INS OPTI3 TYPE    = 'SLIT    ' / OPTIi element.                    HIERARCH ESO INS OPTI4 ID      = 'PS6     ' / OPTIi unique ID.                  HIERARCH ESO INS OPTI4 NAME    = '0.4x11  ' / OPTIi name.                       HIERARCH ESO INS OPTI4 NO      =          6 / OPTIi slot number.                HIERARCH ESO INS OPTI4 TYPE    = 'SLIT    ' / OPTIi element.                    HIERARCH ESO INS OPTI5 ID      = 'PS10    ' / OPTIi unique ID.                  HIERARCH ESO INS OPTI5 NAME    = '0.4x11  ' / OPTIi name.                       HIERARCH ESO INS OPTI5 NO      =         10 / OPTIi slot number.                HIERARCH ESO INS OPTI5 TYPE    = 'SLIT    ' / OPTIi element.                    HIERARCH ESO INS PATH  = 'SLITSPEC' / Optical path used.                        HIERARCH ESO INS SENS21 ID     = 'CA1F1   ' / sensor ID.                        HIERARCH ESO INS SENS21 NAME   = 'Cab.1 Flow rate' / sensor common name.        HIERARCH ESO INS SENS21 VAL    =        91. / Cab. 1 Flow rate [l/h]            HIERARCH ESO INS SENS60 ID     = 'NPM     ' / sensor ID.                        HIERARCH ESO INS SENS60 NAME   = 'NIR cryo. P' / sensor common name.            HIERARCH ESO INS SENS60 VAL    =   4.42E-06 / NIR Pressure [mbar]               HIERARCH ESO INS SENS81 ID     = 'RANGE   ' / sensor ID.                        HIERARCH ESO INS SENS81 NAME   = 'Heater Range' / sensor common name.           HIERARCH ESO INS SENS81 VAL    =      9999. / Lake 340 Heater Range             HIERARCH ESO INS SENS82 ID     = 'HEATR   ' / sensor ID.                        HIERARCH ESO INS SENS82 NAME   = 'Heater output' / sensor common name.          HIERARCH ESO INS SENS82 VAL    =      9999. / Lake 340 Heater output            HIERARCH ESO INS SENSOR7 SWSIM = T / If T, function is software simulat         HIERARCH ESO INS SHUT1 ID      = 'INSH    ' / Shutter ID.                       HIERARCH ESO INS SHUT1 NAME    = 'Instrument shutter' / Shutter name.           HIERARCH ESO INS SHUT1 ST      = T / Shutter open.                              HIERARCH ESO INS SWSIM = 'NORMAL  ' / Software simulation.                      HIERARCH ESO INS TEMP1 ID      = 'TMUC    ' / Temperature sensor ID.            HIERARCH ESO INS TEMP1 NAME    = 'UVB Camera temp.' / Temperature sensor name.  HIERARCH ESO INS TEMP1 VAL     =       16.7 / UVB Camera temp. [C]              HIERARCH ESO INS TEMP10 ID     = 'TMA     ' / Temperature sensor ID.            HIERARCH ESO INS TEMP10 NAME   = 'Ambient temp.' / Temperature sensor name.     HIERARCH ESO INS TEMP10 VAL    =      17.04 / Ambient temp. [C]                 HIERARCH ESO INS TEMP11 ID     = 'TMADC   ' / Temperature sensor ID.            HIERARCH ESO INS TEMP11 NAME   = 'BB UVB ADC temp.' / Temperature sensor name.  HIERARCH ESO INS TEMP11 VAL    =      18.02 / BB UVB ADC temp. [C]              HIERARCH ESO INS TEMP2 ID      = 'TMUP    ' / Temperature sensor ID.            HIERARCH ESO INS TEMP2 NAME    = 'UVB Prism temp.' / Temperature sensor name.   HIERARCH ESO INS TEMP2 VAL     =      16.44 / UVB Prism temp. [C]               HIERARCH ESO INS TEMP21 ID     = 'CA1OT   ' / Temperature sensor ID.            HIERARCH ESO INS TEMP21 NAME   = 'Cab.1 outlet temp.' / Temperature sensor name.HIERARCH ESO INS TEMP21 VAL    =      13.55 / Cab. 1 outlet temp. [C]           HIERARCH ESO INS TEMP22 ID     = 'CA1IT   ' / Temperature sensor ID.            HIERARCH ESO INS TEMP22 NAME   = 'Cab.1 inlet temp.' / Temperature sensor name. HIERARCH ESO INS TEMP22 VAL    =       10.7 / Cab. 1 inlet temp. [C]            HIERARCH ESO INS TEMP23 ID     = 'CA1CT   ' / Temperature sensor ID.            HIERARCH ESO INS TEMP23 NAME   = 'Cab.1 temp.' / Temperature sensor name.       HIERARCH ESO INS TEMP23 VAL    =      21.41 / Cab. 1 temp. [C]                  HIERARCH ESO INS TEMP24 ID     = 'CA1AT   ' / Temperature sensor ID.            HIERARCH ESO INS TEMP24 NAME   = 'Cab.1 Amb. temp.' / Temperature sensor name.  HIERARCH ESO INS TEMP24 VAL    =      17.75 / Cab. 1 Amb. temp.  [C]            HIERARCH ESO INS TEMP3 ID      = 'TMUB    ' / Temperature sensor ID.            HIERARCH ESO INS TEMP3 NAME    = 'UVB bench temp.' / Temperature sensor name.   HIERARCH ESO INS TEMP3 VAL     =      16.78 / UVB bench temp. [C]               HIERARCH ESO INS TEMP4 ID      = 'TMVC    ' / Temperature sensor ID.            HIERARCH ESO INS TEMP4 NAME    = 'VIS Camera temp.' / Temperature sensor name.  HIERARCH ESO INS TEMP4 VAL     =      15.28 / VIS Camera temp. [C]              HIERARCH ESO INS TEMP5 ID      = 'TMVP    ' / Temperature sensor ID.            HIERARCH ESO INS TEMP5 NAME    = 'VIS Prism temp.' / Temperature sensor name.   HIERARCH ESO INS TEMP5 VAL     =      15.93 / VIS Prism temp. [C]               HIERARCH ESO INS TEMP6 ID      = 'TMVB    ' / Temperature sensor ID.            HIERARCH ESO INS TEMP6 NAME    = 'VIS bench temp.' / Temperature sensor name.   HIERARCH ESO INS TEMP6 VAL     =      16.05 / VIS bench temp. [C]               HIERARCH ESO INS TEMP7 ID      = 'TMUCR   ' / Temperature sensor ID.            HIERARCH ESO INS TEMP7 NAME    = 'UVB cryo. temp.' / Temperature sensor name.   HIERARCH ESO INS TEMP7 VAL     =       11.9 / UVB cryo. temp. [C]               HIERARCH ESO INS TEMP8 ID      = 'TMVCR   ' / Temperature sensor ID.            HIERARCH ESO INS TEMP8 NAME    = 'VIS cryo. temp.' / Temperature sensor name.   HIERARCH ESO INS TEMP8 VAL     =      10.49 / VIS cryo. temp. [C]               HIERARCH ESO INS TEMP80 ID     = 'OBCT    ' / Temperature sensor ID.            HIERARCH ESO INS TEMP80 NAME   = 'OB Cover Tel.' / Temperature sensor name.     HIERARCH ESO INS TEMP80 VAL    =     104.11 / OB Cover Telescope [K]            HIERARCH ESO INS TEMP81 ID     = 'OBCB    ' / Temperature sensor ID.            HIERARCH ESO INS TEMP81 NAME   = 'OB Cover Tank' / Temperature sensor name.     HIERARCH ESO INS TEMP81 VAL    =     104.26 / OB Cover Tank [K]                 HIERARCH ESO INS TEMP82 ID     = 'OBPR    ' / Temperature sensor ID.            HIERARCH ESO INS TEMP82 NAME   = 'OB Prism1' / Temperature sensor name.         HIERARCH ESO INS TEMP82 VAL    =     103.33 / OB Prism1 [K]                     HIERARCH ESO INS TEMP83 ID     = 'OBCL    ' / Temperature sensor ID.            HIERARCH ESO INS TEMP83 NAME   = 'OB Corrector Lens' / Temperature sensor name. HIERARCH ESO INS TEMP83 VAL    =     104.34 / OB Corrector Lens [K]             HIERARCH ESO INS TEMP84 ID     = 'CP      ' / Temperature sensor ID.            HIERARCH ESO INS TEMP84 NAME   = 'Cryo. Cold Plate' / Temperature sensor name.  HIERARCH ESO INS TEMP84 VAL    =     84.485 / Cryostat Cold Plate [K]           HIERARCH ESO INS TEMP85 ID     = 'RS      ' / Temperature sensor ID.            HIERARCH ESO INS TEMP85 NAME   = 'Cryo. rad. shield' / Temperature sensor name. HIERARCH ESO INS TEMP85 VAL    =     97.014 / Cryostat rad. shield [K]          HIERARCH ESO INS TEMP86 ID     = 'DCB     ' / Temperature sensor ID.            HIERARCH ESO INS TEMP86 NAME   = 'CCD Copper bar' / Temperature sensor name.    HIERARCH ESO INS TEMP86 VAL    =     76.686 / CCD Copper bar [K]                HIERARCH ESO INS TEMP9 ID      = 'TMNCR   ' / Temperature sensor ID.            HIERARCH ESO INS TEMP9 NAME    = 'NIR cryo. temp.' / Temperature sensor name.   HIERARCH ESO INS TEMP9 VAL     =      17.55 / NIR cryo. temp. [C]               HIERARCH ESO INS TEMP90 ID     = 'NHT     ' / Temperature sensor ID.            HIERARCH ESO INS TEMP90 NAME   = 'NIR Head temp.' / Temperature sensor name.    HIERARCH ESO INS TEMP90 VAL    =      9999. / NIR Head temp. [K]                HIERARCH ESO INS TILT1 AFCX    =      0.201 / Flexure corr. in X [volt].        HIERARCH ESO INS TILT1 AFCY    =     -0.163 / Flexure corr. in Y [volt].        HIERARCH ESO INS TILT1 CONVX   =      0.208 / VoltToMarcsec conversion in X.    HIERARCH ESO INS TILT1 CONVY   =      0.269 / VoltToMarcsec conversion in Y.    HIERARCH ESO INS TILT1 ENGX    =      5.243 / Piezo voltage at end in X [volt]. HIERARCH ESO INS TILT1 ENGY    =      4.397 / Piezo voltage at end in Y [volt]. HIERARCH ESO INS TILT1 ID      = 'afcs1   ' / AFCS ID.                          HIERARCH ESO INS TILT1 MODE    = 'AUTO    ' / AFCS mode.                        HIERARCH ESO INS TILT1 NAME    = 'Flexure comp. UVB' / AFCS description.        HIERARCH ESO INS TILT1 OFFSETX =         5. / Offset voltage in X [volt].       HIERARCH ESO INS TILT1 OFFSETY =         5. / Offset voltage in Y [volt].       HIERARCH ESO INS TILT1 POSXEND =      0.236 / Piezo position at end [volt].     HIERARCH ESO INS TILT1 POSXSTART       =      0.229 / Piezo position at start inHIERARCH ESO INS TILT1 POSYEND =     -0.611 / Piezo position at end [volt].     HIERARCH ESO INS TILT1 POSYSTART       =     -0.614 / Piezo position at start inHIERARCH ESO INS TILT1 REFRACXEND      =      0.991 / Atm. refr. corr. end in X HIERARCH ESO INS TILT1 REFRACXST       =      0.967 / Atm. refr. corr. start in HIERARCH ESO INS TILT1 REFRACYEND      =     -1.491 / Atm. refr. corr. end in Y HIERARCH ESO INS TILT1 REFRACYST       =     -1.493 / Atm. refr. corr. start in HIERARCH ESO INS TILT2 AFCX    =     -0.244 / Flexure corr. in X [volt].        HIERARCH ESO INS TILT2 AFCY    =      0.263 / Flexure corr. in Y [volt].        HIERARCH ESO INS TILT2 CONVX   =      0.291 / VoltToMarcsec conversion in X.    HIERARCH ESO INS TILT2 CONVY   =      0.384 / VoltToMarcsec conversion in Y.    HIERARCH ESO INS TILT2 ENGX    =      4.736 / Piezo voltage at end in X [volt]. HIERARCH ESO INS TILT2 ENGY    =      5.662 / Piezo voltage at end in Y [volt]. HIERARCH ESO INS TILT2 ID      = 'afcs2   ' / AFCS ID.                          HIERARCH ESO INS TILT2 MODE    = 'AUTO    ' / AFCS mode.                        HIERARCH ESO INS TILT2 NAME    = 'Flexure comp. VIS' / AFCS description.        HIERARCH ESO INS TILT2 OFFSETX =         5. / Offset voltage in X [volt].       HIERARCH ESO INS TILT2 OFFSETY =         5. / Offset voltage in Y [volt].       HIERARCH ESO INS TILT2 POSXEND =     -0.273 / Piezo position at end [volt].     HIERARCH ESO INS TILT2 POSXSTART       =     -0.267 / Piezo position at start inHIERARCH ESO INS TILT2 POSYEND =      0.656 / Piezo position at end [volt].     HIERARCH ESO INS TILT2 POSYSTART       =      0.658 / Piezo position at start inHIERARCH ESO INS TILT2 REFRACXEND      =      -1.02 / Atm. refr. corr. end in X HIERARCH ESO INS TILT2 REFRACXST       =      -0.99 / Atm. refr. corr. start in HIERARCH ESO INS TILT2 REFRACYEND      =      1.526 / Atm. refr. corr. end in Y HIERARCH ESO INS TILT2 REFRACYST       =      1.527 / Atm. refr. corr. start in HIERARCH ESO INS TILT3 AFCX    =      0.203 / Flexure corr. in X [volt].        HIERARCH ESO INS TILT3 AFCY    =      0.376 / Flexure corr. in Y [volt].        HIERARCH ESO INS TILT3 CONVX   =       0.58 / VoltToMarcsec conversion in X.    HIERARCH ESO INS TILT3 CONVY   =       0.56 / VoltToMarcsec conversion in Y.    HIERARCH ESO INS TILT3 ENGX    =      5.702 / Piezo voltage at end in X [volt]. HIERARCH ESO INS TILT3 ENGY    =      5.421 / Piezo voltage at end in Y [volt]. HIERARCH ESO INS TILT3 ID      = 'afcs3   ' / AFCS ID.                          HIERARCH ESO INS TILT3 MODE    = 'AUTO    ' / AFCS mode.                        HIERARCH ESO INS TILT3 NAME    = 'Flexure comp. NIR' / AFCS description.        HIERARCH ESO INS TILT3 OFFSETX =         5. / Offset voltage in X [volt].       HIERARCH ESO INS TILT3 OFFSETY =         5. / Offset voltage in Y [volt].       HIERARCH ESO INS TILT3 POSXEND =      0.696 / Piezo position at end [volt].     HIERARCH ESO INS TILT3 POSXSTART       =      0.699 / Piezo position at start inHIERARCH ESO INS TILT3 POSYEND =      0.406 / Piezo position at end [volt].     HIERARCH ESO INS TILT3 POSYSTART       =        0.4 / Piezo position at start inHIERARCH ESO INS TILT3 REFRACXEND      =     -1.138 / Atm. refr. corr. end in X HIERARCH ESO INS TILT3 REFRACXST       =     -1.094 / Atm. refr. corr. start in HIERARCH ESO INS TILT3 REFRACYEND      =      1.644 / Atm. refr. corr. end in Y HIERARCH ESO INS TILT3 REFRACYST       =      1.645 / Atm. refr. corr. start in HIERARCH ESO DET BITS  =         16 / Bits per pixel readout                    HIERARCH ESO DET CHIP1 DATE    = '2005-04-22' / Date of installation [YYYY-MM-DDHIERARCH ESO DET CHIP1 ID      = 'Catherine' / Detector chip identification     HIERARCH ESO DET CHIP1 INDEX   =          1 / Chip index                        HIERARCH ESO DET CHIP1 NAME    = 'MIT/LL CCID-20' / Detector chip name          HIERARCH ESO DET CHIP1 NX      =       2048 / # of pixels along X               HIERARCH ESO DET CHIP1 NY      =       4102 / # of pixels along Y               HIERARCH ESO DET CHIP1 PSZX    =        15. / Size of pixel in X                HIERARCH ESO DET CHIP1 PSZY    =        15. / Size of pixel in Y                HIERARCH ESO DET CHIP1 X       =          1 / X location in array               HIERARCH ESO DET CHIP1 XGAP    =         0. / Gap between chips along x         HIERARCH ESO DET CHIP1 Y       =          1 / Y location in array               HIERARCH ESO DET CHIP1 YGAP    =         0. / Gap between chips along y         HIERARCH ESO DET CHIPS =          1 / # of chips in detector array              HIERARCH ESO DET DATE  = '2005-22-04' / Installation date                       HIERARCH ESO DET DEC   =         0. / Apparent 00:00:00.0 DEC at start          HIERARCH ESO DET DID   = 'ESO-VLT-DIC.CCDDCS,ESO-VLT-DIC.FCDDCS' / Diction      HIERARCH ESO DET EXP NO=       5551 / Unique exposure ID number                 HIERARCH ESO DET EXP RDTTIME   =      4.016 / image readout time                HIERARCH ESO DET EXP TYPE      = 'Normal  ' / Exposure type                     HIERARCH ESO DET EXP XFERTIM   =    152.268 / image transfer time               HIERARCH ESO DET FRAM ID       =          1 / Image sequencial number           HIERARCH ESO DET FRAM TYPE     = 'Normal  ' / Type of frame                     HIERARCH ESO DET ID    = 'CCD FIERA - Rev: 3.96' / Detector system Id           HIERARCH ESO DET NAME  = 'shdetv - shdetv' / Name of detector system            HIERARCH ESO DET OUT1 CHIP     =          1 / Chip to which the output belongs  HIERARCH ESO DET OUT1 CONAD    =        0.6 / Conversion from ADUs to electrons HIERARCH ESO DET OUT1 GAIN     =       1.67 / Conversion from electrons to ADU  HIERARCH ESO DET OUT1 ID       = 'A       ' / Output ID as from manufacturer    HIERARCH ESO DET OUT1 INDEX    =          1 / Output index                      HIERARCH ESO DET OUT1 NAME     = 'A       ' / Description of output             HIERARCH ESO DET OUT1 NX       =       2048 / valid pixels along X              HIERARCH ESO DET OUT1 NY       =       4000 / valid pixels along Y              HIERARCH ESO DET OUT1 OVSCX    =         48 / Overscan region in X              HIERARCH ESO DET OUT1 OVSCY    =          0 / Overscan region in Y              HIERARCH ESO DET OUT1 PRSCX    =         10 / Prescan region in X               HIERARCH ESO DET OUT1 PRSCY    =          0 / Prescan region in Y               HIERARCH ESO DET OUT1 RON      =        3.2 / Readout noise per output (e-)     HIERARCH ESO DET OUT1 X=          1 / X location of output                      HIERARCH ESO DET OUT1 Y=          1 / Y location of output                      HIERARCH ESO DET OUTPUTS       =          1 / # of outputs                      HIERARCH ESO DET OUTREF=          0 / reference output                          HIERARCH ESO DET RA    =         0. / Apparent 00:00:00.0 RA at start           HIERARCH ESO DET READ CLOCK    = '100k/1pt/hg' / Readout clock pattern used     HIERARCH ESO DET READ MODE     = 'normal  ' / Readout method                    HIERARCH ESO DET READ NFRAM    =          1 / Number of readouts buffered in sinHIERARCH ESO DET READ SPEED    = '1pt/100k/hg' / Readout speed                  HIERARCH ESO DET SHUT ID       = 'VA 25mm BistableCCD Sensor1' / Shutter unique HIERARCH ESO DET SHUT TMCLOS   =         0. / Time taken to close shutter       HIERARCH ESO DET SHUT TMOPEN   =         0. / Time taken to open shutter        HIERARCH ESO DET SHUT TYPE     = 'Iris on Slit' / type of shutter               HIERARCH ESO DET SOFW MODE     = 'Normal  ' / CCD sw operational mode           HIERARCH ESO DET TELE INT      =       600. / Interval between two successive teHIERARCH ESO DET TELE NO       =          4 / # of sources active               HIERARCH ESO DET TLM1 END      =       135. / Telemetry value at read completionHIERARCH ESO DET TLM1 ID       = 'CCD Sensor1' / ID of telemetry sensor         HIERARCH ESO DET TLM1 NAME     = 'CCD T1  ' / Description of telemetry param.   HIERARCH ESO DET TLM1 START    =       135. / Telemetry value at read start     HIERARCH ESO DET TLM2 END      =      142.7 / Telemetry value at read completionHIERARCH ESO DET TLM2 ID       = 'CCD Sensor2' / ID of telemetry sensor         HIERARCH ESO DET TLM2 NAME     = 'CCD T2  ' / Description of telemetry param.   HIERARCH ESO DET TLM2 START    =      142.7 / Telemetry value at read start     HIERARCH ESO DET TLM3 END      =         0. / Telemetry value at read completionHIERARCH ESO DET TLM3 ID       = 'Box Temp' / ID of telemetry sensor            HIERARCH ESO DET TLM3 NAME     = 'EBOX T  ' / Description of telemetry param.   HIERARCH ESO DET TLM3 START    =         0. / Telemetry value at read start     HIERARCH ESO DET TLM4 END      =         0. / Telemetry value at read completionHIERARCH ESO DET TLM4 ID       = 'Vacuum  ' / ID of telemetry sensor            HIERARCH ESO DET TLM4 NAME     = 'Vacuum  ' / Description of telemetry param.   HIERARCH ESO DET TLM4 START    =         0. / Telemetry value at read start     HIERARCH ESO DET WIN1 BINX     =          1 / Binning factor along X            HIERARCH ESO DET WIN1 BINY     =          1 / Binning factor along Y            HIERARCH ESO DET WIN1 DIT1     =  60.000002 / actual subintegration time        HIERARCH ESO DET WIN1 DKTM     =    60.3648 / Dark current time                 HIERARCH ESO DET WIN1 NDIT     =          1 / # of subintegrations              HIERARCH ESO DET WIN1 NX       =       2106 / # of pixels along X               HIERARCH ESO DET WIN1 NY       =       4000 / # of pixels along Y               HIERARCH ESO DET WIN1 ST       = T / If T, window enabled                       HIERARCH ESO DET WIN1 STRX     =          1 / Lower left pixel in X             HIERARCH ESO DET WIN1 STRY     =          1 / Lower left pixel in Y             HIERARCH ESO DET WIN1 UIT1     =        60. / user defined subintegration time  HIERARCH ESO DET WINDOWS       =          1 / # of windows readout              HIERARCH ESO PRO CATG  = 'SCI_SLIT_NOD_MERGE_1D_VIS' / Category of pipeline prodHIERARCH ESO PRO DATANCOM      =          1                                     HIERARCH ESO PRO B RELOFF RA   =   2.559839                                     HIERARCH ESO PRO B RELOFF DEC  =  -4.295023                                     HIERARCH ESO PRO B CUMOFF RA   =    1.27992                                     HIERARCH ESO PRO B CUMOFF DEC  =  -2.147512                                     HIERARCH ESO PRO RECT BIN LAMBDA       =      0.015                             HIERARCH ESO PRO RECT BIN SPACE= 0.159999847412                                 HIERARCH ESO PRO RECT LAMBDA MIN       =    530.175                             HIERARCH ESO PRO RECT LAMBDA MAX       =   1040.925                             HIERARCH ESO PRO RECT SPACE MIN= -10.1800003052                                 HIERARCH ESO PRO RECT SPACE MAX=        5.5                                     HIERARCH ESO PRO EXTRACT SLIT MIN      =        31.                             HIERARCH ESO PRO EXTRACT SLIT MAX      =        68.                             HIERARCH ESO PRO DID   = 'PRO-1.15' / Data dictionary for PRO                   HIERARCH ESO PRO TYPE  = 'REDUCED ' / Product type                              HIERARCH ESO PRO TECH  = 'ECHELLE,SLIT,NODDING' / Observation technique         HIERARCH ESO PRO SCIENCE       = T / Scientific product if T                    HIERARCH ESO PRO REC1 ID       = 'xsh_scired_slit_nod' / Pipeline recipe (uniqueHIERARCH ESO PRO REC1 DRS ID   = 'cpl-5.0.1' / Data Reduction System identifier HIERARCH ESO PRO REC1 PIPE ID  = 'xsh/1.0.0' / Pipeline (unique) identifier     HIERARCH ESO PRO REC1 RAW1 NAME= 'XSHOO.2010-04-06T03_26_26.943.fits' / File na HIERARCH ESO PRO REC1 RAW1 CATG= 'OBJECT_SLIT_NOD_VIS' / Category of raw frame  HIERARCH ESO PRO REC1 RAW2 NAME= 'XSHOO.2010-04-06T03_30_18.013.fits' / File na HIERARCH ESO PRO REC1 RAW2 CATG= 'OBJECT_SLIT_NOD_VIS' / Category of raw frame  HIERARCH ESO PRO REC1 CAL1 NAME= 'SPECTRAL_FORMAT_TAB_VIS_NEW.fits' / File name HIERARCH ESO PRO REC1 CAL1 CATG= 'SPECTRAL_FORMAT_TAB_VIS' / Category of calibr HIERARCH ESO PRO REC1 CAL2 NAME= 'PROD_MASTER_BIAS_VIS_2010-04-05_100k_1x1.fit' HIERARCH ESO PRO REC1 CAL2 CATG= 'MASTER_BIAS_VIS' / Category of calibration fr HIERARCH ESO PRO REC1 CAL2 DATAMD5     = 'afa8eb56f504750e5b3326ac886e7cb6' / MDHIERARCH ESO PRO REC1 CAL3 NAME= 'PROD_ORDER_TAB_EDGES_SLIT_VIS.fits' / File na HIERARCH ESO PRO REC1 CAL3 CATG= 'ORDER_TAB_EDGES_SLIT_VIS' / Category of calib HIERARCH ESO PRO REC1 CAL3 DATAMD5     = '82708c0aec2aad822454764586577bf2' / MDHIERARCH ESO PRO REC1 CAL4 NAME= 'PROD_MASTER_FLAT_SLIT_VIS.fits' / File name o HIERARCH ESO PRO REC1 CAL4 CATG= 'MASTER_FLAT_SLIT_VIS' / Category of calibrati HIERARCH ESO PRO REC1 CAL4 DATAMD5     = 'f5002da1545df92c6760183e915ba7fc' / MDHIERARCH ESO PRO REC1 CAL5 NAME= 'PROD_MASTER_BP_MAP_VIS.fits' / File name of c HIERARCH ESO PRO REC1 CAL5 CATG= 'MASTER_BP_MAP_VIS' / Category of calibration  HIERARCH ESO PRO REC1 CAL5 DATAMD5     = '7c62c10c04ff70c96e952e38a9e269f5' / MDHIERARCH ESO PRO REC1 CAL6 NAME= 'PROD_DISP_TAB_AFC_VIS.fits' / File name of ca HIERARCH ESO PRO REC1 CAL6 CATG= 'DISP_TAB_AFC_VIS' / Category of calibration f HIERARCH ESO PRO REC1 CAL6 DATAMD5     = 'b20896b23781a1b093a45869265a8086' / MDHIERARCH ESO PRO REC1 CAL7 NAME= 'PROD_WAVE_TAB_AFC_VIS.fits' / File name of ca HIERARCH ESO PRO REC1 CAL7 CATG= 'WAVE_TAB_AFC_VIS' / Category of calibration f HIERARCH ESO PRO REC1 CAL7 DATAMD5     = 'd32b99afc051fa62fac33470f914b612' / MDHIERARCH ESO PRO REC1 PARAM1 NAME      = 'keep-temp'                            HIERARCH ESO PRO REC1 PARAM1 VALUE     = 'no      '                             HIERARCH ESO PRO REC1 PARAM2 NAME      = 'debug-level'                          HIERARCH ESO PRO REC1 PARAM2 VALUE     = 'none    '                             HIERARCH ESO PRO REC1 PARAM3 NAME      = 'test    '                             HIERARCH ESO PRO REC1 PARAM3 VALUE     = 'none    '                             HIERARCH ESO PRO REC1 PARAM4 NAME      = 'time-stamp'                           HIERARCH ESO PRO REC1 PARAM4 VALUE     = 'false   '                             HIERARCH ESO PRO REC1 PARAM5 NAME      = 'background-nb-y'                      HIERARCH ESO PRO REC1 PARAM5 VALUE     = '100     '                             HIERARCH ESO PRO REC1 PARAM6 NAME      = 'background-radius-x'                  HIERARCH ESO PRO REC1 PARAM6 VALUE     = '2       '                             HIERARCH ESO PRO REC1 PARAM7 NAME      = 'background-radius-y'                  HIERARCH ESO PRO REC1 PARAM7 VALUE     = '2       '                             HIERARCH ESO PRO REC1 PARAM8 NAME      = 'background-min-grid-frac'             HIERARCH ESO PRO REC1 PARAM8 VALUE     = '0.3333  '                             HIERARCH ESO PRO REC1 PARAM9 NAME      = 'background-grid-frac'                 HIERARCH ESO PRO REC1 PARAM9 VALUE     = '0.5     '                             HIERARCH ESO PRO REC1 PARAM10 NAME     = 'background-method'                    HIERARCH ESO PRO REC1 PARAM10 VALUE    = 'poly    '                             HIERARCH ESO PRO REC1 PARAM11 NAME     = 'background-smooth-x'                  HIERARCH ESO PRO REC1 PARAM11 VALUE    = '-1      '                             HIERARCH ESO PRO REC1 PARAM12 NAME     = 'background-smooth-y'                  HIERARCH ESO PRO REC1 PARAM12 VALUE    = '100     '                             HIERARCH ESO PRO REC1 PARAM13 NAME     = 'background-debug'                     HIERARCH ESO PRO REC1 PARAM13 VALUE    = 'true    '                             HIERARCH ESO PRO REC1 PARAM14 NAME     = 'removecrhsingle-frac-max'             HIERARCH ESO PRO REC1 PARAM14 VALUE    = '0.1     '                             HIERARCH ESO PRO REC1 PARAM15 NAME     = 'removecrhsingle-sigmalim'             HIERARCH ESO PRO REC1 PARAM15 VALUE    = '5       '                             HIERARCH ESO PRO REC1 PARAM16 NAME     = 'removecrhsingle-flim'                 HIERARCH ESO PRO REC1 PARAM16 VALUE    = '2       '                             HIERARCH ESO PRO REC1 PARAM17 NAME     = 'removecrhsingle-niter'                HIERARCH ESO PRO REC1 PARAM17 VALUE    = '4       '                             HIERARCH ESO PRO REC1 PARAM18 NAME     = 'rectify-kernel'                       HIERARCH ESO PRO REC1 PARAM18 VALUE    = 'default '                             HIERARCH ESO PRO REC1 PARAM19 NAME     = 'rectify-radius'                       HIERARCH ESO PRO REC1 PARAM19 VALUE    = '1       '                             HIERARCH ESO PRO REC1 PARAM20 NAME     = 'rectify-bin-lambda'                   HIERARCH ESO PRO REC1 PARAM20 VALUE    = '0.015   '                             HIERARCH ESO PRO REC1 PARAM21 NAME     = 'rectify-bin-slit'                     HIERARCH ESO PRO REC1 PARAM21 VALUE    = '0.16    '                             HIERARCH ESO PRO REC1 PARAM22 NAME     = 'rectify-full-slit'                    HIERARCH ESO PRO REC1 PARAM22 VALUE    = 'true    '                             HIERARCH ESO PRO REC1 PARAM23 NAME     = 'rectify-conserve-flux'                HIERARCH ESO PRO REC1 PARAM23 VALUE    = 'false   '                             HIERARCH ESO PRO REC1 PARAM24 NAME     = 'rectify-fast'                         HIERARCH ESO PRO REC1 PARAM24 VALUE    = 'true    '                             HIERARCH ESO PRO REC1 PARAM25 NAME     = 'localize-method'                      HIERARCH ESO PRO REC1 PARAM25 VALUE    = 'MANUAL  '                             HIERARCH ESO PRO REC1 PARAM26 NAME     = 'localize-chunk-nb'                    HIERARCH ESO PRO REC1 PARAM26 VALUE    = '10      '                             HIERARCH ESO PRO REC1 PARAM27 NAME     = 'localize-thresh'                      HIERARCH ESO PRO REC1 PARAM27 VALUE    = '0.1     '                             HIERARCH ESO PRO REC1 PARAM28 NAME     = 'localize-deg-lambda'                  HIERARCH ESO PRO REC1 PARAM28 VALUE    = '0       '                             HIERARCH ESO PRO REC1 PARAM29 NAME     = 'localize-slit-position'               HIERARCH ESO PRO REC1 PARAM29 VALUE    = '0       '                             HIERARCH ESO PRO REC1 PARAM30 NAME     = 'localize-slit-hheight'                HIERARCH ESO PRO REC1 PARAM30 VALUE    = '0.5     '                             HIERARCH ESO PRO REC1 PARAM31 NAME     = 'localize-kappa'                       HIERARCH ESO PRO REC1 PARAM31 VALUE    = '3       '                             HIERARCH ESO PRO REC1 PARAM32 NAME     = 'localize-niter'                       HIERARCH ESO PRO REC1 PARAM32 VALUE    = '3       '                             HIERARCH ESO PRO REC1 PARAM33 NAME     = 'localize-nod-throw'                   HIERARCH ESO PRO REC1 PARAM33 VALUE    = '0       '                             HIERARCH ESO PRO REC1 PARAM34 NAME     = 'extract-method'                       HIERARCH ESO PRO REC1 PARAM34 VALUE    = 'NOD     '                             HIERARCH ESO PRO REC1 PARAM35 NAME     = 'mergeord-method'                      HIERARCH ESO PRO REC1 PARAM35 VALUE    = '0       '                             HIERARCH ESO PRO REC1 PARAM36 NAME     = 'combine-nod-min'                      HIERARCH ESO PRO REC1 PARAM36 VALUE    = '5       '                             HIERARCH ESO PRO REC1 PARAM37 NAME     = 'combine-nod-clip'                     HIERARCH ESO PRO REC1 PARAM37 VALUE    = 'true    '                             HIERARCH ESO PRO REC1 PARAM38 NAME     = 'combine-nod-clip-sigma'               HIERARCH ESO PRO REC1 PARAM38 VALUE    = '5       '                             HIERARCH ESO PRO REC1 PARAM39 NAME     = 'combine-nod-clip-niter'               HIERARCH ESO PRO REC1 PARAM39 VALUE    = '2       '                             HIERARCH ESO PRO REC1 PARAM40 NAME     = 'combine-nod-clip-diff'                HIERARCH ESO PRO REC1 PARAM40 VALUE    = '0.1     '                             HIERARCH ESO PRO REC1 PARAM41 NAME     = 'combine-nod-use-localization'         HIERARCH ESO PRO REC1 PARAM41 VALUE    = 'false   '                             HIERARCH ESO PRO REC1 PARAM42 NAME     = 'max-slit'                             HIERARCH ESO PRO REC1 PARAM42 VALUE    = '5.7     '                             HIERARCH ESO PRO REC1 PARAM43 NAME     = 'min-slit'                             HIERARCH ESO PRO REC1 PARAM43 VALUE    = '-5.3    '                             HIERARCH ESO PRO REC1 PARAM44 NAME     = 'crh-clip-kappa'                       HIERARCH ESO PRO REC1 PARAM44 VALUE    = '5       '                             HIERARCH ESO PRO REC1 PARAM45 NAME     = 'crh-clip-niter'                       HIERARCH ESO PRO REC1 PARAM45 VALUE    = '5       '                             HIERARCH ESO PRO REC1 PARAM46 NAME     = 'crh-clip-frac'                        HIERARCH ESO PRO REC1 PARAM46 VALUE    = '0.7     '                             HIERARCH ESO PRO REC1 PARAM47 NAME     = 'compute-map'                          HIERARCH ESO PRO REC1 PARAM47 VALUE    = 'true    '                             HIERARCH ESO PRO REC1 PARAM48 NAME     = 'do-flatfield'                         HIERARCH ESO PRO REC1 PARAM48 VALUE    = 'true    '                             HIERARCH ESO ADA ABSROT END    =  171.22757 / Abs rot angle at exp end (deg)    HIERARCH ESO ADA ABSROT PPOS   = 'NEG     ' / sign of probe position            HIERARCH ESO ADA ABSROT START  =  170.41629 / Abs rot angle at exp start (deg)  HIERARCH ESO ADA GUID DEC      =  -39.80273 / -39:48:09.8 Guide star DEC J2000  HIERARCH ESO ADA GUID RA       = 183.956566 / 12:15:49.5 Guide star RA J2000    HIERARCH ESO ADA GUID STATUS   = 'ON      ' / Status of autoguider              HIERARCH ESO ADA POSANG=     30.795 / Position angle at start                   HIERARCH ESO OCS DET2 IMGNAME  = 'XSHOOTER_SLT_OBJ_VIS_' / Data File Name.      HIERARCH ESO SEQ ARM   = 'VIS     ' / Instrument Arm                            HIERARCH ESO SEQ CUMOFF DEC    =   2.147512 / Cumulative DEC offset             HIERARCH ESO SEQ CUMOFF RA     =   -1.27992 / Cumulative RA offset              HIERARCH ESO SEQ CUMOFF X      =         0. / Cumulative offset X (along the sliHIERARCH ESO SEQ CUMOFF Y      =        2.5 / Cumulative offset Y (along the sliHIERARCH ESO SEQ JITTER WIDTH  =         0. / Width of the Jitter box (arcsec)  HIERARCH ESO SEQ NOD THROW     =         5. / Nodding throw length in arcsec    HIERARCH ESO SEQ RELOFF DEC    =   2.147512 / List of DEC offsets               HIERARCH ESO SEQ RELOFF RA     =   -1.27992 / List of RA offsets                HIERARCH ESO QC NPIXSAT=         0.                                             HIERARCH ESO QC FPIXSAT=         0.                                             HIERARCH ESO QC CRRATE = 0.351743344907                                         HIERARCH ESO QC NCRH   =        389                                             HIERARCH ESO QC NCRH AVG       =        389                                     HIERARCH ESO QC FLUX1 VAL      = 17336.209338 / Flux in  672- 680 nm            HIERARCH ESO QC FLUX1 ERR      = 107.362420531 / Error Flux in  672- 680 nm     HIERARCH ESO QC FLUX1 SN       = 161.47371913 / Signal to noise ratio in  672- 6HIERARCH ESO QC FLUX2 VAL      = 26292.4665704 / Flux in  745- 756 nm           HIERARCH ESO QC FLUX2 ERR      = 116.168431666 / Error Flux in  745- 756 nm     HIERARCH ESO QC FLUX2 SN       = 226.330563246 / Signal to noise ratio in  745- HIERARCH ESO QC FLUX3 VAL      = 10235.8148149 / Flux in  992- 999 nm           HIERARCH ESO QC FLUX3 ERR      = 88.2706534408 / Error Flux in  992- 999 nm     HIERARCH ESO QC FLUX3 SN       = 115.959431769 / Signal to noise ratio in  992-                                                                                 HISTORY  ESO-DESCRIPTORS START   ................                               HISTORY  'LHCUTS','R*4',1,4,'5E14.7'                                            HISTORY   0.0000000E+00 0.0000000E+00 0.0000000E+00 4.5382374E-12               HISTORY                                                                         HISTORY  ESO-DESCRIPTORS END     ................                               APNUM1  = '1 1     '                                                            DC-FLAG =                    0                                                  WCSDIM  =                    1                                                  CD1_1   =                0.015                                                  LTM1_1  =                   1.                                                  WAT0_001= 'system=equispec'                                                     WAT1_001= 'wtype=linear label=Wavelength units=angstroms'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       END                                                                                 +Ò¹›+¸—++­ðÙ+¬-ƒ+³ëM+¬oV+Ã¨"+Ÿ5¦+¤´ö+±-ò+¬TÎ+©É+§>‰+âù+´}ê+ªIŽ+¹þ¿+¿/á+Ñõ+Ï5»+Î
+8+ÁŸj+Â’Q+¾BÇ+°©%+±ný+›ú++°Ç+ª¿·+µ’y+ÄcF+µ|1+¦Îa+®÷8+œ‰Ž+”r0+b«‰+(U+3——+ABf+~é0+“™6+™â2+—++®ü¡+¨&Z+¿kÿ+¼Œý+ÄI½+¥“‹+±é—+­=°+Åuw+½ö+ÑQq+Ã&+Åúù+½¦$+ºH+Ãt+Â»Û+¨v+¿EC+µL^+Ì†+Ðð–+ÑmB+Ëš¤+Ã+©<ñ+“Ê+Ž…ˆ+¥Ê+¡<O+²ÿ+±¶‡+¯÷+«;t+«·+º	õ+¼Òƒ+¼¼î+¹ŠË+¨¸™+µ{Ø+Á+º“A+•ò‚+’äß+—ô"+¬DÏ+ªÞƒ+¯¤+¥`à+¥Ž'+ª(]+«ËÅ+ÁªF+¼§Ï+Æ0+½@,+Ê=+½ŒÎ+Áê”+²¬+¸Vª+¬íI+³Ž+³Ç+¢¹}+©kN+µñ+Ìü¼+Ê—…+Ë+ÝÉ®+Ó3ˆ+ËòÜ+äœ+Ñé0+Ì¡¸+¼ËI+±´û+º&+¦é +´à=+Ä%š+Áâ+¾¾r+¾K+Áßç+Ú¤+ÌŽr+¿G\+±·+° È+—U+Œ€è+£¯÷+©G+°ˆ+¦¶\+º±4+Ã·	+Ð¯¼+Ñ,+Ð”Ó+ã.W+Í¸`+¶ø4+Áx+©¿c+¯çü+²ÚÜ+ÌÛ+¼++·¿£+»+·ÀÍ+¬ x+™àï+’ú$+”‘+š_V+¬~+²¡s+¾Ðp+À½}+Ê©î+Ë•+ÈTÇ+Ã+Ã^U+½„+Ï±+´ì+Ÿà}+ŽG9+p1œ+rð•+ni+”b+¶/ +»7_+©Öç+˜ò+¦Ú+³›¸+Â´8+²HÈ+·Ôr+¸E“+°]'+§(+±ãy+¶Iø+ÁM¼+ÇÆª+Èt+àØ+È6+Ç1H+Â –+Ã¿+Ç–5+Ä\‘+ºN|+Á±+½Æ2+Œ´+‰:w+›í+œi+ŒÓŸ+V+«>+¶û`+¿ÀÂ+ÌÍ,+ÍÀÖ+Â"Ë+´¡E+¡»§+º$e+Ád¨+Îè£+ÏÀ +ÈIä+·¿)+ÐÆ+¾£•+»¶ˆ+¼6+Äû+Îj+Ñl½+Å'+¶¼½+º2+Î7ü+Å³“+Ãˆç+¹Ä¡+ÁñV+Âžõ+ºŠ3+°òŒ+²¤ò+®X•+Ÿˆû+Ã=+—Š:+HZ+ß+›Rž+–SÂ+¢Aå+µÔÚ+¸é,+Ä|Ó+Ê5´+Ér+Ñ[+Ï¤+Ôÿ¹+Ä“*+·ž²+¦u—+—j+¨³+¿}j+¼Àø+¤I=+£ž*+¸f8+ÄòÜ+Ó1+Úá½+×Öb+ÙóM+âã+Ì£¿+ÏA+Åç+½d+ÄÀ+¼ê+Ïe+Ï1!+Ã3L+ÂS»+¾r¨+Å†æ+º´‘+½Ô+¶ÃA+ª÷+²sý+º0+¿<ô+ÇgL+É~F+·å+®y]+´¿¨+¸;Â+¸ä+ÊYQ+ÕR³+Ùk+Ë¹æ+Å	€+³:4+ 9Á+”Q¯+~¡Ç+T§+;”M+ZLä+•qª+¢÷«+µ»r+¾P^+»K°+¿"	+³(Ü+ºVµ+Ë´O+¹æ=+ÃÔX+Æp+À¿–+´Ö*+¦ô!+©²ò+µñ«+­‰+¥j¡+¤>+¶'ä+µ¨+¤ë+}îB+Xa+SS€+–š˜+ª’Ï+º¼+³‰+»B‚+ºÈž+Í‘+Í,¨+À¬+¶¤+¬"+¢p+šH·+¡©(+”Û+–¨\+¤u6+¸0ã+¾^z+È+Éîh+ÏÃ(+Ä^%+ÁÿÒ+¼@d+®¼$+ ÇË+‘²+›#$+¬1	+¨µ+£ùR+‚gt+HhF+IÚ++wÊ+˜C¯+®°/+¼Õ>+ÀÏ3+µV+ÃÑ+Ëjf+Èþ„+Ã:ä+Ê3š+Æý+À?%+¾’+º‚+¹m•+ÆrÅ+¿,¦+¿W+Â3+ºÕF+É®.+Å¡ô+¾ÓC+±D¢+©ø+Ÿé©+™	A+£ì€+§öh+«ür+£¢÷+š.+šx¢+¦+¥Á9+‹fS+{	”+síÐ+th*+ië +(ÿ+ªØí+¶±+ÁÚÍ+Á3‹+¸Ø+ Ü;+‚Á[+Yc²+Müã+l^e+©Ì+¯ºZ+°à+²‘}+¨ý{+¨Nˆ+´j°+»&™+°fQ+¸Óµ+¹h¦+³<ã+®íŽ+¢U+¦bÔ+«]³+ºÁî+Î˜/+ºè+Ãú¸+ËÍà+ÕÈ+¶Ä¨+°Þ•+­b+·õ‡+À§Ñ+Â ++ÎS+Û¥k+Älü+ÈÝ®+Èœ¼+ÏÑy+¾›n+¶x+°T+°éÑ+¦ÅF+¸&Ä+Íì}+Ò²+É„+Ð@A+Í_"+È¯+Â–6+Ä>à+Ø“7+Ô1+É2+¾„×+¼i+Ã 	+ÅuË+Ï+Üþá+ÞÔá+Öí±+Ù§+Ãz:+ÊF¤+½Æ+¿NØ+À¹N+¾ñ+Íîá+¿]Æ+½ëp+¼¸t+¹—+¹«+ÉN+À=+ÈH…+Æ5+ËÎ¾+Öú+ÑqÔ+Î X+Èùµ+¾Ö­+Âng+È†À+¶ô+¨>}+¥°d+ª'Š+š ï+9Á+€Fw+cð+¹´+¤™+»õp+¼ü<+½«S+Æ€Õ+Ñzž+ÝÜ+ß ?+Ðs+Õ<ž+Ònö+Êx+Ééß+Àó+ÈÏç+Ñ]·+Ú%f+Ýe+ØÅÙ+Ñ€ç+Ç†+Æ<6+·ag+¯öÝ+´fu+³Ùd+¯¸¥+ªŒŽ+¬V^+®ø™+Á`E+Éò­+ÛÀ`+Ú×‡+ÔáX+Û½+ÎpO+ÓF§+ÅL†+Ä(+µàl+´‰0+¸Ù!+¬2œ+›–§+ù+—¾+¿õ+Ñ,Y+ÌòÄ+Éñþ+ÍÛþ+ÄÚû+Õ¨+Ô¶¢+Üú+Ò«¨+Åç
++½}.+®SK+ªë+©v•+¹˜U+Í;Û+Ä¬+±âÀ+§'Ž+¥_°+¿J,+¹Þ9+ÏE+ÑÍ÷+Ë^æ+Û€°+ãŠñ+ßËÃ+ÙR1+×.ò+Ïsÿ+Ç¬p+È’+Ët+Å+"+ÍX¥+Ðûå+ÙÚ+ßªÍ+ÍTº+Ä¸!+¾ˆu+ÃªÂ+ËkÁ+½œ+Á±”+½ŒB+À$X+¹ÙÇ+¿[]+Áq:+Å<£+¸:L+µ]±+Áôn+Ôý¿+Õn‹+Î;a+ÍNñ+ÄàÄ+Ê4¶+×£&+Ðÿ§+ÌÎ+ÅU‘+Ñ©+Ê©-+ÆEY+Ãr3+¶ä+¶y+½5Ø+À™+½>^+©Vq+³%%+Áœã+ÌÉg+Ö©`+ÞŽê+Û·±+ÛÏ\+ÛW¾+Ðþl+È2×+ÑÑ+Ì¦1+Ð½A+Ï+Ï>7+Ï«¿+Ìö +Ñ+‡+Öt+Ï‹ +Äk+ÀÏ†+Ç‹+¹q`+ÃùÆ+¸4T+½ T+Ã¢­+Øe"+ã+Ö†'+Ò p+Ð£×+Ù >+é>+ÝWj+ÝyE+Ú\Ø+ÖzÀ+Ð	+ÍŒ +Ç9F+µ½ñ+¯ªB+»­+Çz”+ÚŠ™+ä7+Ôïx+Î®“+Âˆ+·_	+·|ø+Ì§ +Ð‹ç+ÃÏý+Ç.\+Â.e+Ît+×5X+Äf+¶P+ªn+¶_¾+ÐÙÆ+Ûý+È&+ÍÕè+Æ>å+½:+Ä8Ö+Ä1ç+µü±+ÀáÃ+Û72+Õ^+Êæ+Íòó+Ñ›è+Ö\u+Û`f+ÔÁ+ÏÃÇ+Îâd+Ï›_+ßé*+ÉØ÷+Íƒ+¾ö²+Ì †+×g+ß¾ü+ß£ +Ñ±?+Ãæ4+»9o+¹!ÿ+²o+³,ˆ+¼ÌF+Ã¤€+Æ#z+Á´!+º{¯+ÆQŽ+ÍÕA+Î³Ñ+Ê~”+¸Öo+¹ê+§òÁ+³+Í¡+ÏDR+Î"+ÚA+Ï;5+Î +Õ–S+Çê+Ä„+±ê+œß¸+—ù +«9+¾ÿç+Æ"ö+¿kT+»µ+¹–’+®]+¶ûj+»ˆ+¯@+¢Â÷+ bP+©)É+¾¿+¾ˆ‘+¸fI+¿fÅ+Ç×Ö+È­{+Ð>Ó+ÖÈI+ÍEû+Î[·+È&+¬1J+“G4+–¨B+ª8ß+È­ƒ+Í¥+È+·9h+²(K+ÅN+Î=+Î/k+Çõ¡+Ím+Êì4+Ìù+Ï;£+ÚÉ+Î8¶+É+¿·+«m+ˆ·”+~Ø…+ŠÃ+£¼€+¼N4+Á‡)+Á?_+ÂF+Ê”ª+ÑÇg+Î;ø+Ôãu+Î+Ôµ+Ñ'+Øíú+ÊÀ+È +ÇýÙ+ÄúÂ+ºŽ+¨ªé+„¸+—€+§¶4+ÂÊ+Ð¢â+Ø j+Úæj+Ôš+ÛŒe+ß©+ÜGÁ+âe +ãòÝ+ßï+ÚÜ­+ÍÕ«+Çpy+¼öL+¾W3+¿g+ÂFj+ÂŸC+½$”+Àf*+ÈÂ#+ÇNs+ÍGÕ+Ó-+Ð¼ª+Íßí+Ô5+Ø=+ÜBW+Ùä+ä Å+Ö¿Ò+Óôj+¹ÁŸ+ ÅT+†àò+{4Ÿ+“úš+° Ò+»_È+Âhç+¾+¼‡m+¼ëK+¿,T+Ï‰+Ïÿ®+ÏXô+Î“+Ç%+Ï}b+Ê+ã+¼/+¹]+¹K×+Ä›h+Ãî+Â&+Ê®C+ÍQ+Óír+ÐŠØ+ÐE+Ëˆî+¸
+ï+ öd+‘¾+‚b+xÞ‚+Š•Í+ j„+°Ÿ|+¸Tu+´$t+©mÞ+¨!D+«cã+¸TE+®¸Ó+£¤+ZÈˆ+5Xl+Eö+yg[+›8m+­×’+´±g+²II+£GF+‚A™+j=f+q«ž+ 7@+¿’+Ì¾s+Õ-ß+Î¢+Ðeí+Ïì©+Ìî+Å[3+ÆóR+¿Te+¶è+¡Ú—+˜ä	+VC+¯#6+»ð+Ã9+Í6Ž+Øž1+Ü9û+Ó»N+Éë(+½hA+«.û+š?í+nœÉ+Hô¢+WÓò+‹¾2+§h<+¹G"+Çì˜+ÇÀ¯+Äì€+È0£+Ð™9+Ó\…+Ñœ+Í–¿+Å®Ë+È%Ö+È7ž+¼&d+Â´@+Ä%+Ð—½+Èñ+¸H+¦÷“+–<¢+Ûª+tó™+GMØ+<›P+_¸ó+ÔB+¨É\+³Š
++¼U‘+º+´äc+µxž+¶)™+²;+ªQ‘+³Jó+¿¶Ä+Ábz+ºœs+¬‚+’ºä+yÞ\+g_›+Œl+«é„+Áö7+ÇŠ	+Æ§Ç+ÄK+³¢H+¡¤+¿N+M¥²+h=%+œÉÍ+¸®d+Èh€+Ãð+Â.Æ+¶éâ+·„•+·f;+ºc‘+¿ùr+Á(¹+·ô)+´'‘+·iP+À¥+ÆE+ÆC¡+Ék+È5ò+Ñ?+ÑÙ+ÌÑÂ+Ë}+Ìñž+ËÁÓ+Ä÷³+Â“ó+½¦ã+º«ä+¿^é+Å–0+È—+Êûf+Íyÿ+Î©+Ås˜+ÅAù+¾=ú+Á Ž+Ã›Ý+Ê¨Ç+Ì‘8+ÓÂ+ÔŒb+ÉØ+Æb¯+¿¼d+¼ª¥+º w+¾¸I+Âé‡+É¤‘+ÌÖx+ÐZ+Î˜#+ËB+ÎT+ÌìÍ+È
++Äª +ÄS’+Î³¿+ÑÝ»+Ìˆä+ÍÃT+Ò­Ë+ÝLÞ+Íx‰+ÆÛ+Ç +ÈÂû+Äœ¡+ÅÄ±+Èøí+Ãhï+¿æë+½-+¿²+¶1%+¦+™í!+‚;2+c¨G+Zƒ+k[+‰Ÿ‰+ ø+¬¿A+¸³!+¼[<+¿Y+¼ŠÝ+±ý}+µÝÑ+º@’+¾Ùe+¾ëõ+º;À+ÂV+Å*à+ÆqG+Áv+µ°²+®nJ+°ÿ+´Ï(+¸0+¸)þ+µv"+®²¬+´jK+¹šŸ+½qW+±+¦Wž+¥/+¨Û¿+§+Œ+«wÖ+¯+¯wW+½q++Â³+ÆhË+ËRd+Ðô+Ðª+Ì!®+Èys+Ç&¿+ÉØ+Ê˜¯+ÂlS+Å¿+Å4¼+Å‡?+Åáâ+ÇÇ«+Æ@‹+Áœã+²à<+Ÿˆ”+ˆV+z#6+~Jv+“|‡+¯ü+Á<Ý+À¤b+ÄMñ+¿¸õ+½¦+²@+²¹Æ+ÀÙ+ÌŸ“+Ê#ß+Êÿ+ÅÝ+Æ…o+Ãå‘+¿Õ+«fh+¡&\+¤ú+»áe+ÉÏ+Îˆ+Ì+ÎÝ+Ã¤¾+¿f+Ésì+ºP‘+®Å—+¨¿Ï+®ø+±7¤+¹Mú+¶#+¯|+´Çg+À;l+Á16+½\Œ+ºÞ+»|Á+¾M,+ÀÂ‹+Àœý+¿˜ +ÈßÁ+Âse+Á]˜+¼4¡+¾¥Ë+Å61+ÓkÝ+Û½t+×¸¡+ÐÓ+Ó:…+Ñ®ø+Ëô—+¿Bý+³—d+·™3+À„ç+ÊC¶+Ë½Ò+ÑøÚ+Ò9.+Òƒ}+ÇÎ‰+ÉòÃ+Èi¡+Á,+¿Ì+ºe+·›S+»7Š+Á++Àsö+¾Ç+¹ËM+µ™ú+¸D +¹Ù+À€þ+È1·+É+ÐÉY+ÉÁ­+¾ØÊ+²‚–+°[+¸¡Á+ÀõN+Äkj+Æ}#+Â£Ó+À7é+Á’-+¾]+Ê¡k+Òwú+Í°á+Î’}+ÐÕì+ÏM+Íeþ+Ìy˜+ÈŽÆ+ÂZn+ºV¨+º),+¸Ñ|+¹M/+ÀÏ+ÁŽ+¿Û”+ÂÏÅ+¼§¢+»=7+¿‡-+Äx+È6+ÄÆ+Áö+ÉÅy+Éº+Ã33+±j„+¤Ëã+£ñ+³«…+Á8+¿¶Ê+ÅDÐ+Í+Ìëz+Àúó+Àx+Áþž+ÂER+¹òÎ+«Šd+¯¤“+½ãN+ÈhÂ+ËtÃ+Ð¢1+Îaã+Êç+Ë@p+Ïjl+Ónß+Ï”+ÊÎ_+Ç×+Åýì+¿eè+µày+­Ë+¶rý+½f+Á1Ÿ+¾W+¾í®+½¦+½ä@+Ælƒ+Æ‰Æ+È•™+ÌŒ„+ÌÉ~+É+Éœ:+ÍÄz+Ó:J+Õ1#+Öu+ÏÚ+ÒX]+Îc+ÏLg+É¢+ÅTq+Å ”+Ð[=+Ó{¥+Ò•D+ÌÚÞ+Ð¢’+Òdû+ÐÖƒ+Ïäª+ÉìÁ+ÂBd+¿â0+ÊCq+ÎÞÏ+Ëø+ÊÔð+Ì]%+Í^g+Êp+»¾®+»a*+º¥+È–c+Ñb+Ôµ+ÔÁ¡+Ø!Æ+Ù,Ú+ÞWÛ+Ø_+Õ‹¾+Ìp+Ä(p+´äã+¯–ó+´IÙ+¾Œ’+¾ q+¿Ó'+ºvß+©Âg+“ÀK+€˜+yÖ;+‰=V+›SG+¬w'+µ`‹+Áüö+ÇS†+ËÆ@+Ò$%+Û}Q+Ý*X+Ø_¿+×¬˜+Ñ‚º+Î„#+Ë:š+Ç€ò+À‘Ã+¿¹ò+Àx“+À6O+µs·+¤(Ò+œ/+žuW+ –+¡ñL+¨XÔ+µl+Ä V+ÐÑœ+Ò~+ÍùW+ÆzŠ+º'V+¶þ+´‰Ñ+¸sR+¶ÇÀ+¸ÒÒ+ÅA	+ÈGz+Ê¿¿+Ì9š+Êˆ6+Î©ú+ÐïÍ+Ï‰©+Ê×ð+Ð6+ÓZa+ÔöU+Ñ“}+Ì^6+É^¥+Çy+È¸8+Áeí+¹{+¸h+À±ë+Ã­y+¾ÉÎ+°jŸ+£«q+­I®+»º+Å;ñ+Åµ>+Æ˜Ð+ÇÑz+ÆñÁ+Ä1R+È=„+Ë
++Î@§+Í+à+Ê°+Á‚+ªÍ–+—I\+™*’+°¡‘+ÅC–+ÌD@+½ª›+ Í+™Ì7+©Æ+ÂÀ¯+Ñ£š+ØïL+Ô¶´+Óeì+Ë¡L+Ë©œ+Å†t+Å5+Èù9+Ê•‚+Î­~+ËlB+ÆŠ+ÊuF+ËŒ+Ï^ù+Ä=+Í2¥+Ëi¢+Ä¹+¯©+§à+·ˆ{+É—½+Ôw,+Öxž+×E°+ÙR?+Ù{®+Ó‚"+ÔÎR+ÒïÒ+ÓÝL+Õ,++ÐÈ{+ÑZE+Ð›F+ÔH†+Û†–+×>+Ôñs+ÑË+Ò(Ë+ÏöÔ+ÆðØ+Á	L+Æ,+Ò(Ÿ+ÕUq+Îª+Åxø+ÁAq+ÅÌ{+Ñ?ý+ÔQ·+Ðk+Î%Á+È+ÃWœ+Äå»+Ço}+Ë…r+Ïò+Ñ"+Ìa+Ér’+¹ð˜+¢Eî+…“å+p/C+‡>+¬úQ+À’+ÇQƒ+ÉPþ+ÆG…+Åf+ÉÛ+Ì7ƒ+Ã3Ì+Ê@+Ì5+Ñº+Ò=+Ø´\+ÕÅ†+ÓËú+Ö•	+×ˆ+Ñü’+Ë§£+Èðô+Ènë+ÅÝW+»¬v+¬/Ý+¢Óë+¡èµ+´9+ÆÎ”+Î8+Ìd+ÃXs+¾c´+ªžö+‰¼í+\¥ª+s·É+ Öv+¾Û +Ð7+Ô…÷+Ëá™+ÁM¾+´Qñ+³%ƒ+Ä`+Íçþ+Í›+Ó6ä+ÎY®+Í”æ+Ðßú+Òút+Ñu+Ë +Ë<µ+Åá/+ÅQÀ+ÄÖ+Äñf+Ãb%+Ä}ö+ÍmÕ+Ï{®+Ò°Ó+Î`%+Êðn+ÏÒÔ+Ò!x+Ï_(+Ë7K+ÅÎ+ËÐY+ÎÏC+ÔÎ2+Ñ+ÊL+ÂáI+·„G+³ï×+ºÕP+Æ´[+ÑçŠ+Ôe*+Ó›ƒ+Óý8+ØŒÄ+Ó½¥+Î;+Éš­+Îæ?+ÒX¨+ÑÅH+ÎSQ+Îù+Ö‰+ÙÍ¡+Ú'¾+Ï¬U+Ém¿+Àž+³¦W+œî +\+~Â+œÆZ+Äll+Öá¼+Õ×W+Ô*M+×(µ+Û-Ã+ÖŒÅ+ËÍ+´v+©3|+´A˜+ÉTö+Î÷Z+Í)+ÈÁ+ÈiÏ+Á+¦ž“+šW±+§&µ+¹ Ô+Ã$M+½r+³Oª+­®&+«Rv+¶Á|+ÄÞ+Ñ}W+ËVE+º]+ŸÈÈ+™ý^+®N+È)é+Õ4-+×¬È+ÕV+Ñš^+ÍŽÐ+ÒŸå+ÒêÙ+ÏÀ+Èsh+ÆœÑ+ÂÞj+Æ<h+¼ý+¹\¢+Ç¾+ÑÄÚ+ÒÔÙ+Èâf+¬V—+™ÿa+œá?+¹·+Ì©Ú+Ôrõ+ÕÏ+Îj?+Æhy+¶I°+³6l+³TÉ+»S+¿Lq+ÂNç+º&Q+¡’+ŒJ[+‡Ç*+¢Ù›+Àû—+Îoô+Õ:§+Ð+Ô†+Ù¢+ÏMÈ+Ä†·+®)ç+«’ë+»)+ÀÎ†+¯¾¢+”ø+‡ãI+˜¦C+°Ð¿+Á÷í+Í>©+ÆÍ+À¥¶+Æg5+Î&ö+Ó$c+Ø&^+Ô¬~+Ç{+¼¦ +¹É +ÂjŒ+ÍÆZ+ÒÿZ+Òƒ”+ÍÁÌ+Æw3+²†À+´ô+ÅüØ+Ù<h+Ö”s+Öpó+ÖÈ+ÑŸ+Æ(+ºa+¸4,+Æ<É+Óû¨+ÒÜÊ+Å½+¿ƒ[+¾ø+Â£æ+ÀŸŽ+¾u5+ÃÚ2+ÄEÈ+Æ‰È+Ê¢\+Ícd+ÏZ¹+ÎÁ8+Ò_G+Ö@J+Õñª+Ï­+Ção+Æ+Íð,+Õ7°+ÌPø+Á‡Q+ÄÈX+ÌøW+Îâ+Ð=÷+ÓR$+Ï
++Ð1+Ò*+Ø¨ó+Ú~Z+Øví+ÚR(+à<Ò+ånü+ßÚ°+ßL7+Ù§+Ö³ž+Ø,‘+×P+Ì4×+Ãª+Ã+Åì+ÉÚˆ+Ð¾[+Òg¹+Ð´¼+ÏÂ+Ð|-+Öe‚+Ôè+ÐñÎ+Åÿ£+ÄûE+Êå+ÐT+Ö,+Ò‰+ÊÐ±+Ì°ô+¿«ˆ+ èZ+‹iq+”ï+¬Jê+©` +ž³Ù+¦òÒ+½=¡+Ìqü+Ï9 +Í¶O+Ðy-+Ö Q+Ð_š+Ñ	+Ì§+ÑÆ.+×j¤+Þ+Ô†+Ò‰Ø+Ôr+Ùv+×§+Ö¤+ÓË2+Íuô+ÁŒ«+¦‚•+“DÉ+œåÄ+²3‘+»
+Ì+¾ä.+Äd.+ÒØõ+Ø=Ó+ÙT©+Õ¼Z+Ób+Óóh+×ýÛ+Öž+×n‡+Øª+Ù^J+Ôl	+Ê`ž+Åk²+È´A+Ï³+Ò‰Ì+ÙCÜ+Ûä+àSI+ÝÄØ+ÓŠ+É‡¹+Ã¬+Ã“+Ì»+ÔÛ¬+Ûõ+Ùk+Úý+Óäš+¿¬+¦bÕ+œº +°XK+ÏÚ?+Ü€¢+ämÔ+áV+Ù›ž+Õº+Ö:+Ñ5‡+Ö·õ+×ü+ÚB}+Ò¥!+Î¬\+Å½˜+ÆPï+Ëv–+Ì-+ÆD[+Ç×#+Õ)Œ+ÞEf+âˆð+àc+Üùè+Øðµ+Ð	+ÏLT+ÓN‹+×§Ü+Ð±+ÊœÌ+Ëzó+Þ~p+áâ+ÞWª+×î
++ÓÙ
++ÐŒ+ÍÝ…+¿):+®‚+°1Š+Èjð+×ˆ‡+Ò·)+Ö~¶+Ýt¾+ÝÍd+Ö[¨+ÓB‰+ÓÝƒ+å2–+Ýá+ÚÖ+Ü+s+ÚX+Ô+`+ÕÖè+Ôé¥+Ô§C+Ø†+×+Úö¿+Ù–K+ÞT+áá;+æ`+â”A+×ùS+È˜+Är+Æ¹+Ã.+ÄH•+ÆLQ+ÊJÏ+Í–+Ï³ +Öìê+Ûõ+ÙZ+ÖŠ+Ó˜Œ+Ø¿‹+ÛÍt+ÜÎ+ã1Ò+Ûœâ+ÖÎ+Ùzb+ÙR/+ÙôO+àØ¾+éH+â/(+Ýè}+ÔŠ…+ÊéF+Ç	s+ÏÌt+ßçy+ÜÅ,+ÏÜ+½
+Í+¹Mæ+¹Ìó+ÃrÚ+Ô´–+×÷Õ+Újö+Ù‡+×qµ+ÝúF+Í`Æ+¾š´+¯™Ñ+´Óø+Éãè+ÚðŠ+à³H+æQ`+çŠ±+å&+àÍ³+à!b+Ý_ƒ+Ý÷z+ÝAg+ÚqB+Ù~+Ò^ú+ÕIÜ+Ùu°+ãnr+èT"+ì¸Ç+íÙÅ+á6¢+Ü•¥+Ù´+Öï+Û² +áˆu+ÞÕÓ+ÖÅ@+ÑuJ+ÒûF+Î +Îwæ+Ï¿‚+ÓkM+×7Y+Ï™+È}‘+Ð¡,+Ñr"+Õ¬¯+Úž+ØÐ+×‘,+Å,c+Çº+Ê~ˆ+Ç¿q+Ë/M+¼I+´™t+®–+²3+²x÷+¨)ß+œì‰+´×g+Æ(ü+É?+É
+”+Ò3Ï+ÖÂj+ÕA4+Ýã‚+Û³+ÔË:+Ï+ÍîÂ+Î±+Î,ž+ÖO+Úf&+ÚVx+Ï²c+ÎÂ(+Í©+ÈYõ+Å:+Ìi‰+ÕŒO+ÜO¶+Ö.|+Ð^I+Ó4Ç+Ö)+Ö,²+Û³Ÿ+Ùf‘+ÕôÛ+Õ:-+Ñ~ú+Ð†a+ØEt+Þˆy+âÝ+Þr+Ö+I+Ò¥+Ïüü+Õt¨+×„·+×ö÷+Ü^‡+à¶+Ù”T+Ï;Ô+Ð[+×3+Ù€Ð+Úl+Ù³¢+Ó’“+Ï8·+ÌŠ?+Õú+×›+ÐXË+Í,	+ËÞŽ+ÍlÍ+Ø;¯+ÛîÖ+Õ·Ú+ÖAæ+Úô˜+ßˆ$+ÞÍ +Ñöþ+ÄÚ+Á®—+ÁÞ°+Ê”°+ÐLL+Íó+ÄÞ¸+ÅÑï+Ã#+Ém_+É´ÿ+Ð+Ñsñ+Ñµ
++Ý‡+ÙùÃ+Õ'ð+ÂƒÅ+ºmÇ+¼_+Ì‘[+Øˆ +Úü`+Ý¤Å+Ü ˜+Õ±¸+Ó±\+Ð“h+ÈCœ+Å¤+¿·©+Æl+Ðš+Ò«O+Ô†2+ÓzG+ÍìÓ+Ö4:+ß:v+Ýú+Õ„+Ðcc+ÌÃñ+Èºø+·¬Ý+©£%+«Uò+·[Ð+Â®,+Ç	+ÒHù+Ê¢Þ+Àw+¶Š}+¨j	+¯H*+ÂöÍ+Ð:¾+Óf+Í›+½4Û+¸¦ô+¿"~+Èúo+È ×+Àµç+¼ ¾+Å¨™+Óª¸+Ð,ã+Åc
++½iý+³½+µÑp+²3Ï+»ÒÞ+½»+µÍ[+¨ø—+ŸsD+¡ðé+±Wt+Ê+Úà&+Ùi˜+Ü§¤+×Þý+ÐŒc+ÖZ+Ø_½+ÕÍ+Í<›+½ƒX+¶®r+¼Z‚+ÅÖ+Ìõ’+ËË+Õ:ü+Ù:Ø+Ô}W+×fÇ+×qê+Ù(É+á=%+Ý}+Ú†Ç+ÕþÔ+ÏÛ¡+Ï·Å+ÁÄ+°ýq+£*ñ+ŸNÆ+©°ó+»·O+ËÎ+Íàþ+Ìé+Ì­‚+Ö]+ÞfQ+Ý)e+ßžÀ+ä\+äC+Ù#[+Ñ?ó+È²+Ñø\+ÓK+Ùæ”+ÜÎú+Þgþ+ãþ¦+çk +èu+é×"+ß…ê+ÞÂ¯+à%ù+á‘o+ä’+æ91+äÒ+âÙb+àôŸ+Þ…§+×±j+Ü¦x+Ù&‚+Úö)+ßAz+ä¯+ã×Z+â®D+Ü~+Ðê#+Å€+ÂZG+Ç#ó+Ær¬+Æé4+Êˆã+ÔœŒ+Õ™+Ûmµ+âO7+æ;–+ìÌt+èCC+ß¨
++Þpº+àç+Þ–³+ÜH•+Þu +ãÿA+å&€+çï9+çä%+ç©ý+å•+æ×J+â6
++Þdç+àV+ç¦+ìÊô+ë=[+ïN«+åÙ´+éç+àE-+Û¤}+Û– +Ý,Å+ä_+ég¥+é¼”+ß‚w+Çj%+Æ^}+Ïº+Ôšx+ÚØ+Øo6+ÙÂ´+Ývy+äŒ@+çü|+èn+ç¦+èI +æ›š+â[à+ÓÆ]+Ìô{+Ì#&+×¹ +áû+å¤J+ê;!+îEm+ð¤-+ê‘µ+ãpË+Û´ª+à•+Üžþ+àá+âÌ+ãÎ	+Þ;+×{++ËÌ_+Î…›+×Œ3+×ï+ÛŽ¶+×øE+Ø{+ÙB+ÛåT+áÀœ+ßßD+â<+ßÙ+ÛXæ+âX+Ù3ä+×êË+Úsl+ÚœŽ+ÚÈ,+ÙöÅ+Úcœ+Û`+ØžÄ+ÙËš+Ú?+Ú	A+Ùº+Úg;+×N€+Ó&Þ+Ìæ6+Ì±ð+Ö+×äˆ+ÓL+Ï×G+Êá>+Écè+Í£5+Ñ ®+Õ“Þ+Ù[1+à6D+Ø·+ÐÜô+ÆÅÝ+»l+½4N+ËF+Ñ¦P+ÐÃs+Õoÿ+Ø(Þ+Þß›+à<Ç+ßBÇ+Þ\+Ø©ê+Øø)+Òqý+Ô¤«+ÓZv+Ö5+×aÕ+Ùº<+Üý+Þ³_+ÜlÊ+ÛsÜ+ÝË+ÖYÐ+Ø»Ü+Úû++Ú|b+×@+Õíè+ÙÔE+Ú9++Ý„¹+ÜEì+ÜM++ÙŽ+Ó@)+Ó§ß+Õ5c+Ù*ÿ+Õá”+Ñu+ÑÉC+ÕçÓ+Úú+Õ‘D+×9œ+ÖC…+Ó_S+ÌI+ÉˆÐ+Ó{Á+Ù
+”+Ø`ÿ+Ù4±+Ø{£+Úÿ˜+ØÙt+Ú ‡+ÛÓ+Û\6+ÖO»+×è`+Øëú+ÝÿJ+ãN+ã<s+Ý®+Ýã‡+ÞQØ+Ý"Ê+ß1+ãî1+á/+àÜ1+Öÿ+ÏP»+ÍÝ+Ì!<+Òä+Ñ™+Ñ@Å+Öõ+Öçø+Ü”r+Þçð+Ül]+Ûo¯+Û™Ñ+Üñá+â\Á+äl¿+èãÜ+æE+à*+ØB+Ù$û+×¨Ã+ÞÝA+âQ+å#+á Y+Ü–3+Õ&+×ù–+Û·Æ+Þ¸F+ß¡L+Û³e+àÊ+âäP+ç¹<+è)1+è³¸+è¤ƒ+ß÷á+à+½+×™è+Õ±+Ü]+Þà\+Ý‚¥+Ýr}+Î T+ÙU1+Ýe+Ûýÿ+Ú×=+à	+à´É+à‰^+àv+Ø‚+ÙòU+Þ¾8+Ý#—+ß`8+á U+ßŽË+à?+Þ1+ØÃî+Öâç+Û½+Ü³ì+ßÂÿ+Û®²+Ûí+Ó Â+Î++ÓŠl+Ý6¨+ä×Ú+à‰I+Ú¿¸+Ð¦+ÓFÔ+Ö°B+Üµ¡+ßuj+Üf"+Ú^+â-Î+à·+ß4©+Ûî†+ýh+Þ½æ+æn¿+ëÈ†+êÎÚ+îÝƒ+èM§+àw­+Þ}8+âîF+çÅ5+ê%³+ç±ô+ç°v+æõc+æ9ˆ+áâ@+ÞBû+Û»²+Øf«+Öz+ÎøW+ÍÉ4+ÓÚ+ÙR%+Üþ÷+ßå”+ÞÆ+ß.Ž+ç..+í +ìŒô+åƒÍ+ÛÊÖ+Ø¬B+Û»u+ßïð+ámi+Ù•Â+×EÕ+Þ´#+ç€v+åŽ +Þ?É+Öfs+Ñ«–+ËÒØ+Íb+Óµ+Ù +ÚË+Úº¯+Õü+Õç+×2+ÚK+Ú¶»+Õoà+à«ž+Û…+Óî+Î£!+ÎÅ+Ï.‰+Ó.#+ÓÎ+Ó¶,+Õ˜d+Ù™+Ù9ú+Õ~5+Ô¡+Ì›(+Áû6+¿p+Á½¬+ÍË+Ôî³+×†°+ÐèV+Çóä+Æÿ+ºÍ@+¬ÀÂ+©©V+º×~+É™¾+ÑOß+ÔZ+ÚBŽ+Ühf+Û¸C+ÒçÉ+Ì„Œ+ÍÃœ+Ïò†+Ô¯)+ÓîÙ+ÌÐl+Ä§Â+ÇÎ+ÌJ(+ÊÉ@+Ên+ÄoÉ+»{­+¦úŸ+‡³°+]Å)+fÏ+‡¿'+¥c,+¸Z+ÀC½+ÈÚ€+Î[+Ð›	+Ð¹Ó+ÚAM+Þ¸+Ýˆm+Ñ«ƒ+Âsº+ÅÕÔ+Íü_+Ø¡+Õ›°+Õ°%+Ôyã+×Ž+ÕÝ+ÒM+Ò±p+Ø­‡+ÚM!+ß„x+Ö©+ÓA”+Î•â+Ç^~+Ãã+µ®T+³y+½1Ã+Ãû+Å =+ÅW:+À¼p+Ãß?+ÆwŒ+É“ë+É‚‹+ËS+Ì	I+Êd¼+Î%‰+Ñg©+Ò€-+ÑŒ£+Ïÿb+Èçv+Ìßj+ÑN+ÒwR+ÕF+Ñ4$+ÇD+­e™+’Ù+‘W+«Bü+Á¨_+Ëïè+É¢"+ÄØ+¶üq+­\»+¶ê+Æx®+Ï´+Ò­º+Ôl!+Ô“·+Öt·+×qH+Ôq:+ÓF‘+Ô&,+ÖŠæ+Ùä+Ø÷A+Õìë+Ôw¤+Ö<5+Îb+Ñ`Ž+Óùô+Ô*+Ôvƒ+Øè+ÕÛ+ÕUö+ÓUs+×k+Üp+Õ‘1+ØÙ›+ÕÚá+Ö&+Í¥—+Éž+Áõ™+ÁÄF+ÀÌƒ+Æ[	+Ë…«+Î¬y+Ïå+ÍØ+Ó6Ü+Ïz+É¿!+Ëj#+Í£+ÖCð+ÒÂÀ+Ðïk+Ó»à+ÕäÕ+ß»)+è#º+éqd+ãäò+Ú†Í+Ñ6ü+ÍC+Çßõ+ÆÊ+Çé+É£}+Ê7+Æ’s+Ámð+¹žT+µIè+ºàÑ+Áû+Â6ú+Æìé+É“Y+Æ¬>+ÃÍ+Áo<+Ã9g+¿æ¶+ºœÏ+³¼8+­›£+©çH+¨AY+£”6+­Å+Ã&Ý+¿ý+ÁÞz+Á˜i+¾úî+½§+À*•+Áö„+Æ’y+ÀJ+Ê}+ÁdÔ+Àõû+»Ë«+¹E+½¿ +¿°ì+µÀ+²y9+³K÷+±qì+«Ã:+ 2…+¡.Ö+¨˜`+ª‚+§¤+§HÖ+§+š+¦’Þ+¨¸Û+¦¥(+žoz+œÚý+˜Eæ+šB+˜š¹+–á*+•LŠ+’"ç+Ž#þ+‹Ý+†:þ+…w!+ƒFÊ+tãm+t‹+iÐ5+ixé+^´+X+IÁÖ+CP+;ƒå+6&Ù+,Ì"+$¥t+»P+«u+¥L+!ú++üH+ P+Tœ+þ•+ ð
++^â+|+GÎ+"Ð<+-…Ú+4µ§+>1í+@¾˜+Kþ1+\E+\ýµ+`íö+eš5+gÞb+f#%+bsS+aÅÚ+e+n£ó+qöu+q+k™+gZ–+eA+]ª1+V¡¶+R“/+KÂ+@9e+2èœ+-^µ+öl+¢Š+ ®++ ’T+û+G+>‚+>¶+	jX+<+ ®‹+0Ï+8Æô+@Z+KÈ³+Y³]+]ƒ>+h{+s+~ãL+ƒw +‡j<+‹²H+)™+Û+Šiˆ+~˜>+f†+iéL+†ñ+”œÕ+0 +ž@H+£ˆw+¤J+¢y¬+¤ÔI+¥(é+§ B+©ƒj+­‚B+®v·+®1Î+¬Ž +­£à+³=%+³Ä-+´‚J+°m9+² ô+²lõ+¸ +´w³+ªÒË+£ŒG+¤B+°HJ+·XA+¼+»ñY+»…“+»ãE+À–ª+¾u’+·sß+°t„+²TÔ+±ÕÂ+²µ+­=ë+¨ˆô+°¹%+µ8s+¸(g+¼õ+½_ž+º+»½ú+¿6•+¼JÆ+¹ós+·ýÉ+¼¬^+¿”+¼ç¯+ÀÐ+¿ü+Á²¥+¿+¾ƒV+ºÿÑ+¼½+Á˜É+¿·C+¿Êt+Åt+Ä8+ºû+¶Á1+²i++¹&+ÀtK+Ã¯b+Ã12+Âï+¾ä‡+Åw+Älh+Ã0+¿•ë+Áÿ+Áä:+ÁQ§+½@r+¾2+¾è³+ÀÒÒ+ÂÒ*+Ân+Á}±+Ân+Ã05+ºÕ+±åê+¤B+¤2[+Ÿ4#+£›ù+¯Ì™+¿G«+À¬#+Â¤Ã+Å—"+Å:³+È'Æ+¿5œ+»Ö{+¸Ã¶+·¡+®ž”+¤U¸+¡ïN+¶‚+¾ -+Áì+Åd+Å¸+Æi’+ÆÓT+É¾<+Ët+Î±l+Ë4Ç+Å•~+½'+¦hš+œÆ˜+¥5+¸Ã+Á‡Ø+ÌU˜+ÅÕ++ÁÍf+ÄB¤+Å˜+Ç2+ÉND+É-Ð+ÃØ`+Àzã+Ä·+Å1µ+Êÿ+Êª¿+É~o+ÅßÃ+Ä+Ã-+µ,#+Ÿ§U+š‹#+©I+¹µ+¿Ò#+½ôà+¸+¹p+Ãâ„+ÇP+ÅM+ÃÝ:+ÂV+º&Ú+¾§ì+½2£+»N¤+·å¸+¸ìº+Ár+À?è+Á{+Å´	+É³+È÷Ü+½]÷+¼Ð+¾Es+¿üå+Äš„+ÅBv+Ä:º+ÇÀ¿+ÌÏÚ+Ç€+Äý)+ÁßÃ+¼Ž;+¶-•+¶Ô+Áj(+Ã.ì+Ä%G+Ã`á+Ê­+Ê	c+É ×+É ¼+È?Ž+ÅdÐ+¿Å»+¸mI+ºA+µµh+¨_'+¦Û²+´"{+¾vÏ+Èø£+È}¸+Ä0j+ÃžB+Éåq+Ç†ø+É/À+Éè‰+ÅJ9+À¾ô+Ã\+Èo2+Ïªy+ÌäÌ+Ëvö+Éº4+Æp)+È :+Ìç&+Ì³d+Å£%+Àûó+Ã¤’+Ã+À=k+µáE+«ù+«ÞÛ+µAæ+º¨f+¿{8+Ã
+¶+ÆÄø+Åå+Ëô}+Í¨ä+Í¢+Î+Ì§+Íÿ+ÌÜ_+Ê™›+ËL+ÐK<+Ä7é+¿¬3+®ïf+¡È”+¬X!+Áî…+É‘ÿ+Î	â+Ï’í+Ò±+ÌIÏ+Éÿ=+ÇæÔ+É|À+Ò³x+Ø¾‹+××Â+Ï2B+ÍûŸ+ËMÌ+ÉÅ+¹¿+­ºz+²ëz+À¦K+ÉÖ©+ÉL+¿Æ+±Å7+œÍÅ+—ñy+¯µA+ÎÅà+Ø­ô+ÒšD+ËL0+Éîî+Ñ.K+ÕB^+ÕqÖ+ÌQÕ+Åy•+ÇlM+Ì +Õ0_+ÏÓ+Îh +ÆQ˜+¾ÏW+¶8Õ+Ãg"+Ôx+ßÃ|+Øy+Ûº–+ÖŽÀ+ÔLU+×m¶+×#4+Ô{Ö+Ñ4+Ô7Í+Óc+ÕîÉ+Õôœ+×t+Ó'€+Ð1}+ÆÝ*+ÅŽN+Å]+ÂÎ+ÉT'+Ç‰º+ÂÏ+ÇO_+Ëí+Í…§+ÂN´+µ²Ì+¯\°+³âQ+½Qx+Á „+Á)4+½d6+¼~g+ÁÐn+Å‡™+Ç-¤+É¡Z+ÌP‰+Ëq+Ëœ+ÆxÌ+ÈÒU+Ì/+Ïtq+ËµX+Ãñ1+Ãƒó+ÄQO+½Ö+¹+±m\+¥+u+¡ +¯Œ™+ÄBc+ËÏB+ÌëÞ+Õ7W+Õ¹J+×@.+ÕËZ+Ì“Ö+Ï1Ý+Í¾I+Ên,+ÁXP+¾	L+¿h,+ÁKâ+Å	+Ç£€+Çß+ÈN·+½§Ö+®I£+™!†+[`+³äã+ÄTà+Ê+Ì±À+Ëxö+É–à+Äñø+¾|Ç+¼Øþ+¼5Ä+ÂÔ‡+Ëli+Ë£Z+Ëê¨+ÉÃ+Ç·"+Æ: +Å^6+ÂÄŠ+ÇÁµ+Ê4™+Íœ+ÒBÜ+Õç+ÖÖ+Ö‰k+Ô*‡+ÌàÒ+Ç”‚+Ìx+Î–¢+Ì®µ+Ðuï+Òòd+Îú©+Î„+Ñ2š+Ð“F+Íç,+Ì¤n+Í×+Éµ+Ìåp+ÆÃ+ËÒ+Ñž+ÐÛ×+Ö‡Ñ+ÓW+ÓÀû+Æ$+ÇAQ+ÍÆ+ÎƒÞ+Ï–+Ë$v+Ëšò+¾Èó+¯wÙ+£ms+ªŠW+Âåp+Îrì+ÑËV+ÏX÷+Õy+Ía™+Ð]+Ï}„+ÝË+ÝO +×¼+ÐÕ¾+É†ª+Ênœ+ÌÉ¶+¯Kû+²‹×+³Ý€+Ùô+ÚV+×Fí+ÑÂÚ+ÔdQ+Ô¤+Ö
+î+Þ?µ+×0@+Óñ$+Ñ°W+Î0+ÒË+ÒŠ+ÙÃt+Ú §+Ô*ë+ÍšÅ+Ém”+ÉÌC+ÎK+Òwr+Æ;3+Å×++Ïl+Ö#‡+ÐA+Å÷÷+Ê9w+ÉI+Ê¼+Í	+Î›4+Èýý+Å“è+Æ‘+ÍÉ¬+Ô›ã+ÛÒ+Þ°P+Û}±+Òêr+Êû+¿Es+Äk…+ËÞÂ+Ðò+Ò$¢+ÐàÊ+Öç.+Ïéð+Çd+Áz+Àh"+ÅÙ©+ÌJv+Ð¨h+Ìÿä+Í€L+ÊÓr+Ä‚„+ÈŒ+ÑGÄ+Ç{M+¸Q³+­PX+³î#+¾q¤+Ëj–+ÍÜ+×›Ò+ÝØ+Ø@O+ØKÐ+×¬+Ó¥q+ÐO7+ÌçÛ+ÐŽ•+Îã£+È÷K+Ê¾+Ô,ñ+ÙdÉ+ÖÅÝ+×RÀ+ÓKž+×0m+Ûf+Û7+×hG+ÕK‚+Óˆt+Ï2+Ìë’+Ð ˜+Òa+Íöó+ÈÃ³+Áç›+ÅÎÎ+ÐŽŸ+Óh}+Îbà+Â»š+´àø+¯S¤+µ.+Ãn•+Óöß+Ð=k+ÓSg+Öi´+ÛèØ+Ý;w+ãy¿+ãàW+ÝEH+Ý°G+Õ ì+Î_+Ãßô+ÂJj+Í}+ÓE+ÕiÈ+Ð¡Ç+Ðº +Ô".+Ðp+Éi+Êf„+ÊV+Î ¦+Õ7+ÐÕ«+Òa +Ïà¤+ÖEº+Ð§+ÌW+Ö…Ä+×aÎ+ÁËû+Ì%ü+ØÎ}+Ú¾*+ß2Ó+ß¡4+Üi£+Õºn+ÚEˆ+Õûƒ+×F8+ÕóS+Úe»+ÛU+á•®+Þ“á+Üê+à?+ä²+å1ä+çÑ`+à.X+Ûà£+ÜÍ€+àFf+Û‚ò+ÚÐ>+ß<+è¢5+éln+ê“ç+æy_+æO	+á"ï+ÝÈ€+Ö[ü+Ñ³Þ+Ò<+Ó<+Ú—+á®+Üœ+Ø,5+×íð+Ü0²+×Íé+Ö°ì+ÖK)+ÖÚC+Ï×+ÏuY+Ï–†+Ûx§+ãn+äM}+à´+Ù¹­+Ò6o+Ð3Ë+Ï1P+Ñ¢Ë+Ô63+Ë7+Ç°¶+Êý+Î½~+×£ç+Ö1Þ+Òž£+Õó¬+Ú–¨+Ú;e+Ú8Ø+Ös+Ö±å+Ýº¢+Ú,Ã+Ûu+Ö2l+Ð_…+Ê\ë+ÂT'+¿k&+ºª+´ Q+·Åa+Á÷§+Ð×+Òq?+ÑCÇ+ÖQØ+Ú¡+ÝX_+Þê+ÞŠ +Û 7+ßœÕ+Û–Ó+Üeæ+Úêé+ÖÓk+ÓéX+Õ¡%+Þ(+æ—W+äMâ+Ûe+Öt¬+Ò¶+Ò­ü+ÐÈL+Êš+Äå+Ã‰+È+„+Î…ù+Ï)§+Í|+ÆÂ-+Æe„+Ê„‚+¿<²+ºf +¿HÞ+Ëü+Ó—c+Ïc+ÑR+ÓôÍ+ÒÔ™+Ò…+×™ +Úq°+Üõm+ß¬Ø+ß	ý+à&µ+ã÷k+á~*+Þß”+Ø;I+ÜUV+Úöî+Ú+ÕŒ¾+ÔºŽ+Ò‘a+Ñb+ÛHi+ÕÂ¥+Õ±\+Ö@ç+ÑÀ+Âà¥+­y‡+¦¢Ì+´íI+Ö_“+Ú·o+ÜK+Ý
+Í+Ù,D+Ù(+ÜL<+ß«+à3>+îÈ+øAN+í“+äî+á€C+à¸+Ü#+Ñ8N+ÄDh+®®7+¤—„+¯Ý#+½A+ÎüŽ+Ô[+ÚWê+Ú¾ó+ÜB+Ú[+ÚÙÀ+Ø«N+ÒnQ+Î}=+Ñk+Øv©+Ý‹€+àM+Üæ¤+Þp-+ß­Š+Ûžz+Ë+¹Ÿz+±¥s+¹Û|+Ð& +ÖmÛ+ÚEù+ßx+Þ¿+Üs‡+Ò„â+ÅåW+°Jô+¤PX+ª-B+¿<1+ÑÄR+Û+ÞÝŒ+æ(+åÂ¶+ä£+áÛÐ+ÙÅ’+ÒH	+ÑØó+ÒS1+Äª°+¶ÇO+·¼+Å;#+Õh<+Û¥ç+Ûz+êF1+ó:+ÚMÒ+Ü+Û‰Ñ+ÝÔV+á3q+ÞRÓ+áúù+èI+ãœ+èm1+á+Òë
++ÊÅc+Ò%¡+ãöl+ß
+ñ+Þ~ò+á´*+á	+áC¬+Þæí+àhÄ+á6Ö+æ+à¼+äýÛ+àƒ+ãrß+æ¸#+åcß+á=3+ã†3+áC1+ÜßÐ+Û
+î+Ù|O+Ö¹<+Ú€¬+à†»+à«¢+æ{:+àWJ+Ùq†+Ö'À+Õ0+Þ;Ý+åy¸+ã8¯+ß0±+ÞÙK+à2+à!+ä¾œ+çÌs+å9+ç¯b+åTÿ+èõa+âM++à±'+æEx+ãÍì+ßK#+àx®+ä¾m+â%+åu·+æ³?+åÎ'+ã.V+äÞ+ÞµÜ+ÝÄ+Ó^+Ì“+Ð:ý+ÏÓš+ÕT+Ú‰ã+Ø¶+ÚW´+Ùâ€+â<t+â¦¼+Ý³q+Úˆ+ÝÃG+Üü+Û¼’+Ý¢µ+à^Ø+ã®½+àÓ±+á¢Y+Ü—+ÉlÃ+¸Eï+²1N+À‘k+Ñ¾v+ÞNI+àIa+Þk&+Þƒ”+ÜV/+Ý]%+áCX+ãh2+Ý}¿+ÛÔÇ+ÛDê+Ñ`ý+Ð4v+Ö+Ý$Á+Þ²3+Þ5ž+ßí/+áï‰+âÇõ+ä÷Ž+äN+ãè+æ“«+æ–+àŽ+ánþ+â¼ß+âø_+æ13+çM8+ì/+éÂÇ+æ(+äD¯+àˆ+ãty+ã5Œ+èO+æÓr+ä4+ë>¿+ì³D+é/»+Ôªç+ÁÛ;+äÑ>+æœ¯+éå\+êÄH+é+ç„+ëO¨+è§1+äRÙ+ã
+É+âÆ+ßn¿+á'3+â4_+åTG+ÞE4+àP¥+ß+ßÃ+â¦m+æÉ1+çrÅ+ë+ìÈ³+ë	M+ç½ì+å e+ã2x+ãz+â¥Ý+àËc+ä…õ+Û5Ï+ÚE£+áïê+ãçƒ+ã„(+ã*)+ãÆ+ãe¯+ævÃ+â+×Ü*+ÑÀ+ÓÍ+Ö9E+Ô¼\+ØuR+Ø‰Â+Ý_p+á¡¶+æÅî+ä3f+ä¦+â¶£+á-!+â‚+ß©Û+ÓÏ¼+ËC+ÒžV+Øø +Þ”Û+ÝÅ¸+Öçx+Ø¬+Ó›++Ú›Z+ÞH,+ÞÄË+â§+Üê+Ì®f+Æ|×+ÃxD+ÏÌ1+ØRú+ÚÌ{+ÜŒß+Ý¨ +àÛ+âì+àŸ+àÿF+å5¤+çëc+è›“+íºj+çŸ†+â(ñ+Ý*+ÛÑc+àªç+ß€+äqý+é¼N+è+æ› +ã"F+âO3+æ{÷+âÃÑ+Ü¥\+Ð}&+ÆDý+Àâµ+ÅiW+ÐV±+×ó­+á6{+åJm+ê÷g+çõ+â¥+Þ£W+Í)6+¶:+²ZU+ºVn+Éñè+Å«X+¯ÙZ+=[+ ù+¶gX+Ê~Ç+Úˆ?+àë®+âÚß+ã†î+æù+è©Î+êIO+én÷+âÔ³+ßë}+ÝQä+Þ
+È+ß‚Þ+æ+å¼+æÿŽ+ä%§+àd\+Þ“{+ß£+ä ì+ãlÜ+åÕà+ì,ª+î+êÜÑ+é#*+å³÷+æ\+èÙ+è¶+ê_
++êÕõ+éwö+è ‹+è~+é¯°+ì”+éýÉ+åñf+å+ä2¦+àó™+ßi»+à1¡+Û¾z+Ûr6+àá"+ßj]+ãbS+èt +âJª+ã1+äÐ+ã®+é:‚+ép+ì à+ç3Ð+á¤„+âh+åË+çcò+èñº+ëP+ê­È+êT^+èá+èóÃ+ç7h+çŸ+æ@Ü+å¾í+å¡+íÍ+éE+êGÛ+èGþ+äWá+ã`Ù+â(|+à® +Õƒ+Î»g+ÓÑ+ÙR¸+Ûlö+Ø	ˆ+Ò0&+ØN+Ú³+ÙÌ+Ø,d+Þ­+ßào+àö+àne+ãÃ+ãßÝ+á;æ+ß9-+ì+j+¿Q+¯vø+À–f+×—–+çz+âFæ+Ýã|+ÚA+ÉìT+¿|)+Æ:+Ô=+ÞÍú+äÙr+ä	ä+èot+äÑA+çN€+èÅw+ê²b+èÎ!+êWo+éÓ+ßb%+ÑD‘+·B+§È+²i+Ïþ©+âå^+ê²Ø+ç&+áÂ+â}7+æ +ã°†+è±¦+èË¼+ë)Ñ+ë¦ä+çƒy+åÝA+áé‹+Ú~+ÖF×+à“ž+Ý`Ò+ä‘·+ç¨ô+ç+ï+ç\+ëHÃ+åá+ã› +Ûk+×f.+Ùª¬+Ðä¹+»<–+¨aº+®ã¨+È‡v+á 0+ä9ä+Ù:ñ+Æ³Ÿ+Ä[	+Ì½ú+á\	+åb‹+ê+/+è(È+íSO+îÏ™+ê¤+ÛÊy+Ñ}ñ+ÓÄl+Öí+Ûl¡+àù+âë+åkL+å»>+çÙÖ+æÙ|+ç‚â+æc+ë¾¨+îõü+ëÉ+êýÆ+ç¹g+å×Ì+è‰+ë.ë+ð¸F+óui+ôU¨+ñùµ+í²§+â°ü+Þ—m+Ü#ô+ßtN+ÝŒG+×½+Ú-ó+Þ+éË~+íIä+ìó¹+íHY+ã~+àv+ß¡`+á Ž+æ'e+ê@?+êfS+ízŸ+í©7+ëß;+ì2ƒ+èÔÒ+ò½Ï+äÒ³+á-+å7+èeì+ïÎ+êÞ÷+äÍ+àE¡+Úh+Ô.Ê+ÊHù+À`’+²'Q+ <P+Š÷¥+d§›+:¿×+6ýA+aqÉ+Š¹q+›e+ Ð+¤¥Ó+¯h+ÁOy+Ñ†S+ÙÅi+àD¸+á'—+â!6+àî½+ß×!+áTH+ç Ì+æÅ€+èœ+îe!+ï;+ó F+óa2+ï«+ì†+ëKê+ã¨§+ã;Ó+äöž+âú +ì
+¾+êjá+êVþ+æš‡+Öþ+É\ú+Ä«½+Ña+à¨]+ê@d+é¶t+ê(³+êák+ê.k+ëd´+ï>+ífã+è‡›+ÝCo+Ûý+æ´û+äp•+á©1+ájá+àoÊ+à¨Æ+às+Ôa+¾!ˆ+­F‰+·+@+×ï>+ìu&+ïÊ+éó+ì¾‰+ï_F+ïûõ+ðWy+ðÌÓ+òè²+îXª+îP+ëÉo+î +ëš­+é˜+ï@®+ð`À+ðpÆ+ëS+ð3Ó+÷Ê+óM+õý+ð–+êQƒ+âƒú+ÚLR+×ìF+Ö‹/+à.ö+á3^+áª+à´¯+ã¡+å¾K+íÓ+êi+ç01+åÑ+å(+çÉü+ê+è,+ë•;+î[O+ì˜|+érç+ã®+Ð!+¸¬Ã+¯îD+¿Û+Ôh­+Ö]+Ñ(³+Ðg’+ÐDß+ÏwC+ËK+¼ù}+µ©q+³½K+­ê{+ í?+’›¯+x‰I+BÔØ+±þ+äP+:’+pUœ+Ž3ý+ L+²1Q+»uÏ+È³+Ï$-+ÑMÀ+ÖHà+ÛAµ+Ý/^+Þo(+é+å¯Z+äUÂ+Ü¯+â:+çâ+ìr;+ç÷+èí{+æt×+Ý>¯+Çq +±Éæ+¸u„+×­É+ìøÑ+óåy+ô	„+ïoT+â›Ú+Ò÷p+Ñù+Ú¯š+â$+Úq§+Ú°¦+ß+Q+åu_+ê9ƒ+ë{+â¢@+àÄ+åÒÇ+ï@Ã+ð¨+ò/…+îÒÊ+ê}§+î	+ñ¥+ñwz+òçc+ôÒ‰+ô
+Ñ+òÕÓ+ó™ð+ñÜ¥+ònq+ï!P+ê5,+ãv+áª+ÙU+Ø¥È+Ü;”+â¼Ö+æ¥­+êAì+é€R+ë3+ë @+í;¿+í»{+ìŽF+ç*¼+çœ+àÁ+×wÈ+ÔgV+ÛæÂ+áM3+Ös¸+Àè4+³°î+½4«+Öº¦+éj+ç†+ää+ØŸ¶+¾P+œÊ×+’+š~^+©'+¶Áç+Ãm…+½sK+£»b+›X¼+«^+ÊE +Û¦µ+Ü¤í+ÜQì+ä6I+ë@í+îIÝ+ðœå+õ$:+õò+õË+ñßG+îê¤+î&V+êéb+èáÙ+èú›+çß8+í+ï½Z+ëÓX+é9Ì+àÎŸ+ÆÕp+¨KÀ+¢ûº+¼æÁ+áP+îþ\+ññp+ðXW+ôrŸ+òº|+ìr½+ÝÀš+Û:m+çJ‡+õSh+ø!A+ô»+ò +éSó+êÜ+ê°©+àž+Üj’+ï¾+îp+ôôz+òÕ+ög…+õsÛ+ð”`+èø +á¥¥+à‘+æÊL+îæ!+ðª+ñnÁ+ñ¡, À›,´4+ÿ:Ô+ó_™+èð;+ê/=+ï+ñª+â\:+×â´+ÍÈþ+Æ“M+ÌQ—+Ö3ö+Ù²%+Ú	+Ô¼+ÎNÖ+ÁQ_+¯N—+¥õÐ+·Øq+ÔÄÚ+ä®á+çŠ+ìö£+ôÃZ+ï™:+âäC+Î·c+Ñ½„+åÆÞ+ïA–+ïËŠ+ð5+ï_+ð	â+ñÃñ+éËŽ+áéH+èp/+çP—+ç…º+ãPZ+Þè#+×Q¾+½«+°Fµ+º(+ÑÔ±+áøæ+ãeS+æ4+âRk+äsÛ+åMÑ+èh>+ÝØ+Îê[+Ç R+ÎV³+Ü’M+àbJ+äú·+éé+å8‰+ê­+èi+à,V+ÕCä+Æ
+Ÿ+ÈÔä+Ôv+Û`+Ùêx+ÓBc+Ê©a+ÄÏU+Ä;^+ÀRÞ+ºÀº+»[+¼ôd+¿'T+ÄÔt+Ä'ª+Äßr+½Ñy+³×9+¢‡Ì+ŒZø+ƒZÿ+„+€;T+hœ‡+[Ô+iKÀ+`Ì+Cƒ++àZ+”³+B>ê+`æ¹+y3+‹Ðê+•Â+™Õù+”b+‚Ê+m`+{G.+•®1+®Íº+¼)‘+¾!¼+ÁH:+Ã-Ž+½2k+ºK+³0¢+²ÞF+¶%+»Æø+Á V+¿&î+±T^+!ù+‰ˆÉ+‹Ð[+Ÿ2›+º.Ò+Çbë+Æ”+ÉXö+ÎBï+Ì ù+Æ´Ú+Æœ+Èû’+Çºš+Á±7+·•+®b+©+¥Þ+_SË+_ÿ+Y£i+R°B+beÓ+Œ¥Ç+¨'+±7Ã+ ô	+•/^+¡»Å+¸Yn+ÅE}+ÊÓn+ÆËA+Íž+Ð¥Ú+ÓÃ+ÒD-+É¼?+Ë¼+Ñ|+Ô&0+Ð|·+Ê3¬+ÇŠù+Å>~+µÃm+¬ùó+ªN¶+¶à+Ç·+ÔÎ+ÎD4+Â¿+¸é>+¸*4+ºJi+ÂÅv+Äàu+¾0æ+½§Ü+½Î^+Å+Êˆ5+ÎN	+ÍÏº+ÏkN+Ðk‘+Í T+Éd+ÁÑ–+¿B+Á—˜+ÄO‡+Ä‘N+Ç-Î+Í;+Ð+Ñ‹.+Î‹~+ÌúÅ+É4.+Ë9+Îò+Óü°+×»S+×i+ÕRª+Ò:Ô+Ñ0¡+Ëãî+ÉCç+Àt+¶ª+·Ù+ÀIÃ+É•+Õ¬5+×Ôë+Ø/ +Óm¨+Ó0+ÓÎq+ÎºV+Ï²o+Î‹V+Ëj+ÇÇG+Ê„]+Ð¬°+Ì¸Ý+Ó*`+ÐåŽ+Ê¸~+Áz+¿SY+ÂÅŸ+¿š+Ä´1+ÊŒÈ+Í}~+ËÃÚ+ÎÂ+ÑaÊ+Î„É+Ð}}+Ì¥½+ËÓË+ÉäY+È>H+È×ë+Åñ+ÂÆ^+µäà+¬Ðd+§çú+¨Þl+±…+¶[á+ºp>+»³+¾²u+¿vó+¸w+µ¬Œ+³\#+³/?+¿G‚+Ë<(+Å¶e+ÁÜ‡+¼³+¹3(+µ÷º+°ÓÚ+²‰Œ+»Æ+¾è8+»ý%+¹#ª+º
+9+·k+¶J+¸ 8+³<L+©¿ï+”1ç+†)+x–0+jGÌ+}ˆ§+“L×+¬è¬+²½ø+ºV+»i+¾wW+¹ï+½zà+¿žç+½÷Û+¹¸¿+¶9e+·ÔR+¸/°+¸+½Éë+¼X{+À|+ÂYñ+Á--+Ä^Ô+ÃK±+ÅS+Â+À"¾+¿ðt+Â”ã+ÆÊ8+Åxˆ+¾fp+À}¤+À-Ê+¿òj+¾á+¿ÿ+ÃÖu+ÅSÂ+È#É+Å»+Ã¥²+Æ@?+ÍiÎ+Ï_+Ä)ë+À¶¥+Å.+Ä³t+²W+–Ðâ+‹õ‚+™Å¾+¯”ï+¹Ð+»ÎŽ+º¶ +®u+¤Œ+¦–…+µÍL+¼È0+Á¤+¿G:+Ä}7+ÈÓ+Äù$+Áò˜+ÉÚ~+Ë#a+Í¼]+ÊJq+Åe+Æ]+Æêˆ+Î¸k+Ìˆù+ÆãÞ+Å£µ+Æ¿c+Î3·+Ð];+Ä—‰+ÃEÐ+ÇŽy+Ç+ÇèÑ+Áf¦+¼62+¹
+^+ºg5+¼„Á+½Æo+Äq+Ã,î+ÆÐ»+Éá+Ìæ¢+Ê¼_+È;u+ÈÞä+Ê@E+Ê¡+Êzß+ÈX‹+È.Ð+ÉëÛ+È’Ô+ÉVa+ÆQ+Ä¨ë+Ã¼k+Èë€+Èÿ+Ä\X+ÁéÛ+ÃÞ*+ÉÝ’+ÎXµ+ÔJZ+Òù~+Ì|+ÄÖ™+ÅeÒ+Å`•+»ø™+¦Žþ+óà+‘~<+¥³¬+À<+ËHZ+Êº±+Ä,+»"0+ºà+½¼6+ÂY¬+Ë +Ð!+ÍÝõ+Èµ/+¿Å|+³à^+§Ì+—‹+ŽïË+Ž‰Œ+\õ+–Ò©+¥zv+µq¿+¿§Ë+À;”+µ	m+¨Ôì+—t7+Hë+‹j+o+ª#+­xû+©ýd+©O+Žkp+€È²+…‰+™’Ì+¯7p+´æÝ+¸wñ+¹º‘+»z;+»Éã+¼^+»L+¶“ä+°]‘+°c”+°–b+µ»+¸²_+´Ší+§nb+˜UŠ+Žk„+šE‚+«>+³Z~+µ%8+³,Ø+­­º+¨[n+©+­}+°ék+±‹¡+©¢1+¡v¢+¢ÖL+©ä+¸û–+ÆaÛ+ÆòB+¼`+¬Y+­h+•ôò+™ÓÚ+¥NL+¨
+¯+©ü+§¨Ý+©’^+­ï +¬þš+ª¤Š+¤câ+šEã+îy+‹f©+–7;+¥~±+®d	+¬~s+¬Ãä+²E+´6®+´=<+³­÷+®ßM+«<¢+©)O+¥ò+¥´ì+¥á¬+¬“M+±ç"+µ@+²ø+§n+¡Ãy+£AÓ+¬9²+°*S+´ø+´ëÄ+³vó+¶ à+°`í+¨œ+Ÿ1ú+žúb+¤+©•c+¨Ðš+§Ç+£…+Dî+ŒšZ+v}ú+\…a+i¯Q+…™+™ab+¢Åö+©°›+§üÄ+ªþ‚+«£V+¯•˜+­Eé+§,œ+Ÿ#¶+˜¤+–[¶+•¯+»ì+”E@+ŸKw+¯2|+»Óþ+¼ÊE+¸y+·¢Á+·—ë+º
+ï+µo+²ð+¶´s+»+»Â+ºà–+¸ ’+µ‰8+³z?+³—w+·ô+·:+¹>ø+¿cË+½Œ×+·Ô+°Üs+ªÀš+­úÐ+´¼-+·¢A+¶ñø+³IÓ+³Fù+³X#+¶ªq+µÁ+¯ÝÞ+­ný+¨Á/+Ÿ;â+•³”+’b+³+¸-+Œ>&+¢ä+’k+˜Z+•á¥+–‰+›Š&+ª—ò+¹„Í+¼®î+¹÷±+¹q§+¸•o+³\+µR|+·Bã+¶ô+°u‘+¢_z+ˆ¾+Z†Ê+L¨
++dÿÕ+‰ ¡+œÂl+ªq+¬¼7+ªn†+­ña+²tï+·Lz+¾YC+¸³d+·´!+¯ð[+¨ä+©´—+¨k+°š‹+±¡ª+¬Ïw+ª"{+›mÙ+’+˜©‚+¦)B+®`™+·h±+¹Ùã+¾ÐW+¿h€+½SR+½)É+¼Dš+¾@Ø+¸©€+ºíŠ+ºžÈ+±Ã°+°Àÿ+²}¤+±±Š+³‡Ì+µá$+¶å&+µ—e+¶\‘+¹L%+¹š0+µ®b+· +·“+¼u"+Ä@+ÆŸE+ÅFz+Á¡+¼Q#+ªã˜+—1Ë+ŠŽÁ+”Ðj+¤Ùã+¡pÈ+“U+Üs+š¹¨+¤ÕÞ+®Zù+´P+¾â+Ãê>+½Çù+´—+¤è+•Š++•Õà+°2s+¿¨Ý+Â÷+Ât’+ºIE+¾{+ÀÀD+¿+¿&k+¶Â©+©æÓ+œž+“æÏ+—Â¹+ ü©+¡%+§dt+±™+»î+¹@0+±ÉW+¨ð+•˜”+…Ý+_¸+ƒÅ¶+»++að†+WB+m‘+Ž0ö+¨ŒÒ+µîÇ+¶B+µ.+µ–E+·+È+¸ìð+µš<+» +¸ä+¯)+üÎ+‰]+}Ò½+‘}F+«<Z+¸[+¾Ï±+¼ 0+½’+Á>ì+Âj;+Å&+ÃÔQ+Å$P+ÂŽH+Æ,’+É˜+Êé+Ê‹+Ä‡Æ+ÁS+ÅÍê+Îì+Íi+ÃÉH+¹+®”¦+£C˜+šW¤+›”Œ+ªÔ–+ÄLø+Ë*À+Ée+½Ë"+¬W‘+ ßS+Ÿ•A+£º+·±T+Åá+È5V+Ì®÷+Í!ú+ËX	+ÈâJ+Âª£+º*^+¹?N+²ên+ªÀ	+¡b4+–o'+’_+œ+± Œ+»yƒ+À#r+¼†9+Â˜ö+Ã<+»óá+®!$+­³Œ+³BJ+»ÿ<+Ã=+Áòf+¿JA+¸øE+¹¿+ÁÚ+ÈK+Çá±+Ëã²+Í©+Êcd+Ê\z+ÆÐø+ÇÈí+ÈéÃ+Çèà+Ã“N+»„û+½Ç+ÂÅm+Ã²¿+ÅÃ…+ÄÝÑ+À*‚+³ÑÓ+£HO+›¤v+žÊ¸+´)’+¿W+Á£_+¾@)+¶q:+·@á+¶+µ¡Ø+®º+°2+¹M=+Ä3+Ç'µ+Ë„+ÀQ­+Ãä{+À–ù+Àù,+Ä¾¼+È;ª+ÊÒV+Ícz+ËÂÕ+É°ø+Êu¡+ÊíÏ+Ìá,+ÌÖ³+ÌQ­+Ì@¶+Èç+ÈÃª+Ã°’+¼;Î+¼PÕ+»Í¿+­ÐO+$ò+•ð++¥L2+º¡+Ã£T+Â¸+¿lW+À^Ó+ÆšC+Èý+Îò–+ÊÝ+Ä#q+»“ð+¸ÿž+ºHG+Ãõ+Ðq+Ò¿ƒ+Ò…+ÏôÒ+ÓŸ+Òøë+Ðø+ÎJ+Êm+Îk°+Ï]@+Æ}+´¶R+¡äÿ+—0º+¢…Å+¸ç3+³Â®+Å=ž+Ã§+Å0+ÍÖr+Ò®+ÏÛ!+ÊW‘+Ì4”+ÐúÞ+ÖK+Õ7Ë+ÒR¨+ÕMZ+Óˆé+Õ5+Ô±+ÔÏ+Ôžn+Ðã»+Îœ+Ð¥K+Ô+ÖJ*+Ôuç+Ì	+Çê€+Î4Û+ÌÔ'+ÏxB+Í[p+Ìqõ+ÌˆS+Ëã'+ÄNc+»%g+ºÂr+ÂÑ6+Ìœ?+ÒUã+Ñág+Ñ‹+ÉVy+Ê®ø+Ì3Ù+Î°c+Àå	+¨ýÉ+˜nð+ V+«Ÿæ+¿-:+Êjï+Ó
++Ñ(a+Ï+Ëö+ÈÅ +ÉÿD+Ìoà+Ï¯ú+Íf,+Äòš+¾og+½Ôì+ÀïB+ÆfJ+È/ä+Ã¡–+Æ»Ð+Æ·=+´ã+œ‰¯+Ž•ñ+š>+³’£+ÁÞà+ÈÍÐ+ÉäM+ÀÄ/+±r5+¢g+ÜÏ+±LD+ÏX+×ws+Øÿx+×§r+Ð¨[+ÎEo+Ê'+ËNÎ+Ï—°+ÐFí+Ï‰o+Ð™V+Óìn+ÑG÷+Ïsf+Ë8+Åh]+Æ<É+Ê ^+Ä½÷+¶O+¥›+œ+Ó+¥¹÷+²Ú+¿¦0+Àr€+¹©+³Ãh+¶A>+Áü+Êöé+Ñ©Œ+Õb3+Ó+ÇÖÈ+»ý+²•è+ºÑÔ+ÈO“+Ô²:+ÖxT+Õ}e+ÓxÊ+Ö/Y+Øz:+ÓÅT+Ã+¢ƒ8+…1¾+€v+˜õ™+¶Õu+ÐÂü+Ý¶Ì+Þ”Q+Û¶)+×«+Òd+Ó×“+Õ–"+Ô×+Ù©õ+Õ¼è+Ù.+Óo˜+ÑÇ4+ÐcD+Ô²ø+ÙÉ’+ÝpÀ+Þ}q+Õà0+Ö•+ÏûÑ+ÑÒ+Ô_ +Õõ+ÏóE+Ê}+Ì¬5+ÐsA+Ô¦+ÖNb+ÔÞ+Ô‹+Ò˜]+ÉÛ6+Å’?+ÀÄ›+Ä3^+Èê„+Âº;+¹b!+¼0³+ÎS¬+ÛÅ+×Q +ÐŒ“+Ï‚+Ô]è+ÜÅl+ÜÝ^+ÞV+ßÉX+Ü†+Õ‹$+ÉŸW+ÅØû+¸©)+¸öÈ+Á‰…+ÇO‰+ÆºÈ+È)ã+É^+ÎÜÀ+Í°+Ö¬+ØH‹+Ó±+ÎC7+ÍÌ+Ï|+Ø»+ß(^+Üÿ‰+Ô¬Ï+ÐÏÊ+ÊÉ+Ã¾ß+¬¥™+¢/ô+«N-+ÁÒ’+É—+ÅÒh+Äj+Æ
++ÄØ+È'ƒ+ÐØj+Ü›Î+âmÑ+åÙÕ+æP+èó>+ç;y+àþ+Ý¤–+ÙðÐ+×äÈ+Órt+ÑKõ+ÑÛ­+Ñ4Ž+Òl+Ï@’+Ó#+×]+ÖU+Í„+Áe‘+µ7*+º—u+Ç+Ñ¡+ÔÙ+ÕÏÁ+ÚXj+Þ›Ú+à6+àTÂ+âþ+Üûò+Ùþ³+Ö\¸+ÔDÞ+Î£Ï+À©ß+¾oì+Å›d+Ð›ó+×Û
++Øk+Öº8+ÔÍ³+×P+Úêã+Ú6+Òñ+ÎRl+ÑÉ{+ÚO+Ô)C+ÇÄ+¿ä·+Âp+ØrÕ+ál‰+ä +ãøW+ãYø+âNK+á;ƒ+âF·+âð+æ‚+ä·+Ýù+ÎéP+¼¾+¥Êå+£Ü¯+ºX+Ó+Ü+Ýœ+Üàb+ÜãŒ+â2+å;u+âæ^+Ýe+ÛÒÆ+ã—+á™‚+à²+áŠ¸+äJ[+â”Î+è²Ž+æÈÒ+éðo+æß¯+ë˜‹+ðžÈ+î)ß+êN+åì+ÝC+Ü¿À+ß	õ+ß`«+Ü6‡+ÛSÑ+ÔÝ¹+ºI+£_ê+¤-§+·g+Ï0+Ðª+Å¤9+ÂŸ+Êãƒ+ËLî+½œ;+¯+¯2à+ÃiŽ+Öƒî+Ütï+á=+âðÀ+âjÌ+ÝÜ~+ÛhÓ+ÜªJ+ß’Æ+àŽ¥+ÛÍ²+ÒÉ+ÍøÉ+Ð®‡+ÛìF+å¹+ç{!+äáC+à"@+ÝÀ+ßhÀ+åÍÜ+éz`+èË"+åÖŸ+éöŸ+ï¢=+îhè+èñ¡+æÕ+Þ:ò+Û¬+Ø_6+Ü!Y+Ú|§+Ù—™+Ò›8+Õ¥F+Õvk+ØŽÌ+Øép+ÚK"+Û
+1+ØX²+Ï;¡+ÀÞ+¶þÊ+À:T+È"+Ôrr+ÏèU+ÊÎ+È-ã+Î	+ÔýA+Ül™+à¿|+ãB+è’\+ç¸¾+çÇ]+ç€ß+î'ò+ïý\+ðx¦+ò{X+óCH+óbý+ï+ëi+èÆ7+ì´£+ï<ù+éHÖ+ìÈ¥+ïˆç+î#È+î+ïI?+æ;¢+Ý#Þ+ØèÖ+Ü…¿+áð+å>š+çÜk+ê¢$+èmZ+âQ.+ä£‘+ìCÿ+õ‚Í+÷U+ôWs+ëoä+íà+ì`†+ðÌS+ì;é+åNZ+à½£+çåC+è§û+é¯v+ß×i+à×€+äc§+æ[c+ç-ž+è.§+äü–+Þ<+ÞÒ+Úíæ+Ú³Ö+ÜòÇ+Ú–j+Ñ¼+Æ9±+¾$+Ìö,+Ý ð+ä°Â+ã^N+ßÑP+å—&+âQö+ãW+àþ^+æIÁ+íë\+ç©—+àÝ+ÚL•+Ð7+ÏûD+ÎqÐ+ÑÔë+×o¹+ÚÌÿ+Ö¢²+Ë+¹ +¨mH+­›+¿IŽ+Õ]^+Ø­+Ò<+ÖH+Ö¬ó+Ë”É+Ï°+Ô!+ÖµÀ+Ìö&+Í„–+Ï*+Ó²â+Ð;â+È¾o+Éó²+Ì‚æ+Êb‡+Ï[¶+Ñ
++Îp^+Ì+Éàç+ÇÉº+µŠ-+¦¯+°^+Åìº+Øš–+Ú+Ø`£+Õ,è+ÓÆ+×KÛ+Ù@+áÛ)+ß‡î+ÝØÃ+ÏÊê+ÎÛA+ÖðÊ+ÝŠ+Ù ³+æ•h+æ–;+ájã+ä2ë+Öål+Â'±+¿¥z+É@+Ú7_+ßŠ‘+àhÂ+ä­“+ÞtÁ+âý4+Üš+Ü«„+ßÆg+Û{Ð+ÛŸ'+â3Ñ+âQ]+Úµ»+äC‡+ßï¦+Û×+Öž+Ôb|+Ûò^+Úå•+Û¸a+â…+î: +ç#c+ì›+îð+äJ÷+Öb‘+×<+Ý’z+ê ú+òÌü+úCA+õù?+ñT¤+å×n+åù_+ìqb+è~y+â"Ä+ÚÅ+áAÜ+è5Í+é 6+çü¨+èh+äV+Þúß+Ð¸´+Ì41+Ö|ˆ+ß¥ù+íj°+èû”+ã¤«+ç‰o+ès1+åp+ÛÄ'+Ýõ+ÛQ5+ÛéV+Õvô+Ü†	+á…ö+ÜF"+Èžª+Ñbæ+×‚~+é2†+ñô=+÷v¹+ìŒ+ØùJ+Ë	+Ë›ù+ÏÛ¬+Óû»+Ê¼6+º +Á‹ç+Ð—+Ö+ÐüK+ÌÖÊ+ÊÄÓ+Îèó+Òlû+Î¸+ÈE™+¿ò¿+¾
+Ø+Â(4+Â±Š+¾*þ+¹ÚE+ºæ}+¼°M+¶Œ*+²…ý+¬Ç+­¿e+Ç„+Ó:ª+Öò\+Ù¶O+áÃB+ìô+ó7+ð²n+ãÁe+åX¥+á+ÜßÕ+ÙŽñ+ÚÍ+ÞhÛ+ÖÐ0+ÐLµ+ÏÆQ+ÎŽý+Õbh+Û:¬+ßCÞ+Ö~+Ñ}+É°ø+Î9i+ß:°+àW_+ÚØ°+ÑŠ+Òã&+Üë½+Þj+Öì+Îh¬+Å©"+Ãu6+Ê?+Ïï+Ö¤é+Ö“•+Í¶Ð+Æk¸+ÆÁ+¿»¥+´+ã+²Ð+»ÔC+Ñ2k+ë{+ó»c+îŠ+çp‚+å°+Ù½ó+Ð~/+×³«+åO;+óss+ó4+íøÑ+íÐÊ+àÙ+Ø­+Ö¢+Õ\{+ØßÝ+ÛGs+ßŸ“+Ò"q+Ò×+Òæ+Ò3µ+Ëíò+¼å+© æ+œ:y+ªÜò+ÇÝ+Ùh|+éî+ý• +ôRù+òha+é¸ž+æn+éÎc+ô¡+÷Oš+ùø+ðÖ+íp+æý*+ùh\,vð,¢¿+ûk1+÷W¡,:w+þ4U, þe+ø÷Ê+ôt+ø<|+ø+ôüN+ì¹¤+ê[i+ë´
++ûëh, 2n+ýù\+ý-¢+ÿ+ô£¶+åž›+×<+¿uD+¦Ò+’`i+’Œx+¢ð{+½>á+ÓÛÑ+åÌ«+ëeR+ófá+ðwö+ôtb+÷jz+ô­7+è† +á.&+Ýðö+çF+ðµ+õ¼+÷45+ûûH+órä+ñéX+ì‡Ë+í1Ô+õ {+úeB+ùÄ‰+õqI+ñ²f+ñ6+ï¨ú+è°ë+æ8+æÔ+äì+é"|+ã"+àká+Þa+àòò+æ·î+èH+ê<u+ó7+õën+úó+ùAË+ø}+ò ¤+ðW+æŠq+ÖªÉ+ÀÀ+·Ó[+ÀË:+ÖÏ:+äiÎ+ï# +ò±+õ¢ü+ö¨À+ô1ƒ+÷ˆ›+öµ+ï6ë+óàm+ùŽÈ+û2
++ø¿-+öÉj+ñ
+(+óah+ê<†+çÝR+Üà+Ñ|+¼ÚA+°U+´áf+É‹ß+æŽ+ðvÓ+óÈn+ò|ž+ô7å+îÉÝ+å¶V+ÖFZ+ÏmY+ÓO+Ü¥/+î½0+ôö¨+òfY+ïÁ­+òiO+÷±U+õÆ+ëIÅ+éù7+í1+éøa+ê×+ïfÀ+òþ++õpß+ð‘+ð:É+ò£§+õÃW+óƒä+öVº+îR8+çæ+å£P+êA(+ìá¿+ëü+éÈ+æò«+éÐ+èÊÝ+éí’+èÇÈ+êüB+ðUt+óq«+ñ|€+îS+è_#+à‡Í+Õ×E+Ïîí+Ñ*Í+ÝE(+í +íj+è´â+ßLŒ+ÙBï+É2à+³š¨+©fð+¶|Ò+ÐE•+ß1-+í[î+ðOÜ+õ-²+ñÆÆ+ñ*4+õ¡A+ùIù+òËG+õ€Ú+÷´+úÓS+üàƒ+úï®+ò<+ë¦Ì+ãwy+å1+ç¯ï+äðR+éš+ñDz+ö“+ôØÓ+ð¦î+ï s+õW+õF+õ³8, -Ý+ø\k+ô¦Ã+ò	u+ñ­+ôØ¦+ó<™+ïÄj+òÁ+ñæ4+ï?[+îvê+ë¿È+åÝ+ì«Å+è=+äx	+å„Ž+â†t+å’j+ìNê+ò¥ù+õÔ+ôOõ+ôÄÄ+ú>+ôlD+ëô:+àâ+Ñ§+º³+¤Ük+¬ÕS+ÈÂñ+â+ë¾€+ðx×+ëïý+êNÒ+éòØ+íW#+ò!ü+í£+æ@”+ëJŽ+îZÔ+ðiS+òÆN+ñ?+ëÛã+îS+òŽ+÷zÆ+ú{¸+ó¡Ð+ò÷Î+õí+íÍ<+à}>+Ôv·+Ü2ß+èÿì+ô1b+ûG+ýÃâ+ýZè+úT¾+÷^„+ôÊ+îé/+è„W+ìŠy+ñäù+í2g+ìø+ñ»+ïV+éÞ‡+ìÅe+ç ^+ä,›+Ý²Í+Îs+¾êy+›ÿ¬+ue+O2+eOu+”æ+´â+Êkþ+ÕÙO+Ý®+äG+îj+öà’+÷	Þ+õš6+òô|+ôpÎ+÷H+õfx+ïÙ³+î1Û+ír|+îG+êp¬+ñ¬+õÅl+ý`S+ý„#+ûŸö+ü"ç+û‡¹,¢D,bÊ,	­ó,à¡+ûÉ†+ø½+õËK+ó Ö+úÆ, #ô,Bº, :T+ü\Ç+ôd+ø€+ý67+ü·—+û‡Ý+þ@, w+þF³+ùw÷+úë‚+þý8,+±, Sœ+üâï+õÀ„+ò·Õ+ê6Z+çºä+âù+â½>+çÕI+æ(Ù+ï-u+ì3l+Íú¥+Â¤ý+ÒÒÅ+Ìè++Ábß+ª(Õ+®.+‡‰
++’kD+¬Ž+¿|0+Ò¶y+à{+ç‹•+êÆ+õÌˆ+÷Ì+ô”‡+ôéq+óñ¢+ò‚­+êÕ«+ß®+Ô²®+Ü'p+ê ý+ôqÙ, w, ^‚+þ(Í+ñU+Ø>Ú+íß±, æ®,@,Á{,KP, Û©+úì+ö{÷+ô.Ÿ+ö +ò˜ä+á‰š+É‡+·+¸òb+ØR+ð!Ì+îÄg+ñÏ­+ø,Ø+þþz+ÿòß+þ5+øÓô+þ’Ü, ‚Ž+þ€ê+üì\, †+ÿ½É+û)s+ùÃÊ+ö¤)+÷…X+ú§!+ûC
++ýe„+ý-æ+ùd}+úÉ+øÍÌ+ø¯ž+÷|y+÷ÂÐ, v+ÿ]-+øþg+ó6È+óÝà+õ¥§+ösU+ó‰2+ëú+å#Ñ+ßƒ?+ØrW+ËTd+°àë+’©Ò+f´)+OËÅ+zŽá+¡X+Æ+Ú‚ó+á¾È+èœG+ï}º+ëçÿ+æÞ +çp+å±S+âq£+ÙÛÇ+ÕfŠ+â•++î+ü(ï+ý'+ú! +øÊZ+ú3º+ÿTE+þaê+ù~+ôæÕ+øX++üHÝ+öâ¤+ötÛ+ößù+ù8†+úmí+ýè6,+D,º´,*ô+ÿP8+ÿ€i+þ, /è, ++÷ö’+ê2x+åó+íßJ+÷PÛ, +þ€ð+üR+þ§
++ý=¿+þ‹c+úÏÐ+úp+ûóÈ+úi¹+ë™Þ+ÕÅj+±zÚ+“ùý+™l•+ÁZ®+èÕ +ÿdå, ¤c+ýßŽ+ý‰É+þð,,SÅ,äÞ,0!+ø-5+ò|X+å<§+ækÅ+ëÁ+ó¬Í+û-1+û*+þj§+òøv+øÛ)+ð(o+èÁ++Õ¨Ñ+×²Ÿ+ä™®+ó™9+ùØ+ø¯§+ýÄå,Pb,¤c,i,tÔ,n,ª‘+ýœ+þEw+ý~¾+ÿº+üè+þÃ+ýõé+ÿ&+ù”É+ö=+ôV…+öí­+ðS·+ó¯+÷e+ûš4+øq+óúU+öi‚+ý /+ù–v+ø«K+ûbÄ,²N, qå+ûéo+ør$+îI+ÚCi+Î!S+ÒHõ+å‹%+ò{Î+ö+ïh+ã=_+Ü*Õ+ãe#+î”H+ôH+ö³ï+ñî+é Û+ëþ¼+í;>+î£Õ+íä¤+ï8š+ì»á+ðsL+ìØÐ+ïÝ+ïx+ð+ïÌ´+î„J+ërŒ+ðsx+ôÔ°+ó&+ôóê+ô8Ò+ûÆ™+û™È+úXÚ+óŒÒ+ñD+ñÃç+íx†+íRÙ+÷‚t+úýÆ+ú–ž+øz,Jn,éœ+õÓÇ+óè+ö°_+û‘@+÷i~+ñR +ë¾µ+í’t+ï¸Í+î¿+óäA+÷wZ+ô?+úgl+ù +ú®Ñ+øJE+ó¼È+ìãÞ+è†+èÏI+ðþ+÷˜+óA^+î¼†+ë÷+í)&+ïû+êÈ+Û*ü+ÃP¼+£Uü+†âŸ+s36+Œ¦¡+«~O+ÃŽ+ÏfÜ+ÍÁœ+¹3\+ ã5+—+U+§jÈ+»J+ÐtE+Ü…/+Þzÿ+âŽy+ãò+Þ–‡+Õú+ÌÐ+ÀóÍ+±³+²ád+É;+ád+è¸ø+ß­{+ß«¬+åÖØ+öäW+ûóÍ+ôÛY+æós+ÖçÅ+È.+¹ñ¥+¿û+È+½Ê+¡ +N•+³û+Ñ,§+è»ñ+ìÚ]+íÆ +ó¥Æ+øƒ*+úàÍ+é¯,+Ýçu+ÛÀÇ+á#+âC +ðPp+ü‘á+ÿ’+ü+ùõ¿+÷aÐ+úç9+ýÌ+ü§+û›’+÷G^+öµ„+õë +ð`{+î˜+æ69+Þ9,+äs+ñ|Ë+ükå+øÎG+úÜP+ùˆâ+ðØ¼+êcM+ðÅ+ô‹{+ÿ<Â,Åé,þ”, à«,I3,ÈË,=¦, Úi, 2,ºü+ÿîÐ+ú?^+üÿW+û¨V+î­´+ÝÇ%+ÛÒÁ+âíR+ç¼€+âžS+×¹â+Ø0+å+õ%Í+ü¾+ý'+ùÊÏ+ûŽ,&†,b,Ñ`+ÿøs+ø®Ñ+ö€ë+ú+ô›n+þ0f,£,³N, ¹±, @+ù›º+ù¡”+ù3+õ+ô¡-+ôGÌ+ôd=+óŽl+óD+òƒ+ö·¼+ö»¬+ú¸+ýç°+ÿšŠ, ^ç+ù&j+öÎÜ+ñrÀ+ïN
++ñ{)+ö[ô+ü$¢,jã,h	, ßú+ú^Ò+û'+ùmþ+ýæë+ÿÕf, !¹+úŒ¯+õW+öY%+û8E+üÑ8, ¸ˆ+ÿÝŸ, …+ýFm+÷O+â^ž+Ý=+ä`x+ò«Æ+ûZ¨+øt+øòS+øM`+÷·¬+ü¿»+ÿ œ+ÿ), zÆ,(0,œr, `,)Ö, 9”+ÿ‹‰, ß~,+À,ü#, ‚Y+ýd+û€Æ+þÑ,1,&ð,)~,g+þ;+ý-“+øÐÃ+÷	+ù{~+ù,þ+ü-+þË,ºŒ,3…,™y,›O,ºä,n+ý< +ÿGÁ+ÿ¤$+ÿj,<¤,^ö,«y,J·, ÷?, ©«,°ë,ÈE,:8,s{+þ³-+ùÂ“+ûsm+ü,q¥,‡\,÷K,x,ÈX,X,=ã,Ç{,‰ë,c§,‘Í,:š,h#+þek+þ!,`D,3é,DF, òì,Ü8,+®,Æ ,‹,?W+óÐ+à$+Þí¯+îà±+ý¿,Øm,n,/,!K,  Ý+ü	§+øÊÑ+û
+H, &,/Â,˜×,†,*G+ûÐQ,@ÿ,Àô,ƒ,9í+ÿb¯, áR+ÿs,"ì,b¬,ˆg,êû,¢?,>‚,,µ,
+R,$ ,¨6,(,•%,…ò,JÞ,	ÂM,,Ýk+ýÆº+í×+çp+ì^½+ûýÆ,¸l,8,Ä‡,	,mw,
+BÔ,Z#,è,äó,	Û/,
+ø,	%á,Çê,öÉ,ðá,
+Iâ,šî,ñÆ,+,˜v,ˆ5,š,ýa,º,ƒÌ,Ô/,¡‹,Y.,nF,þß,´+ûíØ+öéu+öv+ø)ü+ý†Ç+þýi+üÀœ+ø¢Š+÷é+þ—3,‚,,ßË,œ§,©,H§,ðÑ,ªP,t¿+þLq+îLÊ+Ò9r+¾›Œ+¹©í+ÒxI+ïÛX, ýf,0,fÃ,P‰,#K+ÿÎú+üè+÷ZD+ûF, ÷, -R+ÿ Â,B‹,	Å],ØA,cŸ,	,$?,®p+ú(+ùÐ×+øBL+üÚu+ÿÓ¤, =Ö, 1,ŒE,Õ/, *+øŸ+ù£Ê+õ Ò+î±+êç+ïÎ+û6Ó+üCÙ, ¡K,Ö,Á·, ý´, Ó+, »Ä,l:,D+üD+ø×„+ú–+ç+ÒU¬+Í8+Û³+ðÿ®+ü'#+üe÷, »ï, Ó+ü½$+û±O+õÙ+ä-Œ+Ï¬€+ÅªÆ+Ô²++ôéû,n›,Ôr+ø?>+ôª”+ü©/+þ§â, ¯6,:–,ÐË+þì6+üX£,f¢,ºd,?Ö,H],ÎÊ,,^;,,‘,l5,ñ,	Ms,	|-,d„,¨¡,Ñ°,
+á¡,:ª,s),
+´,FÔ,M,´V,",.±Ù,Dû ,jBˆ,ˆ>T,”{&,—z,“q\,ÁÜ,“ 0,•¨w,“•,†i+,ih…,D3«,-|Û,Ž\,sø,îÇ,?ž,*û,
+D»,EŠ,	„Ÿ,E,ôÿ,÷Y+ý`+ÿ(A,ë,Ì‘,^–,-¦,›Ì,"‰,ÒT,ž,€,§,ÎR,•ç,Q¶,åõ,¹¢,ëÐ,[Œ,g,h+û=¯+ë?+ÞG+Ítö+ÂüÚ+éq+÷+b+þ¥Ö+ÿf, }›, {,9œ,¶:,#, f#+ôñK+òD+ôr²+þ¢, Æ–, ×i,ˆ1+÷ýÙ+å¡I+½[,+®RS+™ÿW+–‹+·W-+âc˜+÷U, p{,ï«+õ”+èÚv+×Bõ+Íä“+Ú#þ+ïï5+ögú+çI+Ðõ+Í…t+Þî…+õ|², ¨‡,˜ã,˜l+ú¢Ì+öÌ+òJˆ+ñ»e+òÎÿ+ú+übÙ+ü´, ‹5+ÿIM+ö§"+öR+óÐ”+ñ°¸+ôÍ+ø9î+ûo+öy+ô¦Ÿ+òƒÆ+ðÔ+ì¯É+î{1+ðW3+ò´W+÷Ê¨+þEè+÷Ï”+ïËn+ê°Ú+ê³¸+ìªN+è"ê+âÓ+Õýù+ÙŠ·+â­K+íÉ6+ó"¯+ø¾á, ™œ, ÊJ, Ræ, iå+ýl|+ýŠð+ý31+ö)Ô+÷æ+ô»Þ+ù°+þÒÊ+øMß+ú{G+ü[+üÌ+úfš+õv½+øÞ„+ü=N+úýð+û‘+öÕ+þµ´,€Û,ðM+ý‚²+ìj¼+á·h+áÁB+ëvÈ+ü,9, Žš, /G+ýsÓ+ýÎÏ+ýö+üã­+úÁ,G<,3•,šà,Ä“,+ûé¯+ù‡>+þ\–+ûð2+ù;é+ôÀð+÷Ñ`+ÿ‘Š,‹,?, Ä\,"‘,–8+ÿN.+øë9+üL·+úÅ-+ýÛ_+ýú0+ùË+òJ+ñ‚U+ð/>+ólÎ+ô®+êÎF+ÝãÁ+ÏD7+¸yü+´òg+Å(µ+Ý†+èùJ+ßŸ+Èr$+¶zÛ+¹B²+ÐÁf+àÅ=+íº(+óðÛ+÷8å+ûþ+øUL+ô¼+÷"Ú+÷;d+õ¹Ñ+÷Š+ùy»+üœ—, )P+ý­›+û1/+üEû+þ `+úý|+ô`\+ïBV+éoƒ+íKê+öéÈ,‚ƒ,ê, Öy+ýîq+ûàØ+òâå+èr-+ÔÄ›+É
+§+Ô?ÿ+ç*+ùÍœ+ÿÏ+ý ­+ÿ½ò, Š),L, @…+ÿ^¯+ûvZ+úé:+ø®+ü©+ú´+ý­', ¬,ˆÂ+ÿ‹…+üâq+øa¨+ýØ%+ûjú+ü•m+ýÈl+ü'Õ+üS›+ú,þ, FF,/§, 9Ò, ÎÍ, Šš+û[o+ñhÀ+ïÿb+íšO+ñÁ6+ôˆö+õ«x+ô³]+ñÓ+éèF+çl•+â—>+Ü3`+ã$£+ìïÉ+õe+ý`f+þÈ`, ²¥+ù‹Š+õÍ+ø6+öÿï+ð/ú+çÚ+çLõ+êÔÅ+ðº+õâZ+ö+òíZ+ågo+×¹±+Ëhî+ÙÑ+ä+¢+çÝÆ+çÛX+ìêÒ+ø}Á+÷ÆW+ôÄÜ+ö,+ùªá, ³n,ñÇ+þÁÖ+ý²p+þÄ5,Â, ¢¨+ý…+ó–¨+ó¥±+ú5¾+üÞ%+ûéœ+÷T+õNÈ+ùÑ‹+üˆó+ú˜ø+îo+è<j+í¢z+ôG#+ø±Ê+ùN+úäð+ÿR¨, 0Å+ü±û+úM-+öÌÎ+ô±7+ö¿+ù¸h+÷¤+ø£'+ú™÷+ù.+÷&Å+÷0N+ônP+öÉ+ú¿+ö¨ï+ñFé+ò¹Õ+÷rË+úhb+÷ªÙ+ô½‡+ôž+õ;+ðÙÚ+ñ{Œ+ì~±+ñDT+ò¹Ê+÷ð<+÷Û +õÈ+ö.‘+÷”´+ú~Z+ú¸+û0+ú“¶+û•<+ú´8+õ.€+ð„+ïÃ¡+ö=Ä+ø(ñ+øèb+ôÐ+÷Š_+üg”+ûà+÷¸O+ò–q+îMY+é6L+ðqï+ôÓ+÷~ð+õf+òœ®+ô×]+ø™+û÷0+úŠ+øX+î]À+ßàí+Ænž+«nõ+ÇÉ?+Ûó+ëj+ð*¨+ð¡c+çìÃ+Þo+åa;+ëÌ+ìV$+ñxC+ñÏd+ðtV+ò¸+î>¼+ê:ˆ+ìÊ+ò‘Ö+õzû+úgö+ó8$+ì[m+é2å+éiQ+ó×7+ó¢?+òV'+ð ‡+î³«+ð'T+ñ9+ém}+Ø‹+Ìœí+ÔF+é¬Ê+ño¨+òâ¹+ó4¼+ò,2+ô”+ùŠŽ+üÕ¡+ø~+ñÜN+êQ¿+ìŽ@+ñ$*+ìP+éËˆ+î•+ú2+ük+üñ+÷mÙ+êbd+ãi+â²b+àl;+â_"+äÓç+äÀ+ç¤+ìmÿ+ñ|«+õË+ñ	+ëÍ”+èÑ°+éÒ+ì^(+íÏ+ì0k+êyO+íd+î¾[+ò+ïÏõ+ð×0+î*Þ+ëx+é{¾+ð{+ï–ß+ï Ž+îB¥+ì +ëf¦+îœÖ+òP¶+ñº‘+ò‘’+ï"+òIã+ó¼ù+ôO6+ò+ëõœ+æ”¶+ê\ +ì‹y+ñ.z+òŸ9+øŽ¡+øRÅ+úˆÿ+ú˜½+ùb†+öm±+ó}+ïSê+ï‚õ+ôø–+û–+öÑE+úVÅ+õèd+ø.+õ/i+ôÒë+óE…+í_Û+Ú·g+Â2ú+¶*¨+ÂÌº+àÊ+ï7÷+òU™+õ%,+øÓð+ôÐl+ùÃ+ù"D+óøT+ïôÝ+øT+ø³ó+ó¶+õé»+òMð+ðÞù+ôW¶+õ±h+óœŽ+ñÛ%+ïî×+òcà+ññÙ+ðÕ+òÐU+ðÉ+ì`+ç0w+ê|	+ð"õ+ôÈ–+üˆ~+û;y+÷­Ÿ+ö(+ð>+åUÃ+áÄÄ+ç+ì.+ìë+ì™Â+ì§„+í6Ó+íj+îy#+íí‡+êD+ÞIq+Ëß°+Éyƒ+Ô…¥+Ûñ–+Ýƒ+à(å+ãZ)+èè+ërD+æÖË+æX+æD#+äï}+çUÊ+êÍÉ+í­s+êE+äv÷+áù3+àVô+àKº+ç¡ò+éH"+íG%+íçœ+ò¬+ôxÙ+ó~ì+òa+èÎT+à;¤+äjÙ+ê¤t+ê +ëðó+ê>+ìC+éÊ+ç1@+á‘+ç:ß+è8Ç+èY+áUø+âE;+çÑ+æ‡{+ä‘ð+ìs?+îš'+ívâ+èv&+é“¾+ãHÝ+èO¢+ç®~+çœV+ì@º+îh+íŒ"+ê¹]+áÌ<+ß3+Þ]+Þ_!+Ú	`+Úæ+âNÃ+é¢„+éæ¾+äŸÌ+ã÷+êc=+éÍù+é+ë˜;+ê8•+æoî+á1+ÑÅÿ+¿çJ+·ÿ8+Ã÷!+Ö‘ü+èØ++ï|+ðS
++ëï+åƒ+æ1+ïÿÇ+ñš+èè +ß€æ+ØÆ)+Þ4Ð+éæ+ëZÌ+çÚ3+å[7+Ý«{+Ùkñ+áËd+èo+üDC+÷BÝ+ìŽ×+èÇœ+çªÐ+çC0+áž1+ãØí+çÀ+ëlš+î^@+ïç“+è©{+éq+îNù+ñ5­+ð=â+í…é+éÁ³+è&+ìÖ*+îv+ðúé+ð¤ +ì+ï:Y+ï©+òv+ó?b+õïÉ+öÇ+õ'+ôs+ô˜Ž+ñÚÉ+øl·+óAÍ+ð‘s+ñèZ+íˆi+ñŽë+òÒÀ+óŸa+ð »+îj/+íRå+ê¶Æ+æÛÏ+ëÍ+íèŒ+óÊ\+û +ôeÊ+ïwÀ+æ Ë+å’ +èS÷+ïúÑ+ïjÿ+î(+ìfç+ëÖ+ë•n+òbö+ô¶Ï+óÖõ+ø
++ðbZ+á`+ÝEx+Ýó”+ÙŠ”+ËôÚ+¶«
++¯I+»,˜+ÒHã+ßôÝ+ãÆ¨+å´~+ã¼w+åE­+èµQ+âŒž+Ü²C+â0d+çÂÍ+íÅ"+î “+é$à+ê1È+éô”+Þx˜+Óo~+Ñý+×K¯+Ö1Ú+Õ¤+×9k+ÙÌä+ÚÒe+ØjŸ+ÔšÀ+Ø[+Üø+Þmi+å_m+Þæj+àÌ¡+Ü^»+Ýˆ;+ß.À+à}+ãç+áÓ=+äá +ã	^+ã~'+ãÞÆ+á%µ+ãP+æ’6+æ½8+æêé+ã¶±+Û¬
++×Û.+ÖÑÛ+ÚZ}+á/†+âÕî+â³`+àä+èÂ¹+ä³+à'+Ù6U+Õ½+Õì+ÝG§+ã•Ä+Þt5+ä +å˜€+ëKQ+ê†Ú+é0}+àP+Ý9\+ÝW	+Û–+ÞàR+èzŒ+ëÓ+ãVJ+Ýþ+×¹Û+Ök+Ú¯‡+Ú˜ß+×ùü+ÖÔn+ßÎõ+âÄk+å@¹+ßP×+Ø,J+ÚGÁ+â2+ä<+åþk+áì¼+áç+â©Î+çÄb+ã ›+Ý)£+ÝÏù+ß<„+áÀ¥+äQÿ+âê+áŸæ+×¹ß+Öåá+Õç#+Ýšš+ßíY+ã*+áÁæ+áZ+åÙæ+å6ò+Ò¸+Â¦+Á¦©+ÊrC+Ô‡J+Ö©T+Ý1+Ýßô+âév+â×•+çÀÈ+è%-+åQ
++á×x+á«¼+â=+âÊÇ+Ùï+ÏÃ®+ÌkO+ÐÑ´+ßdJ+æ+éXá+æ=+åœ“+æ(&+éT+ì!Ü+è{ø+âÕ+áç+åu+êFn+ë"J+ê¯A+â±+Ø›ß+Û…o+àæb+åí+è“+èx+çà±+åd«+ãø¨+åÛy+ãˆ8+ãG+Ý˜i+ÓÐ´+Íž¶+ÎòÒ+Ü]†+ç£3+î«Ü+í()+èõÔ+çú†+ãy9+Ú²ù+Ûè_+Ü„.+à¥ô+ã†.+â$Æ+à6+ì•®+êH¢+å¡Å+â©0+Ý¼ï+Ü>+Ý²¼+Üµœ+×»y+É÷+©_ü+xFô+¥¥*îd‡+#N“+„V»+³W³+Ñˆ±+Ûaq+Þ¸]+Ýæ`+Ýºb+å^—+èáµ+ëbs+äËÁ+ãY+ÚD+ÓÖz+Òk+×[O+áÚ+îÑ+ð»ï+æòÍ+Ü@:+Û
++Ýt¥+Ü‰Ë+ÝÄ¸+Þœ|+Ý]M+ÝhG+àƒ&+á²V+ßã,+Üÿq+âk++æj+çªÒ+éa]+åÉ.+Ü‡6+ÙË³+ØÒ+Ø+ØT+Ô*+Îñ`+ÏüË+Ð­f+Ï—+ÌÑ,+É†Þ+Ê·Ý+Ñ+Ñ¶U+Ñàª+×Û£+ÚW	+Ù ë+Ôkj+Íl3+É·+ËD^+ÈOn+¶ÉË+›Xç+„uÊ+€îL+”W¿+«Óf+½³i+ËÔ+Õž!+Ü—¸+Þy~+Ûì#+ÖÍ$+Ôé\+Ê£+Á±+À£ä+Å®+Íñ´+Ôh¡+Ø‹+ßÆˆ+ÜsÜ+Ú¯ +ØÛ+ÖÎ^+Ô¼Œ+Ñ¸Ñ+Ô#+Õ*’+ÏÅ}+Î5£+Ï!ý+ÓA+ÙÍd+Ù˜5+Ùƒj+ÕÙ=+×Q+Øb-+ØE‘+Ö@+×¹a+ÔI=+Ðƒ+Í¥J+ÏZ+ÎôÊ+Îú¾+×aß+Ù`®+ÙÖ+×è†+Ü"+Ú.æ+×íÑ+Ög¤+Õ+(+Ð0+Ìx+Ìƒ°+Ð +Î1+ÏLI+Ò'…+Óâ;+ÖY+ÖŽ+Ý–&+ÞÁ>+ÝûS+Þ;+Û$ö+Ôªu+Ó–B+Øš+Öq¬+Òg+Ôà»+Ú@x+ÝÎÅ+Ý #+ÜH„+Ý%M+Ø+Ö´+×G¶+Õþ+ÑJ	+Òá–+ÕÇ+Ð¢+Ó*B+ÖmÑ+Úz+Úòˆ+ÞK+ÝpH+Ø§+Óu+Ô±F+Ò	p+ÒÀ›+Ð|+Ï¹÷+ÏM›+Ï­¼+ÐmU+Ò¸F+ÖóF+Ü
+Å+ÛÀ+Ü•+Þ¤£+Ø°[+ÔÉÆ+Ö·S+Ö[+Õx+Õ§I+Ö›ø+×t+Ôš2+Ú+Ø+Ú`¥+Õ¯ù+Ó= +Õ +ØU+ÙÁÐ+Õn°+Ôšˆ+ÒÞx+Öê·+Ü/¦+ÞIü+ã)+Ýíä+ÞÅQ+äY1+ãY +Ú`+ÖãZ+Õ+ÏÆ+ÍX‹+Ì"+Ì}j+È!`+Ó+ØË¥+Ýð+à)Ü+Ý+ÛUG+Úäö+Ù	|+ß+á4e+ä^+à[+Ù7ç+Øüy+×à+ÙY+ÒÖƒ+ÒñŸ+ÜÍ>+à>æ+ß’½+×á+¿Ã%+©%,+®^A+ÂÁ›+Öx¨+ÞI+ÞÄ+ßÕC+áW+Ü¹O+×jÞ+Ö¸¨+Úò†+Ú•ú+Ùü+ÕWI+Ðæä+ÑEZ+Ôf+ÙZ¶+ÙW+Ò¡+Ñã+Òlf+Ô£p+ÏL6+ÊòØ+Ðl/+Õ.7+Ùí+Ó+ËBŠ+Ç6\+ÅhÐ+ËÓG+Ì`R+Ï*3+Ò`+Ñ9ö+ÐÍ+Íã5+Ìl +Êý”+ËÉ³+Éäå+È¨%+ÂÖ+¶§+¯ðç+±ÁP+¿B˜+ÓD*+Üýë+âÖâ+ßwZ+ØF!+Íµ4+ÇX+Áà—+È*+ÉPC+Ì™2+Ñ
+ù+Õ/x+Ð/÷+Ç§?+Â ¾+¼§+Å#€+Êá_+ÐÈ +Ø]+ß}ß+â”\+à´+Üæ+Ôwî+Ëž±+Å²3+ÆLì+Ê¤ +Õ3¼+Ùªh+×ß”+ÔÝW+ÎãÃ+Ä‰l+Ä°+ÉqN+ÑC^+Õc+Ö”+Ù•+Ý$.+Ý©õ+ß(î+Ú.ç+×M+Ô²ø+Ø*r+Ûêœ+Þ¼r+àI+à¦z+âÔÆ+àï+Ûl·+Ô&+Ì©‹+È}5+ÈA¯+ÎÖq+ÓÕO+Ô25+Ð‡0+Ë®+É+Ç5+Íqä+Óg+ØZÚ+Ù+Ù ¤+Ú>+Ü>#+àÿ@+äÔ.+Ûæþ+Ò59+Ë§/+ÓÆ\+Ø\=+ÜÈ+âOò+ç×+çÇb+÷{2,S+ïj¬+ÐnX+Åž+¼ Þ+º˜â+Âˆ+Î]$+ÑHŸ+ÐwÃ+Í˜+Ïj+×Éw+Ü ¶+ßÕ*+âº!+ä0+á×+Ý—Ã+ÕáÆ+ÎÜV+Ðf+Û·+ßAÎ+ßäé+Üf'+ò:+Þ`ü+¼(+¸ÐA+ÂÅÎ+ÑÛ“+ÙF»+Î¯P+¾7+ºI5+¼|“+Å¿+Í
+)+ÌÂ$+Î`0+Ïø+Ô.+Òs:+ÜDh+á‘+åÄ×+ßƒ+Û"ò+ÝG+Ùéõ+Þ4Ñ+à++ã >+âGO+Û&ë+×¶þ+Íw†+È5s+ÌËŒ+ÑÀ~+Ò¿ß+Î+Å
+Ú+Ä·Ü+ÎEš+Ðú6+Ñ5V+É½³+Åâ +Çà›+Óö+âø™+íÎ6+ì¿+å+çÃW+è¥µ+åÒ+Þ¼Y+ÞYÓ+Þ7–+Þq+ØæÚ+ÔAj+Óô'+ÓM²+Ø¹Ç+áo½+æ%p+å/;+Û*­+ÏÁh+Ë±ã+É£¬+ÎSæ+Ó›+Ö% +Ù§E+Ô‚ê+Ìi+É¾L+Ð–»+è×º,+õZØ+åµ+ç +ã Â+ßti+ÛHA+Ö<F+ØKÂ+ÛÜ;+æ9&+ëw+ê4¾+ÞLÿ+Ñ¬+Å®“+ÁÊw+À}Ÿ+Æ Š+Ë¬r+ÑG+Î?T+Í@h+ÑÌ +ÐÝÅ+Êrd+¿Þ&+¹ìz+½Cê+Á7ø+ÅP+Éó+ÌÑU+Ë+]+ÈfÀ+Í¨b+Ò“›+Ò·j+ÎV·+ÈÅ.+Åv>+Æ +È—+Å¦Y+ÂÖ/+ÂÔ+ÄZ‚+Æ8+ÌeS+Ð%¯+Ñ4P+Ïî+Ë(+Æ¤Œ+ÍÈÂ+ÏÇ“+ÎÂA+ÌIÔ+Ê²œ+ÆØ,+Â]+Å@=+Í4ƒ+Óîd+Ú‹•+×ï÷+ÑC+ÎoS+ÌW²+ÍÚê+ÌA+Å‚+¾šÆ+¿<‹+Á©¸+ÈLJ+Í†‘+×l5+Ûà¶+Ö’ù+Òä.+Õs+Ó-ß+Ìª´+Ã']+¿Î€+¼†÷+Ç•=+ÓÍ.+Þ»+â&+ß+×e+È½]+Â+,+Á?û+Ä7–+Á{v+º½ñ+¼z+¾ë +ÃNa+Ëˆ +Öé}+Ù(Y+Ö^+Ñ
+,+Ïj+ÑÃ+Ú-‚+à`+Ýûâ+Ò¸ò+ÄÿR+¼t +µ|Ü+µÓ +ºÝ+ÃW+ÎÞ+×ÉÌ+ÚS+Ù„ã+ÕL)+Ðè+Æî;+Á
+ù+½(H+¸é+´ -+µ™+ÃÇe+ÑGŠ+Ô$ +Ó8A+Õ é+ÛOE+Û:Î+ÖŸò+×ô8+Úå©+á©¸+ã"@+ÝÇE+Ò|+Ãê7+»•+Ã@í+Ð7½+ÛhÛ+Ü¨+Ø +Ô›š+ÙÿØ+ã,Ö+à?’+Óá¾+Æ~9+½úÔ+½‰–+Êžµ+Ö!I+Ú…d+Öæh+ÑŒƒ+ÆœÍ+Ã½m+ÎÌ2+Ù“9+ÛŸ¤+Ùeó+Ò•~+Îhe+Î<+ÌªŸ+È1 +Ã"a+ÄÝ	+ÈŽM+ÒŠƒ+Ø1„+ÕMA+ÍmÆ+ÆþÖ+¸æ¤+³$¬+·¿E+È´:+Ôlº+ÏË—+Ä%÷+»QY+½Ej+Áô©+ÆÄb+ÍÄ’+ÓSï+ÔÅ+Ò£„+ØÃ©+Ý2G+ß¬¬+ß\b+ÛÏZ+Ô+Ë›P+Ão{+¶öï+¸ö—+¿+É¢8+É¹Ü+ÊJ0+ÉÚå+ÌŒ#+ÑîK+Ú{+Û3+×@+Ô(v+Ðˆ‚+Æ È+½^Ë+¼*‘+Å+Óžµ+ß7++äÿ&+ä³Ÿ+ÞãT+Ú"Ø+ÛÝ(+Ý¹4+ä/Â+æÕã+á®®+Ñ~+Åä +»ó+·Z\+µe5+¹­á+º«ü+»Å+½éy+Ã.c+Æû+Æã+Ê +Ímû+ÍqÂ+Ïk9+Îõó+Ç(®+Á+¹œa+¿q¹+ÏWÞ+Ö–+Ö³Û+Õq+Ö¶²+Ùêz+Ü~;+Õ0ó+Æ¥¸+¿Wv+½ÖZ+¾SÏ+µLI+°NT+¹Îë+Í<E+É)@+ÆgÓ+Î›ë+Ôæp+Ú×ù+Üª+ÏÔ+¿ÛÚ+Ùb+Ö6‚+ÔÆ+Îˆ½+É.J+È°Ç+ÉÊ	+Î†,+Ô[+Û‘!+Ú}ð+Öu+Î«+Á8Þ+³¨ø+°o+¯Kå+¸ªí+»yW+¾ð$+Ä“+ÊÀ+ÌÚñ+ÉÒå+Ëfß+Í;k+Ù°Ë+âçž+éye+ìyÿ+é´œ+à´è+ÔŒÜ+ÍÈ”+ÍÎD+ÒÒÖ+ÓkP+Ñ#+ÈPã+À¹ê+Àµ˜+ÄÃ++ÅÕ +¾D±+¿r1+Ä}é+ÊC]+Ë<•+ÓÃ+Á{Æ+Á(#+Ï»+Øþ¨+ßæÒ+à!©+ä:Å+á2+Ü‘Ø+ÕÅ+Òo÷+Óøé+ÏË+Í‘Û+È‰R+Å·+ÅGñ+ÅLk+Ío+Ð•{+ÒÑ+Ãa^+µÜœ+­lø+¯æÎ+½W"+Ì,+ÒÞU+Ð d+Ì†+ÍWž+ÐS+Í©+È+ÉÓ+Ð.v+×@C+Ù"?+Ùg²+Ú
+õ+Öé'+Ï?µ+ÈÇÅ+Ãç+ÊH+ÔãÝ+Øo+Ñ+Ä01+¹iç+¹Wú+ÄÕ>+ÆNk+¾#M+·¿Y+¾»v+Ê!n+ÏIZ+ÔX#+ÏÜÏ+Ò`+Î`+Ëá©+Ë×j+ÐùŸ+Ö“Z+×¤+ÔB˜+Ï—+ËÍÔ+Èüµ+ÊÒ+Ê 5+ÈÒ—+Á+¼©+ÃÚ_+Ë©+ÙE5+áµ³+ß¾ë+Ô>+ÊC+ÄŸê+»%+±®;+¯ÃŽ+·\+Â7+Ìò+Ì»+ÐÃ‘+Ð:	+Ì|r+Ç\‰+Ç¤ž+ÈØ‘+ÏÝý+ÓQ+Óùj+ÍÐP+Ì™+Æà+ÃÄ§+ÌÑ+Èw+ÑÍ+ËÅ]+Í‹_+Ê’+Æ˜R+ÂøÒ+Êßñ+ÏZf+Ò¡}+ÒÒo+ÐÂ“+Î=_+Æl+¾Ò€+ºH+Á”ß+ÊþÓ+Ñ>ž+Ïð+É»B+Æà+ÃF+»n]+´g]+»|t+ÇA.+Ñ¿+Ñß‘+Úº”+ã¨%+å”h+ßt+Í…?+Æ	8+ÂÏ“+ÄmT+¿‹r+¿]A+½bÀ+¹ã+¶œ+º˜+Áþ+Ì­ +ÎMí+Éªú+ÆË¶+Ãy³+½3d+»Ä+¹'c+À³¦+Å+Î&ï+Ôm@+Èó+»ñù+¶¹+µ_U+·}-+ºÀj+½§ð+ÇÂ…+Ç‰»+Äžè+Àø³+À!G+Äw+ÍO¼+Ñ¡Ó+Ê+Æ¸Ø+Ç<ñ+Áù¯+¿ç‹+Ã§í+Å;ô+Ä´ù+¿þi+½äW+¼g+»·+·½z+¼*Ô+Á@
++ËÜ¡+Ìù+Éd+Ã)Ü+ºf +ºq+ºío+Áàƒ+Ío+Ïö+Î +Éè3+Å·–+»-+²Hë+­²‹+´ì+¿º+Ç¦+Îa³+ÎL+ÌOÿ+Æ­x+Á{9+¿½v+¸èX+¶]~+±µ+¶Ì+¼bg+½ë+µœ®+¯B+¯ü+¸˜+ÄY+Ï³‡+Ô¤á+ÅŒî+»1ð+³†v+²½u+ÁÎÙ+Ô1Ë+ßY8+åÿu+ê7W+æÊ¾+Þú#+Ô:c+Ëú‚+Çõ]+Ä8+Èi~+ÊJÇ+ÇíÕ+Éî+ÃSÊ+¶}Þ+ª'ƒ+«c +°†º+³€+¶>È+¿‡0+Ëï@+×ß›+àoi+Õ:±+Ë@+ËÃÅ+Çz+ÉŸ+Ó Þ+ÕG+Ô C+Û7 +Ïº+ËœE+Å—Á+Ç‚‚+Éjí+Ë#z+Í$º+¹Ñs+­7ô+°u'+¯”+´Ië+¹¼o+¼Iƒ+»5+Ä+y+ÅßÅ+Ä	º+Ãñ+ºT(+µ“Q+·R+¹g6+¶ý"+±Æ+´÷&+ÉnY+åF+ñj•+ñ¼Ó+ì5Å+ä•;+ÚW+Â~‚+¿ý+»?+´ÕÒ+°³:+¶AÇ+Ã›ó+Î*i+ÖN“+åBq+ß$+Î«+¶0ý+´ƒ7+¾~¯+É£ê+Ø¯±+àM`+ä s+à:P+Þæ°+×µ€+Ä‹‹+º·Á+¿¨ž+Ì-À+ÒBP+Îy¡+¾Ê +·½=+»Ã­+ÉÑ,+×@m+Þ+Üj++ÛëÏ+ä­‡+Û#2+Úï+ÞÛ+ãw+ãýÈ+Ý»Š+Ê#‘+»‹õ+¶ +³_+´ˆ+¶^+¾Ùþ+Éc˜+Ë·:+À¼Á+¯Ø²+©·[+µL¸+ÄÓQ+×Æ
++×Þ +Ä “+ÃÁŒ+Æ½f+Çä+ÇË+Çé[+¾žÕ+¬›€+œ†€+¢ªî+´–+ÏpA+åM+îµ+éG+àc(+ØÇ;+Òï+ÎL+½Ç¢+´Ô@+®+´b²+º°;+¸R+´I]+¬ÈÆ+§LÐ+®®Þ+¼ËW+Õôí+î-m+ñðJ+ì…£+â¸°+Õn]+Ïä+ÏM¯+Õ®É+Þ,8+éü+èvw+Ö\L+ÒöM+Î£O+Á±Î+¸Nö+¹ì+Å8ä+Í‡m+Ëà¼+ÌO+Î×ì+Ï¥£+ÍÙ+Ñ¶f+ÚT+Ún_+Ó×+Ìï[+Í[ç+ÔE\+Ðiÿ+È-ˆ+É5&+Ñk+ÛüU+Ü0Ý+×Ã´+ÌBW+ÂÛ”+ÐGr+ß8;+Þ¥+×“+×‘b+Þso+áO +Ü}î+Ýb+ß&È+Ø?z+Ó~-+Ìœê+Ï1]+ÒÂ+Ô	]+ÐHá+Ès+Ãe|+ÍÈ,+ÑžC+ÍK‹+Àµ\+ÃãR+ÒöÕ+ä1W+ãŠ¥+Ùý÷+ÙA;+Û~+×;k+Î|#+È+ÃWÞ+Ëû+Òô%+Ù+ÜmÑ+Û«õ+Ü“+Ú’ã+Õ['+Ïz+Å§+½&·+±ƒl+¬R£+¿ÕÃ+Â»õ+È“¥+È}+Ãi+È¨+Ë£+ÌS+Æhµ+¾Äö+»Õs+º#‹+³+¯c²+°íÖ+´>Ë+¹î+ÉH+ÚO+ä+è–>+ãEÆ+â3+ê›è+å,+ÌB½+Á†+½J+Ç
+~+Õ®¿+â ø+ç+ì+öPÒ+îti+ç—+à†+Òþ+ÅûÈ+¼J+²Ñ+¹¼s+Éñ+ÕG?+Ö+×Ü+äï-+ð ÷+î\Ÿ+ëË¾+è@o+æ%+Û	+Ð—Ž+ÎŸU+Ñáã+Óä•+á-¡+è•Ž+ó«\+õú—+çî+ßãr+à+Ùži+ÑRc+Ö3€+ß*¥+èC!+éEm+ëÉŸ+æÒ+ÚíH+Ðˆ+Æ’\+¿u+²¹œ+±0­+¿‚Œ+×‰+âù«+æ>+çœË+í$i+îØ+çÁ:+Ø+a+Ó]¤+ÚÕ+áÀÈ+é{I+êÔV+ä[+×i+Ï±Ë+Å\>+¼ü1+Â¢+Û9è+ðâÕ+þ¤¾+úÏ+ñrÃ+ë¶‚+Û§&+Ë!¾+ÁŒ¶+¹$+³ÖM+±Xþ+³5Õ+¾æ+Í_{+ß Î+çcƒ+èµí+Ý¸+Ðˆ›+É<·+É«+Ì':+Ç3 +»Ù+±ê+­™Â+¹Û·+Â¶,+À‡+µõ/+«î4+©‹+®[j+¼g+Ä+ÈQü+»Zu+¿µR+ÙÆ”+éŽO+óH'+ôÿ~+ôŒ+êÔÖ+ßŠ+Ùl+Ö+ÙÈ+ÞØU+Ù¿•+ÑÏL+Ðr„+Ó	
++Ù ¤+àê˜+ï ÷+÷¿Ù+õwê+õ¿+êò+Ð' +¶"+¯7ö+ºû%+×#8+ð®~+ò~Ê+ãké+Òã+Ê°+Ò(Í+Ø7Õ+Õ§þ+ÍÐ,+Á»/+Ã…þ+Ô'þ+åÀ+îK +óyc+òsÇ+öo+õò§+ï8+äÃx+Õ­+Îì†+Îqz+Þ‘+ï½›+øf×+ý|Ö+þ4Š+ô®½+íI'+â `+Ü3¦+ÙB+â`=+ïq¦, ò,f”+úŽ¤+îÜu+ç4Z+å~+â…Œ+Ú+ÔÛû+ÜÞ]+ì~y+üÁ,sŸ,&, 5à+ôûV+ç}k+ÚÀû+Ñš+Ö`+Ú<Ž+àzØ+à<r+ÜN+á%Ã+è˜#+ì+åG;+Û¨œ+ÛL˜+èã+ôZ,+ùK9+ÿÂZ+ÿÇ+úàƒ+çVm+Ö²—+Ó…8+ÝR+ÔÒÌ+ÙªG+âÔÀ+älw+äob+ß"Ÿ+ÛÔ+×‘+äºï+ö~,R,NU, òì+ûŽQ+ën¹+ÙþÍ+Ï¿•+Ñ¾‘+Ú²Î+ß1²+ß!“+Ý+Øød+Ý°í+â±h+äü+å±+éàT+ïµ±+ïª—+î„4+õqþ+ú,‡+óÝ’+èYç+éÔ+ò%n+ó×+íü+ë7+ðe+÷ø +öÏ‰+ï¢+çQ½+íl‚+ùI¤,†,!d,Î, 0[+ñðK+ãí§+Úeï+Øíã+ßPÄ+ç)+ò	"+ï¼Â+å±'+Ó Æ+ÉXR+Î¥k+ãú+ñâº+øoŸ+û„+úÉ×+÷©j+í[Õ+åT+ì)$+øß, ?ƒ,C«,‘+ÿj+ù¸+õýŽ+÷Yp+ýœ, ‘û, Ü&+ú^á+ó‡Ÿ+ñf+é3R+àÂ+Ý¿Þ+ÜF¨+áÃK+ïQô+ýÓÊ,MO,è1,Ô, ÷+üh+úù	+øÐð+ôÝ+í0Ì+ãG+àø+çÅR+õ*s+óÄ	+óŒX+ó¦°+ùp÷+ø†ï+ñÝ+òg¸+óÜ+ñÐ+ïÆj+á*Þ+Ð›°+Ìù¿+ÖR[+áíÞ+ðÜÜ+ôÌ+ó¶»+ê*G+ë‹#+ìà+ì_Œ+îb4+ûËh, ËJ+üü¬+ìx+â©é+Þ‡ +äh©+íbŠ+óÌË+ñJ%+ô*+øá`+ü1+úŒp+ö9!+î¬’+â ž+Ú¢p+âF)+õº#+ö`š+æýÆ+éÆ+î‰2+÷eq+ü*`+ý`@+ÿòÓ, Ï++ÿ†9+ú\E+õl&+ñw+í28+ìaÅ+ëšP+äñ.+à¢š+áÑØ+ê+õÐª,Ž´,@ø+üÜ+îì{+æ|ç+ìÃ]+ôû0+ûÓ+ÿ1, nÑ,-?,ÔÑ, ’_+ø.Z+èi	+ÕÇ2+ÔØ;+âéø+ðP¶+þ6{+þ+ùvÛ+ú­“+ü¼º+ý;3,í),¦{,¼r,, †Š+ô6ñ+é/*+ÙEC+ÈQ(+Åï/+ÎÔ +âo+óV?+ø#U+ú%+÷Ô»+ùÁt,a_,¤Û,‡|+ÿŠ+öjè+úN, "K, gý+÷èî+ìÈ‡+ßg€+àÓÏ+äö+êìö+ó‘i+ð‹¬+çó+èw/+ðnå+õ*+ø¥}+øÉ+÷ç+ù=+ýÈD, Ë¼+øJz+ë…Ì+ß
+:+Ü/7+ÙrŠ+ÖÅW+Ý&Ó+ãü˜+ìëY+öé+ú26+ÿƒ¦, ë, ¢³+ùnf+ñ™(+éŒ+äÃô+ä¡+ê’™+í`À+íÕ+ãþœ+Ý-+ÞdÆ+æ“0+öI+þ©+ÿi¸+ÿaý,Çï,¬,·,Ÿà+ü9+îÌù+áÆ +Ûõ+à+åº'+ãnÂ+ÙÝ·+Íˆa+Ä±Å+ÀÅ†+¾¦ý+ÃÎ+É°}+Ï'º+Þh4+òˆÖ+öx,+èßº+ÔÈ§+É¦˜+à&3+ô +ùQ€+òêq+èÈ+âŸU+à+á=<+íN+øýá+÷T†+ñSn+ó-ç+ôÁ¯+íhE+ç*Œ+ëS@+ö!â,P,EÇ,àÍ,‰ ,ca+ôlW+è¤Ÿ+àZÓ+á<+îÚ+ö–f+ødé+ðŠt+ì½¶+ì¯+ó}Ö+ø±1+üz‹,?,iä,	\ö,  ,ØD+ÿ_š+óýS+ä©(+Ý¡Ê+Þµn+è+õn,PÖ,’y,It,Æ(,pa,j3, ìl+øÌ*+êB˜+ÛX=+ÔÎæ+ÜåH+ÞøL+äèÅ+íÏ£+öP>,VW,˜w+åV3+×†Ò+ûð–+û]7+õÙ+õð¨+ðõ+ï5Í+ëa+îoh+ëöq+æ½!+ËçT+É]g+ÝP0+ìÄÿ+þ¡+þ·Ä+ûzž+õèå+ô‰Ä+õï+ô‰8+ù‰º+ý ‘+úþñ+ù°+ù!+ô'+ëa+èœ¼+Þ"+ÑÉ+Ý[(+æÊ$+ñU#+ò¡+ü¦`, ü,ÑA,íÞ,V+ùœM+òlr+è¸»+à‚›+Ýai+Ü±*+ëÚ+ü
+q,[$,St,a,yv+ý¾°+óäÀ+ë˜š+ò•Ü+õ	+öµ™+ö),+ö4r+ó=+ê­+æŸÍ+è•Ö+êG+ìõ÷+ó¾+ý…, Ç+ÿ&z+ö‚º+ób@+õ‘‰+÷É´+ôâê+ïn+çûÜ+è8m+îe+ù`a,',
+-K+ýI¯, w­, ø+ù.|+÷Sã+ú[™+øÇ,+öèø+ôJ+ìæ„+æã•+ä“+î#²+÷º¯+÷Ž+ï¥Õ+ô@4+ü¥,+ýœò+ø^È+üEô,J’,€+ý¶+öN+è°E+ß‘+Ür§+æj†+ûC,MÚ,
+	â,Ø¨,Ö,}+þñ–+ùŠ¸+ï®•+åù¡+æI„+î¯z+üUÚ,|n,ÁX+ýÇà+÷;ò+÷*+ü R+ÿÿ,“»,ôã+ÿù+íV!+Ü›ü+âqr+æÆo+ði+òþM+ôFŒ+ö°Ò+îå+ïÜŠ+ø˜+ý«;, ‡´+ýNË+þ^8,«ù,	,	Ù,	Zž,ñ,	·•,a¥,Ñ^,Ýå+õvŽ+èÙ¯+äƒÙ+ê.+ög¶,3ï,SF,G÷, Þ[,Z‰, ùÈ+þ2”+ö¥Þ+é”Ü+Û˜¤+Ë+Ììœ+ÐÐ^+ß<Ÿ+ñK‘,Ÿ,ò,Å·+ÿ:+þNñ+þÝ¬+ûù+ö>C+öyn+òê±+ñ?É+ùf§+úÐ±+üz`,%R,XQ,ó&,3<,	j,	äc,¼c+ý´+ð˜î+ïÔn+óPL+ý K,=±,’Ä,«:,b,¨¾,ó&,6,Û€, Ö“+÷–÷+óÐ*+õk[+öŠn+÷À+ò]”+ðÝê+ö2œ+ù<‘+üÓÙ+ùþr+÷°+óæÊ+ôeÚ+óÆÒ+ó”+ò=+òw—+ôñƒ+÷<X+ùí¯+ø>@+òÑ·+ñÔ+û–'+ÿ•T+þ.Ó+ûQ+ù7+û(C, Ü+õåŽ+óìÅ+þÔ2,Â?,-R,Ë—,k
+,`­,?^, x, ‘D,oå,
+8g,	Çã,âÆ,Jà,[.,‘¾,Ý½,À±,ob,gÜ,
+Kß,]ó,qi,Ï„,
+|,±,éŽ,ñ,,,ù,
+]d,et,VR,o€+þ6+ú u+ö¿H+ù[Î, ÏÌ,;ò,ø|, ‚u, V,À¹+þzk+þ#,$*,îc,
+ú,4ê,	,÷É,>,àE,},Éç,¶,Ý,Q,,
+h÷,å÷,?q,
+,	d:,áX+üe+û”–,›x,­,ËD,`,†Å+ú*„+öX+ö3+ïnú+è; +é6b+óú°+ü™ä,à,ñ‡,„š,Æ–,J8,k-,Ú,€B,Å,ˆõ,Ó,iZ,IS,)J,
+¡‚,½V,¥W,1,£F,Ðå,',k,s@,û8,4 ,Œ%,ÊU,H“,t1, y,‘«,íG,Åß,Qä,
+E),
+/,œy,	™D,
+Ó,p˜,T,½Ú,Ÿ,V,,	"ç,	ŽA,†,¾,•,F“,¨y,Ø»,K~,Å},'‡,™ß,–Ñ,gf,ÿC,ÉH,ó´,N,ñ,£,
+[Q,Ób,Ft,
+†,y?,1ÿ,	ë,	ÃI,
+YÜ,l-,F,ì¦,ï³,Ú,ûa,5Á,–ü,'#,Ûf,å,'Ç,ä,²V,
+èà,pW+þåž, B,„²,	ËÊ,¢^,ó˜,¶Ç,%Y+òEt+Ó"+À¶ª+ºVq+Âiµ+Ëe+Ñzù+ÒµÀ+Ô3ú+Ø¨7+Øâ+Ûy+Û¹•+à*‰+ã€+ë}_+î)©+ì¹à+îaf+ô8;+ü'+ÿ$Ë+ývw+ùë»+ùÉ·+ùg+ú_4+ù‡»+ùt:+÷l8+øá®+öú+óO+ñZ +ëX2+æ—î+é!à+çÏ€+ãÚ‰+ÝO+Þn4+àïÔ+ã†Z+äþÈ+Öå+¿¨Ê+ÎkU+ãl¿+áÈ›+â!+ÜB+Ù)s+Ú«Î+á‘ñ+äÊ·+äY!+érW+î9_+ìJ+ähÅ+ÝÂh+â$+í”ó+õv+ò¦+ñ&†+ô?;, \É,s,	,BÕ,	¯,L’,Ô,ÄÌ,½,	®
+,0ö,ó
+,±C,´¿,b§+þ.!+þL³,Y‡, ™c+õóy+êÒ+ë*a+ö>, Hr+ûÐÐ+òp+ê
+²+åVü+ãeÈ+âŸñ+æå+êÜá+ìp¾+êÒ+éMÃ+ëú+ôà(+÷"v,7,,¢Ž+ß}+áKz+î{è+új;+ü¸‰+ï¯Ž+æ9+å/Ã+ñHV+üJV,ï›+úÙ+ó¡g+ê:ê+ô˜ü, ÅD,,Bf+ùÊý+ì†Ä+ê5|+öÿÜ, ­>,»u,&+ûÒ”+óB1+óUÀ+ø©5+þfÖ+ýÅÆ+ýè+ô+ïŠŒ+í ˆ+îÒi+ö+øz1+÷es+÷5Ê+÷Z+÷]h+õU+òó²+øHT+ö(!+ûB“+ü»×, "+ýþÄ+ôQò+èºõ+è“`+ð®^+ÿÄ@,ªq,›,]+ôK+è· +íQ~+ûhD,ì],,Pr+þð”+ôß+êÙ+êÀ+ü]ã, Ä¹,P2,ÃQ, Œ8+þ›+òPp+îÛ+÷^¦,÷¸,®8,Šu,q+ù '+êRœ+ão+ç$ù+õ{ì,(P,~G,E+÷[/+ê—w+àšî+ß²Œ+ç‘ã+ò­;+õ÷+ñÛ'+á×À+Ö´Ž+Ðty+ÚY+ç1+ó3¼+úv+ýÔï+ü9˜+ù2G+úBò+÷D\+ñ+ï;â+òp"+òwÛ+îê—+ß`+Èæ+²xç+«qÔ+¯¡H+µfQ+»W¥+Äf+ËH+ÎŸ+Ð+8+Î…+Îå+ÍÔF+Ðõ.+ÓÐó+Ðü§+Ó–X+Ôw+Ö–3+Ò[L+Éõ›+ÓÐ3+áv¦+ä^#+äí+äi0+æà+æþˆ+äMf+ãYˆ+ãOE+é†i+íñÇ+ê¬P+ßƒ+Øø+Ó¿”+ÓKÚ+Ò"²+Ø5+Ü(+â‡+æñl+åâH+äŒÛ+âù¦+Þ’í+Ú÷+ÙÒX+ÚH1+ÚP)+Úú„+ÝsÕ+Ý™Ä+Ú'+ÖÁ+Ôuk+ÑgY+ÒZ_+ÑÔ6+Ù/M+àð-+éçû+ë[{+çôÐ+ß˜=+Üc+ÓÄ·+Çc%+Â+Ëþî+Øâ¥+ç7s+ï(+î+ê«+âç)+à“¼+ãÄ<+àáf+Ù+ +ØwÐ+â«ä+ïw¨+ïÔ+êpá+îo+üŽÂ+åÈõ+Ø«µ+Óy
++Ôœ1+ÕÕT+Ümj+Ö”+Êç{+áæ‹+ñå•+å«]+×H+Îæm+Ëÿ‹+ÌW$+Èòv+ÌÎ+ÐÛ²+Ý-v+â‚N+ã³~+àýy+Ú½Í+Ô"Â+ÍÎþ+Éyí+ØF¿+áç^+äü +ç†å+ê#¼+è_¤+ê®+êÛ+êªf+ã—î+Ý)+ÙY«+×€¿+Ýö+èŠÿ+ô4¶+ö)}+õ`¯+å®0+ÛÜq+ÖK+ÞŸ¯+èÙæ+ðS+ë#Y+ã®â+ÜÎb+â¼+ñ d+øM+öÓS+ï^Þ+æNQ+ÚÒ™+Úé¶+ã3ú+î:+ìõ®+èbG+å:+á9ú+Ýx‚+ÛÜ+Ü.Â+á®´+ÛØ,+ÓB¸+Ôr”+ÛË–+Ýõ+ÛwÀ+ß]Ž+àÛ‹+åé‡+êAÞ+î¤ê+ìD9+ã.+Û |+ßj+ç™Î+ðLÑ+ï	+Ý£§+èGv+åoß+Þî—+×k+Ùþ+Û” +Þi>+á`ô+ç
+„+éD¸+à¦W+ÖÓ+Õ+Ý¶¨+ñ­Ò+üæ”+û¡v+õ&¿+æ1ö+Ù•+ÔL¿+âR+ð~Ù+ù‰c+üåÿ+õXS+ìØb+áfž+ÞzË+ãçá+èÈô+í¥¿+ð‹+ø|_+øÄr+ôg’+î¬é+ë³®+ëÝÅ+÷=4, 7C,Êe, ®+úÒà+ñ©+éb+ê…À+ì
+R+ò¬.+ø¾+ÿf¸+öl}+åõÑ+Õà+ÖwÓ+à›(+ì¨+ðnK+ò6+ølÐ+ý +ùz¯+õ'ú+ðç0+õà+ü2+ü°>+ú¦{+ø¯À+ö¼È+ï6*+áy+Ô…š+ÌÄ›+Ãt+±Æ(+¤™é+¢`¯+§’Ç+¯ã¦+°„ +´2Ø+¶”q+»¾¨+¼Æ›+Á¸+Ä¨Ö+Æ+ù+ÆQZ+Áƒ.+Ä.z+Èµ+Ð´ø+Õf©+Ö l+Õv‘+ÑF+Ïe®+ÌHC+ÉÐü+Ë—ê+Ðž+ÕÔ+Õw:+ÔH:+ÓâM+ßt‹+í‡ô+Ø=+Çè+¾[…+µ›×+²–U+·"ä+½*ú+Â +Çt+ÆÎˆ+ÉÎ»+Éäæ+Éœ³+ÌÔ®+Ô%-+ÖpÏ+Î–ÿ+ÈrN+Á2ù+Ãúû+Ê+Ë4ß+È¼}+Í
++Ît}+ÍXˆ+ÊC\+Ïï+Õ-^+Ú˜+Ô}º+Ê†Ÿ+Àî§+¼fB+»Xš+Á#¯+Æ¦6+Ïðí+Õû*+×:C+Ðë•+È·+É6ò+ÍÏÄ+ÓU:+Ñëo+Ï]+ÍŸs+Ïü +Ô%9+Ï&Ü+Î„ô+ÎÑb+ÒCù+ÍA–+¾hî+±u£+¬äÈ+¸?ã+ÈÑ+Ù6Â+ÞÒ+ÖÝ¾+ÌÍÒ+¸ÂK+¥ñ=+½D+ÈÚQ+Ì²J+ÏÇí+ÑX2+Ðñg+Ïvý+Ðö“+Ô+Õ(õ+Ñ)N+Ë>}+ÊÑö+ÊZ»+Í§Ù+Ï_|+Ï+Ó®©+×d$+Üèr+Üq×+Óõ+Í—Ã+Ê˜+Ð5+Ûÿs+âËß+ß@ñ+×4k+Ò–E+Ô|¦+Ô_u+Ìr,+Á×£+Â–û+Ç|)+Ð{4+Ô$>+ÒU¤+Ô+Ïú¸+Ïê+ÑßØ+Õ+ÿ+ÍK´+Æ$˜+Â¿æ+Ãô»+Æ.Ÿ+¿Ð	+°"~+ßL+rÊK+zé+•òÓ+´©¢+É–"+Íó}+Ëš+ÆŠa+ÇXt+Óš+ØˆF+Ý\ +ØUW+Õ4§+ÓNo+ÒíÄ+Ðæ+ÑóÕ+ÏíÛ+Î+ÏÅV+ÐÜ1+Õ—+×,+×/ƒ+×·b+Ù±ö+Üh2+åÔ+çåË+æ”D+àrd+ÔO+Ë
+ø+Ë6+×Å+èÀ+í“ì+ïi+è¡+Ý¯+ÒÃ+Ä'º+Êlö+ÑV{+Ù+ßz+åd1+åAw+Øû»+Ô»Ò+ÚÅK+ëº¢+ûö×+ÿX+öq+ã´)+Ò–+ÇÏý+Ñ:V+à¿v+ï‚k+ô~8+ïµ+çu+ß»+Ûœ=+ÙÏ¬+ÙêØ+ÕÓ¾+Õôs+Î:k+ÇÁ+ÄWä+ÊâC+ÓM7+Û„+ß®+áŠ+àMË+ÓŸû+È‹7+Å1Ò+É+Ì²«+ÍXš+Ñ[€+Û>J+ÞV³+ÙÌ·+Ôô˜+×ì +Ø›{+ßcu+æ×+ç Û+ëÆÐ+çÃÃ+Üe—+Ø¶+ÙÏ+ÜñJ+ßÃç+âK+à…™+à“+ÔüÈ+ÄO+²ÌO+±µ+½Eø+Ìq‚+Ñ?ù+Ð¢y+ÓZ+Ùr¯+ÜÍV+ØÎA+ÛÖ+Þßž+ãü+æ?+ãã+àã¦+â!++àâ–+Øt+Ñô#+ÑÇ+ØTœ+å25+í¼.+çRb+çÁ+êb +èD#+ãZ—+ÝßZ+Ø€/+Í+,+ÇÏ+Äœû+Ë–n+ÐŸs+ÐHC+Ñ§T+Ø¹¤+ã÷†+åTŒ+æJ+æÛõ+ì¾œ+í0+å+M+ànŸ+Û/'+ßëÊ+å?R+îÁô+ï"’+èël+Þn+×7ˆ+ëŽ×+ßX+ØÚD+Ú|+ã:¬+î0g+öd3+ñ!Ó+ÞQx+Ý]÷+Ù…p+Õ^Ë+Õð.+ÖÞl+Þ£+çÌ}+çüÌ+êF+éÐû+ëƒå+èí+áC©+Ô> +ÆÔ+Éˆd+Ó•Å+áäG+ëá+ëoÁ+äç¯+áLÇ+èÓÉ+ç¹N+àæâ+ÐÇ¤+Íï
++ÑÁA+Õ²q+ânÖ+ìŸÿ+ïÒ`+÷ª¬+úa¡+õQÈ+ê‹	+ÛñÁ+Û5E+Ûj+ÒÉ'+Êò+ÍÜµ+ÙÏÖ+êT+éæ+èÿ+ÝÛ'+Ðõ+ÉÂo+Ëö¢+Üˆ¸,/¯+ò¼J+à~y+ß¼}+ç[^+î6\+ëÑp+ãq+Ú%+Ó'Y+ÙŽÝ+âè²+ç³+ètN+ñW/+úò+ûo+ö–\+øFÛ+ìT1+ãu:+Úd£+ÏÿQ+äÇå+ð³+æeß+ãPs+ëxq+ñl°+öe+ñþ:+ìç½+Ûÿ(+×/Ò+ÙÛ-+ÙÅ‡+Óæ0+ËP|+¾í?+¿S(+Ð5+Újz+ß¢4+Ù÷+Ò +Év +Ãp1+ÂrJ+Çv+Ò{+ÓßV+Ò+Ú\Ä+æ$ó+å&c+ÜSt+ÍÝq+Ðô]+ÜîÇ+ëŸv+òë+ð@ß+å¹5+çÖ<+ñ¥k+ñÈa+í¨+ê-¾+ä À+ã½»+äy7+é3C+ñÄ+íW +äò²+Û×+×Ðœ+Û=+ãþ+í8G+íh-+íÁI+î§è+ïú+ðñÖ+ïä+îSL+ñó+íÆ¸+êW:+é+å{R+à=+áX+âD±+èõo+ó)G+ø³À+ûS+ø‚ +ïÈY+ã¹+Øƒ++Ì†¿+ÇK~+Ëè`+ËãQ+ËL'+Ì/ú+Ò´E+ÜV€+ßcÅ+Ý…e+Ëçv+ÛdS+é¸Ú+ì¯+ëê<+æ}„+áû+ßÂ\+Üš¦+ØOã+ßýK+å–+ç|Ó+âÏj+êû{+ô™]+ô€Y+ï÷Ó+å³±+×ýß+Ê¢+Àp’+²×Ù+ž#	+‡Ù+‡Æ+¡ì{+Å!+Úøð+àÓŠ+àš+àÝÂ+ãm¡+ßm+Ò¤Q+ÑOQ+×¥+âÑï+êÈ*+ïa†+ëò8+è+ïJ=+ó£c+ðYº+í|;+í<+åÅ¤+à¶™+Ù¶+Ü”r+ã+ê
+„+égð+â´Z+Ü,U+Ðþ£+Ä7#+¹Ê.+´uø+».~+Æ…W+ÐQŠ+Ï	g+ÎV+Í T+Í…+Õæ+ßŸ¬+å	U+Þ_+Ì×ö+»Yˆ+­u+¸Âv+Ê¡Û+ØÐ*+Ým‹+ØÓl+ÜÁÄ+Þ	?+â¥ÿ+éÎ–+ìÿÍ+åèå+ßa›+ãè•+êK+ëê+é—+â²µ+áôˆ+ãdG+å[—+å
++èÔ+í!+èô+ã«&+àéÀ+à?+ìÜù+ñ[?+ìýÙ+é…¾+åùt+ß'd+Ýe+Ü„ø+äž[+ìä’+òÒ©+ôì“+÷½+ïî—+ê]+ÞW+ÆOt+»6ç+ÁŠ+ÒªB+ã
+:+ãB+êº¶+õ£y+òä+è:V+äi+ç‡Š+ïëÖ+ò‡Ã+÷È©+ùq4+ùvì+÷¾’+÷Ÿ+ôÅC+òôµ+ë++ãž+Ù7ê+ÖÃ+ßË+è¦ò+òZ+ð
+p+ê;>+æ"++è)+ì°+ï:+ëkÔ+æn¥+çÉ+é5€+ïx+óÞÖ+ô½ì+ø]+ôÜG+òTþ+óK³+ôPŠ+ó–Ä+î&a+å¤Ã+Ýù+ÍB+ÉuQ+Ð­“+â`+õ¢+ÿ3++þ„+øtÍ+ôÙ+ôÙÂ+ù7¥+õU‰+ôÐ®+ò«3+ïÃ+ìß:+çö>+å8v+æ¹^+ì`Ó+ô4Ã+þƒh+ÿ$Ë+þYÉ+üÐz+úBS+õ_‚+úAö+ûŸ+þÔþ+øe+ñoÒ+ææ—+Þ»+ØÊ„+ßNå+êû˜+òB"+ò¦´+óS0+õ·=+îsÇ+èÖ4+åª2+èÃó+ño¾+ö'+ó†'+òaa+ñvm+ï+ïÂ€+ë­z+ëf,+ñÀ1+õ€ƒ+ùRv+ý¾	,ÊÊ,Lø, ~‡+ý¾+ú2·+øP+ôb<+ï—Z+ëÉ+ê¯%+í++ï™á+òu+ôŸ¼+ô‡&+ýD¿, –,_,áF, ,ð+ý/Ë, ¿;, ü+üF¦+ö_O+ð•¸+ð‰+òÑ—+ñ^Ú+õM5+ý/Y,<“,Ãª,å#,„f+ùË5+öF{+úe+üÖø+þD_+ÿâ|, 3p+ø˜ã+îô×+êÉ¦+ëÊ‘+ô>â,Þè+ÿY}+þ—¡+òÕ‘+è¶x+äãl+êWw+ñŽ +ø+úÚ-,", _+ñ`|+çØ+äiÁ+îÁ+õ¦.+úyB+û©¸+ùò+õV4+ñœ+ö§+ù|Ü+ú‡+öSô+ð½Ú+ï8d+ðõÔ+íøè+ï22+ïn+ô9+ù—?+ð®€+Ù +¾öš+µj+Á'ø+Û¤+öYé,4,10+ýD+ø1ß+÷x©+úN|+û~'+ûR(+÷Êš+óŽ.+ñÔ+ñ}Ç+õ$+ú¾+ý ‹, …,Ô×,)W,lp,Çö,é0,àí,–^,Z¡,¥B+õ–á+íUI+ó>Þ,×‹,v9,˜º,:,šo+û§+öž‘+ôbî+÷þ¾+þ°&,)¯, ‚M+è²š+Ê©G+»™y+ÃŒ~+Ùj+ðZÓ+þìñ,Ë,k,,—Ñ,ž, +úí×+ñ2g+æÓ7+æ÷+æ~+ìs±+õ…+óÏ¯+ñ’À+í" +ñ%D+þ-ù,Æ,¶8,ÁÕ+üö+ø¦ç+ö«+÷¹K+õp6+ó'+óp¢+ø©Ò+üÝo+ÿ,ÆÈ,zu+þ¼ë+ó%+íÍê+ölµ+þæ_,B,Òº,u›,ÔŸ,¶¾+ü´€+ù^‚+÷qú+ýÿˆ, Éÿ,“¯,¶”,ùØ,‘à, åÜ+üë+ú¤ñ+üd+ý¡˜+øØ¨+óÿk+ëhf+ÝW¯+Ñ‡+Î?E+×Ðé+çØR, ³,Ÿ ,æ{,óz,xä+þâ¼+ôŒZ+ï"Ò+÷œ, Í),¡î,mñ+ùÔ‰+ò/¯+ú±Q,	˜F,óÖ,UÐ,P,k“,W%, ”­,Ò×,¨ý,èu, L‰+õ-©+íÉj+ïx‡+÷HE+ü‡|+ø?¹+ï<Æ+óB=+ýN,~;,	˜¦,·M,±³,Õá,­¸,,,NV,	9,[Z, ðc+÷pO+ò®@, Óœ,Û\,[, V_+û	+ø$“+ø¿ù+üÌ3+ýTÆ+ûùÒ+üˆÈ+ø¼‚+òª9+ê)Â+ëÈ
++ñ«D+õD+ûªB,˜, /‘, [„, À¥,¶i,Êï,{‡,ûÉ,²y+ÿ99+üf+ûgô+ÿ9=, 0s,ã,ü,Þ­,~«,¾¾,F³,	Ë+úÎ­+ûÉ¢,1,èâ,	õü,§%,æÊ,+ñ,BŠ, -é, ¸,4Å,t, ü-+øBÇ, G`,…1,ß,;Y,7;+þH+þ!,ðL,’,PE,á,·S,i#,»H,æ„,H!,ä§,y%,¬ð,œ3,	Òœ,	 ,à-,_ï,F,ôð,ÎÁ,
+*,	†?,<,V=,ÓÖ,nÖ,v,Ä´,Î,ž,âR,
+›!,	Üý,{,°Ö,¨,žÌ,‘J, cK, _x+øÃ÷+ö+ú6p+ö(×+ü7, nô,šœ,‘t,,ÛÝ,â+ü‹ñ+ÿE,P,(›,
+^7,	`Ì,èÿ,0H,ºó,q,ÓB,ƒ¡,ÐÖ,Én+úG\+ñÈC+éX€+é§+óVë, Nö,3g,{,nÒ,ÜÍ,±t,	©B,	Î,Ô	,ÑO,+ü*i+ú5˜+ú,&+ðrÏ+ìS•+êJÑ+ò¸+þò,ø,Ö°,W>,å¤,<+û>+ëT5+åßñ+çH|+ð•ö+ú[M, t+ÿ––,M,²Ö,Jä,Tè,ö,h,ãw,†œ,Ü,Z+, b+üêþ,}ð,ÆÒ,y^,h,·,¼˜,ŒÙ,½ñ,¶,Vk,Qÿ,L, Ö,¾(,-,–,ÿ,Fˆ,	:,iâ,Áã,ƒ¿,:Ì,ƒ,h˜+ù›Ç+ò3+ò³#+ý¯, +ÞÈ–+×¨›+çŠÒ+ðÜ¡,,¬?,©,†Û,è,Ñè,Mÿ,œJ,%,^H,	º–,¹ª,Wœ,Éª,Y+þ=Ð,¬ç,{_,S,†E,Ò,UI,*s,-J,®4,	,EC,	ž,"c,èd,@¯,ËQ,Éç,kE,@5,v†,°m,õ,.¿,,Ù`,Â¦,Že,­Í,Ý[,R^,V+üxš+óÌW+ú¡%,¤,
+z,þ,Á#,"J,	V£,3©,[®,þñ,N,×À,Ð¡,ov,
+ç¾,uë,r+ú5Ù+ð¶‰+æ¹®+èx!+õ‰+ü£G,,
+KI,Õ,)à,ì,	¡ï,ô,¯§,
+ˆ,
+ìè,	ÖZ,
+=Æ,Ó,Ï,
+¿,
+á,	i,ùâ,/ß,¨s,ß,	{',â,	!‘,
+¦r,%2,£Ù, „,g,Nm,±ó,Bü,Q,,k,|T,H,ïÛ,Ü›,
+¨õ,+Â,+j+þ‹ê,\l,fŠ+öXÂ+õw+üÒ§,*Å,	›U,+,»,0Þ, |,P‘,uJ,	K~,
+Ø,ku,
+ï1,H, Ï,.Û,yí,³9+ò°,ú,PX,!3,	ŸÛ,›S,<d, Š,¤!,
+^Î,
+ùa,
+œ,b,ã,éÂ,
+Vª,ÿç,ò“,\,Nž,å#,§E,	™Š,ÎÄ,O,àÀ,
+Êo,K9+ÿªO+é É+ÍÂ†+¯€ç+'7+¢eî+¼|+ÞŠ+÷‘f,ÜÕ,0ï,
+“$,1},‘­,Ì!,êé,0Š,	Â.,
+‹,å‹,¾k,:„,ú¹,Ž:,J“,÷,ÀL,7«,—
+,	ã,oº,R,.Ì,,	Y2,£?, [0, ”ï,©,—o,Š¯,2N,
+Ø7,º«, ¬«,  ,éH,{,-,,
+ä7,	ža,ú¡,:E,!´,õÄ,Ÿ,,5õ,,
+T_,	™
+,VI,ü,	JÈ,F,,Jš,	~ò,‹,ÐÄ,c¥,Á,Ö«,ÙV,B,¡ò,,¢i,¦,š,	å},	7,	³,‘8,|O,,\æ,­›,è,­,¾*,
+Ó´,”,¿¶,¤,zj,sE,yÊ,£,8],—,¶í,LM,¨¢,³‘,±G,1Ë,Ž’,Öd,] ,š,
+qû,	#3,‡Š,,«B,×š,WP,ïm,H,_8,
+¢ò,!~,ä+õÎ©+çS+Ü»+Ög++ã_¦,ê,
+ u,·Ð,ñ×,3@,,$Œ,þ|,¼4,¢à,’,S,Â(,5G,
+Ú˜,£¶,±ó,˜@,¡,=j,ð,Ü,ç9,Â»,Ó¹,X),Ð,b·,Tü,
+¹¶,(`,lM,¶V,jé,‹o,ø$,	ËÇ,
+ ó,ƒb,ÒÞ,\,
+jt,Ñ,wª,
+'i,	ë.,h¥,	N,
+/À,Û¯,R,„,3¾,	6,Të,JŽ,ÉÞ,¡+,
+W+ø€ö,“ ,j¨,0ï,é,}ü,!$+ùø,+j,
+s,©Q+ü:+â˜+Êõœ+ÊÓ+Û¸ø+ômE+ÿg,O¦,LH,Ã,",î	,:+ù“
++èm+Þ¼+ëB,",
+,âÞ,v‡,#a,"j,/~,˜Œ,À6,†é,­`,˜ù,5¹,Ìö,Ua,-e,c!,M,î[,þB,rr,	•
+,=Å, Y},s?,ò©,dè,fN,Ð™,¬,
+},
+p,–Ç,Úr,dØ,§U,ÖÔ,¥å,:œ+ñ1i+á1Ð+æ•…+û,
+,G,Rë,Õ?,ÇT,jn,aã,³½,º¸,CÔ,*£,Ô8, Ö+ÿR½,Oë,î,Ñ,º›,ÁÕ,µÁ,.ú,jr,i@,e!,>Œ,Žh,l,}Ç,…æ,”>,Ùs,ì^,ê¼,¶‚,¹,ÇÒ,{Ü,nú,Ë—,ÄC,M,'H,U`,NC,¯‡,ô’,çä,s,…î,Õ|,^å,?,Ãø,37,€·,³ ,×Y,AÓ,AE,Ò ,1,u,Øü,j,µ,i,3î,²R,[],L,vJ,ò,š×,§,}:,^,ä,Ã,Ã,¬M,™Ô,ñÏ,Or,…,Qã,g;,&,iÞ,Å¼,E,rN,®Ã,Dh,z?,LÉ,ó),=,™,`B,sÅ,w[,„,>-,UÃ,ü6,¯é,K ,Î,,j,X%,I³,ëJ,º§,F#,pî,l°,Î:,(;,'å, a,Á,¿Ý,V2,ÎÜ,Û¢,Ãs,ßo,»Û,íZ+ô¬è,zb,…a,sx,;•,bs,4—,$u,<W,
+ü,I,!â,‰,0),
+Ž,Y8,¨·,·,%.,
+Ü,,‚H,	û,Ï9,,%M,",21,bU,=¸,¼z,ñ
+,d>,Ó,bŒ,	fŽ,U+ÿü ,|´,
+õõ,#\,Ù(,më,;C,¡,öB,‚“,\G,f˜,×È,;,
+ê!,™æ,â‘,¤Í,â.,Z,,¦a,â{,?B,¹~,4Å,/œ,gí,·,¼,A2,Š,ÞÑ,Ç,ñX,	5É,½Î,	…),jÿ,p	,/g,/ç,u),«û,WÁ,„Ó,aH,,U,
+,1‰,¯,Ù,è1, u,Ë,•ò,»M,<,,ñ,©	,ßr,Ý),ò,~è,Þ“,”š,I!,
+H,,±+ëø¢+Õ½+Ðæ©+á}µ+û˜/,´Ã,Š,	êÍ,3’,ˆl,0â,QÂ,Äc,^î,è,ì,,Ó,U,q,I],,®!, ,Ì§,~,fí,Ñ«,ÿ®,á×,â‹,î°,8`,jÉ,Ræ,$Ó,Üþ,Í/,	 ,‡›,,[‡,6‡,¦,,Î„,8Í,Ð¾,à-,‘¥,‡a,ÚF,Õ&,ž™,	I,ŒJ,zÚ,h¹,Þ:,¥±,LI,He,h†,Â,²<,|ê,E„,ò¾,9,„û,êD,?·,ºï,",	OÎ,‘+ø'E+÷é1, âs,
+ä,L›,Ä,Ñ,Mê,Ÿ ,„ª,­=,°E,1Î,eû,Š‰,2ü,H(,a‰,,,¶,~|,ÍX,¨+þëŸ,eý,V,á",Yù,}Á,I²,É§, R,Ä‘,È,O~,—Œ,má,Í,ïF,çu,	’,Ò7,TÃ,Fƒ,[»,£%,„,ø–,õí,Ïà,
+F¬,á^,lL, #,Æ,©N,`ª,àë,ó~,ä*,,ã,÷P,©P,ŽŽ,|Û,Œ5,A,}Ó,œ,mó,Þr,u›,©ß+ú¼À+øBŠ+ùŽ ,™,‹ ,éC,¬®,o,Œš,
+¼µ, f,Š1,«s,>„,<Ç,§,¡,vG,aS,šÔ, ,³,eØ,¯v,$æ,è,¡,-	,û,æ,cÓ,>Œ,ž,–?,u,—™,vr,lµ,n–,$E,¬¬,àµ,lÂ,þ<,8,â—,E,² ,·®,IW,E, ,6v,w>,v6,
+G,™ ,	Ê×,I,°å,èÏ,1`,?·,Ò’,ØX,c½,ª0,#
+,•†,¿, ,ÅÌ,þ,‰Ç,ÙG,4Æ,0,¡,Þ^,1æ,°ä,ÀŽ,L,¡,Üÿ,Y,+ˆ,Û,v,‚!,Õ/,6§,Š¤,í,0r,9Q,f6,ä,ùk,Eê,_=,Å4,Wï,¯ÿ,êÎ,GÆ,8, ~,„´,…,Ã,”
+,Jü,×, z,V,],),Q,|³,ž,”Ô,±9,>, #,Åð,&Ç,dÿ,o},ªU,Ø,-M,|s,O1,ð,Aj,ø¬,ÉÏ,±M,ðñ,á°,º,ßV,á˜,¯,ð8,Ø7,ã™,oA,‹?,¯>,è,›,Çš,ˆ,"|+÷‹ù+éç{+ê>5+ùòÖ,Ï7,ìý,dŸ,áP,o,V5,Ÿà,Þÿ,Pô,Ææ,Û,œ´,8ø,×ë,¤P,28,ô§,[,ZX,–µ,¬,§Ÿ,Òb, r,,µ,!Ë,2L,\R,“Î,‹&,#š,Ù¿,©,á,nº,%,G,oâ,Ï´, ¹,n,½b,e,ÞV,	¹,BÉ,ž,­ð,Hó,Fô,%ü,‡,Pa,F{,¢t,$¥,›,ç,Š,•8,ä,ïä,o,,‹¶,ú—,5¶,¦ú,NÔ,éí,TŒ,¶Ô,¶Å,ê,m-,K¢,T’,[R,q¢,W±,ÆÈ,çÌ,j,|Ê,kt,EC,›¨,§˜,Ü,© ,=,G,³æ,µ,®°,1K,å¿,o,Ê*,ÂC,(_,±,	|A,¼¥,ÈÁ,	nR,ÑŽ+ïÂ&+Ô3?+Ê3{+Û0N+ýÝ€,Ì„,Ö,ð˜,m,JÇ,wc,¼,HE,|§,ªû,½¨,Ží,-,“è,Ô;,Ã:,Ù©,ßÒ,×P,¬±,Ù,ü‚,ª,Ê&,_‰,.£,DÒ,z·,™§,—,o–,Ðú,{=,+A,,e,–`,¤7,àå,åX,Í:,ô,b,··,š,¼(,Kò,¹,¡ç,É¦,Þ¦,ió,I,ld,'¬,j,9,Ç&,M¤,ÒÙ,Ê…,ß®,-Ž,`¨,þ™,',?ƒ,é,û,",Úu,U,ÚO,$u,‘w,Ž,a,ò,ŸJ,çW,³¿,Ü¶,xS,`Â, é,¯á,EÙ,^å,Ì,áý,’,z„,´,-,…),Yð,i,ä,
+,T;,°,N,Í,^œ,ˆL,6:,@,­,ŽŸ,’–,B,µ,4`,Ry,¢­,
+p,g…,5,,™S,2—,•ˆ,b¬,ÌE,Úâ,­x,é3,2´,Õ,	ô,¶q,{o,ã¦,§u,ª¶,Ú,zm,»/,]‚,gT+ý$E,,Ùw, Þ,è,æz,èc,AD,%Õ,u,Pg,Y#,„†,u,#H,d,£¦,ú\,ré,Í÷,#-,,I,Ô|,Õè,ø],Nþ,?R,Œë,V,gü,Xì,	¥,vÿ,ßž,¾),Œ,ÑM,ñ.,H,Ê ,P,†,pÞ,q²,[,(ñ,¿ò,w¥,“,zŒ,yt,
+(,€+ÿþA,”«,
+³·,´ä,1},3,S,AÄ,p@,¨,¢;,fU,]:,£n,L,˜Ý,¬‹,',|\,,üU+ùwÑ+çïé+ÚBö+ç;‘+û-<,>O,©,q,ÜI,‚µ,,†,ë¡,©Ã,¨,uÍ,×Š,©”, ,µ1,^7,Ï,ˆô,"Â,«·,äµ,)õ,‘,aš,Üy,,,¢,kz,59,V¾,ï^,8h,\Ý,“,òg,¤%,T,,Ôã,dŒ,B,Î,PY,›ç,Æ±,Á!,¸Š,®a,BQ,³,x‘,ûC,‚S,v,n,o,½±,¾v,»’,¨Ö,Z˜,¼<,q@,Js,Ð},ÛI,Ø,”•,¢C,,²û,s,»å,›–,4G,Œo,K,
+š,Î,é´,Ïï,±Ô,À,Ïr,Í?,Q6,Y‚,ù!,!Ë,ž,‚D,yk,ÙÅ, â,,¬q,‡æ,3ø,´,© ,}k,‰ +ô;‡+Üy/+ÚF+íl–,ÅG,RN,“Š,l,>+,p,°¦,¡,%‡,üœ,q4,•,ãÃ,Ú¾,Bï,>Ä,Ž8,AÚ,öÕ,×þ,sø,ÊÎ,ªÕ,—,,³å,ßè,¤V,Ä#,U÷,O,(f,µ2,§V,Æ²,Œi,«,2B,ŸË,2C,ãö,$Dã,Ìª,,Z²,Ëq,ô),D,=',7Û,ãó,(¿,0§,Û,7Y,SÜ,Y,‹Â, e,µU,., ¸,i,Ší,‡,ÀÄ,J˜,B¼,b,l,~ç,Äà,˜,Gƒ,R,g[,	;`,f&,çZ,Uv,šK,Þª,	(,
+Á,tƒ,Ñâ,kÔ,ôo,ìÃ,³4,#V,¥-,³a,	£,ñ«,‡å,æC,ðu,Ö´,r,!ê,,Æ,u\,íX,	è,Á,bG,‘%,Ôð,ù8,ø‡,x®,rò,†G,ôO,,ÿ,d,1h,ÿ,°Z,¤u,¹Ì,öJ,bÆ,Dy,n–,±£,Ä,ïÒ,%Ž,šÜ,q	,Üd,š‚,H|,È,qé,|d,Á^,ù, dÔ,õG, ,w+,T,4Ò,×Ù,pÁ,^1,–,L=,y,J-,`+,!ý,.«,ø|,H,HN,‰ ,ß,V,÷R,áY,Ñv,6ç,™,/Ð,9,,\,¯x,[I,+Ü,ŽÏ,Ä¢,EF,ý,xU,Æ¦,é÷,Æs,°!,F, Ã),¶x,“G,T,‡,¦Ù,ÿ’,Ü,
+eÚ,#O,ßÌ,G˜,	é,`E,yå,J,äË,Ÿ¢,¯,Ë),­©, Ù,"ê, ´i,º7,ú,ºY,’¤,©÷,þƒ,·¨,,ìh,ê,y¼,aE,pÁ,Sv,ãK, „X,!r,Á*,g,,ú§,&ú,N~,«ð,û	,AÐ,è,ƒo,+,Ëª,’Ÿ,y½,3[,·,—,Â,5v,¢,xc,3Z,Ï,šé,Y,ôó,­,­C,¸Þ,‘w,ãõ,:,km,áa, ÿ, …B, ô®,¾Í,ÙŽ,Ç@,‚,ö,Í?,U,·¢,ºÒ,þ%,ÛÙ,Ð”,°ö,³,@W,1N,Ý¦,ðC,Þ#,,S0,Y,DÃ,Á,Žf,õ
+,8,õR,ùÊ,Î¼,¸,c˜,	ë‹,Ò,d›,Ç ,(Ó,d,&ä,—B,Úî, ,Ìó,E,ÐÀ, ,ë,«¤,„:,,tÕ,¨,,%, ÖÂ,!Ð, :ˆ,~É,,û+,–‚,H,¼ç,{T,÷$,^[,¦@,ô=,…F,·Þ,] ,µõ, ¿¨,Ë[,®ü,#™,€,ùý,Ø§,R‹,É,ï¥,ä~,tµ,É,Ì!,~¼,H×,ò,Er,!<	,]W,¶N,O5,C],ž‰,,$,›^,êÎ,ãÍ, ,Ï3,’!,bx,¸³,áæ,ü˜,Â.,Îú,Dv,u,ø¨,Å‡,î‡,Ð,Jk,ì¼,ò,Êø,,K&,Šc,H,™], Q,†|,",Á‰,·ã, p|, Ã,B,_Ý,?Æ,ª,Î,F3,˜J,ƒ,Ãz,<U,Rˆ,ÕJ,M., ]O,¨ø, ì,S—,ek,ò|,Ï,‚†,©F,mB,z2,Þ,:|,¾‚,xü,µ,)k,Ô,§o,	b,qÏ,‰ä,MŽ,uL, Î,¯,Ô,Ü,ãr,Dd,S
+,,¶°,W½,Ã¹,“#,õ/,ŠV,Ê,Zª,¨,Ò®,,ÍÔ,à,‹h,
+è,æ™,·O,ÃÐ,{,Žà,Ò-,¿Ì,üœ,wÕ,Gî,ôÛ,fê,>€,,õÙ,%,ð,«^,¿,O¥,–!,U,0â,ÕF,<w,MØ,/c,¥x,O,û¥,{,¾,jB,ÃŒ,HÁ,#/*,-bÂ,'¦:,"FÛ,!®-,8Š,©,Ùy,2›+ý0f+ú‡Ð,¿z,´ ,ª ,Šm,¿,}|,è€,9,ã¼,dé,{,®,ƒ¿,~U,û»,ó«,¸â,7,®¹,6Ù,
+á,4,ã,°,V–,ç€,™/,	fž,*",ë,:Ë,<,-,%Ì,»\,nØ,aA,KW,x½,úA,‹1,×s,
+•ó,
+ób,î,¯Ï,k,ö†,éÞ,ýy,B,CQ,OÊ,ó’,î8,~,£u,=Ë,Ä?,Â”,~ö,{Þ,,Ú~,[,¡+,ÄX,ë,ÓY,[c,ú™,.ˆ,„G,@N,	É»,9ß,V,Ú,k,Gß,hþ,33,"U,×,+,SÖ,Í,}·,`‚,%,gw,´2,Œ,ãÑ,Dß,¹„,l|,Éç,(,^È,sB,	ì,Ðº,I›,Ôë,×,«¾,r,”A,Ý!,ï‹,À,ŽŽ,	²Ä,¬Ý,”{,=¼,L$,£Ì,-›,Ý[,#’,f],%¯,!n,(,«ƒ,Áç,	_-,n,Z,_¹,È¸,
+ñ
+,òœ,~Á,	NŸ,ZÅ,¥†,·Å,ä’,mp,IÇ,¨1,jµ,œµ,ûÿ,›ê,v`,õ÷,¨÷,Z%,
+ÕU,ü,/S,Ïh,Sû,	(®,Qî,0*,ÿS,iÕ,%ý,´g,Òð,t,Ë,¦,,t­,}­,!v,½Á,aÓ,Ì,t,'Á,0X,z²,	Í#,æ,$,™Ž,Ší,mt,ò‘,é ,¦Û,	Þç,
+ð,’·,
+e¡,†Ø,ë¨,Ö,eµ,öš,ò,æs,ßO,7×,Šú,f‡,`,	Ca,d§,}»+ÿe,®ß,¾¾,ün,ÚQ,Þb,–|,c›,x|,Ê,×d,Úx,‡G,
+²;,	™–,6„,Å½,T€,¸,Ø*,=,UÔ,—†,ïê,")¢, Z},O,d×,=Š,¹c,Ò$,™,(4,œ,¥²,œ©,ù9,¶,Ä,¢‡,¢Z,,© ,;¥,l,[ò,¥,’$,
+Ã,Ù,õ‹,!Ô±,/¦,”,'µ,=,äÌ,©‰,+é,~‰,Ír,|ð,sª,Ý€,îx,w,Dÿ,`é,¡ù,‹ì,™…,IÓ+øW++ølj,
+D,Ý,	Íí,	â&,0,uÛ,
+E,1Î,’g, >,·2,w,Û,
+x,«o,É,
+Rµ,#,Æ°,¿{,
+I¥,ic,Ú>,T,ø,¤L,†d,*@,
+s&,6t,”ë,€Í,R",U,·/,Ï,_,ÿ”,ý*,
+Âz,Zí,	1,	Æ,
+¯Z,	²ã, EU,
+˜E,Ýt,
+&h,fÖ,¨Æ,,ÅA,n,KŸ,ï ,0,,@",×É,¤,
+·Ñ,,,
+‚Ð,Ïr,CN,),
+ö2,;Q,B’,
+2,	…{,
+$~,½p,—©,h$,)•,÷À,âg,#,Î,"!,›ª,H,S,©3,^C,/þ,lq,DÚ,æã,ÿ~,	lp,	ÖR,Y),]§,p?,
+H",´Ø,­¶,†,á,Ú,oœ,>Ú,
+W@,”;,Í+,¢È,¬:,±,3¹,B‰,½,OÂ,
+¤,ÙA,¢,	ÝR,%Ø,	ƒ!,¹»,­K,aT,o,ã,Ÿ¢,F‰,¡ç,úÖ,,Ë,p×,	ÅÖ,Ç,‡²,“µ,	Ÿ,	M,óˆ,-,§,	ö7,®Ð,Wö,ÝÒ,oÏ,ô,QE,uÑ,	¨ì,m¹,	kt,BE,u,m™,áä,G,bÍ,ªˆ,IQ,¿',,
+úc,t,
+§Ë,žÞ,c…,
+ÄÃ,Ø,8,
+ ,ª«,„,,¨+ÿXÚ,’,™,P,
+•p,Kú,ƒ,;…,	 ?,[Ã,öš,†Û,:,w,pß,7¨,	¯‡,Åc,C,š†+ûU¯+ö‘]+ýA,’­,f,
+å>,
+@!,
++,
+ân,¦«,ç©,Ó­, ó,¹2,5è, b,´…,	"3,×c,}a,Œ,›,
+]+ÿb+ó±H+õ®+þ¶ô,TF,0Ü,;¤,Å,‘¤,ÿ,B<,ø,û,¸7,‘¸,+ütž+óš:+í=Æ+ä+×+Ã1Ð+²¤+ µº+Ž4g+i+[+-?Y+6Ìb+]¥é+Žo»+¬Ç²+Àh-+ÊZü+Ù!ç+äŸÀ+é­7+ï™Á+ûû°,T¸,—,ªf,k, åý+þÖ‚+ýŒR, ÆÉ, ,~, ê,tâ,d±,¡€,M,™È,æ€,˜K,®`,f ,ëá,s,,­,&ï,4f,ÆÙ,,aÀ,hk,Ñ,F$,,.s,
+^Ö+ýž+ý§Ù,±”, f+íÜ*+óðs+÷¦w, Lª,,[“,™^,ÚK,ß©,@W,­,BL,Õ—,,Åh,¸×,#å,“Á+úèö+þ2i, >,Dt,ýZ,ð,çô,	—,ïâ,FR,»Þ,4,d÷, °+ÿ€/,n ,â¯,•í,÷,	=(,
+WÉ,H,Ç(,	‹N,E,	xÀ,E,¬,Pï,¾, ¶«, ®å, lú,Þ, À+ÿÓ, ut,¡,ÂB,	ˆ4,	´t,Oà,+,ñP,Ñ;,Ø7,p, ~2,LÖ,IJ,“N,
+*+,í,	g8,F©,.z,ŠÖ,¥š,	°Ü,Ù,6A,KC,§,¹C,ãí,N,é,¥Ò,Ä,£™,¢Ñ,
+½Û,"‡,	‘T,BB,
+ÝC,áù,	Ÿw,M,Î¶,ªs,t,ÒÓ,ŠI,F“,Lˆ,Úò,
+d,ç¶,dm,dÉ,™,•ø,µ7,âq,-³,d,É,YL,”F,%Õ,^¾,
+õ,&,°Õ,¶Ù,4 ,ê&,ÕÀ,¸Ò,ðA,ÚA,F,’À,ªÁ,‘¼,	ö,û,·X,_,ÿJ,'é,	Ü,vÄ,;R,
+ÏÎ,AÅ,e…,ã$,
+Qx,óë,,d£,–š,
+Ø,2y,	–,S,K_,7,Ê,Ò,à€,	:,	ÁT,ÿÚ,4k,Fë,v·,Âd,a›,!€,‡ÿ,F$+ú„+ë¤T+Û;+Ä2+¦\Æ+ƒu²+O}+CÓ+qŒw+Êî+¾tk+×ñú+ê[Ü+û=,"›,p<,$à,®T,^_,Ÿ„,)\,,²Å,å¸,˜Q,	&h,Ž­,ª,Ü³,¶,3©,Œú,éÙ,ˆb,Ln,›˜,ì,«,
+B,má,íú,«í,jt,¤j,
+b‘,óJ+ýÛi+ô’á+ñç{+ù!o,q,tm,qª,üõ,,S,áò,/w,H‡,ÔE,],£!,ÌÐ,É",Ã7,ÛQ,,á,Dœ,ë,¯î,X	,Ð,É,½¾,~N,&ñ,Ïe,óx,“Í,ë,¡Y+ü~#+üÿ,’”,Ÿ,	æ2,	š,}©,åy,1f,š,~,
+ôt,9Ä,`¾,Yø,¡½+ÿ†f+þÿu,…,üí,«,ÐÙ,Ÿñ,¶V,†$+þQ_+ç¢„+ÛyÁ+ßÑÑ+ñ˜î,/,¥j,ûé,ßB,6}, · +þkæ+ÿ‰†, l³,˜G,¨,O,ŸÀ,Z,‚,	¯%,
+—3,&&,x¼,|9,ð,Šl,	_,/·,9¾,	ð¸,o,b,/,’‘,
+Q¦,
+gÊ,
+xâ,_û,	²¶,	,e,«Æ,«Ã,O,ŽÔ,H,
+2C,5,ƒW,”À,á,
+O,Ã,ì,,	ö´,Ýó,¿f,f+ü›+ó¼7+õlá,¤',©q,	T³,\°,Kw,•,%",O+,#,ƒ,|,ò_,Ì*,
+p,
+]',
+;#,
+ªÔ,
+ˆi,~>,öJ,3l,Ñ,šV,Î®,	,IÓ,G+ù\À+ö1Š+ý¬U,:Ÿ,-,™é,XË,ú{,æO,1»,j&,™,%,	ƒP,s@,),´O,çR,µð,ÿz,	Çå,,E,b¡,X,S,7º,ùó,ú, ª,^,àß,ÿ,b,
+“ü,
+‚Y,<,£,¥4,AÆ,vM,/,Ù$,+ˆ,;,$,gU+þü',É±,	ù,	;³,
+>â,f,·Á,&u,
+,dÙ,vº,µ#,m2,´ž,8,½“,‰,,(r,¬‚,,r,PÉ,y.,í4,!N,-%,ŠD,†,ý",,€,
+,
+K",Å¦,ÇQ,2,ÎX,ûå,Ì_,,U,"„,w¿,‹X,
+år,YJ,¥”, A,©j,
+OÐ,õ¥,	n¬,½-,ÐB,Œœ,OL,L®,Æñ+ù”+ù+‘+ü(é,ÿD,XÆ,ì¶,é°,U¥,)x,ãö,õÁ,Ã,¤ä,—õ,sE,
+ÿ:,
+E‰,	…,fW,,
+}r,ê¨,\á,Ö,¿¶,
+³ß,	Ë†,	ý,,>R,v,	œ×,	Dç,	€,`Q, 3A+ë—E+ÚS+ØÑç+ÞŸž+àõ+ç(+ëº¹+÷V+úôX+üc+ûß+÷ë+ý~+ÿðš,UP,NÃ,ìf,Öœ+ýªæ+ög+ôßò+÷‘L+þÒÚ,±,ÿ„,Wÿ,
+„¨,’‹,fÿ,
+€t,¸,E,ðH,¢’,ù™,oÂ,ÿ,ít,
+/Ÿ,Pk,éƒ,üŽ,½Ê,Óô,LÏ,R,¯,h<,¾,ÿ†,	g†,	Ÿî,Q¥,r…,ùp,Nk,
+Z^,•,X¬,½ ,
+‚j,	Â,Þ,€,	<,
+˜,¿û,]F,à«,Ç ,!í,
+Ž,þ,ì,½¦,É¾,	ˆ·,s¨,qÄ,¾,æ£,ÎÔ,Ñ,	’,‰,	%x,
+¼2,„r, Ù,…‚,[Y,É¹,—, ®Î,÷,ï\,–P,,Ò×,[,t,¨,µó,	g,lý,Ã„,Ë£,á5,j¦,X,¯Ó,	N,	o,â,¬?,m+ÿËU, )å,°õ,[Å,8•,X,>ò,bÅ,-,Ä,
+À},
+‘æ,k+úÁ˜+ö™¬+ûù,ÐX,+ ,ª,/ê,ô¬,ôM,Èp,m%,", r,	ý\,K±,
+|,æt,þ,	…,ë%,Îð,„,	L",.S,Tå,Ž…,Ê,=µ,9®,$,Žñ,ûF,Y ,ju,´7,ë”,‚©,í	, ~,B,ì%,è@,E7,LÆ,ä,(,	ù€,\],&},	¦¤,´¦,Ói,gú,3,ªƒ,ÿÄ,ãÎ,'³,Ã,Ï‹,Ù,Å*,	EŠ,h‚,ùŒ,k,í4,{G,í,ñæ,äŸ,9‹,	Ž÷,	âx,ˆG,üw,¿(,™‡,­š,	/¾,•,	.‡,ƒ˜,
+Rß,Ñg+þá|+îÃ+âY+áÏ+ë-1+öf+üÚò+ý:Ã,%3,cT,þK,ìy,
+„,ëK,
+¨,gü,ºæ,†¶,W€,r¶,Ã…,×Û,ãŒ+ÿÅù,ÑÝ,Èç,ÁË,,É,iê,¾¥,	w±,ý”,_×,î¥, 7`+ø÷ì,µ},Ü,ó,¢,Ê,	’ÿ,
+X×,
+¡•,˜,	áò,"(,x¨,ï,}•,q@,¬W,Êq,j;,
+¥F,‹4+÷»+éÝ+ébz+øâž,x,Ø©,ä,ÏN,	Ó,,–T,«ä,w9,8,9V,G
+,IÜ,¥,¬,ï,ú‰,	_,u},
+ÎØ,<Ú,ˆ‚,	ê²,ï,Š,â&,&–,{Ù,	±º,	Ö,,
+ìË,
+BI,
+¤,×,cØ,@4,--,6î,Õ,àY,½,
+ù,Â¬,Ò1,?,	µ<,îe,
+~«,„%,ß,U¡,.=,‘,ûc,$¢+û£ˆ, ­E,9,t²,¾,¥¿,n´,·),ñ:,ÞÔ,èâ,VÏ,«„,ÎÏ,î,œý+öjõ+çø'+ä^+êÑº+úK«,%‚,	`,ï,K¡,,ý·,³ì,õô,’t,¹©,Ð»,¬®,x,^[,	É…,SÔ,\V,5²,@+,W,ÿÏ,¥ˆ,Ñ%,€,ÙÍ,	´,d«,"],¬r,B!,	º,˜Ê,®0,ã², ,0w,2Ê,®,4™,v,ç%,Á,c,€±,h,ú,C¡,:,,ªž,R,ú,Z£,Á‘,ý,
+¤ž,b‹,-Ç,Å,–,Ñ1,Á<,àO,§,U,ðS,ä,fœ,
+PK,$,M,²,™L,Æ,ïP,(,J«, 
+,	Àm,—",Ž§,ýF,øÕ,Ü,Hu,ïD,ÎÒ,,Œ,	Ðµ,
+Ò=,k˜,©^,C|,K,³,Õœ,%b,·…,ðj,“Z,Ðÿ,cK,Gâ,às,˜ù,éí,²þ,JY,¸,¢F,,N,Üþ,+#,·À,Ð,ÓÝ,{,	„,¸;,É=,	$},Gå,¥_,Ï,“Á,â©,¹ý,|À,
+.Ø,ÌÕ,
+û,
+$,	W,(u,ÝŒ,
+Ld,²,¤,
+Ô},½Ä,
+Õ,
+GÄ,·™,¾,e®,GI,k±,3ù,Â7,}r,,~,
+´’,ÿ©,üE,CÕ,ç¥,O,ar,¯\,öO,ÛÞ,êx,½x,ŸB,µ,Ê,¶þ,
+m,¾Î,Œ%,TU,
+#,ræ,	u+,	Ø‚,…C,õÆ,
+œš,‘,	–ü,
+N@,^,sµ,Œ,ÿð,
+<õ,
+_¯,	Š^,M·,Ýu,
+Ã¿,ªg,	Z,	jœ,,B!,áí,ä¥,\,P,$ý,•‚,%k,ï…,
+FE,	b,xÄ+ü[|+ë³å+á¡;+ægÁ+ø,™,pò,rë, ,Ù,´Ì,µ*,XY,¼^,¿x,,
+ƒO,	Ã,	k•,þ
+,i,ÏE+ÿ…é+ù\œ+ýþ,$œ,5f+úã_+÷LŽ+úõÁ,g—,,
+;,f,¥t,%Ã,ý¿,å,
+H‡,
+£Œ,
+…´, ,Ñ6,“Ý,ÛÆ,Ñ,wò,Ôë,Xù,ú…,Ò'+ÿns,“4,,C,—W,Ä£,É&,UŒ,	wØ,©,fn,Ï*,¨¤,­<,%,Åâ,
+N¸,l,¹x,V,é",þD,ªy,ÿ,	\”,	j,
+¼Ò,©,
+¼õ,¼ô,ã,ƒÓ,9Á,3,"Œ,áE,
+n,„¸,]°+ò`ì+õÜ,«,ùj,¤t,âó,Yt,®/,Å²,¹),AF,K?,Ð,ìN,À,î‚,U=,4Š,	ÒI,J,VÁ,
+‹Z,€<,(à,a>,Ng,ã*,ÙÁ,ÖÏ,
+î,w½,ŒÀ,?,8(,yš,	'¸,¢,‘,	‡ ,,,ò·,–,æ0,3,‚0,,×ã, +úSý+ójœ, +_,2`,¼3,ÀT,\,&Ç,],É§,ö¼,{,È×,ÞQ,.P,
+ ú,	öI,
+BS,	¶,	[Ÿ,	B5,[M,i·,Ö,ýÛ,„Å,,C-,
+	¥,
+_{,#*,¶¶,‚,HÕ,/¥,®,
+Õ,
+´,	p‚,	I,	"',j~,S,
+)ž,Ñ•,Ú”,…,Óî,Zñ,A,u9,kë,Ä,
+8–,	9,	Ì¤,	´f,	NŽ,	Ùs,
+2é,	jC,&È,	,‹B,.;,ìÖ,ß#,“ù,
+s,Ev,Q~,>©,w,,ß9,&¡,
+·³,Q,B€,ËV,Š,8
+,ç,¾ú,O$,Cç,
+®.,Tj,¤,¯â,…,&Ò,º¢,Î",P•,É,úž,	D,
+;,.,Î,Äé,Ç,,ÀÆ,c,Ã],Hö,²%,b=,r’,	@ñ,‰ˆ,û5,,E€,
+@Ð,¾ ,¼k,œî,·˜,
+Àc,á÷,,
+½þ,„ð, d,åš,”g,…,ÃÖ,ˆï,ºý,¡,t¿,Ù€,ì,	‘,ý,	ÃB,{,ÑÉ,Âº,É,¼?,­p,õñ,™Õ,>,e,>7,	oÍ,
+óM,áº,Ï,æ8,g,,Æ´,Æ,]µ,È,ƒ,¯,IÏ,y‚,
+:,pH+ï,K,;,$,G¯,žF,Ž­,-Ï,8K,
++),¾Á,w÷,Í,2½,ÑT,ö,­¬,÷',Ü,t),Õ,‚k,Û,ª,´…,³?,Ðh,¥Ó,ë,Ÿ²,€Ü,¹a,Q,,â,÷å,Þ,E§,ÇX,ŒQ,àT,Ès,ô6,
+–L,
+è,
+).,Þ^,[, Ã!,Ñ…,	£ ,ƒu,Q,; ,BÎ,ÐÇ,(±,+¾G,-¦*,/áÖ,_Þ,`,ïã,b§,.8,
+j,_U,tv+û=Í,îÆ,Œ,Š>,ÿ,y£,Ëf,N,
+YW,t,ÌW,0H,Nø,ø],HÌ,é,uŠ,.I,3,lÊ,VY,\,õ,v ,¥z,©«,Ûš,%ñ,©l,(,^5, …,õ,jz,î,=ì,ò«,ï,»?,À,•,Fÿ,s¢,äœ,#­,ÈÚ,k,³z,ƒx,./,l),%Ã,Þ,ñ,·Ê,&ƒ,,ù,Ò,ƒ¼,Ê–,ÝY,Ú,o,dÓ,¸,5,E,´Û,ä@,šb,’²,KÎ,Y¬,öï,ƒn,4ê,,2‚,üœ,‚R,Ø3,)\,íg,Ìb,
+½,
+Î,ê¬,nk,h¨,g!,§ç,ÖV,æƒ,åç,B:,€[,÷ò,–&,G9,é¹,š,²´,Ú,ü#,§,
+_Æ,†~,r^,{r,?,ö–,³¿,\,Ä,ãG,ò•,es,$€,Ø{,£W,<,3,,xS,§,s,[,!Ž,Ï5,à±,åÎ,½Ã,	1°,	T,’r,‡{,
+ð,Šð,2,
+ ,ˆ ,Ê,)¨,	ˆw,žö,/z,ƒÑ,Äy,
+ ¨,	?,	Ö\,
+é^,	o,	 ,
+—`,
+2¹,ø,Ò½,Ø,DŽ,
+î ,È,âÙ+õz+âIv+Ý0+ì# , Üá,X,N,~>, L,à,±D,‰-,P,l˜,”ô,Íj,Ÿã,
+/,	@,
+èc,ž‰,€E,Q+,°c,µ?,],#%,
+»,F,ç¤,
+K{,	 ˜,ã3,/|,	z«,
+t8,P{,S²,	 g,
+ÿ,w,””,
+ð,g,,-Ä,/H,J,NY,ò,,d,Y,Š,èW,ìr,\,&%,[,5K,@+,Q\,t ,õÚ,N,L¢,ž™,
+c,
+,
+¼Û,ý,vd,çS,ñ},Óó,•…,?,	Ò3,	°Ý,M;,›=,É:,	m!,’},Hq,¨),…\,›,QT,lÄ,U,
+,	Ê,	€),
+„,Q­,
+±ô,Ga,ÍŠ,Q9,0,ZÁ,5l,z–,œR,…9,…,K,%Ÿ,rT,‘},Ø,-2,ú,©`,ŸÙ,gá,­M,ö©,	¯,·,},.“,mf,x,®ä,óv,áR,sò,	#,£,áÀ,…0,
+õÞ,-,
+C€,	Âñ,
+ð ,Ñ*,bG,¹œ,G’,î+,cÅ,UŽ,£Í,,,È,¸¸,–‚,êM,.,,W¦,Ö,Ù, X,lÃ,®Ô,f ,	Ç,ˆ+ì#¥+Þ•+Ü +çÆí, ~’,
+,5‹,Ä0,èÄ,	ZÂ,DS,
+¹‘,Šµ,,±,5K,Žu,l±,
+û,¨é,Õ‚,í,ù,”,é¸,	¤è,rž,cR,¯?,r÷,oE,À9,
+”¿,	†,Ö=,9i,Ý$,‚,!Ø,ž ,ÈÔ,×e,Yý,
+Ñó,	¬,_,ÆÂ,·2,
+ ,Î•,S,$o,^ó,vv,	UÁ,ª0,oi,€+÷C+äD+ßg+ë[+ü‰Å,F,IP,¿o,ãN,k€,	ðq,¦Y,);+üvÎ+ÿƒø,U,þ©,&>,¾,=i,¯,Ï+þ¤.+ò6+ñ\+þ¦,Ì,Ä‹,g,Gí,µ,KL,ÛÆ,Gi,ã,ç,›I, ™,]é,˜ã,™%,aÚ,v.,üu,¸‚,O,z©,…,,Õy,g1,×É,hK,ñK,=ó,Êk,{¸,4ò,§+,›,óù,],„+,,“,¨Ø,ªI,h,,¸Ü,Ë™,hK,Ç•,ºÅ,Ó>,ñ,n,¿â,Xg,Î,´,( ,//,ö	,•,Ë},1m,0Þ,ÔÓ,S¡,N¦,¡Á,H,Q,Ç!,®.,ä®,“,,!Q,l,v-,GÓ,ZÛ,—9,,
+,1!,
+ŒL,ê,,û,Ÿ,É],µ›,áð,K†,kð,r=,`Ù,!,Ø^,EC,Õ,fà,MA,ã^,T,k&,FV,ŽO,4w,ý,ù$,Œè,R,_ª,ì},˜,_¬,6
+,@p,„û,Á“,#,Ë†,©,,4,÷,ÎÆ,\™,)A,ï–,ù2,€á,m,³ð,½Ü,%, ²,B,ËU,üË,™ê,Í,D|,X,F,¶,w—,E&,'½,š”,¦w,öÒ,Ö ,[,'D,E,÷,l,,r,gn,ïÈ,]á,é,kY,Ü™,ûÄ,_,ó£,·¦,N,ÑÌ,¹t,"…,­à,›Ž,Q®,ûí,>t,ä,¬,5Þ,eo,M^,h,CÚ,Ü,ˆ·,¥Š,ÞN,J,ˆÆ,*‹,…÷,Òñ, j,£+,+¿,z,:+úƒ¿+íñ+í••+÷â:,€>,UŒ,ýï,É±,v+,Â¿,²,jé,ïF,Ef,ž*,ÄÇ,PO,îå,Žã,>¬,!4,¡,Q,,]q,m¿, A,¯ë,¨?,ãÅ,æ,4,È,í·,àà,è¸,-Ò,Õ‡,¼H,ª¸,u1,ƒ«,:,Ã±,!O,,ß”,…P,7´,Ai,(ë,ŒÄ,mn,1û,l,ms,.,ÆO,€[,eñ,û”,
+ÁR,\¢,¨m,È,µ,•	,¼†,¬,W×,ÐÒ,›È,ü
+,)í:,½Ÿ,L©,=#,çY,ý,³¹,O`, ,O,/ÿ,1Ü,–,¶,7,V§,,¯$,x³,7j,”,=,	,Ÿs,fª,Àx,±,Ä‡,ù,Ö*,èM,lè,\þ,DØ,
+·‡,r,-»,¦ ,Q1,n°,ß‡,ú,”,ÒT,T½,3Ó,+ü,7»,ÒÄ,(V,rv,‚î,©m,Æ…,Ìr,Ú‘,aË,z<,
+Î,	:l,ÁM+ú,R+ìèŠ+êÝV+õ–µ, ,B&,œý,Û´,>,ª{,¿,—Ú,ïB,×9,R,Å,ãÔ,@[,ä‡,Î,Å_,h:,&Ü,L,×,Û,¢œ,ÖÈ,NE,L
+,
+¸,l³,v,±),@©,=³,–,¢3,Ê,3 ,¯),?G,Ì¸,õ,m{,üÙ,k,u‹,¦,AÃ,Î†,öý,é,ú8,†,X½,#ç,}ü,b‚,Vf,Ãµ,Žô,ñ,êç,§Å,¬2,M,‡ý,P,õû, e,®N,É”,‚¥,Áu,ÆÓ,Š6,„o,P,œŸ,vÀ,L’,ñj,¤,j,hÌ,Uf,$/,lm,Åæ,ï,Œ%,õa,ÿ®,jŠ,ý,Ma,,…œ,nd,ó,¹,°å,R±,fÆ,ÏO,¹°,¦,Ò,ÔÃ,]d,>Í,5I,++,ÐÔ,ÐÈ,GÑ,à•,Š;,í	,X,44,¼,«ò,.Õ,ð°,Er,,,±“,Û,Þ×,8±,b,Ë¬,ê,½Ù,[¸,¤5,£,	,i[,x,9¾,Qw,÷5,dî,¢¯,ä,œj,f,ù,Ñµ,G,@(,øó,"),ßØ,1Æ,!,üa,ßg,ïí,3É,jr,Ó´,·,¢ð,·Ï,;€,yV,r,“,òS,	1´, ¦,qF,	ÿ‚,Ê–,Ð†,^,‡,~,$â,>\,Ñ¬,!d,NÚ,,˜I,F,Õ„,)´,ê,Ü ,™Œ,]w,¬ã,Kû,	uB,øI,O·,,ˆó,æ{,4{,a,“@,èˆ,GÎ,¦Ý,ìn,1",®å,é¬,¼Î,V1,šÎ,>µ,ø&,E
+,¡,S,,|,¦(,1],×l,K:,”,¥,4.,ú,Œœ,$,Îs,2,ê,yˆ,©S,ù¯,_¯,i4,9,5”,nÈ,ý,g,,ø¡,%î,–º,j-,Ör,ø’,c,r,æ<,²,Í¶,f1,Ã<,’Ó,ÁÀ,ƒà,Ï ,",>t,æ,7¯,©V,Ê],›,ü_,Ë6,@J,Yd,Àû,'·,(1,À,Ôo,Uá,3,·­,?ß,#QŒ,)A,ò,ê,‚9,U,F,Ðí,hý,i,5Ò,Ñ!,e),X!,\K,XË,,,ÁÒ,¸|,Ì,ñH,Z,§»,&˜,—°,W’,Ð,ü», ,Ïì,\+öò$+ó%Í, ÁŽ,
+T˜,r,",{å,„Ö,Ë+ÿ{v+é±p+ÙJ+àWD+ö©,M,a,, û,8i,u,,¹‘,ƒ4,Úº,S,NÔ,Ž§,/à,a¨,ò·,žÝ,¾ã,,ñ™,†5,YJ,;,T,Î,bç,Ue,Äh,],¹õ,š,Ä,±,¸M,†d,ëö,]Ò,e~,r÷,Œ,Ïe,‘0,Ñ,¥½,ºª,t¬,jˆ,ñP,M9,ªÏ,¾î,ç“,éW,ã•,©¤,c:,Ày,Ì.,¦,À,7G,ƒí,>Ó,›ó,”,ü¡,Hï,¥,J‰,6Ê,|m,1ý,ÔÌ,€¸,€‰,:=,#”,U«,7ÿ,b,Ó¿,c*,#½,#Í,Ã`,2,ýó,xj,÷à,
+—,$‡,§–,×Ñ,ª‡,øÈ,¦,˜n,š4,bÂ,£Ó,ìf,Ñ5,–',Û,.?,Yù,í@,Œ„,SC,yb,Î,',Þ±,k,âð,aÈ,”¥,Ã[,h¼,™
+,K,ªë,eP,\S,t€,áû,_,ÁÐ,Û,XŠ,b,ëb,—M,é,Å,§«,%M,W,‡n,p,Á‘,o%,ìæ,ŽE,¦’,	Î,
+`Ã,Úµ,+D,
+)€,œÏ,µa,vÂ,ÜÊ,¨ƒ,€I,™Á,ˆï,-,º÷,g,°@,úà,#¿,Ïd,ž
+,6,Î¢,¹",˜,2â,3,kó,ö¦,î,¾,ÙÈ,‘¬,+$,Oö+þø°+é+æ!C+õ¬Ñ,‰,=,ëÍ,Ò5,•Q,íP,K”,/P,áQ,3—,£,õˆ,l¡,m!,oy,(k,ã,¹Ø,ú,¾‰,bÄ,k¾,(,W,f¢,},ÿâ,`d,oC,Ð»,®±,Éð,Vp,?,â€,jŒ,cœ,Wä,¦,å,),k,A),†,\,õ,Ý,_,Ë2,q,ŒÖ,gh,óR,Êq,°Œ,|‚,$\,„ˆ,T,Å`,k,"c,N2,¬#+ùÈÒ+÷äc,å„,d´,Ý",š{,¼,ùø,®,bî,Ni,jÓ,«,÷â,\ù,ÜÃ,™,1À,hv,Àç,ÀL,‹€,Å9,¼l,Å+,@à,½÷,B˜,E`,ôþ,ëå,3Þ,’O,¼Ÿ,¡¼,Vy,{_,ÏU,Ïz,‹,¢ê,*,À,LP,	j,Á¡,lw,4—,-I,
+A,+‡,de,mû,…ê,é°,r5,A,$,
+ŸÄ,›],v,’Œ,;y,ØÔ,S,”,|,¾$,Ö9,¾, §,æÄ,½b,æK,§¾,Øf,TÐ,yÌ,`Œ,&ù,?I,ïX,úË,à,/g,`,ƒ¤,9,{,ù,ë¦,Oç,ÜC,ë,ÞÌ,•a,¬l,@ÿ,4,OM,c,#‹,jv,",M,,&,	,ô,«,1Ô,ÖÄ,Ÿô,íÎ,Ð,8¦,¬
+,D,?Y,‰Ÿ,ƒG,(,Ø•,ž…,Òk,1,.é,a,$>,ÚÄ,6U,?	,³,¥,…ð,é,»Ü,E,ÑÞ,kÙ,¤¤,v,%,î„,^',,Ã±,Mû,9,Ïˆ,,0x,Ma,É',|ê,+‘,z,ˆŸ,ÁÛ,t„,G,µ,6q,Z„,ÆØ,SA,‹,’,,á×, ñ,>ú,ô°,Ú,=÷,2Â,ª¸, Ç,3m,c:,p`,~,Ö,Bê,Hi,†ó,è|,ûG,ƒú,û=,m,‰,ð,ë,'Ð,EÇ,!º,À,ž,b0, à,.®,ä,cZ,Þò,Š5,Då,²,ó³+û½´+âÞN+Ôí+ØAy+îÀf,Ê¢,Ñm,‹C,8‹,bI,¯,&q,°},}µ,M:,§,Ár,Ÿ”,(\,a‚,³*,Ýð,—,¹Å,ô,V¶,é,¥Á,´,Á
+,õP,Z	,¥`,É±,G, ,¹
+,ã,g¤,,j,k,øÆ,Ç,~P,ˆ”,!0z,¹Œ,¯µ,Û,…Ø,–„,Ô,Þ,UN,Ez,’,¨B,9>,½,a,ê€,Õ,…ê,Sš,
+pŽ,l‰,
+,	Gv,+±,­1,«|,Ó,3z,ÇÛ,]å,½Œ,…›,s?,„ª,wk,ì%,KŸ,èZ,S,ß‰,‰,ôy,îÚ,Êr,°F,Ÿ,»,9,uÐ,­,ˆ,±ø,Ó,Þ,Ú ,¿Ã,°T,&Y,8Å,úù,ûÙ,eø, Ø,ü,ôZ,Lv,:t,5",Ò,kš,!~,ak,®Ÿ,ý°,Ý,œ/,q¢,ÆÜ,¼õ,L÷,Â×,ó,£Š,Ç1,_,\C,‰æ,,ò’,»ã,%ã,ë,a,h,þ9,\,+,g',Ô,}Ï,P,–×,Ú,Âb,Qž,â{,òN,%$…,0Cž,)Ï,(Ø,.,ÐÄ,,Ëý,VÅ,Òƒ,)K,É,1Á,ä,¾,’è,€	,Ñ´,›Ë,,
+Ò,$å,Þ,á.,nL,+«,Æ,'©, /,³š,Gþ,’C,r¶,˜_,	‡´,
+,ý,?™,¬,á,Î,ˆµ,+ï,Rš,Ô3,C ,?,,<V,®Ý,i¢,iÝ,A™,8ô,ƒK,¹,U¹,):,ž,IÀ,ß,¸Ô,3ˆ³,) ,•ò,eì,‘‡,¯K,>Q,ƒ9,,ò,ãô,ðT,%,Äº,|F,x™,U‰,Úx,0ë,·¢,~S,X,re,ê6,Ð,î#,âR,k,N,SÇ,BÑ,ñ,›,wM,»Ž,×$,¸¨,È,nÆ,Öî,†>,Ù5,p,-…,VÑ,-.,P×,ãE,G“,},+),«•,`,©,*A,í²,P,]Å,:
+,ù%,l,ê§,Á9,Çû,g_,­÷,Ìº,S,Óõ,š‚,ì‰,Ó,¨ ,{>,­5, ,ˆ,ÆŒ,Å;,e,÷A,ÄÔ,¢x,C‘, |É+ÙC¾+É«t+òßÊ,Ú˜,%Ÿ,+×,š,¹Ö,)£,]t,xq,jY,[Ë,Ô,Mä,E,\,Úd,ï6,î‘,>ù,£V,L5,kó,›w,‹L,Än,/,,Ó,ë",V¬,~¸,D,Qž,P,ŒA,=ð,J‘,=‘,‰,-~,¢,ðØ,•
+,7š,€¼,ûÍ,,I,eT,ÚÃ,0L,]Ò,Ð<,Ã,kÂ,-ë,(Â,g$,û”,™#,Ü,ý,°,´È,†*,Ø³,~s,p,ÕQ,â¾, õ,„í,÷Â,' ,:E,ãˆ,}),†ê,¨Æ,ç—,˜×,'›,tõ,W½,M6,t×,ŽÄ,ÕF,	á,†,Ká,,Õ˜,(Š,„],Ôé,Ç¼,aÂ,<,‹ñ,»Å,Í,Üì,a,,Õ—,æ¶,,,Ñ…,Ì“,0,KÆ,Àõ,¬,{,·…,¨,=ü,p¶,ßØ,'!,:,ææ,ÿÁ,‰„,OÔ,(Ô,är,vÅ,Øx,¼ß,ôB,ÅÉ,F¢,pŸ,=,M¨,*m,óy,ù½,ÕJ,—+õð+çåé+Ì$ý+ª¤+†"+Z„?+_øH+j+¸Wk+Ü½µ+ôk7,|,º,
+"?,
+Y",tE, l,S,-‘,—¥,i:,x,Gè,â„,],ió,÷,C', ×ã+øåÐ+÷ú,#½,:,¼,z),>Â,é,µ,Š¤,¨$,,e£,!,ƒ,„,Ò,×3,zu,5ƒ,Ä½,û,ÂØ,ÊŸ,,˜,[,",w¥,îÇ,’/,Éa,)E,Vû,ë,T,,Ü•,Râ,
+ÕÇ,rÀ,
+È±,µ',˜Ì,H,  f+ùÿƒ+ìÜ;+ßO+Ìó½+¶KÅ+•Á¯+iÔ+=]1+?÷9+q2ë+œÎK+ÀTN+ÖW+åÇ/+ò8}+û/,ÀT,jà,	_,Åž,EQ,æ,¯ï,®³,xê,{_,f¿,èr,~E,v˜,‚,–‡,	DT+ýbe+î±Õ+í²Ü+ù=,ú,˜,wk,M+,Äg,Õ,k,vü,ÅÚ,,_£,´â,|ð,ìQ,­ç,’,^,§,è«,
+¶,}k,êù,Ò$,–,†ô,n,Ò˜,æ,7,J,ß,ó,	Fµ,­j,	MÒ,	N",<6+ý^8+ù—,Åì,	O,¸w,ëó,uü,È<,c#,š;,Áv,2,,«,ƒš,:
+,D(,ÀM,…“,¢1,w,¬·,º°,
+ÄQ,¹2,Ë{,¿è,4þ,««,‘Ç,£,IA,YÜ,È,zÖ,r,|F,;­,Ôë,ˆÃ,®Ý,5C,#Å,,÷,òÑ,ú,ñ$,™W,–*,co,î,, ¡Ô+ûC€+üd,‚=,°,‘°,Îå,$¬,Uö,½,Éë,
+,bä,®8,.,LË,#/,(²,Ä»,2+,P<,Å‹,ñ,-m,™¼,ÆÜ,Eˆf,!L,%@,Ô,”q,”Y,:,±¤,ùk,E¥,‰$,GŸ,Ò,Ê,ˆ=,2:,¡Q,Ç,ƒ‡,T,Þ±,	s,ak+üÏ+ë–Œ+Ù‰+Ö®~+ä|š+ùP,ø©,
+Ø”,"7,Lí+þ£ù,j;,I¬,Ð–,¡,ü,@|,™ ,hv,8ê,s¯,=/,+õ,Sú,2¼,hg,Ï,úÓ,»ÿ,¿ò,Ïñ,®H,éh,ó.,²Ô,Š€,V,˜,W@,šº,©•,®D,³,®,$Ú,'c,$“,‹ç,b[,:Ž>,'4©,~á,)™,V,æ,í‹,ß•,±y,cü,½3,VZ,Œ,'À,#îm,¨O,R,¥,,¼,‡-,)Õ,,Y,˜,Mh,C“,ê,†À,Õû,›,ê,¤¦,N6,Ð,½â,Â,:%,a,ô,Y;,zü,93,ôH,˜;,R¦,*¹,î\,’b,õ,»ð,äÊ,âì,Î,‡/,öˆ,+,”ó,Tö,@Ä,_G,œm,+,“w,ø·,Ø%,¾>,øÃ,™æ,™õ,Š,´, °,ç8,,ª!,Ÿâ,Ý, ¶,è,â,	Ôþ,„¦,Ei,Zâ,-F,Ø,®X,ÞÉ,M,},“Õ,‡Ó,;,íè,ö,
+ÙÂ,E ,†P,t,Z¯,I¦,ðD,9,pg,Î,8,w,ù~,›ß,úW,¡•,ÂU,äè,®Ä,­§,Hú, f,äë,ðÑ,Nl,D,V,Ê·,­ú,r”,¤,æt,Ž=,'4,¥~,¢,=¶,f%,Bµ,–m,ã‹,«Š,z”,,
+,þ,Óû,Q‚,b,ª,‡n,2š,zq,%ê,8“,‚,Çñ,Ì,{,g¦,ô¾,¼,B ,©ë,¨,w},,m,(,Ñ,çM,ì„, ,<4,)†,­¡,Ay,a›,Ò,
+u,
+™h,÷8,H,tƒ,Y8,YO,P¢,x,âÃ,ÌÆ,%,™¶,c¾,s·,
+ð,,Â£,1Å,
+LÂ,ß¯,¹M,h,øO,7,-,¢˜,Ì,½,gõ,/P,¥',j,h,xŠ,Po,¿þ,°¢,, «A,2º,ž‰,ƒ’,Óƒ,õƒ,ÄÉ,Û›,éÎ,•,´,‚¸,¯Û,“,Æ?,“N,h],´Ã,Á©,=k,ëé,°c,„,±y,Ao,MJ,c,ž,@*,…,9É,°:,l,“¹,ôö,0–,:K,Ê,†U,5ã,Åc,¤ ,6Ï,uR,8,n¸,Í„,Š,ø,—, ,‚,¥p,.,aC,6,o,…>,‚Ç,ú?,}Á,ó`,]X,hg,ï¾,Þ,³Ð,t,,>Ï,@,‘½,ƒR,ÌD,"©,×ž,âÌ,Xj, Œ,w~,R¢,#@,{f,~„,J“,,Ä,’w,¾¿,„,;,—Ï,‰è,¼Ö,Aì,û7,è,Ì,]¥,ã;,(,Ö,Ò,Æ,«,„É,™É,Y,qÚ,vÆ,ïì,å§,€;,s—,Ð,V,M4,„),,,©5,d,ß',Üz,ú5,µ”,Ì,E,Ä{,×, |,ë,,‹),,Õ,‹,ÍB,=,)$,,;ö,[,¢£,äó,AŒ,Ñ,ä’,Ô,§P,¥î,A¹,s×,t*,úN,,‰ú,r‚,¦_,j,d,•,ì½,nÜ,-),ÊA,†,«É,z,`,B,Â,Ä%,?†,yƒ,,§Q,h,î,H,,Þð,Ž»,]^,åG,Ò¢,¶,ý¡,3Ò,5Æ,JÝ,fô,v9,¢S,Eè,Pm,e,œ¯,¦k,!Î,dÄ,\æ,þƒ,Ë,­,ô
+,ªB,jÔ,;ç,nå,wØ,ö ,|Ë,ß¾,S¿,—[,:$,b3,h7,ÍÅ,|‹,Ía,&Û,ÝA,è¸,+b,4`,ã~,Àë,ú=,o,à,
+„¼,	ô$,Ÿ,	Y¸,	,’ä,AA,þ_,;,Ë,H—,¼P,U°,Œ	,Íå,ê,:¸,Ã,6‹,ãÖ,”,)ê,Ûb,ïJ,8;,6,„ñ,J>,…ÿ,æX,g^,Âú,'ú,œ,î,…¥,ö,í/,W,œe,/Ä,Î, û,°,¸,På,%±,´é,z7,ª(,g,%ˆ,&@,””,Íf,2,Ç!,‘e,;,r},dŠ,1à,“,Öº,›ò,j,¨ˆ,—j,±È,zW, ;,‹5,Òë,«K,s,Ê,½h,Éb,^±,iñ,¾,%,	—,+~,×',¥,:,«,°,Ä€,Oæ,C,	n\,QÜ+üjp+üÁŸ,<g,	b',³Ÿ,Òp,RZ,\Í,‚¹,á´,ðÚ,F,f,†,ëB,Û|,‡,¼,É÷,7,vs,íò,yi,–•,vø,=,üu,A“,0~,%e,,­X,¨ã,9,6,dT,†£,™¦,, ~,/ù,€Ž,‹š,ô¿,'W,¾,öç,Fê,zR,Ï,q›,Êõ,åh,²,Šr,—,Z,lÃ,ÉI,>ß,í,.,ëñ,õD,{*,7,ä,¦,ø¶,×¨,¶h,Ðl,‹¬,À,’P,»a,¼ë,»,Zþ,¾à,º,ÀÚ,7å,Â,¤Y,W,§ê,ÏT,­º,Ý,}',ôÖ,ã˜,®O,,”,,Ç,?˜,G1,N,›Õ,é1,Ð,q,gÄ,â&,Ù›,tõ,ç¥,^Ï,jr,i,Ð,[‚,€ ,ï,*Í,ëë,ÝÔ,Jñ,~(,yX,5³,¿°,Ü	,¯,Ð|+üÉ“+èf•+Ì{+±…¯+¥ðY+­ß5+Å«+æ«+ü,Ü,
+ƒ,|é,SR,Qý,PÆ,lh,Þ,F,ß5,
+š,™°,÷¬,›,t½,È‘,î¹,t,K,‚Ë,¤a,šQ,>,¤Q,žÏ,¹+þæ+ø+ùá,§{,	g,j ,[\,dì,e•,Þ¢,,Ð,ä	,óK,}ï,
+",„;+ö)_+ì·—+í_è+ýA,~¬,Ç,
+w),b“,z2,â,ê,˜,»å,q	,Õ,”Û,0ò,Åã,‡•,öU,Š",Þ,ÿq,_w,*[,Üá,ÄF,_õ,1L,ø€,]á,
+Gè,|Ñ,1+ÿ)°,×½,½,f¸,¿,„b,Ža,'E,Ã ,žy,†&,¥í,¾ƒ,±ä,E$,G[,Œ,-—,(Ž,­U,p
+,á9,›,vZ,ª,Â_,Œ‘,T,Éº,z,4,|î,Ñ3,},–,Õ,Î',,¨ë,5,îz,ÀÚ,Ò,
+¡w,O,­Ê,hê,\,@s,€,BË,FO,äà,>,,…-,1,ëí,¿ì,¥,	B³,q>,H<,)5,Ž+þDö+þ1|,?~,	oý,Uq,\í,ûÜ,M,2X,û”,~8,Á,,ÅÎ,‰,„“,›á,yÙ,Ft,‘á,­C, °, ,ùx,åÄ,	 ,v¦+öå5+çÀt+ë²`+üè\,œR,Ã€,2÷,°;,½,›,¸Ã,@i,ßÜ,l,¿<,+,Ë,Ç,á,ep,]T,@‹,€é,a•,\‚,²&,ÏÒ,êq,µ,«õ,œš,‹’,+ì,.],;,Y|,
+Î+,4,Ðð,0,l,hx,³L,ƒ6,¬°,,,2K,Ò,/;,‡ì,,Tr,
+|è,tw,Q,"v,u©,¦,4E,Æ…,Ÿü,UN,^K,‰Ñ,o€,	,-,S©,Õh,®,4,Å+ùÊO+äB+Üä+Ô=o+ÕÓ—+òTŠ,Ý²,ÓN,Éj,¯,,.×,†,ÂË,ƒB,€,T|,Uf,È:,KÓ,#½,@ç,Åc,òC,C{,,—?,¤8,ñ÷,R«,­Ü,p,ï6,ß,om,*,¦D,5”,Ø=,Ö,hù,8²,ý,ª3,ã,¯R,
+,±¸,b¦,ý,ÚÓ,ž,+T,u,†ñ,q>,lç,Ÿ¢,ó.,ñ,D,Og,4u,	y,jÑ,Ü,
+ù,	­,	\z,‹c,ºÎ,),õ,µÇ,Ó¸,õw,ß
+,ÕA,r„,2,ñ@,°,¤,ï,Õ,ú,,º,Çv,•·,±@+ý›¿+ä––+Î¤ë+Ã“M+Ð,f+òPL,Š,,Þ+,=„,Ÿ,¡3,ç›,×,,”7,T,`),Oà,	®+÷A,tk,î,ò,FÚ,Œ,UÝ,ž,##,,s,‡×+ùj+× ×+°ò+–,R+’°f+¦.W+ÇUz+ïï¢,²É,å},9_,°ò, ¢,“õ,Y,Ï,,­¹,2ö,èÞ,¢·,h,ž~,s‘,ì0,(R,'¨, Ë,
+r“,3q,Mù,n¡,xÀ,9w+þÆ=+ð&+Ûíé+Èâs+º6+©i"+³£+ÕHY+ù¢¿,˜~,,y,g/,4B,,,|,È,J,•,
+ÖE,—‰,…(,N½,St,Ñ,«¯,#-,o,ð,Mý,[¨,G,{M,ü,d¡,¯Q,û¿,,C,qç,4s,l,š,Øp,´Õ,Ý‡,Œ!,q¯,	@,|,Šâ+ÿJ(+ú!E,	3,­S,‡I,”l,jN,rÄ,Xv,6t,¼,F.,\`,¾æ+öt­+â°+ÝM +ê^,%`,
+3ü,ŽÝ,øÆ,rO,ŒU,$gä,­°,xd,÷ç+ù-*+íò0,*ú,ví,J,GX,6,„s,,™`,*o,€G,9¹,…ö,¬ò,
+Uc,Kå, ž,
+Ð,¯ã,Ôø,Ó€,h©,Q…,3¤,õ,wô,Z,JE,Šç,«…,´,,çÞ, J,è,b,©,v,ê›,{Ë,l,°œ,Å`,aX,™v,@ˆ,i,¨f,›L,¯©,b ,Ñ,÷¿,‚÷,´ì,¸H,øU,·¢,ÀH,Œ¶,û“,ß,³¥,­C,,Q,O´,	Ô,°,q,o,¶,f’,Ã^,u,ø,lÎ,q,Ó ,õ”,“f,;®,9ò,ïû,&D,',WÎ,×6+þ¹J+â{À+Èh‰+Â®+Ò_+ï´Ö,‡4,ß@,Ud,:.,W,,l¤,Je,Ú=,µŠ,Bè,NÏ,;…,@$,},›,F,¸‡,c,#…,«ý,¦™,´õ,eû,ÊÄ,yÁ,…>,Wt,ÎG,¼¬,j’,	Ø†,a‰,†,Ê,/,Ä,<
+,¡¬,gí,'z,Ç…,b!,F·,¡,ËO,öq,–G,=l,½í,UÃ, >,Bç,«­,d,uP,3F,Ê4,€å,ñ,sP,c‹,†,¡é,:A,²+ä<—+ügò,ÑÍ,ë,®¢,õ²,åy,bB,‡9,zÙ,‚Ä,ÇU,Zl,¹g,W,ê,8õ,Òƒ,¨,RŠ,R‘,ä,Ù˜+öc+Ú+½ªÌ+®H+¶/—+Ô Ü+õÁ,ð×,ï,’‘,v,˜,Q‘,€‰,©e,ò5,¢ƒ,$n,.é,è),’K,]Ï,Fæ,Õ^,ØÇ,!‡,Ÿ!,[”,Èr,],¼à,#,–,CL,e,,`Î,ÛÞ,X®,ïÁ,(–,Ù‡, ,7Ã,n],,œÔ,/”,SÒ,ò«,,5,	ÔU,ñ[,ŽI, ¨?+ö ³+çt+Ð
+ +µ-(+ “}+—m+œsù+¤(÷+¢ÿÇ+¡‰ž+­®`+ËM+çû, æ,x,	Ù‚,P€,÷, J',ö,ôÂ,'r,œ³,âÍ,J,år,Ò!,Ìˆ,ÊÝ, +ú®â+öê8+õ¦ë+ü×-, (,…ó,-a,C¾,ù¬,“ö,¸Q,+r,}e,ŒÕ,dn,ŠË,Ç¶,m,éî,J,_S,ƒÔ,™È,¯R,n,Ÿ£,cñ,k],yt,„t,F,è¿,	/í,I,
+2Á,Ñé,Þ,	èV,ö³,	Ï ,2,
+Â,¯,	•ß,]½,í6,·¶,«B,z”,BÂ,=\,
+‘–,éÑ,x¶,’S,ÎY,’K,‹¼,ô,	-m,
+˜,]í,’,—a,Ä,Ä+,Ÿä,ì{,
+*«,	1M,!|,Õ	,ûÃ,µä,æß,Ì&,‘,",DH,'+ü+úMò,Šº,ø[,ö',ð,žq,šÍ,ël,Ží,IJ,	<Š,
+^#,
+",wÖ,Ï6,	…·,×¡,¾©,¨,ò,„©,ƒ…, š,,7v,Ò©,€w,éó,rA,O+,ä6,	"®,
+Ðq,®Ø,ÒK, Ÿˆ+õÆÌ+ì+ø Ì,Ml+þ"Ù+ýì>+ÿŠ½,b…,Ó-,
+ÒK,	Ï<,ýÞ,"ø,
+bp,	9*,ô,
+¿W,ùt,'6,¼ï,i,"±,¥Ñ+ó?£+úþµ,ù,å!,Jç,kÞ,n(,	š,Zÿ,‡I,	;e,
+÷,k,
+¨!,h,
+¨,Fº,™,†Ó,»,|V,òŒ,7ü,6µ,
+©%,	æ	,	š¹,÷d,dt,%M,šy,Ó×,^Š,F,¸v,Ÿ#,v¦,|‹,d–,P,
+ Û,	¾,#ó,	5,
+h“,¡&,×+ÿ$’+ô²¢+ó•+øvÐ+þËÖ,{¨,k»+ùF+áò<+Ê¦Z+¾8p+¼äì+ËÁ–+ß¸+òD+ÿÛÞ,Ù,µ,#ë,Ãd,	B›,T»,Â,~£,MÐ,[,xG,\×,MÕ,ó‘,
+x·,,'Œ+ö8’+ÿbú,Sb,3{,«,§·,	 M,÷#,
+—O,@“,S,þy,kˆ,ÈÝ,‡û,	ª•,œ,óQ,	#,f®,ú:,	úø,	2,(‹,
+Ï?,	6É,
+e,,A„,´<,‰Ç,Š’,aø,	Á,	,
+â,ëæ+îh+÷ì,  ®,ø,%Í+çT'+ð€l+í(^,(,3=,Ù,\,B",´¥,¥,—G,
+,,	’Ú,	vÚ,ÃK,y ,ƒ:,Ô ,„‡,¹),Î,‡T,
+,v,SŠ,ßí,È,	'Ÿ,
+—T,æ%,ÿW,P,¢ ,°˜,e¹,KP,Á:,OV,ÍÁ,KÂ,	y^,	–Í,
+J±,
+_ ,x£, U,2,Æa,“,œ»,+µ,oœ,Ø,4Ÿ,À,¾,Z
+,
+Ë,
+>h,Û0,
+"è,Ž,È_,3q,u,žo,ƒ,5,¥î,Bê,^,­L,%B,Ž-,Øð,~^,é,	ÆÛ,Œú,	V1,Ê,&,µ,ãŠ,	ù),,,Ù,Ÿz,íÝ, ,`,å>,Õ£,Ï‹,›\+÷À+î†Ò,Ž,tÚ,¯©+ÿNö+çoü,.,ŸA,Á,e,>Ù,e¿,Ö,Ï,fœ,w,‡è,||,\T,	Dé,È,¢ø+üÏ+û˜++÷90+ô'ì+õ^}+õÝ+ñÂð+êp+â+Í‘\+·ÎN+Âó +ê9,4,PÌ,.G!,;Ê‡,5œ,ˆÒ,ë+êâ¥+æðd+ìà¥+òw+÷Ÿ+úÕk+ø¬Ú+ú¦, k|, ÷, –n,od,0Ü,W8,§¡,q,
+‡I,	ƒì,Q™,
+‰¤,
+õ<,c¾,ÁÅ,™Á,
+Î,ßË,Só,	ª,	¾Œ,	›—,
+OG,
+2™,«
+,6,tÁ,"*,œø,õm,j±,m&,	9ø,	wÞ,ûY,AÇ,B,´Õ,	,¢,	†µ,[±,,­Ñ,
+î',
+/Ô,ÂO,	+,	M©,dã,†,ñ‡,ãV,|u,ë,fò,	ês,ÌI,+Ê,¼v,Tß,¼,	Ø4,Î,K¹,î?,Vw,€¯,Dœ,ÝH,Ø£,+,gH,Žd, Y,
+{É,	â,	õ|,ðc,	Õ,'i,ÕJ,ÆŒ,ÚZ,gã,±ò,F,rº,nb,`˜,öv,	¨",y!+ö*q+Ýj³+Îb‚+ÈZË+Ó
+I+èWX+úŒ4, 1E+û*+í|Q+æ_ä+ê´+÷±Ã,ÈÃ,ëf,yc,en,÷Å,äo,,,„x,ˆ,J7,óŸ,&÷,±v+þÔ
++ñp+Ù¼µ+Â`¯+ÏŒo+ãƒ+ù'Ý,^(,
+¡,b,>",‡ë,Hà,µ	,Û,tO,Z­,	YÚ,…,ê­,¾>,¼~,÷¦,Ñ,¥Ê,ô*,[ã,¾N,að,¦o,¿$,q,/§,	*},f,tå,0°,ù,bC,³,¡Ú,€¡,©Ö,ˆ,þ^,
+aÔ,
+?·,
+êh,Ë9,8‹,•H,’,Cz,Á”,[Ù, aÏ,ÐÂ,Ïõ,Ád,0t,jB,PÖ,Jß,¼ ,t,·,‡Á,Î+ÿNÍ+ó÷+ûuü,éç,
+8¯,8Ø,,",ó[,ª©,8,ã©,i,ˆo,	oƒ,	ºz,Õ,4u,–ý,‡,§ö,‘ú,ùŸ,oø,Ó,¯ç,Æë,‰°,ê ,M,h,w(,Š•,€ô,m‘,ê,Šô,»ì,ó,H”,¨K,£Y,˜\,jî,ö,"2,P,‘,ý),ž3,	šÆ,A,ùè,	Û,—ü,#,¿Ê,å,(«,öä,Ã¾,“Û, hy, gà, à—+ýø…+ù6+ö&+õøk+ñ¾ö+ïøH+ìÉ`+í[›+êb:+èH+ãM +Þ„»+Ùm‰+ÚÜÿ+Ûµ0+Úé_+×¿µ+ÐŽÄ+Ìq+ÈyØ+Åê+Áý¾+½ò+¾-y+º›Â+¿õý+Ó±+ó5 ,±/,'B,2ã,)”°,Yª+ö7t+Ôð++Â2¾+½vÑ+Á;O+Ãã„+Ék‘+Í¤+×I+ÚÛ,+Þn+àå¤+ä¸Ø+ç,C+æùJ+ëSm+ë&Ñ+ñ@)+óˆ++óuE+øñ+ù˜+ùõ›+ûä$+úéÕ+ü–+ýèÑ+ÿ™Ñ, !v, ¾, Pt+ê–+ßâ|+Ú¾]+á$Ð+ìÃë+ä•0+ã7²+éøæ+ó´+ú +ýf+üâ8+ÿ‘Q,Õ&,_,MT,ðË,æœ,¹Ÿ,¤',îe,èÛ,M!,—B,yà,øb,	×&,J},
+7g,	(O,	‘ò,ª,
+bÜ,
+!É,mè,÷Ý,N[,ú°,L,b,Ì°,£Ÿ,”q,¢N,#¡,Ö,
+jU,
+uÊ,_+èŽV,yL,-º,"Æ,	6º,
+«,šM,»·,
+¼/,‚,ý*,ÙX,
+Ma,
+{,aÛ,Óý,:,f,O»,^>,õÒ,	ý,~,,Êu,Ä„,7,Na,P‰,®,–ž,Î…,Ç,J,5W,	.+þ¦ã,ú6,ÎT,@¨,Ê\,ðÝ,I™,Ò/,q,G²,ßm,ø,RÝ,¸Æ,•ª,Oq,l,Ä,¯™,JB,ÚÞ,„Æ,›Ò,.r,
+·^,
+à¬,–>,	fí,™ð,Ãê,"à,	ˆ,
+Ø,,,	ŽL,ä,G,‘,9¸,{­,	<,{j,
+ ¾,	èÄ,
+lç,
+e•,
+øe,	Ð,GA,FŽ,öÉ,°,4
+,,
+ôØ,
+ÅL,
+6ï,
+Å‰,¦º,—,gx,úô,öô,Œ/,¾&,?ù,	,Ké,ù
+,Òñ,H,Ÿ,s,–m,v,Kx,Åà,
+wù,	q<,	D:,ºN,	/,
+ºË,sI,Ž,ÃL,?ò,F,
+0Ë,
+Wâ,	¼Ë,
+0C,W,	ž,dœ,N ,ßÇ,ÿ…,
+Ã¢,TM,àS,
+ƒ+,õÇ,	¢“,	ö,	ð,	þ¿,Ê,,dQ,ð\,D ,2Õ,ŒÑ,e,½’,,ù&,
+Î,^,.È,£ð,
+±,&I,Æ¶,Õø,’H,ÏÙ,`•,,ä³,¼Ä,ôÚ,Ê,
+û=,.ü,Ê,
+þ
+,Žº,~Q,Ý,;=,ÙS,0Ï,…@,ä”,<Ô,sä+ùõþ+ð„Õ+îÏ+ú„S,,
+²‰,	½A,Âç,‡6,:h,–,	ÏM,Æ,á7,
+þ?,8û,
+¡S,õv,i,óD,ôx,Ò«, 6,ú,Ï,Êã,Ñ,Ä,ñ‹,}·,Ø…,	AB,	P,	ðû,
+@‹,
+5ï,
+Zü,Š¼,«ñ,û¼,
+Æš,8Ÿ,ke,6R,¬H,ð,Þ,ªÌ,¼,	Ì­,
+´E,¥i,,Û,Â,±¸,	$a,	Ø,	°l,©Ã,ï,UO,b,9ñ,<6,MH,Žq,Eô,`2,˜à,­Ê,	5',çm,ù«,IO,†î,ƒ+,T,	yÏ,	,ý",›,=®,P,`3,æë,Ñš,á™,Û,·,	R,Ûñ,¥k,”{,µ,ª=,Wò,¿@,BÁ,¨>,	$—,
+äÞ,Žè,ï",;’,*˜,«,
+p,á,02,©½,y,W•,I{,Ôà,	_³,&,¼,,‹·,&m,­ï,,r,Âr, 3¯,±R,Z,Z,
+²Ê,	Ù,
+ò,Ô,
+@,.ª,.Œ,ñ",Â,åè,þþ,¤¸,	š,?é,
+Ùˆ,
+wí,z,	i,	[ö,	iV,	û&,
+Ï,gÊ,,è,,V,
+,
+”õ,
+RŽ,	ì,
+y×,
+Os,8I,',
+ËÀ,	Ðb,
+e_,	…È,	MŒ,	cj,
+?Ñ,ÐË,¾”,Õ,)·,A,},¬,G,ˆˆ,	,î,Ç·,„,¤R,´Ã,Å¯,í²,³Q,k«,·ô,1,L,
+3,Íˆ,¬V, ,[“,á‰+ó=š+çX+ÚÒ¡+ÚÈq+çÙš+øïÿ,êd,?,N€,qð,­Ü,	9e,óx,	÷ó,
+‰,
+.,
+›¾,wÉ,Ü²,e÷,ûÁ,
+p,	Øž,
+VF,	öX,	ë™,	/U,
+Ñ°,
+—ä,–Ì,	ãF,	“^,	î•,	ž·,‡L,
+¨,N¥,7Ô,	ÚŽ,	žü,
+è‡,u,å,‘C,æ/,eÕ,£‘,Ž,½,	J,	Ý,¨z,s¾,¿a,¾,Ã›,O<,
+ð ,<K,,„$,2,3ð+é™t,*p,Ç+ÿÓ+óª_+ó¼Æ+ü7å,æ],+¨+ó—~+ì3F,	dë,	UÀ,	§,	‚·,O=,©,
+ÝJ,
+¬<,Õ`,³b,îk,»,½‚,ÙR,c,­,Ä,E²,û,	=Q,£ ,
+­o,e),,mç,“),Ù÷,º—,Ï4,ß&,Ñ,«",ç,Zq,N,ì,n¼,
+^¹,	¢_,	µq,ý0,	 Þ,,,
+šá,>í,%¡,¤,70,F,\\,†G,	B,–,Wî,Jj,Þ},o,ÿ<,2G,ÿ,.,,ðÆ,à,µ(,Ž,Fí,£º,­a,ì,@#,ð,~‰,Çð,GJ,Îç,3·, ·&, Ž?,uØ,ÔW,Ùß,ÿÓ,	ë±,	>",	Ó,Tl,	ÖÊ,
+>ë,	D,	IF,	å¯,	´¼,ø–,#,
+ü',	T\,	Äž,R,rW,s¼,G,`,ˆÓ,Öf,¥*+ú5<,¾H,Þa,È,Ã,ý,¢,rÒ,%J,™/,pj,á½,Û<,>Ü,Ë,g,š`,Vi,Gú,£B,#æ,.},	˜¬,	€,		Þ,ýÄ,
+¤,¹,È,ZN,è,\j,?',¥},
+x,–—,vÆ,áÃ,¼ã,å,á™,.í,Ñ,›,Ù,€s,0	,
+©2,	©Ï,sS,92,	¼,0,’á,4,ÎŸ,UV,
+ÂÕ,Ì,
+l,
+€à,	&,ît,óÍ,(×,
+Xy,	&8,	«ö,	ÃE,GH,1z,¦,l¡,¤,s£,ÁÆ,	Ê,¢,fh,þR,-E,E,¿O,=£,	7«,	,<,Ú½,
+$D,	xâ,
+J,ò,A³,
+ê,¤®,Æ#,}Ð,jà,	…,
+Y­,	X*,
+¦Ü,õ,y,Õ,þ),å,,Ä,h†,d,ö,	ÚI,]*,Z‘,
+í,â,‰,/“,Ò£,¯ã,,©¾,úú,”†,mK,Ÿ,92, ÎÅ,,¥,cF,ƒ,!],!ü,§,·.,q£+ü‹+ú¡p+øåÌ+õx+ôÊ+òKš+ï¤Š+ê
++æRé+ä¸6+åâÿ+ßÐÅ+Ø™+Ò…7+Ì+ÇM+Àœ+¼	‘+Á"¸+ÑDs+òNQ,c,!¤,Cµ,óQ+íU·+Ò¶?+É¦Ñ+ÆAý+Êýú+Î¤+ÔÀ¨+×§´+Þ¶-+ãµd+åý]+éË#+ôìú+öFÙ+úŠÚ+øƒØ+úÝò+üûÀ+þ«ø, bc, ðS, …,]¡,×G,úž,ë,hm,0­,4:,:Å,‚Ë,2,y,d-,£×,Lb,Ôh,ñb,&Þ,fÿ,"ì,Þ,µ,ÌË,‘C,.e, ç,³4,
+e ,
+‰,	œþ,š_,õ,'Â,	%ê,
+>D,
+‡,	‡£,	’â,rÌ,	0,Œý,¿,	„I,‘,E,
+æ,‚n,†±,Æþ,	Šk,
+²{,	Â½,ì», Ä,þc,Œe,:Ù+ýší+éSR+×¹ÿ+Ëe|+Ê ¤+Çï]+ËÛ6+ÊÇ•+ÐíÀ+ãŽe+ÿÀW,h,Ñ‚,
+Êø,$¶,…þ,
+.B,	(,
+{7,Št,A¬,
+³±,Õ¨,ôÎ,hx,„…,³½,
+:H,ÖÐ,
+†,ƒÜ,º,	|î,©¦,EŒ,[,là,	£~,x,\,C,Í,”,
+Ã{,
+†&,	²p,	¤,	c²,	ð|,	Ko,
+Q·,
+,“,ã,	,,´2+ï9+Ý|'+Õè¯+ß+Þ+õ–,ª ,÷5,	®ˆ,0,uY,‰},,
+…È,F`,žü,Ü¾,¦L,÷Ê,k+,pN,Ç!,
+¸…,èg,Ú	,½D,ÁÜ,ÔØ+ÿSý,è«+üç-+ø'D+ã™ô+ßÝa+Ù®+Ç:+¿×½+³Y+¥ô+¡7à+žý+Ÿ"
++¬öÒ+Â­u+ØÍ+èËü+óan+ü7)+þgë+ÿ¸2,Ì^,‘F,‹B,~E,j’,râ,;,âù,å7,",Ð,, R¯+ñà+å!Õ+ÞØÄ+æ}+óg­, £†,û,I×,	Œ,
+ø>,
+°',F,’~, ¢/,(Õ,Ç,Ó,™,9,~@+ó.[+ÝX+ü[%,_<,Úã,	e,
+B%,êØ,k	,ïÂ,L=,
+Ç,Ù,d_,ÚŽ,mŒ,¾,,É‹,ðÍ,ÂU,Ñ·,Ëê,s,³, , –+ýö+üOu+þ0Æ, ó, O,h,4,ÕÏ,ÆF,	ÃÝ,	–],ŸG,»´,Wc,ÜÆ,d,ÛÇ,¨û,©Õ,ŠÙ,i,ç³,1,÷†,ý¤,d,	c¶,ä^,•¼,a…,4	,ÅJ,	-š,	œs,	iE,_œ,¬,¾¢,	Ð,	"k,
+“*,	öM,
+Ýÿ,
+àP,h,ÁÀ,	¹N,²â,©9,†‚,›`,X,k7,©X,ía,	…õ,
+7,
+f ,	´),
+”D,	x%,	ëÝ,	¿T,à ,»¼,VÍ,	€®,	¿,
+YA,y,õÕ,ýn,ê¥, Ïz+÷2+ï×ö+éÌ+îg+úY§+ÿÆ©,…º,€a,\f,­Ù,Œ×,â,ä
+,òÄ,ï¨,	"¢,Žê,m,Š°+ýlž+ù+÷¤+þK,®T,øã,0¥+þ‡„+þ`u+þ$÷,èü,ƒ,L¤,ìo,;^,¹Ú,,×§,áŽ,	,?K, g/,M`,ì,Ú,¬š,1z,SÒ,˜®,¼¬, rû, 9ç, F™,ôU, ,Ý´,lÙ, 0,¶6,N¨,®',7B,  N+ÿU*+ÿÖÄ, Èk,±ä,ú˜,±,œŠ,ãÒ,
+LP,	Ì,Ö$,†!,A¯,ê,5Ž,M, ë,Ýž,*P,îÌ,B˜,Oò,E¿,	ì,
+3,? ,	e7,
+†ß,è´,žæ, ,$¶,”,éÐ,/@, ‘¶, ¦w,Z,â,¤,L,	¦¯,Ô>,$",(®,	™f,
+­,6û,	:,ß,É“,r<,ó	,A‹,a!,	`e,oŽ,zø,
+’|,4¾,ò,*,ãÊ,	>ï+ýN…,\,&Ñ,	Òð,wú,sb,ý,Õ´,,·À,«µ,oŽ,i2, ÿÇ+ýB, K,\Y,Ñ,ê[, ,¢ð,	—È,
+Mq,éž,*Ÿ,s,£8,#Ç,M,yz,{~,Q^,/ ,	“G,0W+ûª+ó´…+æ˜:+ßÖ¹+åSl+õ¤I, ‹£,ò , ê, ³t+ýž+ùh—+ýŽM, »É,éö,	Q,
+ïa,û,
+„R,ä(,
+ùœ,Ô,ÅY,
+Ú´,	e•,‹Â,Ì§,œ], sâ+þß¼,ÉG,ˆ?,
+h,|&,¢ç,¾F,YR,›î,
+ñ\,^,¥
+,€=,ýé,J¶,^,º{,b,¤’,ä~,U,	|Á,
+S¢,
+€,
+¤ë,	Í,¬O,	‹þ,òo,C,
+Y½,½,	ýé,	Ö,íÝ,
+F†,ïÕ, ,_q,w,,¤š,xY,³²,â9,O:,	z,«,´,
+R,DÉ,äÎ,Å{,ô¼,Â0,u,ìV, ï+ýnW, ®¹,­,5s,å¿,	Ö–,	«y,	£,	$s,	7Ì,VQ,Fß,
+Ï,+,™K,]o,Ð«,
+1,><,WG,,
+ës,Êa,ZY,Ò,§½,3,1a,{s,#,Uh,
+Ôš,
+'Ó,œl,	`‘,	’-,
+¯Ð,¹,Àþ,²,âÏ,š©,,ì,Äí,
+´y,îŽ,Ç°,—Z,?í,xl,Š…,	¼,
+^„,	¸ÿ,	˜ ,ý,ÙU,‚Ž,f=,×,–,Y‰,|Ù, Ð0+úxš+ð<Ï+æò+æ±Ü+ï+ÿv,[,H~,
+Úæ,vv,_©,ct,š,‡K,
+¸<,
+Êì,
+ÊP,w‘,nD,ˆ·,³|,RP,ð,ðf,¦,gO,Fœ,®‘,t?,Ù²,	èÇ,…–,	Qò,Wi,	ßÏ,
+D,`7,ŽÆ,	æ,
+•€,b¤,r,
+b¾,Ág,¼,ÕÛ+ú+K+ó®µ+ñ\›+ú°5,¦',	§6,
+¶ ,§,2Œ,¶;,
+äk,£ö,ù,«Û,Ãî,¹,Ò¦,°+öù_+ëÏ]+åº£+ë›Æ+þXÅ,=3,î0,
+5,
+©•,	1,›,è,É&,
+,ž=,YŽ,òö,÷,7~,9Ž,rV,”µ,@U,·æ,ºh,R÷,f—,Ú,¹M,è,Â,ì
+,°ï,íi,èÐ,L@,‹Ú,Wú,j†,Ùõ,® +ûöò+óêÆ+ð+îòœ+õQV+üºå+ÿý +ö5×+ì­+ç6 +íC.+ûTä,'Þ,	!d,'Ú,m,NÛ,¿t,qÉ,sž,
+5Ø,3;,~Ó,g‘,QÇ,Ü5,úì,,èP,¶u,:Þ,ïä,ã*,L,
+Î²,	8·,DN,%‚,{ˆ,HY,¨, Ÿ©,Ï,å,	ø,	'Ò,	•7,	—,m’,
+óÅ,¡›,	å,,	è ,%Ï,
+Þ,
+4ä,	nA,
+y:,
+_â,F€,×t,h,,Y$,‰É,%Ó,˜.,
+F¾,	 ,	}S,"È,n,nC,è©,N,Þ,,M¼,,,4Æ,	·ï,
+ZŒ,Ô-,,Ì,°,¿A,;µ, ¢,¸É,
+,‚“,žN,Ç,kÜ,R,ûä,º,3Ø,ýd,@Ÿ,‘,Œd,°Ì,üL,oZ,
+Þ2,J,
+®ï,
+	,
+‹`,¯í,I2,Â,D,;©,Äð,\Å,¦,	¹,wï,Ùç,	§½,lu,…1,¿Ð,Q%,:§,Ô,
+7ñ,m­,,3ª,Dj,C˜,
+ú­,²t,Ïâ+ÿ§=+ù(¶+ö€+ûeÓ,Hð,?˜,áÏ,õO,My,
+\ÿ,, ,­W,Rf,tá,,Y“,Ä¬,cô,& ,
+Ÿ,ê,íq,
+4L,	s†,
+þ¾,IÐ,o™,ÃN,®…,Á¤,Ë\,ýK,GC,b,,«Å,Ì,š,Žr,‰»,ï¬,6c,£,óõ,ƒÂ,j,³,è$,
+!,Å,W,_Ð, ‰+þãP,,ÜH,ÍÐ,ì,Ûè,Ð,TY,
+¿™,
+Îú,÷ˆ,`­,²+þ›s, ZÐ,&á,¼l,
+`	,wâ,”;,
+Ê;,Ì,&N+ø…À+î…+è+ë¸E+öó½, ‰&,Þ",ò\,ËÇ, J‘+ùð+ó®+ëñ+ÙÌ¦+Æ£‰+·óä+©›E+©‹¯+º·Î+ÏoÞ+ç±Q+ô-›+üÍ,»,»¾,]Q,Lê,œ÷,C,$,‡Ë,
+xy,
+Øú,	®j,
+$',ÿF,	©,,	ì,' ,"	,'Î,s,¬–,°ö,
+žÏ,°,ÈÀ,×,×ë,0,"ª,š',Ûï,‚Û,›,ü¾,nK,¯,®Ú,©,—:,¼Ô,¤˜,§ž,À,(,ÖE,ð,ƒ›,á^,¡¸,4,@l, è,%û, Ò,Í,š¦,¾>,i,“–,h,ò>,pÉ,ú™,³,?M,Sk,Œ,`þ,³J,`9,Â;,.,È ,”,ÅE,Së,R,nm,ge,½_,Ñ,¯L,£™,Eã,ÈÞ,Nh,O,&Z,:,]7,<,
+dË,Ž,?h,	?Œ,
+M,	xE,ï,	ê¯,
+@Ç,,
+Ìâ,T­,½ƒ,N@, ï×+ôÉl+ç«Û+Õvú+Â¦+·—Þ+³Uc+»â%+ÏU~+ä	n+õèU+ù
++ûDô+îhØ,,Þˆ,`T,È,0,X,5,
+«,	Ž,ËE,ö¾,÷,­,¬,
+<,Í,!+,`†,	£z,	=	,	³š,ÀÖ,¾,àì,µ,¢—,lâ,®§,
+åt,', \,t=,ôZ,,ã	,SÚ,Wç,WJ,‡",èÐ,6@,»t,Ù`,Bú,åw,Pá,·¦,4W,ª,rß,°4,T!,‹•,.,!,,ŸÊ,¸‚,?¨,Èï,7
+,Gÿ,,ò ,Áð,?Â,{2,MR,.ë,lÏ,iæ,
+,1,	º,mÎ,6â,Ÿ=,ðp,#“,YV,5^,|ö,–e,
+åu,<Æ,‡æ,Ä+úO+îë+î10+ôz½+ÿŠê,TÅ,ýÏ,	›W,~4,á,
+ò6,Òõ,Ié,íî,],ìÚ,4ê,ü>,ž,Ÿ#,#º,E2, (,80,áº,^{,@’,;•, Î,|ë,V¨,ì±,e],ÃK,ûH, ',[ƒ,þ¶,¸,	ú„,¬o,O¦,¥{,áâ,z,§ä,•¾,ÝÍ,¹v,½Õ,‚,
+âL,
+$,P,
+°,M—,²,Ïù,u,ë,º,	ûo,ç,M(,È,ˆ,]\,Ø¦,^,¥–,P,
+«Ç,
+)À,Èq,©=,	ì,¼X,õS,
+-,ÖÁ,h,oÃ,eM,‹{,ô‚,Ö,
+ÄÕ,	ö,fV,Ï7,ø%,©,së,WŠ,3e,ÍÕ,ÓD,Pï,§K,,f»,Ds,|T,º¨,’,Ö,…·,8ù,©?,é±,Ü,./,|Õ,L,&@,
+r|,fÖ,Wƒ,‘*,š6,üÉ,f,m,(,þz,¾=,$>,€5,6ó,
+µ,
+÷€,3Ÿ,}±,€„,ë>,£
+,A,Øi,g…,ÉŽ,QÌ,µ,Ò…+ýJ4+÷ÜG+øeÄ+þïÿ,<§,sÄ+óð+éM'+ðó,¶,ˆá,|Û,˜,•O,ä°,ÒS,Ýg,Yf,{9,ñ(,‹‡,m,.,Zc,, ,&b,ÿÔ,Üò,ýp,à,øw,,ùJ,±è,%m, Á,Ð¼,¿`,'u,ãú,
+
+²,šè,
+ÐL,pñ,9š+úöã+ñ…7+ék†+å3+ìà+ú•q,˜Y,íP,ÖJ,ø×,‡µ+ÿ+ú^<+ô‰ñ, ³d,œî,z,˜q,Ø,èX,ç3,)g,Ö-,Ëû,²,HG,.ã,¨›,yJ,vW+þ\(+ý`_+ÿ,s,èî,}(,Òd,…ˆ,&	,Tv,nh,7è,5,h,–E,ø¬,"{,£v,(Ó,J¼,ãj,?ü+ÿÀÔ, °^,!,nÀ+ù?O+ä\w+ý¯0,;·,	ì],k¹,Hú,ˆ,Q¶,o ,GÞ,:H,ÿÇ,
+"Q,	šN,†#,«Â,9â,	º,c,»¹,v,,b,«F,
+¨,ð™,²,…z,	ð,ÔÈ,YŸ,	êÓ,Ñ¡,	Ô›,K±,B,{Û,7¤,Ü,,÷,
+\9,¶G,C™,Ž,Ò,¯Ÿ,	z’,!®,},æß,9«,M,„G,™¾,þt+úŒà+ç@ö+ñ­‰,§C,’»,ï%,	f,Òº,ôÈ,—2,Y­, ðö,bX,üù,C‹,
+‡ª,Ðƒ,ô\,¾Ð,³—,Y, ?Ÿ, æ¬,4é,â|,K¹,ã©,
+ù_,l[,ãC,Œž,
+à­,7,1\,â­,	¡[,
++,
+á¼,­,	û*,	8,Ç;,ª3,Ÿ,™,VÖ,ƒ«,{c,‰à,WÑ,²+þ{þ, ˆ¦,7ü,î±,
+%«,Ý”,©o,
+²C,`,¢¢,„,ý,Þm,z‚,	y,ò6,£3,ú[,W±,«,+óËË+ç?+âú²+ýV),ù±,W`,ô\,Òü,é,n²,z,ú,ý²,+3,
+`á,aÆ,PÃ,²,5,"B,b¬,W¸,yd, Äý,°+ÿF.,ë,B,né,š¥,ª«,µ©,E×,gq,A',™,lü,.%,èx,õ,|:,
+!ò,¹k,c˜,	,î},¤ ,"@,kí,^µ,Ï,ºÅ,çÂ,
+Ûº,Ì,Æ[,õò,ÁÔ,¦•,í,w,%,d´,	/È,	>è,)·,L,¶),ùb,->,J‰,e,uÈ,
+cÓ,€ñ,6¿,¥Š,	íƒ,=&,éò,€É,Úì,/¥,‹,®c,ß÷,V¹,"\,Šø,€•,É,Ô,©¬,Å!,h˜,òN,î,áR,mÏ,Â¶,cÒ,¯ê,Û¯,,,<\,¢u,
+«å,Ç,X,á,âH,^Ý,ëQ,Ç,&¶,ùÎ,Š,",^Ü,F‰,Æï,ï^,5D,²Ž,
+ñ,—=,:Ü,¡›,™ê,ër,rT,¥E,;š,	y,p,
+úÆ,_Z,‡,	d,<Y,	;,ø, +÷ãó,OY,›,´,* ,oX,¤C,{,rÜ,›Ÿ,	ux,
+},ˆý,´È,Ì%,«k,>æ,[o,	ÖÖ,‡w,­R,+þAö+þ´¬+ü£÷+û°°+õn6+ó‰ó+ôe•+ûv	,-J,pÎ,
+#,
+„Ï,	ç,
+$ ,0!,~|,XQ,3•,,‡­,
+ÖÆ,Àu,kà,Eó,Io,â,c,¡p,Öi, º+ýMž+þúz,.º,Ó,ãÊ,ux,Dy,	·;,ÝÄ,
+úû,	ÒU,â,|M, ŒF, ? ,Rú,[í,‡Ä,–",MY,@®,Ú,@÷,¹S,øá,pa,É,o%,,©,5¡,j,Æ,é«,	Ù,=Œ,U ,à,]Ý, n“+ÿ&V+ý7u+üU, P,xú,a¤,
+s%,a“,˜¥,ðÃ,¡u,^\,¯,•o,ò¶,uX,o,/,©C,!¡+ÿJ+ú´ÿ+ýÒ,°b,9\,	d2,gV,WB,Ê†,Ý³,¸—,
+Ä,å,bª,ð,“,S,Î,	Rí,	;Ž,øÂ,3,äX,ÂT,ˆ‹,¸,ô^,	#Z,Ï7,áÿ,èÿ,œ", Åš,—, ö™,  \,„¶,¨z, Ó$,dÆ,Üÿ, ,ÑV,M_,}Ä,Ÿ,
+Ù©,ÿa,Ž,€e,¿ê,%D, Û,gà,¢Å,»7,WÂ,…ü,@÷,,´,n,Ã,ç,v,‘ä,°¼,a|,?, Ú+úO+ú›¡+ýîˆ+ÿy—,Ûy,ÅN,K9,8¡,
+þf,CY,è„,Bî+ý²P+ú4}+ø†0+úóÈ+ÿ<z,ìZ,²y,H¢,1, ØE+údb+þX,Ã4+ûXk+÷è“+îN+è[+æmé+íøÈ+ýtë,`P,÷Â,€j,	&Â,	dâ,Ë,
+€,
+¡C,	÷,Ù,(,ÚÊ,ëˆ,×,Ð–,ÿz,&†,”,”³,×M,þ,™¿,Ó',¾Z,=U,;±,Ñü,¬5,HÆ,­,	zó,Ê,	b$,NL,Äó,hA,’d,”O,|U,bv,¬Â,w,=;,¢ð,©K,‚,7,6‹,µ³,£,,‰”,Z,	9ý,
+f¸,¿b,	vc,‡,ºÌ,ù9,4,Œ„,ö9,‹®,Í,sû,˜÷,³,~,™©,|,O×,	“¹,+,
+Ð™,â,Kv,0®,	‚7,í†,‰,©#,·,Ò×,ë|,Cö+ÿÅ,?o, {,cß,a¸,Q¸,­,0d,de,v­,L,{,4n,ˆ:,—u,SÝ, Ù,N,
+wq,´,
+×,n,—©,õ¥,°,Çœ,–A,¡;,h,,§e,Äe,
+)ì,ƒ,Õ,, Ù,Ø¹,[M,6¤,û,ÖO,ho,
+õ,O$,“w,7,“Œ,÷ý,»;,V’, ÀÃ, Q+ÿx, ìb,¼,ŽÆ, H,ÿU,M,àÏ,ËÖ,!,‹,	.‘,,±,	1V, ",kd,®,%ñ,PÍ,
+L,…L,_è,Ïv,¼ó,@l,êJ,Úß,8ý,#í,/C,/Ñ,×¥+ö:À+ãÆ}+æç+ýÚ», Œ,FÞ,P™,	K¾,¸-,
+@,
+Rª,ã,œM+õåY+ì÷©+ðu+ô©, ¼,wW,¦»,$’,xü,5š+ø$“+õØ+÷Êw+ý',÷Ñ,\,,oâ,¾C,^c,»B,á,¦,è,¤;,…`,ej,	1«,	ûv,ÇØ,Òû,èü,wß,Ç\,5,~,’,Š:,˜,Ö8,J,F–,M!,²,ûÔ,!¿,è),Ý,c>,(º,&9,G«,u,ö,6þ,Ô¿,
+Ì,
+Cr,	,
+Žx,,ZX,Áâ,	’,3Ø,ü#,%,q,Ó,I,Õï,¢,	Œ,0,	Pl,®á,	:«,$',›_,en,	78,
+µ,ýö,	ƒ”,	Š,ô,8|,,"N,g,	4æ,u2, ÐÃ+ûë(+óô³+î%P+ô0þ+ú•1,És,… ,ã”,Ÿn,×,
+õ­,,
+ÆÐ,ÊB,
+ œ+÷¢Ž,@¨,è,Pi,ç‘,÷Ý,9†,+ø,­Å,
+2ß,	Y,Cˆ,R´,Õ,/],–Ù,›o,¬,V",+k,°A,Ä,[,Á€,	IÙ,‘¯,	âa,)A,Z×,ø.,âb,B,gö,ùV,/‰,kw,
+t:,‡, Þ,ãƒ,‡»,a‚,üÜ,U|,„r,ø¼,	ô·,,Œô,~‡,3 +ûr+èZÆ+Ò™+ÅeÀ+¿×+Äôp+ÏüP+â9à+÷:¼,×È,`,	ò,/,=,L,98,¥,ý‹,	i,Ý(,	›%,
+–Ü,
+Ù¬,
+/M,
+w2,
+!;,	È¤,	ç,
+1,8,î,±>,ž,Ì,¸,:…,»,ˆ,h$,ª<,wç,Üq,MÖ,J,ö;,æÄ,K+ÿ´+þÕÃ+þJ
++úõd+ùìS+ùÑ+ü5¦+úrì+ú&Ÿ+÷‡ +ùó|+ûÝ`+ÿ\
+,i8, ^x+üã$+ù‹+úGë+÷¼ž+õÍS+öh{+òïy+çR+Ùè³+ÌaÊ+Ã–Þ+Ç6Ô+ÓL+Þì+äÓ+åãR+é+îs+÷5+ù¶Í+÷¨?+ïÝ…+ß‘+ÐUI+Úþ‘+ê&
++õ%¼,&C,i¼,@¹,;ì,)Š,}ý, yÝ+ÿr+û•Ù+õI+ðF•+ò%Ô+÷{<+ý4Q, ä,5, !ý, ‡µ, ´+ÿúm, Áô,j,Ub, Ð+þî	+÷C\+áˆ5+´å±+Ê´+¡BÀ+¾¦u+ÊIX+Öü+ãwÍ+ñ_ð+ú²+ÿy+, k´, ÊK,&,é,	,¥©,ÔÍ,D,,C,hZ,©,¯½, ·z, ª+üøB+ýßË+ÿŸ,  P,u,7ÿ+ýŽ¦+ôÚ+é°©+Þ8Ä+Ùƒ&+×º“+ßM©+édF+ñi.+ï´Ô+æ^t+âq+à<;+Ò«.+îÄ7,ì+þ¡í+ý‹¨+ÿ¸+ùÿ+ø@+óe™+ñÕ;+ñ¤Ð+ñ#X+ôËÕ+ü„+þ²Ø+ý h+ú®¨+úñ©+ö¤1+ëãL+î@¯+ú]@+ûº´+û¾ã, øè, ]	+þÜ[+øDN+íoY+å)þ+â„M+æœD+íVÎ+óJ¦+öÉ”+ú‚t+üQ–, g,,&,Q,3,»',G,™â,¬,xæ,­»,S,ºJ,sÞ+ÿUS+ýj¿, í,Ó¹,ç¢,–0,ü,ÛÂ,7,*,Aá,gý,¬!,Q	,ËÐ,”j,œ,AÌ,¸Ì,8a,,¡b,›Y,š$,ß',Ê;,¶Å,õª,óª,›,	†•,	¢²,TC,~	+÷ª™+î+ö»+ýPs,HF,]§,	†½,å8,,W,U,à,7`,°_,þÌ,ŒQ,ÕX,Ë$,Ž>,áÉ,NC,ƒŠ,G°,5,	ÆU,#,þù,K,
+E±,	Íž, ¸,	ÞŽ,ä,s,³¯,h,DÊ,3,ÿè,
+D,-,C:,&Ÿ,ÅË,½]+úb±+ál&+þhÈ,oÛ,^K,o,ýº,9»,Å,3$,,£C,ô~,âÏ,å,Çà,éý,Ç»,Øq,•ð,‚§,Âð,	wá,	Ÿ,
+ƒ,”ƒ,në,¯‚,DD,ÈX,AK,J,,ä,4ò,ˆP,„ÿ,	,¤¥,Š_,Í?,,!,òž,ýæ,(h,ü,éK,¯Ò,©	,€o,Pø,¼Ø,ŠC,´|,Öî,=g,˜	,jà,%e,	#:,™|,b,¸,"Ö,^O,¼_, €,‚,‘ï,³^, c,³¼,	Ú",Ž¦,
+È,Q\,„,ãè,n,‚v,õ?,fu,ñé,Vª,¹b,ù,C¦,j),	^‰,Š,JÛ,Ÿ‰,Í§,?¹,$¤,ë0,Qº,	–Ÿ,
+ZÖ,	€×,ÙŽ,Øÿ,ž»,ˆ1,)á,èS,*x,¼,’†,:ê,J–,ß	,	=,	q,Áˆ,,	Î,	%Å,B°,£ã,¡{,œ,A,Dù,N¿,aº,Ó{,°,1É,æ2,6,pj,ÎB,E,
+£,
+ýR,q¶,  ,
+\H,9­,tð,(®,L,w,;¢,ô½,
+s‡,‘Ç,	`h,~·,	DÚ,	×c,	çú,	iî,<•,Ö",_@,Þ“,eû,wg,½[,ìW,f,
+,	Ê,±€,î…,Y{,ÿ,wÈ,ÁH,X,p6,ƒ£,gù,,	ú,u,kK,?Ô,uË,Èö,ñ^,¤,Ö,I,¶Ç+ÿ‹º, T;,H,a,	p ,
+Iˆ,+Ø,,˜F,	¼¶,
+®,€€,­Ž,2n,	W,Ð},	”û,	þ8,AÑ,
+b\,Bµ,p«,p©,^X,Sô,	Q0,	Äv,€, †Œ, î,ÝB,mm,ÛD,÷_,6Ä,Rç,Ÿ(,‘,ƒ«,,yF,~,ß,é,@,¯',¿Ô,ÊÃ,‰,äþ,f”,	=l,–É,ìÊ,	K®,Ë7,qQ, ž,šÛ,í˜,>,h+ÿÃ¾,)Œ,£Á,]„,:<,Ò,‘ï,o=,Ýû,ä@,¯i,=2%,“,
+T(,
+ÎÇ,÷Ž,ž,fË,jÚ,‘p,AÃ,’Ê,¹¢,è,ö,b,	Á,Y7,†,~H,à‘,¹,zM,DT, ì´, ¯,C¬, x,]),Õ,jr,³Ž,ew,­ ,SÅ,úQ,š\,, ^+þ€, uŽ,
+ ,	Ó²,óø+ó~Æ+éw}+ßÅ×+Ú•Q+ßéq+çÉ+ï‚+úe/+øa›+ìä+áïB+á%¶+èÈÊ+õ-ˆ, q	,, [+÷ƒ+è3H+ßÔù+ãÅ’+ë€E+õþi, L“,«,ÇŽ,"C,	(J,	$¨,Û, fÆ, õ,w‘,
+‰î,
+?›,<,ö=,ä,µ˜,g’,š˜,aœ,2¾,Ú{,',W,iã,$ ,F%,¦û,?Æ,L“,.¬,	,QÃ,œº,	¯,
+`ÿ,{³,Á{,³7,û´,	=,	|Ò,Ôß,ê,,,+,ˆ,ÁŽ,j,P, ›Ü+ÿRÖ+û”J+üŠ™,šk,Xg,óñ,ºŽ,“,	G,´Õ,<†,Þ",Ãå,ÓQ,
+L©,Dñ,Å¨,	ê(,	,!$,
+=˜,êg,ÆÌ,ÒÆ,@,¢¾,ú,D²,þÒ,†N,O2,çÆ,ÍI,¦œ,Ôå,¿7,âe,MK,ê|,Á:,Z#,¾á,0,§,ó,•Ü,›Ã,ŒÀ,Æ”,¯,^µ, ,‚Â,vX,eX,~k,õ€,:V,Ž>,>Í,Å•,	Yñ,ô¿,, Fc,h,b,1€,L*, ·Á,pI,;>,tö,¸¬,	µy,	7,st,™,
+;,
+# ,	Áô,
+å…,	¼q,	*õ,å~,ÿ7,œu,~.,¾M,ðÒ,”%,§!,Ìú,7	,²ý,*Š,ó ,o~,4¤,ú",ûË,äî,7
+,þz,°È,,v,îÍ,4,
+¸,x,R‡,Ãí,³2,6—,É–,5,0‚,Eæ, )?+úø–+ûíi+ýâ), ø,˜²,b(,µ>,â~,ÒÆ,¢
+, C‰+û-)+ñXH+é	+í`!+ó=T+ÿ¼g,W,±,	"ú,žo,	Œö,wÛ,4,,·à,<b,)ô,dM,,*ž,!æ, ',ÆÁ,U™,ge,_,ýV,@±,¯/,“,lZ,÷,÷§,y¤,íu,?x,Ìt,1,.©,˜,©¤,š‰,‹<,
+˜,ë,ƒõ,ÓK,Šú,C-,Ç¶,SÖ,šì,š,WÅ,ê,‘j,@®,Ú,	<M,
+u(,	ð,Æ,ôw,>v,Ÿ ,×T,|v,ÑÈ,ÒU,@›,7­,%p,	,ÊÅ,y¹,®³,	4M,	œB,Gœ,zÉ,Fý,ˆã,	¡¸,—,hs,i,í,,‡û,°m,›,kr,‘,ù!, ¦,W>,g,®Æ,â,7c,£‡,	'™,
+(å,
+r,î¢,oo,§,õ‘,Ál,	–â,æ·,q.,¾‚,Òä, ±,Öž,¿,Ès,êÒ,)R,	[,,
+»Í,Ø,
+åµ,
+ ,Ý,És,‘œ,à, E^+ÿüÕ+ü¬]+ûÒ, %ð,`º,bÞ,-9,û5,ìk,m
+,¥¶,žú,ÜÙ,ñÞ,‡Ÿ,‰F,Hà,‰[,  , þ,aJ,ý5,cq,¦,®ý,ÅR,¯¸,ÚŸ,X,¦5,µ,	…2,,	žn,Ó,[—,
+9K,	ýÓ,S©,˜ð,¤~,Å,­õ,›á,]ù,òT,Rc,êÊ,»R,?v, ²¸+ú¥+ôÇ÷+ø(
++ù\=,? ,ý¨,Í,)ü,øÁ,í›,*Û,ˆ^,,ä,>,”,ož,£a,8§,Êë,ÉÄ,Œ#,Áf,<,­3,H,\Ý,•¸,r¥,Ðè,«\,éº,IÅ,ñµ,âÊ,×,=ƒ,iÓ,™f,Û«,“0,U1,s9,¿Q,2…,–·,ž¨,&Z,	,¸ ,J`,Ô,I},",/,ÙI,ó,êK,æ¡,	L‹,—,2r,
+Ø,'Ò,B9,	ˆ+,Œ,V,yÔ,¤x,¨¸,°n,»,m­,™å,¬\,¤¤,Àh,c,	FO,P½,…d,ã,„,
+e,­¹,#Þ,6‚,/
+,	i˜,m ,äÛ,ÄÂ,ð,	*4,­,
+",1,ÔÒ,g›,ÁÈ,‹_,po,”g,Ë~,.?,(,ôú,˜%,,S`,ø,ýæ,ì,Fä,Œ6, Þ,øà,
+e,	‘Œ,Áæ,$,’L,œ,S‰,Ë\,3ÿ,„m,aì,›‘,Jœ,Z,å,œë,	3—,	b%,2¹,˜ä,sH, Í,U¥,1W,TG,{.,u›,#2,,ÿ,£,o,m.,yS,tA,½Ž,¸,[,Ã`,‰,àÕ,ª},­,Ž,ÖÇ,{“,J,èX,¾ƒ,Á,Ñ,á’,Õ,%K,…®,.,Ç,e, ˆ,Ët,v},ÛW,[D,ì,-g+þ¾K+ÿ{D, £Ò,Õ¾,	!y,	n–,NÐ,	îD,
+Ý’,	¢,
+Rç,C=,,Ì%,'ò,	@—,ÕÛ,	¼Â,	–×,
+I<,Öt,)î,¬ª,§ã,ôÜ,oÐ,Ý—,Ö+,‘&,kG,Iá,•,L,×8,žr,9¨,jé,Ö:,Õ,vÎ,w,ÑX,á™,Æg,¶ ,µƒ,OU,ˆZ,Ø¶,½,*s,h×,m,Ó,üB,Î¾,?k,\>,É(,o^,Xi,kp,uÌ,Žú,~¿,°½,í,6–,§\,t8,d,àR,d,†,Û,-ÿ,	,Ó,,I6,êå,j,Â¦,mO,»,Èi,‚ ,ºµ,–_,d,Œ–,íå,„”,êÔ,Á~,Û,_,,]Ï,ê¼,U,>ò,µÝ,žÇ,aË,xŽ,hÔ,;¿,@Ã,¯Ç,#*,ù@,	¢,*J,äL,m,Z	,‹’,·þ,»*,À,	]-,	c,M#,¾,Ñ,
+68,K‘,¹Ð,NÈ,- ,˜d,¶m,ÏV,§š,\1,¾,ê,G,,=‡,áà,€¸,Þˆ,Á,‰Þ,•e,ØÚ,
+@,
+@>,ÜZ,½Á,"8,	ß,®Ž,4†,	"$,
+e,Æ,Å,@A,ÓX,Aú,],¼±,]é,	¶,œõ,†÷,ØY,VŒ,·\,Î,Û,ü{,³,¶¸,Ù,Ü`,ˆN,Sp,f–,²*,†Œ,4Ô,b©,-Ñ,Yí,ó,),‰#,,åc,ôÚ,+ +þÈá, œv,"C,ö›,ùá,Á,rä,çÉ, ·+, ¤p,0', À , o:,Éo,Õ, ˜,l(+þy{, ÿÞ, f+ÿÙF,”,&ß,	À, Ë™, â++ÿÓ, »+ÿN©+ÿ¦ý+ÿÍ+ü©,  +ÿ,ø+ø×+ýŸß+ÿâ­+ù†+õ*D+õ*ô+ño+ë¸i+év+é.v+ë+ïŒM+ó¤+ú¯ë+úøl+ùÞX+ñAä+é¿Ù+âÄê+ß+ÞÝ+àÔG+îaÏ+ù§U+ü¢+õÂÉ+öÃ+ýà	+úÁò+ùv+øJ!+ücÑ+ülä+ú,Á+ù£+ú¨Ë+ù“Ù+óEà+ò^L+÷FÙ+øÆ<+üÞ+ù‹U+üJÂ+ùÎ+÷v(+÷‡†+ôº´+ñ2+éFš+æ¢©+ï8¥+òU+ó£®+ô»+ö)Ö+÷O}+ùK‡+÷aÚ+æµž+Ø¡Å+úús+ú-ì+øWÆ+ù1Ý+öuŽ+ñÑ+ç-¡+æÑÌ+ñ}+ñ¢&+ï^’+ñâò+óç¸+ñ¤+ï 8+òË+òT+ö=+ñôˆ+ó—+ô¹X+ïì<+í¸F+òD+ó’+÷´O+úX–+þ7f, E+ÿ'*+ûEò+ýÎa+ýy, Å}+ÿŠ+ùÊœ+úSµ+ûéË+ùÒ­+ù„3+üúà, )+ÿŽý,™Ç,"¸+ÿa	+úìâ+öjX+øÅ+ûSô+ùxH+ûÀ+÷ˆQ+øS+ø·"+öÂ+õ-+ò/â+ì=©+ô2Ó+úg+û±—+þÓs, 7^, , Â., ÍO, [8,^,jŽ, Èi,o,3µ,œ¹+ý°&+ÿÈ€,6›,Vd,!+ÿæ?,<ƒ,¯›, çY, Øì,¼I,Dk+ÿäÓ+üF+ûûÇ+ý7²+þF‡+ýˆ)+úAF+ù+C+òÐ9+ñDë+óš-+ó_ÿ+î4+ìZÏ+äùO+Þ[—+Öê}+Øù/+ß°+èdÏ+îQY+ô¹ê+ø+o+ô[+ï™¨+õ	ê+ög+õ\+ù†J+ù:t+ùy<+ûtÓ+üSá+ü‚x+ûäý+ýˆ–+ùC+ò¦Ó+÷"R+÷#+ö <+ùy++÷í?+ôÊ{+ôM+òV]+òBr+õ/Æ+÷i<+ö"$+û¨Ñ+ü”+÷Óf+øû+ø¬R+÷Å.+õp+õ×+ô+òr’+ój+öd¥+ö^+õ=+òûÈ+ò¤Á+óv+ówO+ô¹¬+ð)±+ñç†+ôqž+ó‰+óC¹+ït!+êQ§+íÖ—+òëà+ötm+ùo+ø×¬+ø{a+ús+öéE+øÜ¥+÷W¨+ö]§+õ“¯+ö?Î+ó¤ª+óÑ³+öL”+õüï+öà¸+úÜ+úÍõ+ú&+÷þæ+øS"+øÃ+ù’®+ö†š+õ3˜+÷q#+ø¢v+õ³š+ó}É+ô3i+ò›À+ñZš+î‚Ñ+í~+éíV+å1½+Ý¥+Û+Úks+Ý#[+â¤+è[Ô+ìíÔ+ò@+õGx+ñ‹«+ñ:+ó˜ï+õŠË+öl'+óˆ+õ±Š+óœº+ï£Ì+ïâ€+óo=+ó,k+î˜·+ñêÌ+öÉŸ+ñÛŠ+ñ`:+ïK+ð¤b+ñß +ònÂ+ó„ã+òžý+ò}”+ø‚+õá¸+õqÄ+õ8+ó+ò+òUð+ñ/1+ôÁ+ï®ñ+ìñk+ð±ø+ð•w+îkþ+ð¦Ò+õ±·+ø¬Ÿ+÷ýý+ùI+ÿnì+øEÐ+÷üç+úd²+ûŠ²+üë+øï1+ò£+î¬+è[&+à”ð+Û‰˜+ßžÖ+ád9+íuÆ+÷]¬+øâ‰+û
+q+þ&+þÓ¬+ü8ß+ùÕ+ü)”+ú*+öl+ðP¾+òc~+ò•N+î¥¶+ïÎl+î³D+ójê+ó}{+ô î+øZ+û¿÷+ÿòù, ?, ã	,’®,²¹,M÷,¨Í,êî,‰ç,ý§,a(,f,¹,~8,*Á,Á,; ,“}, ,Æ,Qy,úö,ì‰,Åg,÷H,¶Z,ÓŸ,/®,ÊŸ+þaQ+þS+ú®†+ý8#, §4,ä,—Ó,1¸,,îk,-ã,{R,u¿,|=,] ,È,Ÿ´,Ú$,5R,4,ü,¼Ï,%,Ûí,£ò,µ€,Wî,¡×,ç],H‚,"ƒ, ‘+þ", 1ô, +þ[’, ù}, Ò+þ+ýÁ¿+ýµÂ+ÿ·÷+þ[‘+ý`s+ý%l+úû]+ûçL+ý`Å+ýK(+ý€ð+ú*+û‚+úÙR+ü…ó+þÈô+ýív+ý˜‚+ý Ó+üÚm+úã_+ú°]+þ.Æ+þpn+ýè+þ7á+ùž.+û½+û!, œ+þ)Ã+þVÆ+ýý~+úü+øŽ²+úYñ+ý•Q+ü"`+û^+ûü+þ†+þŠ®+ü¯j+ùVÇ+ù>+øP+÷f+ì¢Ä+àª+ê1Æ+óv +ú,A+ú<+ü+û‰X+ú×Q+ûÒ5+ü=¼+úb‚+üIW+üò'+ø)š+û»`+úåÌ+úzX+ü&¦, _ò, ‰á+ýÓ+öyN+ôÏ+ð7M+ð]+ô-&+ø6+õí:+÷¿€+øõá+ù§f+üök+úy	+ùŒ+úß+÷o +ùS+úž4+ýx+þŽ<+þ”ß+ø'f+ò˜þ+ùt_+ûWz+úÙ9+ýt0+û8¨+úV5+ü'I+ùxï+üêÏ+ö+õrÇ+÷[ +úoê+ý€S+ÿiÉ+õíß+õ”|+ö±+ôib+õÃô+ôýW+øWÃ+þY¶+ø+ô¶µ+ó¬+ó>+òVÉ+òÓÖ+ô8é+÷í¾+ù­»+ü	É+ü»+ýÌ¨+øÅú+÷ºÉ+õÌ1+÷q+ò-1+õë+÷Þ¹+õÂ/+î~o+ë$‚+äZ<+×œ–+Íh+ÇÀ:+ÌÆx+Ô/Á+àõ+éš+ì6+ñP8+õ7é+õ1+ô1+ô +÷å+ùfM+ù4ý+øGk+ûr+ø7Î+õR.+ö«¨+õX+òï¬+ôŠ÷+ôHÉ+ë^„+åo+ßl+â¹~+è{€+ô!1+÷|˜+÷R+õ‹ª+ôˆ¤+ðJ(+òÐS+õ4n+ñ•Y+í@¸+í?+ò³ý+óC+÷™q+÷¯*+÷J+õ&é+ów²+ó¡^+õŠ*+ê+ê?a+âòj+êfN+ñ?+íá+ñÑ?+ñ[Z+íýØ+îK+î_±+î¸+ïz+ñë¿+ñfü+ïG+ô³Z+ñ4n+ò†Ü+÷9E+ù²÷+ø`+ôÑÕ+ö"+ñ~Ò+ï#Á+ñê+ó]’+ó‚«+÷ï+øPÒ+ô	+ñµ$+ò’9+òÛ+õûÂ+óëõ+ñLO+ôÖH+ñ`+ïö+îsK+ò´}+õÒ+ñ<œ+ì+ë¡^+îŒ+ðŠ[+ï+ëS+ê+ì1+é++ïÁð+ð½N+íl+íÏ+ï=+ð˜Ü+ôBï+ò¯+ñ…&+íjƒ+í÷ˆ+ït+í)+äÕ}+è’+ï£+ó3…+÷z+ñŠ(+î¨F+ñ6+ò¨+ð	#+îd"+í­Š+ö	v+úÜ+÷Ü+ø(“+ô"+î@…+ëŠo+ì'<+ïŸæ+íª~+í©t+ð¼6+ðAü+í¦4+ëd+ëäÖ+ên:+èÇà+éÈž+é®+ìÜ+êS\+ë]s+òkI+íý+è4»+éO£+éÒ¹+ëBŽ+ðLE+ñü=+óx+ðSö+ð/+íØÅ+ëò´+é½Ì+ë0W+êÜ)+óÒi+óSp+ô!x+ôÅÒ+ëã®+ï,¿+îâ¢+ôü­+êø]+ëÖÀ+î +ëÆ¬+îñ^+êYK+çJq+ç[?+äJ…+á¨q+î+`,,Ð+÷‘+÷Úu+î69+òý+ë2…+ðÊS+ìu5+å÷+ä{°+âX+ä_ð+êc+ëíU+î|Â+ð„P+í+íu+ïw©+ì·c+èæå+é¹ó+íED+ìf¿+íS+ìC¸+é@þ+ë±ª+êÀí+ï†+ð8Ó+çj½+èýJ+í-é+ô%Z+öï™+ñù+í¸+æ‚â+ì8+æ­Î+êæ+ë£Û+ëïa+ò4ù+ôvƒ+ùæX+ó®¬+êÖõ+çá0+é3n+æ”±+ä¢<+çÿ+ê¶n+îó¥+ûÉ,ñ¿,_”+ø)ú+êjÚ+æ
+®+Ø(Ø+ßsE+àÖˆ+äÖÕ+ë<»+è»+è¡G+çn+ä¼Ÿ+äÆÎ+åþÂ+äIþ+ä´Ä+è­Ù+êÉ+ë·0+ëVÄ+çíÄ+í½+ö_ˆ+íO/+ë¥w+çÑò+è
+…+éÉb+ç	ù+ôiQ+ìWæ+ì®‚+é:©+ç™G+å'P+â=+ß£#+ä¨2+çñY+ê	ò+å•i+èi–+ð÷k+ã(+æßí+êÇ+ésy+çO+ÞîÑ+ì+ðJK+ëÎö+êçª+å(Å+å~w+â»Ö+ß¨¾+ãž+ç± +é"+í¨ø+ö%Ë+ñ(+êÒ+è†ø+ä¯+ê§¬+ç” +çbr+ã›Î+å½+èê×+ìÖ±+èê«+ì+åož+å­=+í|÷+åaE+æ:ï+çVû+æŽ+òÔ+æáÉ+ÞšW+Ð;ý+ÝL+å†Ö+äÀ+ä	÷+ß<+àu+äÙÌ+åK+åcÝ+éIJ+ê{+ê$>+â´£+â~ +èŸi+Ü"+Ýª+écä+ãÒµ+èé‚+òp>+ñ3+ö}‚+åZ²+ñy¬+ï:+õÛÔ+Ü;È+æ»­+ï¹(+í”A+ôƒ+ë<µ+í7­,‡;+û½+çKn+âm¯+äò+â ´+èƒ?+ê@+îÄ+ð,£+éD?+æ„+æuÓ+ã&Ú+àc+Þ¤ä+ßÜg+ä—˜+åK+ã©?+å‘˜+ãÏâ+áÍ„+áè+ß<$+ßÁ+Ú¦y+ØÇj+ÙÄ+Ý³á+âk+ãõ+æPç+ä<y+Üø+Õr_+Ød+Ôô˜+ØGK+Ùå+ßp_+äéc+âc£+â¤+äŠ+èjÚ+ä9+àÍð+áAz+à[U+â™´+àª+Þ•Ü+øS›+ð (+ôF+ñÛÐ+ò€v+æ¨ò+ï«#+á¯ƒ+ìO?+óTW+ë–ô+ó&g+îk +ìŽ…+ëòx+æô\+àék+ä×ö+ãO+ãûh+ão+âš	+áÄ0+ÔÝá+ÇÈÃ+Ö„˜+á +ââ+×%+äR–+èæ;+ß©h+èÕê+íñ+Þéþ+á˜+Üõ£+àq+ç5+Úï‰+Û^Æ+Ñi~+Í»{+Ë‹Ì+Î¸ +Ò»q+ÚžÊ+ß<Ç+äM·+æ®ù+å…2+â¥ +äàd+Þu€+Ý!Ð+áCf+ß“Õ+ÜGm+Ù¤+ÙÏ+Ô6z+ÐÀÇ+Íi+Îå4+ÓRº+×{¼+Ù`|+Üð–+ßñ±+âxE+äü+ãÚÆ+æCe+è+ê¼+æŸJ+èæÛ+ð\ö+Ø
+b+ãÆ6+æâ€+áíØ+áÀí+å¯B+êm×+ì³U+ñ@+æ.D+åÈ+æ5 +çV+ê‚Ë+è5]+ã¸E+æÂá+ç‰+é<E+ëÅy+ê³Ç+æ®Ø+äxV+ãØó+á›Ô+ÚõÄ+ÙûÅ+Ü‘Ã+å%~+èÁ‘+×|+çY"+ñar+î£ï+èç+ãïD+ß’+Úþƒ+Þx<+àƒg+Ü±´+èÕá+Ûß+ç_(+ñš*+í“+çàG+ï´Î+ïŸ…+äòâ+Þ5m+×ÿ†+Ô“÷+ÐUd+Ì:à+ÌëÏ+Ô¼“+Ý×þ+äW+ååˆ+è'Û+èYÄ+å±+âù¯+á"3+àE;+Ý5+á¾ñ+â¿+Þ7Ó+èy+å¥+éÎ‰+èëq+ê2º+å¸Ç+â"B+àÜ¼+áïÿ+å?o+ëw+îÏ+óU1+ïo+ønà+ëpÈ+ëžÜ+ëXù+ç-+çÐ™+æZÂ+åïâ+è‚0+è]ç+æTm+ñq+ôc +òšã+é"+çÙå+îKC+çº·+æ o+àT4+à¢Ê+ç(/+î`ö+áZ¸+ßé¢+ùB+óÛî+ø›°+üÿ²+ó3“+î”¥+é#+ä:Ù+ådK+ãÝk+äÅJ+ç`o+ê|÷+éÜZ+éÅ´+ç
+ƒ+ê]Õ+ío+æ›_+æ}¢+æýˆ+æ‡±+åh+ã_á+äv0+çzn+ça<+èøŸ+ìë+éaÓ+ëŠW+éšm+èb+äÕE+âQ+ìÚ+ÜÞs+äx2+øiM+ôå/+ì‰+õ]+ìX…+æ€‚+åbC+Ü·W+âð´+Þ$Ð+àÇî+âÄâ+äsÊ+ç”Ù+êª¾+çº¨+çÓA+ét·+ë·ä+çlç+ä†£+æ±+æD'+ä 5+áBM+Þœî+ÞiK+ß’m+æ C+í¦)+ìœ´+îCd+ó•à+ëã€+îbæ+åÒä+â+Æ+à’1+á\ý+à‡þ+ãô+å@¡+éuË+êW<+ìs÷+ì2µ+ì9+ì	~+çN+ä[-+ß»¢+à’m+á¿7+à%Þ+à%y+à©S+éð+ìâ"+ìpõ+ðF+ì,‘+è¦Ž+ì‹+ç®-+åQR+âšŽ+à
+a+ßS+âš+ä½+áü +ãM-+ãZB+ä|+æÊ(+æ*Ñ+çý+æ²+åÅB+á]ò+æ–U+ÜÀš+é±+ï.y+éý+îj>+ïÉ+î ½+ñ¦(+ë€o+ìÆ+ç|q+åz»+áÿ+ÛÔ»+ÛÎÃ+ÜfX+Þ5á+ãf§+ã<ß+ó_Ó+îÏ@+ìT€+è¿L+éW+í4u+êë®+å\Ï+æ4+å<	+æšâ+çôÃ+æ0…+å¿æ+íý£+éÐ†+äJç+ãÄ¹+æO+åï+åëì+ä<+ã…ˆ+àžÕ+Þü†+à¸+à½*+á˜Ò+ãÎD+ão›+èU¢+êbð+è¶H+í*s+çÏÿ+èx…+æÑ+áøó+à;¬+â¬Ÿ+ä•+ãû9+ã«+çÛÅ+êˆå+îÌ+î7¯+îXá+éQ#+òùt+ëP¥+ê/+ìØ¡+ëÄú+æk+é?Ü+çd+ãÔ+í¶+î3+ë{Ã+ì5¦+êu¼+íŽ‰+èVè+ç@+äÂÄ+ãÄ++à*+àþ•+ÝŽ:+ÜV;+Ü#+ÜFÊ+ßÍé+Þuï+Úk+Øï+ÖsÌ+Ôéz+ÒŽ×+ÕÆB+ÓœÅ+ÑIO+ÏÏÄ+Ìþ+É+ÇƒÅ+Äg¿+ÈÔk+Ô03+ÚÁk+ßºc+åÔ,+æõ+å+æª+äv+Þ^|+Ýºu+×S+ÔŒh+Õ´+Úš+å¿£+å¯_+â\z+ñ¶k+ï3+ì_„,+ý”Ê+ø0+ù /+èUˆ+ç™Ò+è©+çñ+åª1+èsê+ñ[,|a+üŽÊ+è–+é1’+îJ+ñ`+îž+ísU+ê<š+è«u+êÈ¡+ìžÓ+ß”ô+ç8
++ììÙ+ëmÇ+ìTö+ìP|+ë!²+è„+éY
++éå×+è^P+êN+í•J+ép©+æêÎ+å=°+å_m+äQÒ+ä*M+ãT+åGZ+ä|+î2ñ+ýù‚+÷ÖW+õ,Ú+ó1w+ñ‘´+Þt+×XŒ+Ëª²+àÄ+êÃZ+íD+íxi+ïÉj+î-U+øI/+÷¬X+òƒP+øžú+ññþ+ì¹ +õFÛ+îˆ+òµÐ+ó€.+ì³+ê°¹+éEÄ+ã”ï+à>+àNÿ+àœ.+Ý×+Ùôn+ÜÙ+Ýâ“+êÈ$+æÄŸ+ñ-^+øà+ïâˆ+ímé+ê7#+çWß+çtÅ+ä©+Þ˜:+áH·+àª(+áÒ+áœ+àØ+áÕ+æ½+èh+ëÀª+ì}
+,		,³Í+ø°h+éÓ*+êQ+è“ +åúÕ+å‘û+ãÒD+ä–S+éZ+èN?+ê+î–›+ðUå+ïOÛ+îr?+ðr±+î2ƒ+ë3S+êôÖ+è ¶+æok+êø‚+ëÕ+é×+â¥+Þ+è˜{+ç>ù+ì(<+çºÁ+ç?ž+èš,'0,c+â%l+á^Í+ç2+ê»+é*ø+èE2+è
+¦+éà+êˆ+â™Ó+Ùõ+í»ˆ+ý]“, šƒ+ô„Ø+÷Áõ+÷ëß+ïñ+íñÖ+ÝÐ+Þæ@+ìÜi+ðO+êàL+ð°~+éÍ!+è>û+å„±+Ùè°+ãø¢+ã
++ß,å+â>…+ä-7+åƒX+èÈ+ç'³+î9¼+ìÛ×+èsÝ+çW+éæ¼+ëh+ìÈ+ê”¥+êÙÜ+àÖ(+áÕ3+á¡m+ÕŸ”+¾Fž+¥Ù¦+¥W-+³\+¸{Ó+¿>—+ÍÉ§+Üët+åÙù+èÆª+í:k+éhð+æú™+å¾+æë5+åç¨+á$+çNœ+ëÄÇ+êõF+êï+ëaû+ñˆE+ðC+ó×&+ïµ+ö¶*,š+ÿª8+ïóð+ì¶Ç+î#+é>Ë+é¾++çäv+ç4c+è“,+ä™%+âo+àÚ•+âˆÃ+åó­+èA°+êÝ+ìYä+ðÂ¼+÷¢Ú, ÷, ž+ô(è+îÖˆ+ìx++ï:Â+ér-+åZÀ+îáû+çi+ê4+é2+åû3+èsI+ðo\+ù/+îœH+ëƒa+öã+óä+õ·Ã+ò·Ü+ì§d+ë¾»+ðeH+î ¬+íy§+ë°B+é¯+éë+é}+èX?+èB+ëÌ+é>’+ì€x+ï3+í@þ+îVô+ðÊ$+ïMƒ+ôÁm+ÿÏÙ+øû+ûÂB+ý£8+öOX+õFb+öö+þºˆ+õäl+íâŽ+ìM#+òK€+öFù+ó<+ðÊã+ô ²+õ|n+õ^w+ô§ +ôQò+÷'Ù+÷*+úQ«+üh1+üõh+ünã+ùFo+õ8ß+õ°º+ò3+ò5“+ï°Â+íª<+ø;`+ö:+ø'`+óo+ó—+÷Ï+ô±l+ì¦¬,b,> +ôë¾+ô+óãÑ+ó	—+ô“ù+òÜC+ðžª+ñÕ5+ñ¸+ñ¦ó+îÒû+ê–Å+ðÑ+ïõ9+ì—ý+îÀ÷+ó€+ýŸè+öÍ‚+øhW+ö³œ+ó®]+úSú+ôKX+õî+ú…Í+øfÿ+ô)%+ôó&+ð!^+ï¦K+î2Ü+ðVQ+ìCÐ+ê7v+èïY+ê|+éYÌ+é”+êO*+éÃ›+ìš°+ïÊÛ+ô–+õ:c+ò‚>+õ+ö­+ò¾}+ò'•+ôI"+ñiª+ò’ç+÷¹ž+ö&W+ôXß+öß»+ìþÔ+ò +çÄC+ã7+í³=+î?+ì¤“+ð2+òi$+ðIX+óIØ+ô—¹+ò9u+ñ³J+÷¿o+õÄ^+÷°ã+óš†+ñ€è+òÎd+ñ&U+ï˜æ+ð2Q+ï4~+ïîç+ïû§+ì%+é„+è¸+çé¾+ë^n+îç+ï]+ï+ñhz+óV+ëPÐ+õ“'+ýœ1+÷,¯+÷˜p+ü”+ýQT+ò«—+ûsæ+þ,¡+öIþ+çpu+ÞñH+Ûb^+äš+ðS+ñ–+í;‰+ímŒ+ì£3+ëôð+ìÊ+îr+ï.ñ+ñœ+íFW+ïs:+ò‹+ó'¦+òi+ôRÑ+õÚ+÷L
++ò™+æí+Ô´+æ…Ô+ñgÞ+ð6§+ìç-+ë—æ+êtX+ëH+èI-+ìg+ðx++îa+íŸz+ð%+ì|+êXy+éï+é!r+ìÀ+ïÆ+òyà+ôð$+óÞ+òav+ï‡c+ó…8+öf +ôÉŽ+÷@4+ôB_+ïƒÙ+î	$+Ó„ö+Îø)+æ)-+îT +ìõî+ì|·+ìˆ~+êMÅ+ë-{+êF5+è¦_+ë¹E+êº+ê¥-+êY(+ïg}+í&+îÊ+ò•?+ü@Z+ï¬+ùÅÛ+þ0}+ý+ð÷P+ï;ê+ï3j+âYd+Ú–õ+ßUÎ+Ý€w+Ø Â+×0+à"ì+è„Í+èx¢+ê ¡+ç\+ä±Ê+è˜À+éãn+ê/ç+î!{+ðÌÔ+ñÇ+î™?+éOG+ï!Ç+ë0Î+ór«+ö%+óö]+ô+ôµ+ôÌ;+ô{^+öè+úx+ú°+÷<+ø}Ò+÷±+øÚM+ôr¥+ùÏ›+ô1j+ñ´+óÏG+íq+÷Þ\+ö+ö±+ò3ÿ+ùšG+õp+ñÝ+ó…¹+ïÑT+îƒm+íàŸ+í¢+ëP+îã+ðrI+ðk'+ðÞ++ðp?+ðu˜+òˆp+à¯Œ,*c+ä·+íˆ~+ñ€¸+îÔK+íä…+ë•+ê8+êëÓ+ï0§+ê K+èö6+è¶+ç<;+ä<[+áX+àÜ+ãÕl+êb/+è2+é|D+é¢S+êŽp+é*+ë	¯+ïGÜ+ïÌz+óÜ×+ô³É+ð_¸+ïBš+î0Ë+îØÎ+ò’S+òÔÃ+óSÍ+ò<´+ðëð+òÒ×+ñ¨Æ+ó^&+ñ‚§+ñtÚ+ñé+ëŸ-+éV#+äï+èÙ÷+êVø+éÃ’+è‘G+èDý+ê“+íÅ+í§+ðVf+ñˆ+ïÎ°+ï¢+ñ”€+ðË€+î	k+ègÒ+èŽ9+êQt+î35+ó.n+ú¤+ü>¨+ÿÙ+üPm, Ê,4, Õ‚,©¶, ¡%+þÂ8+ý3+üÖ+þ‚Ž, ‰+ÿ´<,Ò,Ë,iÅ,®,8,îl,–õ,	.ö,J', §œ, ëd+ÿ+e+ûÿ_+ø¼ÿ+ù +ü[ì+ü_k+ù5x+üŸî,”,pÍ+øµù+÷fš+ü ˆ+ûÓj+ö8+÷P5+ø+ðÿ†+ô³Â+üEì+ýl+û¯Ž+ú†+ûo+ûžü+ø9a+úV&+ÿ&õ, ï
++÷A0+üï,Ü6,#"+üYS+öb‚+ú}q+üúR, > +úŠ+û<+úLÒ+ûœ+ûFT+ühÄ+üH+ÿ„`, ®Õ+ÿÒÁ+üÑè+ýÍ, Šb+ÿ÷N+þ8c+û¡p+ý$£+ûës+ýJC+þw+þ +þ3+úé~+üK},ÃN,N?, ra, Æ¿,G, ±T,.,×‚,ñÕ,]©,sê,ÿG,·T,ò,áG, *;+ý0Ù+üæ±+ýÖð+ÿÂ	, $Ö,e#, 0+ýz+ÿ9W+üS°+üã9+üúÏ+üî„+ûô6+úæ#+ùËï, zp,	¼,kÒ,Î+ød¶+ù³c+üÈb+ü], 8+üš¥+î•ý+ötT+ùY‰+úJó+û6¡+ùëî+û+Ë+ûã+ú…R+ý0<+ûúT+þÀŸ+ÿÉE,,8p,Ÿõ,’˜,=°,
+G¤,j°,i',N,ìh,T,±9,	²ö,	~,¾—,’5,
+"0,Q,OÞ,&¨,
+…,
+2æ,
+¥ª,
+X>,',1,.Å,
+`X,
+,	Ša,
+5ž,
+òv,	Xˆ,
+¯^,Æg,2Ó,ô,~,Õz,Æ,ú!,¢,ýó,ã„,zÒ,ìw,þK,·Õ,ìè,«~,¥,Y,Mý,*k,]á,Ûß,fò,©M,$†(,&l¬,(J,$á×,þM, ª,!ëÑ,"ß,! ö,#1,"?T,!â,
+ré,%+ûÉ—, ÑR,	ñ,u_,!ûj,#|, ¢ê, é,"tï,!eß,N“,y!,!ŸC,µ’,¬‡,?,ë ,Ú*,r,,¯,8F, t,p¬,ð,;H,ãg,à²,)Í,/Ê,ó¾,±À,;Ú,“ê,qR,Û,S],²,Z—,!ò,lc,W,=k,
+/Ú,>,,Ó,3r,Xf,,j,·Ö,å,/Ü,Ä,!…,°Z,C±,	Œß,w,Z¾,L,r,ŽÁ,ÿÒ,£,Éf,C9,<,dã+þV+ö$E+ï¡ß+çõà+æØÔ,\µ, »ÿ,ZZ,4~,â,£ñ,ôe,Š‘,¢ñ,ž•,ë9,I¤+üíH+ïNŽ+ùŸ², ý3+ýé6+ûx+þÃ, í,P‰+ý7+ÿ
+·+ýˆ, ¤+ü++ýæ+ý:Ì+û\+þU…+þy4+ÿ>¨+ü+ú´5,	+ÿæï+ý§+ü?ù+ý˜+û²\+üBÈ+üO+ûðž,Y®, ëø+ûe†+ý4+þ4 +ú§X+ûO´+ý¸Ù,C+ý,ò+÷š‹+üöÙ+þMÀ+û©¶+ù,Í+ùÙ+ù-Ÿ+ü?+ýA+þø1+ûêh+öü«+ùv\+úv‘+ëÈ+Îe$+Ûä+ðÏ+øt+÷ˆè+øÒÍ+÷Wd+ù™+÷AH+ø0L+ú5+õÖ+ü„·+øôÂ+÷SN+ñé¹+î‘g+íÊQ+ïàÝ+ëû+íP+òÌ+ó½·+ø=+ú¨Â+úMw+ò©˜+îÃ+îž÷+âûÂ+Þ9|+Úm+Þ¶+é\Ù+ð•ˆ+ðP+òg+ô +ö+ò+ô­Œ+ñ=‹+íØÉ+é»+ãÝT+ÜND+Î)¾+ÄSò+Ä0¹+ÎjÜ+Ú•«+ã_+í¤M+ðh+íŸ¿+ôw+öŒ++õ¡­+òC+ïä+ðB+îÃÀ+ð´;+öÖ+ô|+òUß+ó+ò+ò1+ôï+ô¸—+ó¾”+ôµŸ+ô™ô+õÜT+ñ€+õ–+öìÔ+ôhf+óWô+ñï¡+õ§ø+ùÛ+û½£+ûƒŽ+üŒ&, .Ù+û+ödÒ+ùi+ýƒ+þôy+üçÒ+ýŒ+ùP\+÷H+ùÁ[+úî,+ùxT+öY2+óqc+ðYv+ò—+øÓ•+øÓ+÷Ôß+ï®©+ñz+ò³C+ñs½+óu+ôæ„+óK‘+ôG‘+óá{+õ»Á+ï˜.+ïOÍ+î²+õF+óûà+òºµ+ô¼Š+ô•¥+ôâŒ+ôž)+÷v+ñy+ñ Í+ôi+øô8+øt‹+éÁ+Ïÿ>+ÙÑD+â!+òp"+ñoæ+ò¸+ð†+ôŠÓ+÷Ë+øõ¸+öåß+úñ+ùý+ö„+ø$Í+úÃ‘+õ#	+ñÙ°+ô¿+öØX+ð±+öÝ‡+÷Š+òø+ô¿+ø\+ùIò+ð´Œ+ï	+ím	+÷¢y+ÿü×+ù!+øKõ,$Á+üúo+ófÀ,}i+÷·e+ø#7+ü?Æ+ú”$+÷
+=+ö )+ùV®+ô4U,94,)á+ú^d+û/2+û[~+û¤+úEj,Ú+ûTõ+ë»ð+ïê+ò‘…+òÄ+óÇß+öÛq+ö{‘+ó[Ê+ô±`+ø·þ+ú¿‹+ó´[+ôÄÄ+÷ž
++÷dú+öãÈ+÷ þ+ò¶¦+òº+ö_+ôZ+ó*+ñd+ê’K+àÆÝ+Ösü+ÉéÉ+½wª+°ºé+­Qƒ+³iÕ+Â@Š+Óô+á®ª+éCÇ+ìò]+ðž,+í++îp«+ó‚+öT•+ô+øÜ+÷vø+ø‹+ú›+öŽ+ó+ôÚ+óBH+õd¸+ûÐÌ+ü I+ûE¿+þu+þ_¼+þ›+î\±+ûŸ+ù¤6+ø+øM+û´·,Ìÿ,p, Ä¯+øë&+ü\2+ø÷T+ö{+þÓ+ür¬+ûiï+û¸œ+úÍ÷+ú]É+ûÇ+ü‡>+÷ì¢+÷ô+úa^+üu-+øªÝ+öÿ+÷R~+ó½m+ô×p+ö²Ì+ñê]+òj¢+óBw+òš+ñ9þ+òÅX+ò<L+÷Hþ+þL+ýiÜ+ø”²+ûÎ+çmÀ+íŒ+÷Ô3+÷g­+÷Î¸+øFã+÷ãâ+ò¶ß+ònË+õê+ö@M+õg+õ´R+õM/+òéÌ+óÚ*+òšU+ò¿¹+íÖd+ô¿<+ù¸D+øPý+ÿ> +þë+õtð+óøï,	À,	ô‚+þñ+þ”·+ý`+ö‹¡,2©+ø2ñ+ôay+òxÍ+÷µÎ+÷ßE+ö+î+÷w«+ùªm+úLú+þpñ, Ð+ý„‡+ùùˆ+øú€+ü£‘+ý+ÿ»¤+þ16+ù¯, ·û+û]Ð+ùÕ*+úc¸+üˆ+÷ë+õi~+öÝP+ô)+û6+üŽá+ýº7+ÿ41,*ä+üëD+ý7¨+ú²œ+ü¬…+û‘O,ò‚, •,
+˜,#ø+ÿb+ÿ{r+ýïq+øå+üŠ<+ý, ,F+ÿU,Km, 
+m+ù Ý+ûo‚+ÿ 4+þÈH+ýó·+ø¶æ+ü)Ž+ý1+ý¸I+ù·N+û+þL +ÿ:)+þèÈ+ÿê,ý+ü·Æ+üêH+þµ+ü¼a+û‘7+óŒB+î'+ï+ï5»+ò˜4+÷’'+ú1³+ù•+ü6A+üö+ý+ÿx+û+üÉ÷,sÍ,€r,f:+ý=*+ýó+úáå+ü0î+ÿäæ+þë , Ùt+þ¯a+þ¸ó+ûàY+þÕl, ke+ÿx_, ‡Æ,Œs, ]°+þ´†+þî[, è×,hß+ÿk+þHS+þ}‰+þ.+ûÅ+þ	, í,ƒ,–k,ƒï, æ,,¾+ÿAh+ú½’+øb“+öG+÷Î2+ö—+ø*+úñÍ+û»Ì+û”©+ø‡q+ú¨%+ú¿ý+ü(A+ùÊ8+üý +ú§++ù­+øµð+õr{+ñô+ðœ+ñ¿£+éd<+éÜ+ß+Ô¬h+Æ
+R+¶Žg+¤Ï+—~+’¶¥+žÈ;+°n]+Ãœ)+ÓÛà+àÌs+ìù+î©|+ðÕ+òÍ´+ö·+÷a›+÷
+ö+ú»Ù+ûûƒ+üÔz+ÿ÷+ýlý+ú¢ú+üÃó+úÄ$+ü@[+ù××+øãJ+ù"h+úv+ù”5+ù‰–+þ4ý,cL,=+ùú+õä­+ù6X+üÞ4+ü~+ýzG+ýÅ®+ýÛñ+üôÖ+ûÁ+ù”y+ÿ¶+ÿ µ,à½,ž,°7+ÿ£k+ùÔœ+ø°ã+üF‰+ûù²+û›1+óA^+ðÞ–+èL+ÞŸ§+Ì„±+¼(+±ï+ªR‚+«¶i+º–Õ+Í(>+Þð+ëP1+óÈ+óß›+÷¦,+úàÁ+ük+ü¥«+ÿEÿ+ý è+ø¬+þ‰™+üŒä+úÜœ+ùŠ9+ú‡o, 1+û”Y+ü¸+ùü@+øº¡+ùe+õ>…+ô¯³+öûº+üñ+÷í!+òÍN+ô7+öS+÷7+õ‰+íÐX+ë­ú+î9}+îâ&+ó™9+ô98,¿|,úí,Î+ú¢+ø4H+÷u+öcÏ+ùh+ùE’+û‹+ýÛó+ÿf§+ûö+ùVL+ýº+ÿ¶+û¶å, FT,G‚,*,”w,hs,»=,Œ,Y>,öò,Kz+úœ†+ù„ˆ+ø	û+øŸÎ+úŠ(+øm·+ô+ö:p+óÇ^+öŠ
++úÀz+ùµ¾+ùU+ú$z+úkŸ+üÀ+ýz+ûµê+ýr™, `æ+üÒø+ú‰*+øáø+÷,
++óûG+óû6+òUè+ø#×+úK+ûô±+û&+þRª, õ»,‚,5, ,õ, :ë, p•+ÿ÷F+úvª+ü’“+ü¥3+üîú+ü°W+ý¥, æ,|a,u2, åZ, êÁ+ýÐv+ýÐœ+ü/&, «&,˜,Ö,‡Œ,“G+ÿ¦µ+þÝb, È+ø·…+õ¸1+ñ9+êü+ëˆl+ï?ø+÷Ü8+þã3, 9ï, &¶, Â^+þ¹z+ÿKn+üÿ[+üRÞ+ú:ò+û›*+þ¾+þ˜¿, T†+ûÚû+õ˜´+ý	+ïŠm+ãV+äûO+ä—?+ìnŸ+òõ+ù"Œ+ú§~+úJ+ûA9+ý	+ú1+û‚Ó+ücþ+ü³=+ü+þ:/+þP+ÿâó, FG+ýÿU+ýI+ü(Ã+ùæ+øßC+ù´>+ùU~+ø‹+õ›+ì	¥+ås%+ÝPý+ËG+·9K+¤èR+›¡$+¡õo+³„B+Æ%A+×¯û+âÓQ+ê¼ã+ð£¤+ô¾z+øÆè+÷c­+ÿ=§+÷¢D+õ±>+øÏ=+þí, c‹,Î«+élÖ+ôl+þ„Ê, v+þÇœ+ùÆ+ûé\+üú^, ,Àá, šù,çü,Í$,Ùó,—–,‰,r ,¯„,†ä+ÿµ,†Ô,“,!ä+ÿþ+ÿUØ, ¾ÿ+ýÿ,@Â,ŸÕ,¤/+þS+û|Q, Ž²+ÿ¢\+úëU+ûÝ¹+ùÁà+ü‚Ú+ýô+ý@e+ùå¦+ûè+ÿ$+ú‹o+û/J+ýWð+þ*+ûå™+üÖ¹, @ž+û}O+üÂ•, (þ,1Î,Ö?,&`, …Þ+ûˆè+úµ^+÷6^+öþ~+þ=?, ex+ýh+÷â+öÓ+ô4”+è	+Ôù+¿ºn+±V+±–+¾·+Çë+Ú)ô+åz+ñæ8+üÕv+þ`†, It, X°, Oˆ+ÿº,  %+üÛ+þˆ,Á¨,‚k,re,Rz,Þ˜,AÙ, ó(,<,¼ž, s, e}+üƒ+þ3•, 3µ+þóì+ýIÊ, èr, %¼+ÿG¾+ü^,ÃÃ,fº,=u, €7+ýMT+ý×Ä,N, «,˜£,Æ§+ûœq,† +þÔ, V, >Ç+ÿŒr+ý	=,­é,†§, |,?],F, áä, u,¨Ü,»Š,=R, 3,Úÿ,Æ¥,Ìt, î‘+þö2, õK+þ«x+ý\=+þš3+ù¾½+øøú+øˆÂ+ýRc,äö,C!, U",¹[,@®,Cu,GÆ,¢t,OÂ+þò+÷=:+öKr+ùÃ—+ú Ÿ+ýõl,8ò,i¸,ç¶,gÁ, 8,$ , óg,#,¸,?«, Ã +þªb, µÍ,Ü²+ÿž=+ÿ ¤+õóß+î^+ä¾ú+ÑúL+¼+Ì+­ +§B,+³{,+À¨+×%g+éêè+ïkâ+óÉH+øã+ý¢+ýQP+þÑ.+ýƒQ, ‹Þ+ÿƒ+þî	,ƒ{,Û0+ü”+ý€$,&0,®K,B ,sV,©,’L,£ª,æZ,-Q,iH,Âæ, ¹ê,–”,ùè,©,±n,=î,‹3,ëÜ,Kh,^Í,ç‡,öh,€,0v,4Ú,
+A,Ij,0Ø, À
+,iå,¯.,¤s,Ô,˜Û,WÞ,±,D,ÝD,m,Jñ,Œº,â@,Î,C, Š ,æ’,¦F+ýù, Æ†, vÔ+þµä+þp+þª+þã}+ý/®+õ×™+öãõ+ûHÐ, 2T, f+þ„è+ÿÀ*+ÿ^E+û‡5+ùÍ<+ø¦(+íVË+ÝEÈ+×(+Ù¬Ã+Þ{–+è[(+õÏ+ü(, !+ÿÛ+ÿµï,z‚,Ú~,[,ð‚,õ`,ßã,a†,",;9,s,lŒ, Õ+ÿÿÖ, V, ²û,‚C,qå, ¥U,, ™d+ÿ]è, ÷¹, ã,ì,ÿï,š7,P,LS,·Ø,áñ,©i,<W+ÿ¨Ú, |È,H*,"ø, ,Ì.,¸D,ù|, „g,ÔU,Î[,1ó,ÖÎ,à, ú+ûÆû+úÅë+ø¨%+òÚ+ãI‘+Ï?á+½k+²±+°Š+¼	e+ÓËK+æ%+ð'Ç+ú×™+ýµ“+û–'+úoÄ+þBm+ü°q+úåê+øI†+ô¬o+ùÿ¥+þŸ×,†,ùl,/Ï,ó²,Ït,ãe,*,yö,»,€W,ï@,h›,§o,¨ë,  R,d&,õ,´Ç,Žð,Øù, Ñ+ý¹+÷r3+òrƒ+ë¢Ñ+ç+òÑ+÷+ý½ö,× ,]Ü,a€,°ù,“h,`\,¾Q,Kí,{0,a,à°,Y,q0,ê, ù +ýÉû+ü@+èñ½+Ö;Ä+Ø#Ú+ñ«+è¥+çù:+íÉm+ô+õø, ÆÌ,`,µ, Ù ,Ç~,è,ij,\ç,í,*	,¾+ÿˆv,Ž@,²ú, Ú_,‚4,(+þçh,¶Ÿ,ýW,”Ù+ü-S, F$,Mã,þ,7i,E+÷Y}+Ý]+Ëõ+ÈaE+Ëé+Ü,ï+î‹†+û'«+ýªû, ¯í,=2,F],ü•,³†,$Ö,®,¼,§, ú, Æ%, ž ,E§+ùFÊ+øu+õa{+ïíÛ+úƒ¿+öÙ´+ýJ,4+þY„,`,g,ùW, ´©,˜­,Ù,ÚÂ,Œ;,&B,çé,5¡,¦´,;œ,2¨, –],‘R,ñ,†õ,YZ,L™,BÒ,%•,H,ëi,b,ã,zÑ,àF,8,ØX,zÒ+þ¥*+þ„¦,Ä—+ý]o+ûó×+ÿˆÞ,Œ),nî,û,#Q,WÁ,*,¿¢,­Ä, ž,g},U½,–,‡q,O‡,ä×,Fª,Dy,X‹,n¯,Ýô,Zü,î°,¾ø,&],‚5,%á,
+†Š,	’,B;,Ï,Ûš,Q$,5|,•Š,†Î,@í,Ù],•Ÿ,Ä,ù ,Î„,O¬,OÊ,L,íw,+v,¢X,Ðt,J,‚°,¾,,Ê,ÞK,Ãc,ˆ,ð,Š,=Y,½=,â,ó,8-,Ü,µ‚,Ø	,,½+üÍ+ò0+ó/+ô†+øû–+øY­,[<,­â,ìb,0¡,ÀA,vâ,ñP,XŸ,²×,~¼,ék,Š½,bÒ,n,Óç,Ëq,µ¿,ñ„,¸,¯Ó,+B,h,Ì,˜G,?>,+ü@, ¹%,¸q,Ëµ,z,AY,•,÷³,Gß,?ˆ,S,	ÈÚ+öªÇ+è•+ÑÁÇ+É#"+ÈÍÍ+Ù·i+äIÍ+ë½;+õ!), žf,!*,Éß,ZA,³¯,âÜ,÷œ,x>,Ž¶,X,–É,û1,À ,",ª,Žð,ùf,S,¾S,3k,^É, ,í,€=,H3,­,7,Jn,÷,Z,A
+,õ(, ,l,#æ,ø°,ì‘,ó,Ò”,
+~,xF,æ,[²,(,çF,(ù,Ù), 2,'Z,Fâ,ˆ,`A,Œz,ŒÑ,ŒD,?·,f,hj, ·ª+ÿº	,YÞ,jž, ûä,^d,™×,×†+ÿËÝ, B,\,>W,-,Bc,Ø™,7+÷>+ø‘+ï–é+ä¿+Ï4ç+¶ë6+¤£+˜/E+”›T+Ÿá+±Ú·+ÈH´+Ú„O+çì+õýÉ+þ{x,¸,gž,·ô,+,Ë±,pž,Ž,š, ½$,ÁA,¼ö,š?,Úo+þ›Ø+÷{<+ð‡”+ã‡K+Ö
+ê+Âo++¶Ä+¶ò+»
++Çc+ÞF+ìyF+ô++÷m‚+úrp+þF€,©G,µX,a¨,Þö,F/+ÿ¢+ÿ(Ž, Ê,/÷,Q,?L,“w,2‚,Bp,Ç÷,¥ø,*, ÖB,´,g(,TØ,xg,Ã£,©Ú,É,Ei,&,zÁ,\,Ê,y,:},A,¥`,€-,°l,Û,„/,jÖ,žE,Â÷, Â ,„«,~°,˜‰,êþ,O_,‰y,UD,X,Ž,1ß,¬D,A7,G,
+2ù,éÓ,W,ÙF,Å¯,Š,4,ô@,É•,Î¼,à§, ÷,µ–,…˜,ÐB,ÄÃ,F,áL, ‡>+ÿx[+ù9c+÷90+ùíÉ+ýàO+þÞ,M,º,Ü^,‰`, ðk,Õš,º9,·X,¼
+,'¬, ‘,HÊ,—à,Á,²ž,r–,âº,’,
+!ä,
+Á,
+OK,	6,Q«,Ol,I\,¨n, c,Ìq,µ,½, É­,%{,I',ú­,ö,ï,b,Ë,RÈ,â€,'Ü,m!,_7,Õt,¢,¢l,‚Ã,¿,,Ó,bE,.ê,Œa,äƒ,°A,³N,K§,gæ,Š+þKu, Ïp,*£,4,à,õ{,Ìý,õ, `b,<,³Ì,.ô,#²,Ó,wÕ,+,,˜þ,•à,5x,ƒ,,+üùy+þi+û+ü, ùe, Áœ,1¡,Uw,½û,f4,ã, ­:,¼´,ñ™,‡†,O_, +², à!,U+þ f,ZL,X,òæ,¶š,3­, Q‘+þ !,‡ç,2Ó,ïé+ûë•, 	,#,zŸ,01,0Ò,„,Yí,^,Õs,i,, öñ,Œ@,3„,oR,MQ,+ÿí(, HD,l, ,6f,Vï,üb,	m,.o, 	Á+ÿgq, Ùâ,*’,y“,Å•,a+þÿ/, ¥ê, ÷v,Ò¨,øØ,¨½,_§, ÙÔ,$", }ˆ,I,-R,¬§,ÉŸ,™ä,-ñ,Ã½,å(,LO,Šg,PO,:b,h±,@,£c,6S,¼‡,,¢,Zr, ², ~H,O, Áî,x‰,Dç,N¦,Ó1,ù,Ìç,	6,Ïr,Õ,š, î†,Tò,•—,A,¼Ø,Î,bÕ,],%K,pó,ó=,aå,“Š,ª«,ÿ«,J®, F+õºž+ìØ"+çY+ëÙá+ó¾ç+óžR+û½+ýÎú, 4U,+ýŽ·,[3,Wñ+þÈÝ+ýy'+ù•¡+ý•ì,Lj,šñ,ûs,ºü,0|,eÊ,Í,Ie,<³, 3,Ù,0,Î²,í1,0,‚,£´,è,Šù,­,O,‚Š,ÝF,Û¬,p;,ÕÀ,`f,¹_,Ut,Ä,\†,âä,¥ ,ï,Á`,n,$,ôD,ÉÏ,Ti,Íå,—ø,Ü,M(,~,ûÚ,›Ä,¢,j,˜,4 ,è ,Þ¶,ÜH,ó,Q°,Ž5,ùÜ,T·,jÏ,Þ,$—,)+,”Ö,3,C8,@ü,r‹,Ü,´, ,¢?,ô3,”9,‘@,,5,Q,8N,/È,ü",2,Ð‚,ÌX,¬³,ÆÈ,vW,Fª,;+,,5,yé,²w,%T,‰_,ŸÖ,áx,y,ñ¶,5b,Æ},Y,Š®,ÕÝ,ç7,<ü,9±,.É,
+õ,›ó,$C,>,ˆ,ª,÷Æ,J—,†^,Y,2,]t,pì,,n,s$,¾û,uë,ÅÎ,k,é,,+,«2,S,±{,#ó,A,/t,Ôv,/P,½þ,û,½,ê`,}8,],D*,_`,D€,9k,³^,ïé,ü,6×,èR,@,x“,ò,TÛ,™Ž,C˜,1x,Á™,g\,S2,†,ˆ¤,Ùì,u,v­,Gi, e,x;,Fà,|’,ý,p@,ë,ä,wÃ,Mu,ã, ßu,[¾,ñË,¨,½Ö,±P,I,,c%,
+,ï™,¬P,3”,a,D,'Ý,Ð~,Ce,ºæ,SI,âi,º¨,<,	VN,Î˜,ÇG,2Ç,3ž,°$,,$Š,­²,
+Iç,	~’,sÈ,So,i,!,CÆ+ÿÓÝ,âa,J¾,
+Oº,Û½,,ËD,.+ýü[+ÿøé,åÌ,HÙ,îc,	ò…,	£,ƒÓ,æË,W“,_h,ö¿,D,½”,×,
+\¹,Ò?,j,¶9,Ô,:´,Üw,vê,Už,™o,Ø?,R{,Õ{,‘D,‘,ÍW,‚x,[9,$ ,^,C˜,Àµ,ó	,»s,+Q,t‡,Hª,ð$,‰‰,
+Z\,?û,`Û,Ÿ-,ÿ‡,S†,ç{,,	,UI,¢;, 9K,Ì…,(),n,®Õ,!Ë,Zš,ç,Ûû,ëe, Û,hÏ,vQ,pë,·’,H®,Ð,ûn,B—,d», Nz+ÿ®«, ãC, ›,Âž,¢s,=,þÓ, xL,—ì,'%,q5,%O,pü,¨¦,4Q,Ó,f,‹8,HÀ,¬‡,+.,ô],
+/Y,Z‹,Þ,
+¡ª,
+àJ,,„,,æ,G×,ó,˜š,¡å,›ÿ,ŽH,Ã,æ},,	Q¶,è),Ç],”Ë,óí,,Rl,‚ç,Î*,•X,½·,BV,È…,,q, âH,†],_,¿i,	*	,ú,;/,•L,f,W, Ã+ÿ)+ýIC, ›ý,ï,™,B,úº,gé,Wô,¯£, ,9, Ê+,´™,3!,Šµ,{æ,¶,£&,Z<,“‹,ì»,È,è%,…H,«ã,.®,Àn,¥;,Ä¥,~¬,“,â@,QX,Îð,£¿,Ý,¯ú,	~—,ºq,,·…,³+,Úo,XÌ+þÌÿ+ýƒ++ÿ˜+ü :+ù»+ö ½+ùc£+ùßµ+ø\š+ûKÒ+úô‡+üeV+þzR+ûí+ûf+÷È+öð+ñU³+õ½2+û¦+üU$+ýÙð, ˆ	,wó,Üb,™ ,‹ê,™“,aµ,`4,Ô+ý_v+ú¢Ž+ø¸M+ü¥
++û++ø+øe5+÷Ë],	y,G+ù6+óßo+ú£8, 	ë+ý¶, }ö+øUa+ôŸ˜+òq€+îà³+ñ'ÿ+óÌV+ñÝ+ê£++î«ú+û(r,(, Ö±+þãŽ+þÉ	,V\+ú\’+ö0‹+öT8+ûîP+þÖ½+êzÜ+çJ+ër+êiÂ+ì-Ì+ëU:+ï©ÿ+øXi+éii+á}¿+âùi+âŠ@+æù+ìÃ6+ôß+ü7b, ^$+ÿd+ÿfƒ, vU+ü…º+ûÃZ+ø¯«+ùðÆ+ýº+ÿN_+û¬¬+÷9+òÍÿ+ò™+ë‘+éK7+èþ™+ð&+÷Ú+þ|+þï,:õ,|÷,¢g, xf+ù-9+õZ«+ï#$+ìë+ïî+ñµ(+ðýM+ô ø+öõ+ò£+ùŸú+ô±Ô+ôœ+ô˜‰+ðó¶+êBa+åò~+ä¬1+èÛó+és+égJ+ëwc+íeB+ó8+ùta+öÕ+÷òþ+÷n˜+ùÉW+ýg+ý´+ýˆ+÷½C+ë†.+è¢+ì+ñ§+ðšê+ðe!+ñÄó+ôÍÿ+îÏ³+í:+ïÂÐ+òÔ+õÚá+úP+, #Ï,7¡,Ð,¶Ü,ô,õô,D,œ),Fõ,ˆü,Hµ+û6ë+õŠ+ô’ +ò°õ+õë+÷K+÷9õ+÷À·+ýÃI, ²¨,¿¥,`x+ü*ó+üD[+óÇ)+ðŸì+êkà+ê¢q+èC¼+æû+êõå+ì_|+ó[<+ü'o+ùG+óç!+ëÝC+ì¸.+ìâè+ñ…û+öî=+õžÂ+ö[+ûâ\+ÿÔP+ùgï+òòE+ö}ø+üÉg+ýMÀ+øm+÷†‰+ý¯H,Ã+ùÝ+ór°+òmB+òc+ô‰,ú–,–©,{“,jœ+úˆš+÷¹+ò8+ôwZ+ý^Ù,µ.,¬l,þ,úâ, ·/+÷‚%+ös+ðã+ô¾þ+÷£/+üUT+úöŠ,P­,Ä,Ÿx,žO,8L,],	-,J<+þ…£+ú·ô+ý+ýªÎ+û¨e+þ <+û’+õEú+îß‚+èì+ì:c+ï>+æ+ä&+æR6+êbŸ+í$¬+îuO+ùsˆ,åº,7°,)‚,)õ,À,o<+þ”, ,‰),Ž,Öu,Ç,ÇÖ,–,Æ¢+ø¶4, L¹,ã×,&Ú,a«,&ƒ,)o,Ìi,E‚, ÕÄ, 'v+þ
+, øy,ƒÁ+ýê[+ùòô+ý6š+þ(¸+ù®+ý[È,V6,, 
+,§þ,Æµ,…¥,›,:+þs+þÇ_+ÿ¿,ô>,	H,«,Ÿ{,÷z,
+kù,í€,¢Ë,üˆ, íñ,+ýcl+öÀà+ö%‡+ô‰+ø}¢+õµ+òî^+ôê|+ûìÿ+øM-+ö³±+ö¦c+ú§^+ü$G, „ë, —»,c4,B7,›¡,ïÝ,ü),•¹,ŒÕ,ßd, ôW,¯é,ŠÐ+þÖÖ+ûS+ùW$+úF+ý;)+ÿ"Ð+ý+ûÍÈ+ú^U+úØƒ+ö°Ç+÷á/+û3,ÐÁ+ÿ+ö¬´+úä7+øñ¾,  «,%ë,Ë,MÛ,,÷Ê,a, Ñu,  Ù, †Ç,d6,Ñ,(±,+[,À,’,
+/,ê,,	­U,qÿ+þŒ]+ý]¡+ùc!+÷Ñ±+ôˆ•+øc¾+ò¤ +ù‹+ú¤˜,o
+,Ö{,5,6Ï,S,?þ+ÿ	+ýPu, •+üVø+ö¥+òdº+ñ˜9+ó*ô+ùn.,oö,U,´ƒ,ö,ì”, á(+ü•+ý[Þ+ý¡+ýËP, ò,ö`,#@,¡Ê,Ã?,l,õÑ,„m,î6+ÿø¹, ’š,ãô,3>, WF,å,u,
+Ã,Œï,žA,ÜN, Ñ+÷¥+õ¬K+ôî…+ö­+ùâu, Íß,1d,m,¾,Æ,Qn,çÆ,òò,z},²„,±K,’, ]+û¶]+þåñ, §, “,è¿,À6,fN,
+Šî,
+åÝ,’‰,2Ë,ÞA,·’,¬-, dŒ+üƒ,:à,Ë›, r,n¦,—Ø, ø,¡é, „^,xÔ,ðI,X•, !+ýÅ +ý"+ücÔ+ÿ+í+ýßl+ügå+÷î;+ó!„+÷m+øyÿ+ðá+ïÅ¹+öI¹+ø.‚+ð­)+ö’ô+õ²+ôoã+úÖ²+ý"+ý¸,“,ø’,bS,‡, ”ä+ýÿƒ+÷Êà+ûº?+ü!ï+úoo+÷”’+ødW+þöß,	1,Kü,ñ*,5r,Ø™,y_,ÝV,F,ÓÔ+üÞ+ø|3+ù:+õ¸›+öÆ"+ú÷œ+üuø+ù†e+øsy, ¯M,í,ìQ, ìÐ+þ+ÿW>,{×,#1, , ?, uT, K!+þœ+ý‡S, Q,Ù¹,è‡,ç4,ƒò,£Ù,+Ö+üÀ%+úN
++ú÷+ù¢R+øõã+þe×,«,”c,	,>,C,6,{?,s5,—|,D,p{, Ö+ýƒ+üvõ,[+ÿwë+òœá+êÞF+ëh+êZ!+î„'+öâ+ôÐ+ø"Í+üùo,™À,µ¹,9D+ÿ"Ò+öÍu+ôO+ö*(+÷Ó}+ôŽt+öü7+ýÔ\+þâ6, Èâ+üŸD+üáÁ+þ5Ñ+ù™+ù?Û+ÿY/, wÐ, å5+ý^, 8ø+þ3U,¶Ã,RÆ,þƒ,q‚, ¼œ+ü„k+öî+øDi+øz>+ùN_+øÖ(+öÅ7+ô’î+éÍœ+æö9+ï!+î5¦+ýÆ,fu+ÿg,^À,,Î,Àô,à,¬Ô,íx+þpè+ûæ”, äh,€P,ë+ýW%+üì-+üt¸, êu,½,a¯,ÆØ,²,‰è,f,Åã+ÿ-O+÷Ý}+ôRý+ñ#©+÷°§,./,p%,™p, f, Xw,B, q½+û.Ý+û‰c+÷”r+ûì, ~a+úÆ‚+ö˜+ójÿ+î¿x+ëÊâ+ê~ø+äH+éxr+ñí¸+úï+ûÜC+ÿB»,yy,k, \ ,Û—,RÛ,Ú+ý:&+ü©O+þ¡Þ+ÿ-‹+ý#ª, hÃ,ëª, NÈ,õ,+,ÂX, Ò+ÿ
+›, œ+þ‹±+üa-+ùFŠ+ûñJ+ýÏ+õìö+î?Í+ò5½+ðö+ï
+6+øP+ü8½+ÿg,Q‘,T¤, Àd+ÿñ*+ÿK¡, Éö+ý%S+ûšg+ýº¶, ú¢, y+þõ1, Þ¦+ÿÝ@+þn‚,Þy,¾‰,äc,ùÿ,Ÿ,Ñ, á8+ÿ ¼+öèø+í®ì+ðµ¨+òOÉ+ò¼/+òø8+üµ+ÿñ&+ÿ–,p«,0˜,A,»Ú, G+÷òü+ö<û+òà+òO=+õ¨·+õ©i+õVH+ú³,+ùh+õ(G+ð¸˜+õV²+þE+ø0š+üƒö+ø@+ïh*+ê”q+è±+õ¢C+öq
++ò_á+ö?<+ýï—,–h,¦+ýŒ+ûÜg+üˆr+ÿEF+ÿùw,†‰,z&,>,ec,­>+ÿW,q—,Æ,+ÿ!&, `, Ü•+ü¬ˆ+ün¡+þYŠ+û§+ýÔ,‰—+ý;µ+û4 ,?h,çÜ,Q
+,Ñ,&›, Ý,e.,ÒÜ,i,ÌF, PT, <ÿ+ýNà+ÿLk+ýJa+ûÇÅ+ÿ1%+þò+þ˜ö+ÿµ¾+ý<M+ø-Ò+÷IŽ+û§‚, :­,Ò«,¥P+ÿ, ,hö,Ö>+ÿjr+úª¹+ù%¶+ø”Ï+õý-+þŸû,P~,…Õ+ú0Ð+ÿ}+úš|,¢Ð,‚Ú,KÐ,õK,4,ø×,pù,ÂÙ,Qé,ï/,˜}, 4}, ƒ+þÝ,Vm,À,;ö,e,ô",P,6,à,²H+ÿš$, 	c+þo•+õÔÔ+úè@+üWk, ',z,Lv,ì,kX,1,",±,,u4,Oa,TK,¯V, ,`Ö,‹+÷ w+ï~´+ë÷À+õÇ +ý¢Ô+þ;—,,î+öÖ[+ç¡L+ôãÕ+ö"å, Øƒ,}X,°˜,#U,úK,+ˆ,IB,$},¸Á,/ù+ý+÷Æ+þ÷Ã,>k,8¾+ü+û^+÷]Ð+íâI+ì«+ì¬ñ+ë­º+ò9ÿ+ù‚+ÿß9,‡¬,¯Y,œ™+þ™+øŠ¥+÷Ä(+÷ÙÅ+øßc+ù>+ìï0+î`–+ï˜	+î±)+óâÈ+÷â»+ùÍÈ, o&,0õ,?^,¶Ÿ,ÏÜ,RÏ,–,8a, *,ç¶,äx,d;,Ú+ÿ€,´P,·I,}Ã,ÍÇ+üÒ+ý…?,‡Ö,"W,M·+ÿ¯+ÿ+þ-@+þjº, µ|,r,,Ü
+,ý,¸¢,Ë,±¿,ì=,êS,
+,ö,»/, ò)+úàj+üŒ¾, Ø6, ¬,‘,j	, ‡Ž+ýÜ+þx´, Õ,¥%,8L,a6,ºJ,¬w+þzù, â,ìÖ,#é+þŒ+þJ+ü!‹+þ •, ?+û±¨+þÍ+þF0+ÿ¯(+øi+ö””, Jß, —Z+þ_+ùªß+óVØ+öçp+ôŒ+ýª^, 0,ÚF,úò,¦+ÿ<8+û›$+ÿ%ð+ò`+ðÌÊ+Ú²A+ïÇ&+÷àv+ö×}+÷È+ó¸ë+òõ4+ô3+úÀà,
+2,ë‡,gÚ,Nn,Q,/6+ýØE+ýþƒ+÷çâ+ò€+é‚+ë¡Ü+ñO<+ó×’+÷eÁ+ó?Y+õ€"+õáD+ú#b+úÎ[+ø\+÷òP+÷û‡+÷)Ÿ+÷å:+ûgL+òl1+òi+ôfb+ôc+÷‹++ýÍE,Pa, 9s+ý-M+ï…+ç2]+ááB+ã}±+èú8+ïo9+íõq+íì+óQµ+ø‘Ô+ú} +ü•M+ÿË"+õ¼„+öœ+èû+å¦£+íc+òúë+ø—N, _5,–³,š,ê,+¢,–Í,>=+ö¡+÷…ð+üYØ+üLê+÷ÊÄ+øÆ)+þˆÚ+öÉ´+òK+ï_$+é<Š+ì,­+öf,A4,zª, ðÆ,wI+û+ù¿B+ù¸+úÑâ+úC+ö2'+ðë´+ós+õ¨\+øï++ùQ\,v,þ+ýñÞ+ûzÙ, x6+ún™+øÝ+÷T8+þ]q,QU,å*,Dµ,L",ôè,?},»,_[,ñ,£Ñ,h™,3S,cŠ,ó*,¶],á,dg,óø,„-,Ä,rò,Ñ++þ‘™+þw,8ù+ÿw+ú+û©”+ü´+ùï+÷½+üÙ+ÿ˜û+û·7+ý•ð+üt²+ôòv+ýn{+þ¾,>,ïå,b+,hã,.e,h+,ðÎ,ˆ,\},#9,,cñ+ýè, Ê=,¡,mÎ,Ÿm,¦?+ý]j+ù„+ùó€+ÿ4Ï,¸Å,¥ú,ÉÝ,,uÖ, >,sg,4,,#,€Ý,ƒ¼,¥J,#Q,.,Õi,X?,©å,5ç,½‰,[-,	ç+þ{ô+úôï+úZs+ü6+ûæ'+üm+ýôô, ¦Ë+õk+ø·Ã+ÿ ‹+þ…+÷_+øhW, „¦, D,ØO,H,:ù,èL,Ü ,'í,Ä¤,&,Èx,4­,-+,ÿ-,ü,¶à,DÉ,²m,è6+þ[,ŸŽ,æ¾,Ù+þî`, ò,7Ë,$È,KÏ,“,Þ!,).+ø²‰+÷š÷, Ì^,v\,F×,#,‘L,
+Žd,‘3,ÊÛ,2,Ê,85,Ùã,-Í,Œä,&¶,?Ý+þn½+ú¦Ù+û;ø+ùE+ñ±++òŽ+÷Ð+õi, Ÿq, ôÁ+þs,Ú&,Žì,‡,6,ÐÍ,8, ñ, d–,ã+, x§,´s,žô,eÆ,²,ÅN,9,¸#,.,¼?,²,Œ‹,!Í,¨Ü,,“, Œ,Ç®,Ì«,5À,ði,3À,û,ˆ”,°²,I,êó,€Á,à—, øj+÷ÇM+ú`N+û±@+ûÚö+ÿ‰Ô,p,a,=,Ë¹,“Ì,—B,ò,bž,	"ª,
+,
+æ,	v§,	³, J,&É,
+³i,¶Ñ,°Þ,¨€,
+-N,…š,Ùb,	í,	ÓŸ,¾G,E°,#, ‰,¤`,äÑ,ö•,jŠ,Q¸,—,ßZ,‰h,Äê,Z–,¾£,4e,ë,Z²,½„,ç,5%,’,¯þ,6,Þ–,S§,€O,‰,Û,Ý,9 ,ƒ,r¥,w>,n,¿,
+sÐ,«,DÏ,r­,f,	‹ø,"ù,	±,Û',”Ñ,{ã,),Íe+þ|, BT,ç£,š+ûe³+ÿÀ,IÕ,`«,OÄ,/„,G³,	L,¾Ö,¯ê,/,¢ú,Þî,j+þÎø+þù‚+öpÈ+ÿp+þA—,,Èé,•,í,QÊ+ÿØ4+ð6+ö¼,ËÉ,h,Õz,
+ˆ¶,û(,!Þ,E—,™ÿ,žý,¹ž,],¤f+ýÝß,æ,ñ,Dà,U,íÀ,¸Î,/,%Õ,üË,€¨+ü«I+Ú+ÝÊ’+õTÝ+ý“n,Hp+þQâ+ûaB, +, Ø7+ý¤Ø,ü;,•ÿ,j™,†’,žä,ûÆ,¹¢,üƒ,L€,÷•,ÑJ,¨,	,*Y,
+ä,ðº,]‹,Ï¢,“¤,º+,Íi,˜^,,z,J7,B,Þ‚,¹Ž,§š,ðŽ,‡ï,èh,ë,³/,¿â,ˆ,(f,Æ½,
+Æ,‹‡, ‡^,Ù6,–,)—,Ÿƒ,|,
+?§,ÍO,SN,¾H,Ô…,u±,ó,Ã,,,	Î,ò,$I,
+,	,4`,Ê,	Š,eo,Ÿß,°Ý, é/+û7ò+ÿw…,ã,„,í3,ÑÌ,Dk,¯,Þ·,R_,Èq,Dµ,ê,“],á•,"{,nÊ,¬‘,
+«å,?°,‚¥,žð,1,b×,	Éù,s,Xi,=1,=,šÛ,Ç‡,å ,]L,’b,	”,;,
+	,¢",
+ëò,’š,",Ö,ë»,	ëÒ,t5,À<,š^,ÿÆ,3±,½«,¢ð,#6,k,š,‡S,:Â+ÿÚž, ð, sÀ+öË+ùYt, ê+üj+ÿˆ¯,I,ˆ,Œ8,‚,Ÿ,jÂ,™,ëé,èÎ,¡s,Ÿp,^,	eO,¿K,üˆ,½Œ,
+/,ú, Öu,Ê·,»ù,Á,–G,
+=,Ï5,
+†,¥2,,i,ß¯,Z¹,_,[Ž,
+l},5Q,
+f,[M,C’,&,‡Ò,õ,;),‰È,{ç,ú5,Áa, ,õ‹,[,Õ,U,,yÊ,úè+ý…þ+ÿÂœ,‚+÷·¼+òŽ+ìáˆ+ïýA+÷î…+öd+ò’-+õ‡Á+øg¾+ù;+ù	‡+ý/,è ,,
+,Sç,›¸,	Á,
+v^,­Ã,”ê,ˆ,ï,„É,Œ£,lQ,b},½‚,šá+÷ Ä+åjN+ò_+üéÆ,2ø,	h,	ÆŸ,Š),
+ã,"z,È-,
+l?,
+Xp,B},},	žÐ,M,<D,5Ø,ß¯+ÿço,šA, H,T,¼²,r¿,¡U,$à,ÙF,Ä,>í,~E,Ó,ß,¢®+÷£]+ø™,¡§,AL+üõ +ü&Æ+ù¥Œ+ûÐ‹,º,Rz,¿:,ûö+þ‡Š+üIz, Dž,%í,Hã, [›+üÜœ+û2,!, Ë‹,d%, ð,®Ý,+V,
+š,6p,Ñ<,Ÿu,±ÿ,~,	G7,ä,Á,,•B+þÒ£, ˜Â,œ, í,µ(,m,<,œ +ýEm,Å,­¿,	Eë,l´,6,
+[n,,“,ºz,Çö,L,
+‚ü,–ƒ,r2,W›,%,,Bp+üæ2, …î,’,ág,Ïý,ãW+þâ;,½,[,û!,fú,ï,
+\(,—x,É,up,Ïé,l,ã+ù%=+í¦+ú!%,yÎ,dB,	EÑ,·8,},å,7,s+ø +ûi¼, Ö2+þ²R+þÎ ,&©,Æü,“t,@+ùfµ,,ß+þI+ú—F, Qâ+þn+üB+þJc,	tÔ,
+ƒ,À´,ºè,	®Ì,óä,pÄ,ª,óo,`X,ïÂ,	y,ªè,	¾,„ ,Z,ñ,Y·+þýX,šq,	4,¹,Ô,	£|,øl,}á,_,Q‡,%,RÝ,Gò,G¾,çù,cÜ,&7,-š,,ÓÎ,ê,so,Úâ,
+|Q,	-,Í^,#ž,(C,},wp,l²,7ï,‘ß,u,!O,é+üŠ¡+þB+ÿ=Á,#i,î,–:,(Ó,yú,Ý,w÷,ö$,	6ü,Ê@,È1,Âò,\,(,¤,¹k,•7,,z„,”O+üþ, /,¡—, ¿,,†,
+¼k,‰6,…Ü,º,Ät+ùÎí,z,ÇÓ,k,dÍ,Ï,Ö»+ÿSM+÷ ¬, Í,tö,ÈÅ,Ô>,J,¶…,wÞ,
+5B,ž,
+R+ó!y,B,Õ,
+%ñ,	ä,_,Ü-,#Ÿ,
+Ô«,ºm,ò®,Ž÷,¼ù,æŒ,	C|,Ûü,§_,°½,Î[,R6,	Ÿ€,A,Ô2,	-,º,Ø,ž<,,/,bî,Ë‹+ý¯‰,~Ã,	A²,
+C¹,†,šŒ,,{­,	¥ç,™W,ö|,Á£,Å°,™«,šø,	Ô,§`,qª,¼,³,]E,	ý[,ïˆ+ö”«+áÝ+ö‚³,
+ê,à‚,V,¢	,	‚,›¼,â0,
+IF,&,	,Ly,	…ä,3…,Ö^,¶,	f,(,
+ƒ,Vè,#v,Hø,	˜,øè,¼3,ÜG,B,C@,	\1,µ,1!,Œû,	ðA,ºH,
+m,	5Ù,[ª,l+ò›,u²,	gš,¢,,’',4,á„,ë£,âü,	(,Õè,p¼,ð,	”#,÷Ì,Tï,	ìó,¹,é,¹-,	±,d7, ,€,Šj,²×,ó§,ì[,é5,	`,]å,.á,-š,nÊ,«",= ,_*,	<,
+¦t,C¼,
+0Þ,,«¦,[,YÙ,¶),½½,(L,A€,ž,	Q,L,4ù,ãk,ªÿ,
+¡[,Ëò,ý,ÕÆ,
++ü,ÿÉ,’Õ,#Ì,Tý,ƒì,¯T,ú×,
+¦×,ªÚ,	‡,¤d,Á[,DÈ,2p,dû,,–ý,^,Yt,Š,6Ù, À,
+B,µ,0ð,ío, ÃC,ú,¶º,â_, Ì=+ùúÄ,+ý,úO,f^,¿‘,
+°#,¬5+üžÁ+ñAñ+ú—Ø+ý}¯,0p+þÜ,ò_,F.,&z,|ë, ž«+Úð}+î1Ì+øUg+üb¾+ñöZ+÷h, Ùç+ýÔœ+û~+ñ½T+õ¸`,*,¹	,,„,èó, y,åç,fµ,ÖT,@Ñ,õ¶,:Ú,Õž,Õ©,gê,+},#,íS,ê£,D^,ŒÈ,nþ,
+Ú,pÚ,v©,Oõ,\ä,ïè,š,	¡£,)],e–,ÃÄ,‰c,
+è,ôÛ,.…,p,
+uh,
+Ÿê,Ò—,ÈK,„•,@U,Ú},	v|,Ù},â,È, Ô,ZV,i;,	´1,ª˜, î+,8ã,¸o,}Þ,Ö7,ßü,<O,§,	„Ú,V¦,®Ú,Ï‹,q>,L},G*,Ì	,™Í,“,	h,"Þ,†,6v,¢,
+g,û¼,„,[,è©,‹ê, t+ýj…,N2,iŽ,0Œ,ãò,½ƒ,«—,
+¾V+ý“,ü,0H,	¿Z,
+Ký,ø‘,n,$,,Gr,Žh,{S,	e1,Á°,
+–Ñ,	Y7,RÝ,Ð,
+¾,›´,
+àê,rå,
+} +ûQÏ,w,þ%,Yg,ÞJ,Ÿ,J™,õŽ,	b°,
+Æ,ýe,m,0Å,Û>,q,*,½Z,îò,N/,µÚ,FB,ý®,^,	åæ,Æ),‰å,dò,NI,
+,wµ,|Q,Pú+ÿ9&+åÍâ+òŸ¥,H¦,ôÓ,1€,‹,4,JU,¶Ú,tÇ,Ð,”,J,xŸ,¦ž,¥,¸,l/+ú¢Å,€,ÜÊ,þ +øz<, ,	! ,"ò,rÿ,ÿ‰,_ë,ÒŽ,œ,ò+ìŠb+êÜ7,ŒJ,û3,·š,;ý,lY, ý,]V,—,g2,Q,H,!L,),Þù,Íü,<J,é],ê,	ö-,Kå, À(,<S,ï+,M+þà„,­,Šž,	ŒØ,
+f°,Œ+üz+úéš,”o, Ùþ+þ,YO,C$,Ë}+ù#»,²°,é	,èP,rg+ï±:+ñúŽ,é,¢A,§",ÁD,ÛP,,Áp,Ê‘,3Ä,"s,§j+þa!,÷­+ý…+÷ï²,ö&,'>,„,	h.,
+ÎO,™ˆ,8™+ôÎÏ,R",y,Z,Tº,e,zj,>;,¾m,\,±X+ýi;,%f,*F,K+ý€è+õ²X+÷D|,Y+þ£z+ýÄ§+üÿ+÷…i,	æ[,×a,hc,}+ü£,0L,œO+ý#€+ý0+û·,›8,…²+ÿ(,âš+ù‚æ+ÿ+ö*“+ø4},e,¬½+ú~+ôT5,Ø_+íö•+å‰+ýù,Žg,	 T,¨â+ÿ+*+ôŒG,Œê,Ül, ñ@,k, ï0,	gç,”,N¯+çŒ,+ú¬A,Ð½,S-,T¢+ÿ#è,Ó,Zµ+òõK,Ë(,\â,«,_ñ,8Ì+þ>, •,	ùt,dJ,Ë§,Ÿ,,:,iž,ù,9‰+ý†-,½ , U®,§,Ôð+ÿÃ,	F–,B,	yä,Ê,o4,ÁÕ,V¥+ýGÅ+ú‘£,+þe8+úå“+þeÂ,Äh,Ø, ÄÁ,}½,	³ ,Z, t,UU,¬©,ø+ç£,€À,oš,ð9,
+ÐÛ,
+þ,,.,”t,(,ÏÞ,i	,AW+ö-þ,ÂÂ,’i+øÍ,è†,k ,F,|,Ù,1	,ì,‡ó,‚{,ç™+ï|X+õß¤,’ò,# ,õ?,À†+üOì,¹f,¢…,
+N,^,	˜, ²×+çj¥, ‘³+úØ©+èàU,	T(,	’_+ø[^, ,	óƒ,[µ,?£,/‡,Äë, ,	Øü+ý£I+î8¦+ü),,÷™, „+ç+û°q+ì,·',Ca,b£+å~C+ìz,
+ì,	jŸ,æ;,¸&,Z»,(Å,¡ƒ+ýÖq,>“,}w,œ,MÄ,c²+úš¯,\[,œÛ,#E, Ü,3S,î=,<Ý,),Kƒ,u3,¨û,,Ä),³,S, b‚,”ô,Â‚+ñÄª,`,
+˜ˆ,Ä,:&,;.,’Ë,	•),”«,Š¬,E,4a,tã,ô¦,|‘,ó.,ç,º—,!……,î2, Êœ+ý¯‰,[,
+x¿,@, ˜Ñ,®+óô,$,À(,†,¹‘,§Q,Øœ,¥»,Åï,#’+ä]+âÔ+ÿ0w+òR+,€Y,C¡, H, E+ü›*+ÿºu,D“,V(,‰á,Zð,Ø ,òd,§,¶Þ+ð}„,Äå,,¦Á,{,F+, .©+öVF,a*,Ý,É¶+ï®å+ëqº,H0,*f,(T+ü8ž,…<,Ï,µY,iŠ,~,ªÆ+þ²x+ùtI,#†+õN„+óº|,sU,¦ñ+éðÌ, ¿,Ù_,?]+ùoê+ø0©,6+ë9C,]Æ,§Ì, ØÏ+üö,W=+ú.S,‡á,c{,I,‚ß,Š½,(A;,ÍU,èº,i<,G,¢,Cµ,¯,
+”£,þ÷,X»,Ÿç,A–,$sÇ,?¥3,8ã, {c,D,.,Æ½, >C+öÛ±,
+œ,	Æ©,¥,}Æ,”,1™¯+ñP +óÿ<,'®+ÿH‚, Ç,(ú~,Tú,Lº,R,Ì,€û,-}µ, ü±,5í<,¯?,dè,0FÚ,%ã,4Ñ¹,¤—,pf,7Ä,t,%Ju,6Ã¹,*Ô',¼š,.,«™,¯u,	Q+÷@³+ø F+ïõ¦,\,
+÷+üy¦+×B,Cz,"ðÇ,Œ+æ‘º,æ-,y†+Í)æ+Òu,8,ü,2ê,DE,¶H,‡,¸¾,é¢+ÞÛ0,,J`,cú,q²,l.,<Šâ,!(,`8,.U ,ÝJ+ØÛë,ÐÝ,†,¶Ù,çá,ëb,),V,ÔË,,l+×!J,¸», ô2,$6,%Ô0, v,s,
+Kð,y+ÕÖw+úˆÄ,b, ¯–+þ±K,ss,†,(Êˆ,:þ,Að,e£+ôTÛ,çÀ,žŽ+øÎ=+ðÜc,Æ¨,å,šŠ,³,¾V+Ûú,ùQ,k,(Ê,#Z+ök¿,|,ô+Ê 8+ßLB,@[á,`Í,)áð,+Ç,
+­J,!÷,&u,	"Ç+Ó­+â®9+Þ<I,Xâ+ú~Z+ñò²,.+ÿ+æ6'+ý+Å,E¤+é³,,*žÀ+ÿcú,ˆ6+õyF+á÷Þ+ëÖy+æÄG,Âé,/ê…,-fÚ,#,a¼,LO+Üÿ+ÿ¥”,Ðx,w,², j+Ï·@, À,ãü,á—,Äc,Dr™,-ù),>,?m„,	ÿ+º˜Ú+ð+û(Þ+÷ê+Ç"m,1Ö,]+öû÷,]ª,õS,@OÛ,A,Ë,'èZ+Õoý+»Í¤,Jï|,:ÈÉ+úóe,q+úÌ1+¯vE+ÌÑ+å'©, LK,@ùÃ,0,, >,<+,YÈº,ACB,	[$+Ö¤ ,¼ø,°c,Èì,;D¼,Ÿ’,,¿,É,üB,„Ù+ÛÙ“,#É,Vé,^+âÌL+Øv‹, `!,oÙ,Zu++êTK+Æ|>,ËÏ,CÝ,<>R,VMÔ,Q“¯,ÍÈD,FmH,"ˆ},6½+úGÜ,3ÏÖ,e]+ëmK+‹uQ+šn¼+Òñ&,)%+™Û_+•m°+Ø˜W+ç#Q+¥q],º‘,+E+ÝºÄ+Ã+Þ Î,Oø,šm¤,6‡è,’œ,¨+ëøé,¬S,_Û,Az+äÖÏ+ëÚ‘,o+ÏYÜ,+z,+p,"Ës,&Îµ,œö,!ìS,CJ­,©M,=Ò,LC,
+¦6,ÕË,ø4+ù\_+ß¿f,7$&,Y÷                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

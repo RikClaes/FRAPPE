@@ -1,0 +1,4 @@
+# Dartmouth Stellar Evolution Model: Basic Mass Track
+#
+# M=0.10 X=7.2533E-01 Z=1.3794E-02 COMP=GA07 [a/Fe]= 0.00 MIXL=2.0401 TURBT=6.00 CCO=0.00
+# Age (yrs)     Log T    Log g    Log L    Log R   Y_core     Z_core    (Z/X)_surf   A(Li)        L_H        k2      B_tach      u_conv  t_conv

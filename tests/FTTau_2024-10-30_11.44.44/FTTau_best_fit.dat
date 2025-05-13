@@ -1,0 +1,84 @@
+FIT OF THE OBJECT FTTau USING THE CLASS III 3.0 
+Executed on Wed Oct 30 11:48:38 2024
+Using the file /Users/rclaes/Work/StructuredSources/Spectra/VIS/flux_FTTau_vis_tell.fits
+
+INPUT PARAMETERS:
+dist = 130 pc
+Rv = 5.0
+
+BEST FIT:
+CLASS III: 3.0 
+
+spectral type: M3.0
+Teff: 3410 
+Chi2 = 3.549e+01 
+
+OBJECT PARAMETERS:
+Av = 2.90 mag
+Lacc/Lsun = 1.10e-01 
+log(Lacc/Lsun) = -0.957 
+Lstar = 0.52 Lsun
+log(Lstar/Lsun) = -0.28 
+
+NORMALIZATION CONSTANTS: 
+H = 1.210e-20 
+K = 4.802e-13 
+
+SLAB PARAMETERS:
+T = 6500 K 
+n_e = 1e+13 cm-3
+tau (300 nm) =  1 
+Area = 1.97e+21 cm2 
+Radius = 2.50e+10 cm 
+
+OBJECT DERIVED PARAMETERS:
+M = 0.28 Msun Age = 0.52 (BARAFFE+15)
+Macc = 3.25e-08 Msun/yr (BARAFFE+15)
+M = 0.32 Msun Age = 1.26 (SIESS)
+Macc = 2.86e-08 Msun/yr (SIESS)
+M = 0.50 Msun Age = 1.01 (BARAFFE)
+Macc = 1.82e-08 Msun/yr (BARAFFE)
+M = 0.28 Msun Age = 0.57 (PALLA)
+Macc = 3.30e-08 Msun/yr (PALLA)
+M = 0.22 Msun Age = 0.20 (DANTONA)
+Macc = 4.17e-08 Msun/yr (DANTONA)
+M = 0.29 Msun Age = 1.04 (Feiden)
+Macc = 3.18e-08 Msun/yr (Feiden)
+
+
+Other best chi2 results:
+{'3.0/2.7/6500/1e+13/1': np.float64(38.26366547199443), '3.0/2.7/7000/7e+13/0.5': np.float64(41.91699336425716), '3.0/2.7/7000/1e+14/0.05': np.float64(41.874862370157075), '3.0/2.7/7000/1e+14/0.1': np.float64(38.52888954043924), '3.0/2.8/6500/1e+13/1': np.float64(36.23634171496194), '3.0/2.8/7000/5e+13/1': np.float64(41.97009403872595), '3.0/2.8/7000/7e+13/0.5': np.float64(40.251799018925034), '3.0/2.8/7000/1e+14/0.05': np.float64(41.37091925396446), '3.0/2.8/7000/1e+14/0.1': np.float64(37.20432767628319), '3.0/2.8/7500/3e+13/5': np.float64(40.78631723392161), '3.0/2.8/7500/5e+14/0.01': np.float64(40.789807151181414), '3.0/2.9/6500/1e+13/1': np.float64(35.48798824185424), '3.0/2.9/7000/5e+13/1': np.float64(40.545846237431995), '3.0/2.9/7000/7e+13/0.5': np.float64(39.5150424438024), '3.0/2.9/7000/1e+14/0.05': np.float64(41.69223734053804), '3.0/2.9/7000/1e+14/0.1': np.float64(36.823202915594884), '3.0/2.9/7500/3e+13/5': np.float64(38.9816885407667), '3.0/2.9/7500/5e+14/0.01': np.float64(39.29712116915938), '3.0/3.0/6500/1e+13/1': np.float64(35.98910664146399), '3.0/3.0/7000/5e+13/1': np.float64(40.064423136205264), '3.0/3.0/7000/7e+13/0.5': np.float64(39.61192726213429), '3.0/3.0/7000/1e+14/0.05': np.float64(42.746458372516685), '3.0/3.0/7000/1e+14/0.1': np.float64(37.3042461247001), '3.0/3.0/7500/3e+13/5': np.float64(37.943170879473996), '3.0/3.0/7500/5e+14/0.01': np.float64(38.781864661214726), '3.0/3.0/7500/5e+14/0.05': np.float64(42.82839193554865), '3.0/3.1/6500/1e+13/1': np.float64(37.74736964809561), '3.0/3.1/7000/5e+13/1': np.float64(40.46501333785003), '3.0/3.1/7000/7e+13/0.5': np.float64(40.4736380829425), '3.0/3.1/7000/1e+14/0.1': np.float64(38.59508810842522), '3.0/3.1/7500/3e+13/5': np.float64(37.60347310831464), '3.0/3.1/7500/5e+14/0.01': np.float64(39.18786730110723), '3.0/3.2/6500/1e+13/1': np.float64(40.811820679337416), '3.0/3.2/7000/5e+13/1': np.float64(41.71584433697156), '3.0/3.2/7000/7e+13/0.5': np.float64(42.059571355735386), '3.0/3.2/7000/1e+14/0.1': np.float64(40.67501946922716), '3.0/3.2/7500/3e+13/5': np.float64(37.92548916972783), '3.0/3.2/7500/5e+14/0.01': np.float64(40.48877875228085), '3.0/3.3/7500/3e+13/5': np.float64(38.90579006916494), '3.0/3.3/7500/5e+14/0.01': np.float64(42.691322582612294)}
+
+FITTED PARAMETERS:
+Class IIIs: [3, 3.25, 3.5] 
+Av: [2.7 2.8 2.9 3.  3.1 3.2 3.3] 
+
+
+These values were computed using the grit found at: 
+/Users/rclaes/python/functions/MyFitter/FrappePackage/src/models_grid/Interpolations/earlyK_norm731_200p_500iter_rad2.5_deg2_LongWL_improved/interp.npz
+this grid contains the following features: 
+[[332.5 337.5]
+ [337.5 342.5]
+ [352.  358. ]
+ [359.  362. ]
+ [399.  402. ]
+ [448.  452. ]
+ [474.  476. ]
+ [414.  416. ]
+ [464.  466. ]
+ [510.  515. ]
+ [539.  544. ]
+ [617.  620. ]
+ [643.  645. ]
+ [675.  678. ]
+ [702.5 703.5]
+ [706.5 707.5]
+ [709.5 710.5]
+ [713.5 714.5]
+ [780.  782. ]
+ [800.  802. ]
+ [870.  872. ]
+ [894.  896. ]]
+and is normalized at: 
+731.0nm
+

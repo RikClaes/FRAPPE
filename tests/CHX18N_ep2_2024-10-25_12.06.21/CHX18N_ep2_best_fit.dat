@@ -1,0 +1,84 @@
+FIT OF THE OBJECT CHX18N_ep2 USING THE CLASS III -4.0 
+Executed on Fri Oct 25 12:08:25 2024
+Using the file /Users/rclaes/Work/ChaI/CHX18N/XS/flux_CHX18N_ep2_vis_tell.fits
+
+INPUT PARAMETERS:
+dist = 400 pc
+Rv = 3.1
+
+BEST FIT:
+CLASS III: -4.0 
+
+spectral type: K4.0
+Teff: 4375 
+Chi2 = 1.660e+00 
+
+OBJECT PARAMETERS:
+Av = 1.20 mag
+Lacc/Lsun = 2.00e-01 
+log(Lacc/Lsun) = -0.698 
+Lstar = 8.27 Lsun
+log(Lstar/Lsun) = 0.92 
+
+NORMALIZATION CONSTANTS: 
+H = 4.747e-22 
+K = 1.394e-12 
+
+SLAB PARAMETERS:
+T = 9250 K 
+n_e = 1e+16 cm-3
+tau (300 nm) =  0.75 
+Area = 7.30e+20 cm2 
+Radius = 1.52e+10 cm 
+
+OBJECT DERIVED PARAMETERS:
+M = nan Msun Age = nan (BARAFFE+15)
+Macc = nan Msun/yr (BARAFFE+15)
+M = 1.30 Msun Age = 0.37 (SIESS)
+Macc = 3.06e-08 Msun/yr (SIESS)
+M = nan Msun Age = nan (BARAFFE)
+Macc = nan Msun/yr (BARAFFE)
+M = nan Msun Age = nan (PALLA)
+Macc = nan Msun/yr (PALLA)
+M = 0.50 Msun Age = 0.02 (DANTONA)
+Macc = 7.94e-08 Msun/yr (DANTONA)
+M = nan Msun Age = nan (Feiden)
+Macc = nan Msun/yr (Feiden)
+
+
+Other best chi2 results:
+{'-4.0/1.2/8000/1e+15/0.5': np.float64(1.702203608717112), '-4.0/1.2/8000/1e+15/0.75': np.float64(1.6984865850981647), '-4.0/1.2/8250/5e+14/3': np.float64(1.7056811070738103), '-4.0/1.2/8250/1e+15/1': np.float64(1.6918958696166402), '-4.0/1.2/8500/1e+15/3': np.float64(1.7052773408246118), '-4.0/1.2/8750/5e+14/5': np.float64(1.7051418191919536), '-4.0/1.2/8750/1e+15/3': np.float64(1.692570908609189), '-4.0/1.2/8750/1e+16/0.1': np.float64(1.7081285207231434), '-4.0/1.2/9000/1e+15/5': np.float64(1.6945468275619122), '-4.0/1.2/9000/1e+16/0.01': np.float64(1.707109370891774), '-4.0/1.2/9000/1e+16/0.05': np.float64(1.6997833113420973), '-4.0/1.2/9000/1e+16/0.1': np.float64(1.6918748904432497), '-4.0/1.2/9000/1e+16/0.3': np.float64(1.6733156536293923), '-4.0/1.2/9000/1e+16/0.5': np.float64(1.672656122125417), '-4.0/1.2/9000/1e+16/0.75': np.float64(1.6895983702645927), '-4.0/1.2/9250/1e+15/5': np.float64(1.6908412430586073), '-4.0/1.2/9250/1e+16/0.3': np.float64(1.689828261914119), '-4.0/1.2/9250/1e+16/0.5': np.float64(1.6691669086124803), '-4.0/1.2/9250/1e+16/0.75': np.float64(1.6595539197297828), '-4.0/1.2/9250/1e+16/1': np.float64(1.6643116891640368), '-4.0/1.2/9500/1e+15/5': np.float64(1.6947992372833625), '-4.0/1.2/9500/1e+16/0.5': np.float64(1.706306190023963), '-4.0/1.2/9500/1e+16/0.75': np.float64(1.6790625314911356), '-4.0/1.2/9500/1e+16/1': np.float64(1.6638018370701), '-4.0/1.2/9750/1e+15/5': np.float64(1.6976166107950628), '-4.0/1.2/9750/1e+16/1': np.float64(1.6972662353790566), '-4.0/1.2/9750/1e+16/3': np.float64(1.6940366447677522), '-4.0/1.2/10000/1e+15/5': np.float64(1.6972379375688014), '-4.0/1.2/10000/1e+16/3': np.float64(1.6707698777355473), '-4.0/1.2/10500/1e+11/5': np.float64(1.7019883679406043), '-4.0/1.2/10500/1e+12/5': np.float64(1.701973094987479), '-4.0/1.2/10500/1e+13/5': np.float64(1.7018471648664355), '-4.0/1.2/10500/3e+13/5': np.float64(1.7015767318403021), '-4.0/1.2/10500/5e+13/5': np.float64(1.7013005537174002), '-4.0/1.2/10500/7e+13/5': np.float64(1.7010261127856718), '-4.0/1.2/10500/1e+14/5': np.float64(1.7006195722609319), '-4.0/1.2/10500/5e+14/5': np.float64(1.695513252130203), '-4.0/1.2/10500/1e+15/5': np.float64(1.6899578739922134), '-4.0/1.2/10500/1e+16/3': np.float64(1.6787717483147124), '-4.0/1.2/10500/1e+16/5': np.float64(1.6789402548433694)}
+
+FITTED PARAMETERS:
+Class IIIs: [3, 3.25, 3.5] 
+Av: [0.7 0.8 0.9 1.  1.1 1.2 1.3 1.4 1.5 1.6] 
+
+
+These values were computed using the grit found at: 
+/Users/rclaes/python/functions/MyFitter/FrappePackage/src/models_grid/Interpolations/earlyK_norm731_200p_500iter_rad2.5_deg2_LongWL_improved/interp.npz
+this grid contains the following features: 
+[[332.5 337.5]
+ [337.5 342.5]
+ [352.  358. ]
+ [359.  362. ]
+ [399.  402. ]
+ [448.  452. ]
+ [474.  476. ]
+ [414.  416. ]
+ [464.  466. ]
+ [510.  515. ]
+ [539.  544. ]
+ [617.  620. ]
+ [643.  645. ]
+ [675.  678. ]
+ [702.5 703.5]
+ [706.5 707.5]
+ [709.5 710.5]
+ [713.5 714.5]
+ [780.  782. ]
+ [800.  802. ]
+ [870.  872. ]
+ [894.  896. ]]
+and is normalized at: 
+731.0nm
+

@@ -1,0 +1,84 @@
+FIT OF THE OBJECT CHX18N_ep2 USING THE CLASS III -6.0 
+Executed on Tue Oct 29 15:29:29 2024
+Using the file /Users/rclaes/Work/ChaI/CHX18N/XS/flux_CHX18N_ep2_vis_tell.fits
+
+INPUT PARAMETERS:
+dist = 400 pc
+Rv = 3.1
+
+BEST FIT:
+CLASS III: -6.0 
+
+spectral type: K2.0
+Teff: 4710 
+Chi2 = 2.433e+01 
+
+OBJECT PARAMETERS:
+Av = 1.60 mag
+Lacc/Lsun = 2.34e-01 
+log(Lacc/Lsun) = -0.630 
+Lstar = 9.79 Lsun
+log(Lstar/Lsun) = 0.99 
+
+NORMALIZATION CONSTANTS: 
+H = 2.501e-21 
+K = 1.801e-12 
+
+SLAB PARAMETERS:
+T = 7000 K 
+n_e = 1e+11 cm-3
+tau (300 nm) =  3 
+Area = 3.85e+21 cm2 
+Radius = 3.50e+10 cm 
+
+OBJECT DERIVED PARAMETERS:
+M = nan Msun Age = nan (BARAFFE+15)
+Macc = nan Msun/yr (BARAFFE+15)
+M = 2.22 Msun Age = 0.69 (SIESS)
+Macc = 1.98e-08 Msun/yr (SIESS)
+M = nan Msun Age = nan (BARAFFE)
+Macc = nan Msun/yr (BARAFFE)
+M = nan Msun Age = nan (PALLA)
+Macc = nan Msun/yr (PALLA)
+M = 1.16 Msun Age = 0.19 (DANTONA)
+Macc = 3.77e-08 Msun/yr (DANTONA)
+M = nan Msun Age = nan (Feiden)
+Macc = nan Msun/yr (Feiden)
+
+
+Other best chi2 results:
+{'-6.0/1.6/6500/1e+11/0.75': np.float64(24.3918392382226), '-6.0/1.6/6500/1e+11/1': np.float64(24.34696193787108), '-6.0/1.6/6500/1e+11/3': np.float64(24.37259768411279), '-6.0/1.6/7000/1e+11/0.5': np.float64(24.426484145300947), '-6.0/1.6/7000/1e+11/0.75': np.float64(24.37481744318577), '-6.0/1.6/7000/1e+11/1': np.float64(24.33224222622946), '-6.0/1.6/7000/1e+11/3': np.float64(24.327574109447447), '-6.0/1.6/7000/1e+12/0.75': np.float64(24.41841160320019), '-6.0/1.6/7000/1e+12/1': np.float64(24.38452013237702), '-6.0/1.6/7500/1e+11/0.5': np.float64(24.430276313985175), '-6.0/1.6/7500/1e+11/0.75': np.float64(24.3859049281734), '-6.0/1.6/7500/1e+11/1': np.float64(24.35063669274583), '-6.0/1.6/7500/1e+11/3': np.float64(24.379367267806387), '-6.0/1.6/7500/1e+12/0.75': np.float64(24.395078245284367), '-6.0/1.6/7500/1e+12/1': np.float64(24.361629478028405), '-6.0/1.6/7500/1e+12/3': np.float64(24.407822687317477), '-6.0/1.6/7750/1e+11/0.75': np.float64(24.395043003378554), '-6.0/1.6/7750/1e+11/1': np.float64(24.36387552065502), '-6.0/1.6/7750/1e+11/3': np.float64(24.418660263106986), '-6.0/1.6/7750/1e+12/0.75': np.float64(24.399578857796627), '-6.0/1.6/7750/1e+12/1': np.float64(24.369345431228442), '-6.0/1.6/7750/1e+13/1': np.float64(24.42383263460047), '-6.0/1.6/8000/1e+11/0.75': np.float64(24.40556588345828), '-6.0/1.6/8000/1e+11/1': np.float64(24.378737188265728), '-6.0/1.6/8000/1e+12/0.75': np.float64(24.40790112448169), '-6.0/1.6/8000/1e+12/1': np.float64(24.381575243292907), '-6.0/1.6/8000/1e+13/1': np.float64(24.409757967859978), '-6.0/1.6/8250/1e+11/0.75': np.float64(24.417183334001063), '-6.0/1.6/8250/1e+11/1': np.float64(24.39475938470809), '-6.0/1.6/8250/1e+12/0.75': np.float64(24.418443645228855), '-6.0/1.6/8250/1e+12/1': np.float64(24.396289016279574), '-6.0/1.6/8250/1e+13/0.75': np.float64(24.431096918106004), '-6.0/1.6/8250/1e+13/1': np.float64(24.411499648714717), '-6.0/1.6/8500/1e+11/0.75': np.float64(24.429708754523126), '-6.0/1.6/8500/1e+11/1': np.float64(24.41169344939724), '-6.0/1.6/8500/1e+12/0.75': np.float64(24.430418813326316), '-6.0/1.6/8500/1e+12/1': np.float64(24.41255934784984), '-6.0/1.6/8500/1e+13/1': np.float64(24.42105868047019), '-6.0/1.6/8750/1e+11/1': np.float64(24.429305726876567), '-6.0/1.6/8750/1e+12/1': np.float64(24.429791844876494)}
+
+FITTED PARAMETERS:
+Class IIIs: [3, 3.25, 3.5] 
+Av: [1.6] 
+
+
+These values were computed using the grit found at: 
+/Users/rclaes/python/functions/MyFitter/FrappePackage/src/models_grid/Interpolations/earlyK_norm731_200p_500iter_rad2.5_deg2_LongWL_improved/interp.npz
+this grid contains the following features: 
+[[332.5 337.5]
+ [337.5 342.5]
+ [352.  358. ]
+ [359.  362. ]
+ [399.  402. ]
+ [448.  452. ]
+ [474.  476. ]
+ [414.  416. ]
+ [464.  466. ]
+ [510.  515. ]
+ [539.  544. ]
+ [617.  620. ]
+ [643.  645. ]
+ [675.  678. ]
+ [702.5 703.5]
+ [706.5 707.5]
+ [709.5 710.5]
+ [713.5 714.5]
+ [780.  782. ]
+ [800.  802. ]
+ [870.  872. ]
+ [894.  896. ]]
+and is normalized at: 
+731.0nm
+

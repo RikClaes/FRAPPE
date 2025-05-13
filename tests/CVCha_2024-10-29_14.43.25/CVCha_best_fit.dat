@@ -1,0 +1,84 @@
+FIT OF THE OBJECT CVCha USING THE CLASS III -9.0 
+Executed on Tue Oct 29 14:58:49 2024
+Using the file /Users/rclaes/Work/ChaI/CVCha/XS/flux_CVCha_vis_tell.fits
+
+INPUT PARAMETERS:
+dist = 400 pc
+Rv = 3.1
+
+BEST FIT:
+CLASS III: -9.0 
+
+spectral type: G9.0
+Teff: 5025 
+Chi2 = 7.441e+00 
+
+OBJECT PARAMETERS:
+Av = 1.40 mag
+Lacc/Lsun = 7.81e+00 
+log(Lacc/Lsun) = 0.893 
+Lstar = 19.62 Lsun
+log(Lstar/Lsun) = 1.29 
+
+NORMALIZATION CONSTANTS: 
+H = 1.727e-20 
+K = 3.837e-12 
+
+SLAB PARAMETERS:
+T = 9000 K 
+n_e = 1e+15 cm-3
+tau (300 nm) =  3 
+Area = 2.66e+22 cm2 
+Radius = 9.19e+10 cm 
+
+OBJECT DERIVED PARAMETERS:
+M = nan Msun Age = nan (BARAFFE+15)
+Macc = nan Msun/yr (BARAFFE+15)
+M = 3.24 Msun Age = 0.87 (SIESS)
+Macc = 5.61e-07 Msun/yr (SIESS)
+M = nan Msun Age = nan (BARAFFE)
+Macc = nan Msun/yr (BARAFFE)
+M = nan Msun Age = nan (PALLA)
+Macc = nan Msun/yr (PALLA)
+M = 2.21 Msun Age = 0.24 (DANTONA)
+Macc = 8.21e-07 Msun/yr (DANTONA)
+M = nan Msun Age = nan (Feiden)
+Macc = nan Msun/yr (Feiden)
+
+
+Other best chi2 results:
+{'-6.5/1.4/8250/5e+14/3': np.float64(8.74979003712783), '-7.0/1.4/8250/5e+14/3': np.float64(7.8566393430859325), '-7.0/1.4/8750/5e+14/5': np.float64(8.665492689272018), '-7.5/1.4/8250/5e+14/3': np.float64(8.204955828678692), '-7.5/1.4/8750/5e+14/5': np.float64(7.922462268821806), '-7.5/1.4/8750/1e+15/3': np.float64(8.386016870859955), '-7.5/1.4/9000/5e+14/5': np.float64(8.910131814848262), '-8.0/1.4/8500/5e+14/3': np.float64(8.34452888114072), '-8.0/1.4/8750/5e+14/5': np.float64(8.727414281013694), '-8.0/1.4/8750/1e+15/3': np.float64(7.817152690611795), '-8.0/1.4/9000/5e+14/5': np.float64(8.06462124353101), '-8.0/1.4/9250/5e+14/5': np.float64(8.87804433608048), '-8.5/1.4/8500/5e+14/3': np.float64(8.22751466254326), '-8.5/1.4/9000/5e+14/5': np.float64(8.834741747384157), '-8.5/1.4/9000/1e+15/3': np.float64(8.442106604193551), '-8.5/1.4/9250/5e+14/5': np.float64(8.696177023267914), '-8.75/1.4/8500/5e+14/3': np.float64(8.663002763490159), '-8.75/1.4/9000/1e+15/3': np.float64(8.246159329326838), '-9.0/1.4/8500/5e+14/3': np.float64(7.688826805676381), '-9.0/1.4/8750/5e+14/3': np.float64(7.772418295551429), '-9.0/1.4/9000/1e+15/3': np.float64(7.441121299183568), '-9.0/1.4/9250/5e+13/5': np.float64(8.820663934845832), '-9.0/1.4/9250/7e+13/5': np.float64(8.715505583851243), '-9.0/1.4/9250/1e+14/5': np.float64(8.582416965155439), '-9.0/1.4/9250/1e+15/3': np.float64(7.889527446098114), '-9.0/1.4/9500/1e+11/5': np.float64(8.72723365878371), '-9.0/1.4/9500/1e+12/5': np.float64(8.725712127643853), '-9.0/1.4/9500/1e+13/5': np.float64(8.710497751034534), '-9.0/1.4/9500/3e+13/5': np.float64(8.680560046834902), '-9.0/1.4/9500/5e+13/5': np.float64(8.655801389596169), '-9.0/1.4/9500/7e+13/5': np.float64(8.635923944867411), '-9.0/1.4/9500/1e+14/5': np.float64(8.615255561404124), '-9.0/1.5/9000/5e+14/5': np.float64(8.619050679374336), '-9.0/1.5/9250/5e+14/5': np.float64(8.541140224353416), '-9.25/1.4/8750/5e+14/3': np.float64(8.077935260255842), '-9.25/1.4/9000/1e+15/3': np.float64(8.346285741122196), '-9.25/1.4/9250/7e+13/5': np.float64(8.876403615655427), '-9.25/1.4/9250/1e+14/5': np.float64(8.827814008992977), '-9.25/1.4/9250/1e+15/3': np.float64(8.087774790663428), '-9.25/1.4/9500/1e+15/3': np.float64(8.685471290925953)}
+
+FITTED PARAMETERS:
+Class IIIs: [3, 3.25, 3.5] 
+Av: [0.8 0.9 1.  1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9] 
+
+
+These values were computed using the grit found at: 
+/Users/rclaes/python/functions/MyFitter/FrappePackage/src/models_grid/Interpolations/earlyK_norm731_200p_500iter_rad2.5_deg2_LongWL_improved/interp.npz
+this grid contains the following features: 
+[[332.5 337.5]
+ [337.5 342.5]
+ [352.  358. ]
+ [359.  362. ]
+ [399.  402. ]
+ [448.  452. ]
+ [474.  476. ]
+ [414.  416. ]
+ [464.  466. ]
+ [510.  515. ]
+ [539.  544. ]
+ [617.  620. ]
+ [643.  645. ]
+ [675.  678. ]
+ [702.5 703.5]
+ [706.5 707.5]
+ [709.5 710.5]
+ [713.5 714.5]
+ [780.  782. ]
+ [800.  802. ]
+ [870.  872. ]
+ [894.  896. ]]
+and is normalized at: 
+731.0nm
+

@@ -1,0 +1,13 @@
+
+Oct  1 16:51 [flux_CD_29_8887A_NIR_corr_scaled_phot.fits]: CD-29_8887A
+    center      cont      flux       eqw      core     gfwhm     lfwhm
+  2164.473 9.868E-13 1.257E-14  -0.01274
+
+Nov 23 18:02 [flux_CD_36_7429A_NIR_corr_scaled_phot.fits]: CD-36_7429A
+    center      cont      flux       eqw      core     gfwhm     lfwhm
+   1083.07 1.112E-12 2.523E-14  -0.02269
+  1083.079 1.078E-12 4.314E-14  -0.04003
+
+Nov 23 18:03 [flux_TWA6_NIR_corr_scaled_phot.fits]: TWA-6
+  1082.892 8.403E-13 3.346E-14  -0.03982
+  1082.933 8.321E-13 4.755E-14  -0.05715
