@@ -145,7 +145,7 @@ def isochrone_interp(logT,logL,model='Siess',tol=0.016,PATH =None):
 			mass[i] = m[best]
 			logage[i] = a[best]
 		else:
-			print(distance[best])
+			#print(distance[best])
 			mass[i] = np.nan
 			logage[i] = np.nan
 

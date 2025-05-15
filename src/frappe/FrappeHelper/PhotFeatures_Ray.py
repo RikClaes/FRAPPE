@@ -1,3 +1,9 @@
+import os
+import sys
+PATH = os.path.dirname(os.path.realpath(__file__))
+sys.path.append(PATH)
+#sys.path = [PATH+'/FrappeHelper/'] + sys.path
+#print(PATH)
 import numpy as np
 from spec_readspec import spec_readspec
 import matplotlib.pyplot as plt
@@ -8,7 +14,7 @@ import numpy as np
 from localreg import *
 from scipy import interpolate as intp
 from readcol_py3 import *
-import os
+
 import ray
 
 
@@ -55,21 +61,21 @@ class classIII:
         ticklabels = np.array(['G4','','G6','','','G9','K0','','','K3','','K5','','K7','','M1','','M3','','M5','','M7','','M9',''])
         ticks =  np.arange(-14,11,1)
         ray.shutdown()
-        ray.init()
+        ray.init(runtime_env={"working_dir":PATH})
 
         pool = ray.get([InerLoopExtract.remote(nameList[i],i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpTErr)for i in range(len(nameList))])
 
             #for i in range(len(nameList)):
 
-        print(np.array(pool).shape)
+        #print(np.array(pool).shape)
         Values = np.array(pool)[:,0].transpose()
         Errors = np.array(pool)[:,1].transpose()
-        mask = np.array(pool)[:,2].transpose().astype(np.bool)
-        print(Values.shape)
+        mask = np.array(pool)[:,2].transpose().astype(bool)
+        #print(Values.shape)
 
-        print(Errors.shape)
-        print(mask)
-        print(mask[0])
+       # print(Errors.shape)
+        #print(mask)
+       # print(mask[0])
         #mask = Values > 0
         self.setExtarctedFeatures(usedFeatures, Values, Errors, SptCodes,mask)
 
@@ -95,21 +101,21 @@ class classIII:
         ticklabels = np.array(['G4','','G6','','','G9','K0','','','K3','','K5','','K7','','M1','','M3','','M5','','M7','','M9',''])
         ticks =  np.arange(-14,11,1)
         ray.shutdown()
-        ray.init()
+        ray.init(runtime_env={"working_dir":PATH})
 
         pool = ray.get([InerLoopExtract_log.remote(nameList[i],i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpTErr)for i in range(len(nameList))])
 
             #for i in range(len(nameList)):
 
-        print(np.array(pool).shape)
+        #print(np.array(pool).shape)
         Values = np.array(pool)[:,0].transpose()
         Errors = np.array(pool)[:,1].transpose()
-        mask = np.array(pool)[:,2].transpose().astype(np.bool)
-        print(Values.shape)
+        mask = np.array(pool)[:,2].transpose().astype(bool)
+       # print(Values.shape)
 
-        print(Errors.shape)
-        print(mask)
-        print(mask[0])
+        #print(Errors.shape)
+        #print(mask)
+        #print(mask[0])
         #mask = Values > 0
         self.setExtarctedFeatures(usedFeatures, Values, Errors, SptCodes,mask)
 
@@ -157,7 +163,7 @@ class classIII:
             errs = errorMatrix[i][self.Mask[i]]
             sptCodeCut = sptCode[self.Mask[i]]
             SpTErrCut = SpTErr[self.Mask[i]]
-            print(self.Mask[i])
+            #print(self.Mask[i])
 
 
             #ValuesOut[i,:] = localreg(sptCodeCut, feats, outSPTcode , degree=deg, kernel=rbf.epanechnikov, radius=rad)
@@ -203,12 +209,12 @@ class classIII:
         upperOut = np.empty((len(features),len(outSPTcode)))
         mask = self.Mask
         ray.shutdown()
-        ray.init()
+        ray.init(runtime_env={"working_dir":PATH})
         pool = ray.get([InerLoopFit.remote(i,featureMatrix,errorMatrix,sptCode,SpTErr,mask,mcSamples,outSPTcode,rad,deg)for i in range(len(features))])
 
         pool1 = np.array(pool)
-        print("HERE")
-        print(pool1.shape)
+        #print("HERE")
+        #print(pool1.shape)
         medOut,lowerOut,upperOut  = pool1[:,0,:], pool1[:,1,:], pool1[:,2,:]
 
         medAndErr = np.array([medOut,lowerOut,upperOut])
@@ -238,12 +244,12 @@ class classIII:
         upperOut = np.empty((len(features),len(outSPTcode)))
         mask = self.Mask
         ray.shutdown()
-        ray.init()
+        ray.init(runtime_env={"working_dir":PATH})
         pool = ray.get([InerLoopFit_log.remote(i,featureMatrix,errorMatrix,sptCode,SpTErr,mask,mcSamples,outSPTcode,rad,deg)for i in range(len(features))])
 
         pool1 = np.array(pool)
-        print("HERE")
-        print(pool1.shape)
+        #print("HERE")
+        #print(pool1.shape)
         medOut,lowerOut,upperOut  = pool1[:,0,:], pool1[:,1,:], pool1[:,2,:]
 
         medAndErr = np.array([medOut,lowerOut,upperOut])
@@ -284,7 +290,7 @@ class classIII:
             sptCodeCut = sptCode[self.Mask[i]]
             SpTErrCut = SpTErr[self.Mask[i]]
 
-            print(self.Mask[i])
+            #print(self.Mask[i])
 
 
             ValuesBestFitOut[i,:] = localreg(sptCodeCut, feats, outSPTcode , degree=deg, kernel=rbf.epanechnikov, radius=rad)
@@ -317,7 +323,7 @@ class classIII:
     ######
     #TODO: hightlight points not used!
     ######
-    def plotAllInterpIndividualy(self, outdir ='./',logScale = False):
+    def plotAllInterpIndividualy(self, outdir ='./',logScale = False,close = True):
         for i in range(len(self.medInterp)):
             fig, axs = plt.subplots(2, 1,figsize=(16,9),sharex='col', gridspec_kw={'height_ratios': [3, 1]})
             axs[0].set_title('wl range: '+str(self.usedFeatures[i][0])+'-'+str(self.usedFeatures[i][1])+' nm')
@@ -350,7 +356,8 @@ class classIII:
                 plt.savefig(outdir+'wl_range:'+str(self.usedFeatures[i][0])+'-'+str(self.usedFeatures[i][1])+'nm_LOG.png')
             else:
                 plt.savefig(outdir+'wl_range:'+str(self.usedFeatures[i][0])+'-'+str(self.usedFeatures[i][1])+'nm.png')
-            plt.close()
+            if close == True:
+                plt.close()
 
     def plotAllInterpIndividualy_FitResiduals_LOG(self, outdir ='./',logScale = False):
         if logScale:
@@ -564,9 +571,9 @@ def readMixClassIII(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = False):
     if not average:
         i = np.random.randint(0,len(name_cl3[sptCodes == nearestSptInArray]))
         cl3_toSelectModel = name_cl3[sptCodes == nearestSptInArray][i]
-        print('!!!!!')
-        print(cl3_toSelectModel)
-        print('!!!!!')
+        #print('!!!!!')
+        #print(cl3_toSelectModel)
+       # print('!!!!!')
         wl,fl = spec_readspec(PATH_CLASSIII +'VIS/flux_'+cl3_toSelectModel+'_VIS_corr_phot.fits')
 
         fwlnorm = np.nanmedian(fl[(wl<WLnorm+halfWidth)&(wl>WLnorm-halfWidth)])
@@ -609,9 +616,9 @@ def readMixClassIII_withSpT(min_chi_sq_cl3,PATH_CLASSIII,wlNorm =731,average = F
         i = np.random.randint(0,len(name_cl3[sptCodes == nearestSptInArray]))
         cl3_toSelectModel = name_cl3[sptCodes == nearestSptInArray][i]
         spt = SpT_cl3[sptCodes == nearestSptInArray][i]
-        print('!!!!!')
-        print(cl3_toSelectModel)
-        print('!!!!!')
+        #print('!!!!!')
+        #print(cl3_toSelectModel)
+        #print('!!!!!')
         wl,fl = spec_readspec(PATH_CLASSIII +'VIS/flux_'+cl3_toSelectModel+'_VIS_corr_phot.fits')
 
         fwlnorm = np.nanmedian(fl[(wl<WLnorm+halfWidth)&(wl>WLnorm-halfWidth)])
@@ -648,7 +655,7 @@ def InerLoopExtract(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpT
         nirFile = glob.glob(DirSpec+'NIR/*%s*' %name)[0]
         Wnir,Fnir = spec_readspec(nirFile)
 
-        print(i)
+        #print(i)
         wl = np.concatenate([Wuvb[Wuvb<550],Wvis[(Wvis>550)&(Wvis<=1020)],Wnir[Wnir>1020]])
         fl = np.concatenate([Fuvb[Wuvb<550],Fvis[(Wvis>550)&(Wvis<=1020)],Fnir[Wnir>1020]])
         #fl[fl<0] = 0#np.nan
@@ -702,7 +709,7 @@ def InerLoopExtract(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth,SpT
             Errors[j] =   errFlDerred
             #mask[j] = ((fluxNotScaledInRange/ErrNotScaledInRange) >=0.)
             mask[j] = ((((errFlDerred) <=0.25) or (fluxInRange>0.5))&(fluxInRange>0.0)) #ErrFin0.25
-        print(mask)
+        #print(mask)
         return Values, Errors, mask
 
 @ray.remote#(num_returns=2)
@@ -720,7 +727,7 @@ def InerLoopExtract_log(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth
         nirFile = glob.glob(DirSpec+'NIR/*%s*' %name)[0]
         Wnir,Fnir = spec_readspec(nirFile)
 
-        print(i)
+        #print(i)
         wl = np.concatenate([Wuvb[Wuvb<550],Wvis[(Wvis>550)&(Wvis<=1020)],Wnir[Wnir>1020]])
         fl = np.concatenate([Fuvb[Wuvb<550],Fvis[(Wvis>550)&(Wvis<=1020)],Fnir[Wnir>1020]])
 
@@ -749,7 +756,7 @@ def InerLoopExtract_log(name,i,DirSpec,usedFeatures,AvErr,WLnorm,wlNormHalfWidth
             errFlDerred = np.sqrt(term1+ term2)
             Errors[j] =   errFlDerred
             mask[j] = ((np.nanmedian((fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])]))/np.nanstd((fl[(wl>usedFeatures[j,0])&(wl<usedFeatures[j,1])]))) >=0.0)
-        print(mask)
+        #print(mask)
         return Values, Errors, mask
 
 @ray.remote

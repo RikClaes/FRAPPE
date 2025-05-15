@@ -282,20 +282,10 @@ class Fit():
 		self.perAA = False
 		self.Rv = 3.1
 		for option, value in kwargs.items():
-			#print("here")
-			#print(option)
-			#print(sys.argv[1])
-			#print("here")
-				#print(obj_in)
+
 			if option == 'spt':
 				# cl3_in = sys.argv[1]; del sys.argv[1]
 				cl3_in = value  # Dec, 2nd 2014 - in this way I can give as input a sequence of names and becomes a list
-			elif option == 'max_u' or option == '--max_wl_uvb':
-				self.max_wl_uvb = value
-			elif option == 'min_v' or option == '--min_wl_vis':
-				self.min_wl_vis = value
-			elif option == 'max_v' or option == '--max_wl_vis':
-				self.max_wl_vis = value
 			elif option == 'dist' or option == '--distance':
 				self.dist_pc = value
 			elif option == 'Av' or option == '--Av_fix':
@@ -315,8 +305,6 @@ class Fit():
 				sys.exit(1)
 
 
-		#gridFile = '/Users/rclaes/python/functions/MyFitter/earlyK_norm731_200p_1000iter_rad2.5_NoInstrRes_SignalNonZero/GoodOne.npz'
-
 		self.classIIIreadIn = pf.classIII(gridFile)
 		self.usedFeatures = self.classIIIreadIn.getUsedInterpFeat()
 		self.normWLandWidth = self.classIIIreadIn.getUsedNormWl()
@@ -333,7 +321,7 @@ class Fit():
 			path = os.getcwd()
 		self.path = path
 		self.PATH_OUT = path+obj_in+'_%4d-%02d-%02d_%02d.%02d.%02d' % now
-		print("here")
+		print("Writing output files to:")
 		print(self.PATH_OUT)
 		os.mkdir(self.PATH_OUT)
 		self.PATH_OUT = self.PATH_OUT+'/'
@@ -359,7 +347,7 @@ class Fit():
 			self.fl_UVB_in = self.fl_UVB_in*10
 			self.fl_VIS_in = self.fl_VIS_in*10
 		# name the object!
-		print(obj_in)
+		#print(obj_in)
 		if obj_in != None:
 			self.obj_in = obj_in
 		else:
@@ -371,15 +359,11 @@ class Fit():
 		# --------------------------------
 		# Remember that cardelli_extinction is in AA and my spectra in nm.
 		if Av != None:
-			print( Av)
+			#print( Av)
 			self.Av_list = np.array(Av,dtype=np.float32)
-			print(self.Av_list)
+			#print(self.Av_list)
 		else:
-			# Av_list = np.linspace(0,0.5,6)
-			# Av_list = np.linspace(0,2,21)
-			self.Av_list = np.concatenate((np.linspace(0,1.5,16),np.linspace(1.5,3,4)))	#[  0. ,   0.1,   0.2,   0.3,   0.4,   0.5,   0.6,   0.7,   0.8, 0.9,   1. ,   1.1,   1.2,   1.3,   1.4,   1.5,   1.6,   1.7,1.8,   1.9,   2. ,   2.1,   2.2,   2.3,   2.4,   2.5,   2.6,2.7,   2.8,   2.9,   3. ,   3. ,   4. ,   5. ,   6. ,   7. ,8. ,   9. ,  10. ]
-			# Av_list = np.concatenate((np.linspace(0,3,19),np.linspace(3,10,8)))	#[0.,0.16666667,0.33333333,0.5,0.66666667,0.83333333,1.,1.16666667,1.33333333,1.5,   1.66666667,   1.83333333,2.,   2.16666667,   2.33333333,   2.5,2.66666667,   2.83333333,   3.,   3.,4.,   5.,   6.,   7.,8.,   9.,  10.]
-			# Av_list = (np.linspace(0,0.5,10))	#[0.,0.16666667,0.33333333,0.5,0.66666667,0.83333333,1.,1.16666667,1.33333333,1.5,   1.66666667,   1.83333333,2.,   2.16666667,   2.33333333,   2.5,2.66666667,   2.83333333,   3.,   3.,4.,   5.,   6.,   7.,8.,   9.,  10.]
+			self.Av_list = np.concatenate((np.linspace(0,1.5,16),np.linspace(1.5,3,4)))
 
 
 		# ------------------------------
@@ -387,7 +371,7 @@ class Fit():
 		# ------------------------------
 		# if no for on cl3 is needed, but you just want to use one peculiar Class III, then you should have typed it in
 		if cl3_in != None:
-			print('You have given a selection of spectral types')
+			#print('You have given a selection of spectral types')
 			# if len(cl3_in) == 1:
 			# 	cl3_in_list = [cl3_in]
 			# else:
@@ -405,7 +389,6 @@ class Fit():
 		# 3) BIG FOR
 		# now makes use of the RAY package, RC
 		time_init = time.time()
-		print("working_dir   " + PATH+'/models_grid/')
 		#ray.init(runtime_env={"working_dir":os.path.dirname(os.path.dirname(PATH)), "excludes": [
 		#				'src/frappe/models_grid/**',
 		#				'/frappe/models_grid/**','
@@ -418,7 +401,7 @@ class Fit():
         #    "frappe/models_grid/**/*.tgz",
         #    "frappe/models_grid/**/*.zip"
         #]})#
-		ray.init()
+		ray.init(runtime_env={"working_dir":PATH+'/FrappeHelper/'})
 		pool_outputs1 = ray.get([main_process.remote(self,cl3_in_list[i])for i in range(len(cl3_in_list))])
 
 		print( 'Execution time:', time.time() - time_init, " seconds")
@@ -484,9 +467,9 @@ class Fit():
 		for key, val in self.chi_sq.items():
 			w.writerow([key, val, self.H_fin[key],self.K_fin[key]])
 		if len(list(csv.DictReader(open(self.PATH_OUT+'%s_clIII_%s_chi2.csv'% (self.obj_in,self.min_chi_sq_cl3)))))+1 != len(self.chi_sq):
-			print('MA PERCHE???????????')
+			#print('MA PERCHE???????????')
 			while len(list(csv.DictReader(open(self.PATH_OUT+'%s_clIII_%s_chi2.csv'% (self.obj_in,self.min_chi_sq_cl3)))))+1 != len(self.chi_sq):
-				print('MA PERCHE???????????')
+				#print('MA PERCHE???????????')
 				w = csv.writer(open(self.PATH_OUT+'%s_clIII_%s_chi2.csv'% (self.obj_in,self.min_chi_sq_cl3), 'w'))
 				for key, val in self.chi_sq.items():
 					w.writerow([key, val, self.H_fin[key],self.K_fin[key]])
@@ -948,7 +931,7 @@ class Fit():
 
 		if plot_smooth == False:
 			pl.plot(wl_UVB[ind_uvb],fl_UVB[ind_uvb],'k',zorder = 1)#,title=hdr['OBJECT'])#,xtitle='Wavelength [nm]',ytitle='Flux')
-			print('best fit sptCode = '+min_chi_sq_cl3)
+			#print('best fit sptCode = '+min_chi_sq_cl3)
 
 			# features used during fitting
 			wlFeat = (usedFeatures[:,0]+usedFeatures[:,1])/2
@@ -1647,7 +1630,7 @@ class Fit():
 			pl.plot(wl_cl3_UVB[ind_uvb_3],min_chi_sq_H*fl_slab_UVB_c[ind_uvb_3],'c')
 
 			pl.plot(wl_cl3_VIS[ind_vis_3],min_chi_sq_K*fl_cl3_VIS[ind_vis_3]+min_chi_sq_H*fl_slab_VIS_c[ind_vis_3],'b',alpha =0.5)
-			print(min_chi_sq_K*fl_cl3_VIS[ind_vis_3]+min_chi_sq_H*fl_slab_VIS_c[ind_vis_3])
+			#print(min_chi_sq_K*fl_cl3_VIS[ind_vis_3]+min_chi_sq_H*fl_slab_VIS_c[ind_vis_3])
 			pl.plot(wl_cl3_VIS[ind_vis_3],min_chi_sq_K*fl_cl3_VIS[ind_vis_3],'g',alpha =0.6)
 			pl.plot(wl_cl3_VIS[ind_vis_3],min_chi_sq_H*fl_slab_VIS_c[ind_vis_3],'c')
 

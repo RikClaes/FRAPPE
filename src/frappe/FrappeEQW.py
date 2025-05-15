@@ -83,7 +83,7 @@ import EqwVSspt as eqw
 ### this is the good one!!!!
 ####################
 
-
+ray.shutdown()
 				############################
 				# 	  PATH DEFINITION	   #
 				############################
@@ -287,6 +287,7 @@ def main_process(self,cl3_spt):
 						fluxclIIIAtWl = K*contAroundLine/2
 						fit_eqw[i] = eqwInterp[i]*fluxclIIIAtWl/(fluxSlabAtWl+fluxclIIIAtWl)
 						fit_eqw_err[i] = 0#eqwInterpErr[i]*fluxclIIIAtWl/(fluxSlabAtWl+fluxclIIIAtWl)
+					#complete:
 					eqw_std = np.sqrt((self.eqw_errObs**2) +(fit_eqw_err**2))
 					#print('fit_eqw')
 					#print(fit_eqw)
@@ -295,9 +296,9 @@ def main_process(self,cl3_spt):
 					#print('eqw_std')
 					#print(eqw_std)
 					chiterm1 = np.sum(((fit_cont - obs_cont_dered) / fit_std)**2)
-					logErrEqw = self.eqw_errObs/(self.eqwValObs*np.log(10))
-					#chiterm2 = np.nansum(((fit_eqw - self.eqwValObs) / eqw_std)**2)
-					chiterm2 = np.nansum(((np.log10(fit_eqw) - np.log10(self.eqwValObs)) / logErrEqw)**2)
+					#logErrEqw = self.eqw_errObs/(self.eqwValObs*np.log(10))
+					chiterm2 = np.nansum(((fit_eqw - self.eqwValObs) / eqw_std)**2)
+					#chiterm2 = np.nansum(((np.log10(fit_eqw) - np.log10(self.eqwValObs)) / logErrEqw)**2)
 					#Chiterm1List = np.append(Chiterm1List,chiterm1)
 					#Chiterm2List = np.append(Chiterm2List,chiterm2)
 					chi_sq_temp = chiterm1  + chiterm2
@@ -532,7 +533,7 @@ class Fit():
 		# 3) BIG FOR
 		# now makes use of the RAY package, RC
 		time_init = time.time()
-		ray.init()
+		ray.init(runtime_env={"working_dir":PATH+'/FrappeHelper/'})
 		pool_outputs1 = ray.get([main_process.remote(self,cl3_in_list[i])for i in range(len(cl3_in_list))])
 
 		print( 'Execution time:', time.time() - time_init, " seconds")

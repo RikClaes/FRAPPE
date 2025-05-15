@@ -43,7 +43,7 @@
 import numpy as np
 import string
 
-def readcol_py3(file,nvar,format='FMT',skipline=0,numline=1e5,verbose='YES'):
+def readcol_py3(file,nvar,format='FMT',skipline=0,numline=1e5,verbose='NO'):
 
 	#get the total number of lines in the file
 	nlines = file_lines(file,verbose=verbose)

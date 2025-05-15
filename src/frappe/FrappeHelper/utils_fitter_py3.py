@@ -26,10 +26,10 @@ def read_slab_check(T_in,Ne_in,tau_in,cl3_inn,ARM_in,PATH_SLAB_RESAMPLED_SAV,PAT
 		# print(w)
 		wl_slab,fl_slab = s['w'],s['f']
 	elif os.path.isfile(PATH_SLAB_RESAMPLED+'slab_T%s_ne%s_tau%s_clIII_%s_%s.dat' % (T_in,Ne_in,tau_in,cl3_inn,ARM_in)):
-		print('Leggiamo il file')
+		#print('Leggiamo il file')
 		#read the UVB and VIS files of the resampled slab model
 		wl_slab,fl_slab = read_resampled_slab(T_in,Ne_in,tau_in,cl3_inn,ARM_in,PATH_SLAB_RESAMPLED)
-		print('Letto')
+		#print('Letto')
 	else:
 		sys.exit('slab model not available.')
 	return np.array(wl_slab,dtype=np.float64),np.array(fl_slab,dtype=np.float64)
@@ -46,14 +46,13 @@ def read_slab(T_in,Ne_in,tau_in,cl3_inn,ARM_in,PATH_SLAB_RESAMPLED_SAV,PATH_SLAB
 		# print(w)
 		wl_slab,fl_slab = s['w'],s['f']
 	elif os.path.isfile(PATH_SLAB_RESAMPLED+'slab_T%s_ne%s_tau%s_clIII_%s_%s.dat' % (T_in,Ne_in,tau_in,cl3_inn,ARM_in)):
-		print('Leggiamo il file')
+		#print('Leggiamo il file')
 		#read the UVB and VIS files of the resampled slab model
 		wl_slab,fl_slab = read_resampled_slab(T_in,Ne_in,tau_in,cl3_inn,ARM_in,PATH_SLAB_RESAMPLED)
-		print('Letto')
+		#print('Letto')
 	else:
 		# if it's not there, you have to create it, but this is slower!!!
 		time_init = time.time()
-		print('AAAAAAARRRRRRGGGGGHHHHHH!!!!!!!')
 		ARM = ARM_in
 		# first, write the input file
 		f = open(PATH_ACC+'in.slab', 'w')
