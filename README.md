@@ -21,8 +21,17 @@ The below eaxmple shows how to load an interpolated spectrum at a given SpT and 
 Directory pointing towards and interpolated grid
 dirInterp = '/Interpolations/earlyK_norm731_200p_1000iter_rad2.5_WholeVIS.pnz'
 
+#Directory pointing towards and interpolated grid, they get istalled when pip nstalling the package, but if you just want 
+dirInterp = '/Users/rikclaes/python/functions/MyFitter/FrappePackage/src/frappe/models_grid/Interpolations/earlyK_norm731_200p_1000iter_rad2.5_WholeVIS/interp.npz'
+
+
 import matplotlib.pyplot as plt
+import numpy as np
+# make sure these are in yout python directory!!
 import PhotFeatures_Ray as pf
+from spt_coding import spt_coding
+
+
 
 # First the class III object needs to be initialized
 classIIIreadIn = pf.classIII(dirInterp)
@@ -40,9 +49,10 @@ sptCode = spt_coding('M3')
 features,errors = classIIIreadIn.getFeatsAtSpt_symetricErr(sptCode)
 #The spectrum can then be plotted using
 plt.figure()
-plt.plot(wl,np.log10(features)+i,'tab:blue',linewidth=.5)
-plt.fill_between(wl,np.log10(features-errors) +i, np.log10(features +errors)+i,color='tab:blue',alpha = 0.4)
-
+plt.plot(wl,np.log10(features),'tab:blue',linewidth=.5)
+plt.fill_between(wl,np.log10(features-errors) , np.log10(features +errors),color='tab:blue',alpha = 0.4)
+plt.xlabel('Wavelength [nm]')
+plt.ylabel('')
 
 ```
 this results in the following plot:
@@ -58,12 +68,15 @@ A future update will allow for other spectra to be included.
 
 ```
 import numpy as np
-import MyFitter.PhotFeatures_Ray as pf
+import PhotFeatures_Ray as pf
 import matplotlib.pyplot as plt
 
-SptFile = '~/.../summary_classIII_SPTok_SpTErr.txt'
+#Here you neet to alter the directory that on your machine 
+SptFile = '/Users/rikclaes/python/functions/MyFitter/FrappePackage/src/frappe/models_grid/RunnableGrid/summary_classIII_SPTok_SpTErr.txt'
 SptInfo = np.genfromtxt(SptFile,usecols=(0,2,4),skip_header=1,dtype=[('Name','U64'),('Spt','U4'),('SptErr','f8')])
 
+#Here you neet to alter the directory that on your machine 
+dirSpec = '/Users/rikclaes/python/functions/MyFitter/FrappePackage/src/frappe/models_grid/RunnableGrid/'
 
 nameList = SptInfo['Name']
 Spts = SptInfo['Spt']
@@ -86,15 +99,18 @@ features = np.array([[335-5,335+5],
 classIIIFeat = pf.classIII()
 classIIIFeat.extractFeaturesXS_ray(dirSpec,nameList,Spts,features,WLnorm= 731,SpTErr = SptInfo['SptErr'])
 
-output = '/someFileName' #the output file you want to produce .npz should not be included in the name
+# Choose where you want the outputs!!!
+output = '/Users/rikclaes/python/functions/MyFitter/FrappePackage/src/testInterp/' #the output file you want to produce .npz should not be included in the name
 #run the non parametric fits
-classIIICarlosFeat.nonParamFit_ray(200,1000,rad =2.5,deg =1,outFile = output)
+classIIIFeat.nonParamFit_ray(200,1000,rad =2.5,deg =1,outFile = output+'interp.npz')
 
 # the following plots can be produced to inspect the resulting interpolated spectrum
 # first the wavelength ranges are plotted individually
-classIIICarlosFeat.plotAllInterpIndividualy(outDir+'figsGoodInterp_NoBTsettl/')
+plt.figure()
+classIIIFeat.plotAllInterpIndividualy(output,close = False)
 # plot several different interpolations together
-classIIICarlosFeat.plotInterpTogetherWithErr(outDir+'figsGoodInterp_NoBTsettl/')
+plt.figure()
+classIIIFeat.plotInterpTogetherWithErr(output)
 ```
 Below are two example of the produced figures
 ![plot](https://github.com/RikClaes/FRAPPE/blob/main/Figures/wl_range%3A709.5-710.5nm.png)
