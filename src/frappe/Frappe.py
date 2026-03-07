@@ -1594,9 +1594,9 @@ class Fit():
 		p1 = pl.figure(figsize=(10,7))
 		#pl.rcParams.update({'font.size': 13})
 		if smooth == False:
-			pl.plot (wl_UVB[ind_uvb],fl_UVB[ind_uvb],'r')
-			pl.plot(wl_VIS[ind_vis],fl_VIS[ind_vis],'r')
-			pl.plot(wl_NIR,fl_NIR,'r')
+			pl.plot (wl_UVB[ind_uvb],fl_UVB[ind_uvb],'k')
+			pl.plot(wl_VIS[ind_vis],fl_VIS[ind_vis],'k')
+			pl.plot(wl_NIR,fl_NIR,'k')
 		else:
 
 			##############
@@ -1608,9 +1608,9 @@ class Fit():
 			fl_VIS_smooth = spectrum_resample(fl_VIS,wl_VIS,wl_VIS_smooth)
 			wl_NIR_smooth = wl_NIR[::12 ]
 			fl_NIR_smooth = spectrum_resample(fl_NIR,wl_NIR,wl_NIR_smooth)
-			pl.plot(wl_UVB_smooth,fl_UVB_smooth,'r')
-			pl.plot(wl_VIS_smooth,fl_VIS_smooth,'r')
-			pl.plot(wl_NIR_smooth,fl_NIR_smooth,'r')
+			pl.plot(wl_UVB_smooth,fl_UVB_smooth,'k')
+			pl.plot(wl_VIS_smooth,fl_VIS_smooth,'k')
+			pl.plot(wl_NIR_smooth,fl_NIR_smooth,'k')
 
 		if CLIII == True:
 			"""
@@ -1627,12 +1627,12 @@ class Fit():
 			pl.axis([330,2048,0.1*np.median(fl_UVB[(wl_UVB < 450) & (wl_UVB > 400)]),4*np.median(fl_VIS[(wl_VIS < 820) & (wl_VIS > 800)])])
 			pl.plot(wl_cl3_UVB[ind_uvb_3],min_chi_sq_K*fl_cl3_UVB[ind_uvb_3]+min_chi_sq_H*fl_slab_UVB_c[ind_uvb_3],'b',alpha =0.5)
 			pl.plot(wl_cl3_UVB[ind_uvb_3],min_chi_sq_K*fl_cl3_UVB[ind_uvb_3],'g',alpha =0.6)
-			pl.plot(wl_cl3_UVB[ind_uvb_3],min_chi_sq_H*fl_slab_UVB_c[ind_uvb_3],'c')
+			pl.plot(wl_cl3_UVB[ind_uvb_3],min_chi_sq_H*fl_slab_UVB_c[ind_uvb_3],'r')
 
 			pl.plot(wl_cl3_VIS[ind_vis_3],min_chi_sq_K*fl_cl3_VIS[ind_vis_3]+min_chi_sq_H*fl_slab_VIS_c[ind_vis_3],'b',alpha =0.5)
 			#print(min_chi_sq_K*fl_cl3_VIS[ind_vis_3]+min_chi_sq_H*fl_slab_VIS_c[ind_vis_3])
 			pl.plot(wl_cl3_VIS[ind_vis_3],min_chi_sq_K*fl_cl3_VIS[ind_vis_3],'g',alpha =0.6)
-			pl.plot(wl_cl3_VIS[ind_vis_3],min_chi_sq_H*fl_slab_VIS_c[ind_vis_3],'c')
+			pl.plot(wl_cl3_VIS[ind_vis_3],min_chi_sq_H*fl_slab_VIS_c[ind_vis_3],'r')
 
 			pl.plot(wl_cl3_NIR,min_chi_sq_K*fl_cl3_NIR,'g',alpha =0.6)
 
@@ -1696,11 +1696,11 @@ class Fit():
 			pl.axis([330,2048,0.1*np.median(fl_UVB[(wl_UVB < 450) & (wl_UVB > 400)]),4*np.median(fl_VIS[(wl_VIS < 820) & (wl_VIS > 800)])])
 			#pl.loglog(wl_cl3_UVB[ind_uvb_3],min_chi_sq_K*fl_cl3_UVB[ind_uvb_3]+min_chi_sq_H*fl_slab_UVB_c[ind_uvb_3],'b')
 			#pl.loglog(wl_cl3_UVB[ind_uvb_3],min_chi_sq_K*fl_cl3_UVB[ind_uvb_3],'g')
-			pl.plot(wl_cl3_UVB[ind_uvb_3],min_chi_sq_H*fl_slab_UVB_c[ind_uvb_3],'c')
+			pl.plot(wl_cl3_UVB[ind_uvb_3],min_chi_sq_H*fl_slab_UVB_c[ind_uvb_3],'r')
 
 			#pl.loglog(wl_cl3_VIS[ind_vis_3],min_chi_sq_K*fl_cl3_VIS[ind_vis_3]+min_chi_sq_H*fl_slab_VIS_c[ind_vis_3],'b')
 			#pl.loglog(wl_cl3_VIS[ind_vis_3],min_chi_sq_K*fl_cl3_VIS[ind_vis_3],'g')
-			pl.plot(wl_cl3_VIS[ind_vis_3],min_chi_sq_H*fl_slab_VIS_c[ind_vis_3],'c')
+			pl.plot(wl_cl3_VIS[ind_vis_3],min_chi_sq_H*fl_slab_VIS_c[ind_vis_3],'r')
 
 			#pl.loglog(wl_cl3_NIR,min_chi_sq_K*fl_cl3_NIR,'g')
 
