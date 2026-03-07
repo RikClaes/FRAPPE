@@ -7,3 +7,6 @@
 Frappe works as an importable python package. 
 the ExampleFrappeRuns.ipynb jupyter notbook runs through its current functionality.
 The X-shooter spectra used in this tutorial can be found in the Example spectra folder
+
+## For more information see the Claes et al. 2024
+https://ui.adsabs.harvard.edu/abs/2024A%26A...690A.122C/abstract
