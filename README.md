@@ -4,3 +4,6 @@
 - using: pip install git+https://github.com/RikClaes/FRAPPE.git
 
 ## Running frappe:
+Frappe works as an importable python package. 
+the ExampleFrappeRuns.ipynb jupyter notbook runs through its current functionality.
+The X-shooter spectra used in this tutorial can be found in the Example spectra folder
