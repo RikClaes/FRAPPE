@@ -11,7 +11,7 @@ authors = [
 ]
 description = "Fitter for accretion properties"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = "==3.9"
 dependencies = [
   "ray",
   "localreg==0.5.0",
