@@ -300,14 +300,12 @@ def computeEW(wl,fl,wlline,size_cont=1.,dire =None):
 		return None, None
 	cont,err_cont,wl_line_ext,wl_cont = continuum_estimate_carlo(wl,fl,wlline,size_cont=size_cont,plot='save',namefile=dire,pixel_buff=5)#,plot='stop')
 	#print(len(cont))
-	print('Here')
 	ind = np.where((wl>=np.min(wl_line_ext))&(wl<=np.max(wl_line_ext)))
 	flux = int_tabulated(wl[ind],fl[ind]-cont)
 	ew_auto = -1.*flux/cont
 	err_flux = err_cont*np.diff(wl_line_ext)  # propagated for the size of the integration interval
-	print(((np.abs(flux)+err_flux)/cont)-np.abs(ew_auto))
 	err_ew_auto = ((np.abs(flux)+err_flux)/cont)-np.abs(ew_auto)
-	return ew_auto, err_ew_auto
+	return np.squeeze(ew_auto), np.squeeze(err_ew_auto)
 
 class EQWvsSpT:
     def __init__(self, dir = None):

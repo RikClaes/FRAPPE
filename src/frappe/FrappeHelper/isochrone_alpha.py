@@ -142,8 +142,8 @@ def isochrone_interp(logT,logL,model='Siess',tol=0.016,PATH =None):
 		if np.size(best[0]) > 1:	# this happens if there are two solutions which are the same
 			best = best[0][0]	# in this case I select one of the two (they are the same)
 		if distance[best] <= tol:
-			mass[i] = m[best]
-			logage[i] = a[best]
+			mass[i] = np.squeeze(m[best])
+			logage[i] = np.squeeze(a[best])
 		else:
 			#print(distance[best])
 			mass[i] = np.nan

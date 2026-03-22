@@ -376,8 +376,8 @@ def chi_sq_distr_cl3(chi_sq,H_fin,K_fin,cl3_in_list,PATH):
 		data[i,4] = k.split('/')[4]	# tau
 		data[i,5] = chi_sq[k]	# chi_sq
 		#print(H_fin[k][0])
-		data[i,6] = H_fin[k][0]	# H   --- if it creates problem I should add a [0] at the end ??? 2015-02-02 CFM
-		data[i,7] = K_fin[k][0]	# K
+		data[i,6] = np.squeeze(H_fin[k])	# H   --- if it creates problem I should add a [0] at the end ??? 2015-02-02 CFM
+		data[i,7] = np.squeeze(K_fin[k])	# K
 		i+=1
 
 	# prepare the plot
@@ -424,8 +424,8 @@ def chi_sq_distr_Av(chi_sq,H_fin,K_fin,Av_list,best_av):
 		data[i,3] = k.split('/')[3]	# Ne
 		data[i,4] = k.split('/')[4]	# tau
 		data[i,5] = chi_sq[k]	# chi_sq
-		data[i,6] = H_fin[k][0]	# H
-		data[i,7] = K_fin[k][0]	# K
+		data[i,6] = np.squeeze(H_fin[k])# H
+		data[i,7] = np.squeeze(K_fin[k])# K
 		i+=1
 
 	# prepare the plot
@@ -472,8 +472,8 @@ def chi_sq_distr_cl3_Av(chi_sq,H_fin,K_fin,cl3_in_list,Av_list,PATH):
 		data[i,3] = k.split('/')[3]	# Ne
 		data[i,4] = k.split('/')[4]	# tau
 		data[i,5] = chi_sq[k]	# chi_sq
-		data[i,6] = H_fin[k][0]	# H
-		data[i,7] = K_fin[k][0]	# K
+		data[i,6] = np.squeeze(H_fin[k])# H
+		data[i,7] = np.squeeze(K_fin[k])# K
 		i+=1
 
 	# assign to each Cl3 a Teff value
@@ -558,8 +558,8 @@ def posterior_distr_cl3_Av(chi_sq,H_fin,K_fin,cl3_in_list,Av_list,PATH):
 		data[i,3] = k.split('/')[3]	# Ne
 		data[i,4] = k.split('/')[4]	# tau
 		data[i,5] = chi_sq[k]	# chi_sq
-		data[i,6] = H_fin[k][0]	# H
-		data[i,7] = K_fin[k][0]	# K
+		data[i,6] = np.squeeze(H_fin[k])# H
+		data[i,7] = np.squeeze(K_fin[k])# K
 		i+=1
 
 	# assign to each Cl3 a Teff value
@@ -648,8 +648,8 @@ def chi_sq_distr_cl3_Av_Marginalise(chi_sq,H_fin,K_fin,cl3_in_list,Av_list,PATH)
 		data[i,3] = k.split('/')[3]	# Ne
 		data[i,4] = k.split('/')[4]	# tau
 		data[i,5] = chi_sq[k]	# chi_sq
-		data[i,6] = H_fin[k][0]	# H
-		data[i,7] = K_fin[k][0]	# K
+		data[i,6] = np.squeeze(H_fin[k])# H
+		data[i,7] = np.squeeze(K_fin[k])# K
 		i+=1
 
 	# assign to each Cl3 a Teff value

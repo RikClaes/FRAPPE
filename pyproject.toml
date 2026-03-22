@@ -7,25 +7,29 @@ name = "frappe"
 version = "0.1.0"
 authors = [
   { name="Rik Claes", email="rclaes@live.be" },
-{ name="Carlo F. Manara", email="cmanara@eso.org" }
+  { name="Carlo F. Manara", email="cmanara@eso.org" }
 ]
 description = "Fitter for accretion properties"
 readme = "README.md"
-requires-python = "==3.9"
+requires-python = ">=3.10"
 dependencies = [
-  "ray",
-  "localreg==0.5.0",
-  "matplotlib>=2.1.1",
-  "numpy>=1.17.3",
-	"scipy>=1.3.1",
-	"ipywidgets>=7.5.1",
-"ipympl",
-"jupyter",
-"astropy",
-"PyQt5"
+  "ray>=2.10.0",
+  "localreg>=0.5.0",
+  "matplotlib>=3.5.0",
+  "numpy>=1.23.0",
+  "scipy>=1.9.0",
+  "ipywidgets>=8.0.0",
+  "ipympl>=0.9.0",
+  "jupyter>=1.0.0",
+  "astropy>=5.0",
+  "PyQt5>=5.15.9"
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
