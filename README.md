@@ -10,3 +10,7 @@ The X-shooter spectra used in this tutorial can be found in the Example spectra 
 
 ## For more information see the Claes et al. 2024
 https://ui.adsabs.harvard.edu/abs/2024A%26A...690A.122C/abstract
+
+## Frappe is a further development of code developed by Carlo F. Manara.
+More info see Manara et al. 2013
+https://ui.adsabs.harvard.edu/abs/2013A%26A...558A.114M/abstract
